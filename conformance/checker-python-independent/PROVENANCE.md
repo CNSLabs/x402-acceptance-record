@@ -1,3 +1,5 @@
+> Publication copy: private locators were removed from metadata. The [export manifest](../PUBLICATION-METADATA.json) records original and public hashes; inputs, outputs, timestamps and source snapshots retain their original meaning.
+
 <!-- human-doc: evidence -->
 # Implementation provenance
 
@@ -7,7 +9,7 @@ The initial implementation was written in a fresh agent context using the parent
 
 The permitted packet was read: `SPEC.md`, `CASES.md`, `VECTOR-FORMAT.md`, both pinned upstream specification texts, `SOURCE-MANIFEST.json`, and `vectors.json`. The expected results were visible and used by the separate assertion runner. The verifier only receives `vectors[*].inputs`, decoded to exact bytes; it never receives an ID or expected result. It does not open the corpus.
 
-The specification pin is `ad53b54ad59df93bd5d3258963f27acccdcec23c`; the corpus pin is `b3bd7cb228cce98803cadcdfb75bc847e4455df8`. The upstream texts are execution evidence at `23b5c21125982961a2d4c13faf3cb5a6d6d7c03b` and offer/receipt at `faa1c694c66a3732aaabbce93bdae140e521a67d`.
+The specification pin is `ad53b54ad59df93bd5d3258963f27acccdcec23c`; the corpus pin is `(private source commit; locator withheld)`. The upstream texts are execution evidence at `23b5c21125982961a2d4c13faf3cb5a6d6d7c03b` and offer/receipt at `faa1c694c66a3732aaabbce93bdae140e521a67d`.
 
 The corpus SHA-256 was checked before and after runs and remains:
 

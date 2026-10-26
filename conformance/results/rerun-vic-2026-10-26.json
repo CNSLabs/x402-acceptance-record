@@ -3,7 +3,7 @@
   "method": "Fresh-context Python implementation; reference acceptance implementations unopened; expectations visible to implementer but not verifier.",
   "pins": {
     "spec_commit": "ad53b54ad59df93bd5d3258963f27acccdcec23c",
-    "corpus_commit": "b3bd7cb228cce98803cadcdfb75bc847e4455df8",
+    "corpus_commit": "(private source commit; locator withheld)",
     "upstream_execution_evidence_commit": "23b5c21125982961a2d4c13faf3cb5a6d6d7c03b",
     "upstream_offer_receipt_commit": "faa1c694c66a3732aaabbce93bdae140e521a67d",
     "files": {
@@ -2725,37 +2725,37 @@
   "loaded_library_and_module_sources": [
     {
       "module": "Crypto",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/Crypto/__init__.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/Crypto/__init__.py",
       "sha256": "4051cc37a6a43b5ca1cd6bc08284ba3593831a92f71d9faa46f559eeffe9bd4f"
     },
     {
       "module": "Crypto.Hash",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/Crypto/Hash/__init__.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/Crypto/Hash/__init__.py",
       "sha256": "df08b30541432c1e94800f18f0e228fb50928adc7de6a2f79e4b4cabb857911b"
     },
     {
       "module": "Crypto.Hash.keccak",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/Crypto/Hash/keccak.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/Crypto/Hash/keccak.py",
       "sha256": "f798f27e64aa5bd3ebd9dbea293cba4930de3c26d6579a0e805b8c2abac6a244"
     },
     {
       "module": "Crypto.Util",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/Crypto/Util/__init__.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/Crypto/Util/__init__.py",
       "sha256": "3e4749c1c86b4b1778b72ef5b1dd1e757b2df434a29c8e60060cde45faba364a"
     },
     {
       "module": "Crypto.Util._file_system",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/Crypto/Util/_file_system.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/Crypto/Util/_file_system.py",
       "sha256": "3917ef9a5c0a26d9460393c236beb8e94f21bb34da6ecd9be3777f1436ae1be2"
     },
     {
       "module": "Crypto.Util._raw_api",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/Crypto/Util/_raw_api.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/Crypto/Util/_raw_api.py",
       "sha256": "4e2c3e290cf7d03c048a12fe6e462deaec836e3931d46524d876fdcef7f346fc"
     },
     {
       "module": "Crypto.Util.py3compat",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/Crypto/Util/py3compat.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/Crypto/Util/py3compat.py",
       "sha256": "347d6ab99290190edcdc0537f7b983cb7bbdfb0222c327ab217d4056542cc406"
     },
     {
@@ -2765,7 +2765,7 @@
     },
     {
       "module": "__main__",
-      "path": "/private/tmp/x402-independent-publication-20261026/v0/checker-python-independent/run_vectors.py",
+      "path": "<temporary-directory>/v0/checker-python-independent/run_vectors.py",
       "sha256": "093f53f60881e154af65adb60610339ba1270e0df1da2db1287d9b31cf732fbc"
     },
     {
@@ -2785,7 +2785,7 @@
     },
     {
       "module": "_cffi_backend",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/_cffi_backend.cpython-314-darwin.so",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/_cffi_backend.cpython-314-darwin.so",
       "sha256": "7a3ea590a8ba470a09d11267ca583fe7c3a08b15b2699578ef5e048041127684"
     },
     {
@@ -2875,7 +2875,7 @@
     },
     {
       "module": "_sodium",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/nacl/_sodium.abi3.so",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/nacl/_sodium.abi3.so",
       "sha256": "dbc73de77581797e963721c65ce9980afc2e4127e6ef4cdf3680590d4341e90b"
     },
     {
@@ -2915,7 +2915,7 @@
     },
     {
       "module": "annotated_types",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/annotated_types/__init__.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/annotated_types/__init__.py",
       "sha256": "a7104a4d439b27a9f74fc0be236b9ba1b7831e6044026802a205abc1298a9bc8"
     },
     {
@@ -2955,37 +2955,37 @@
     },
     {
       "module": "cffi",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/cffi/__init__.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/cffi/__init__.py",
       "sha256": "c47b2db28c5f197e242d4dd4af95b7ebb0da65763fc76972cafd06f93e942cda"
     },
     {
       "module": "cffi.api",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/cffi/api.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/cffi/api.py",
       "sha256": "7165f5665b1c98ec9392fb61881a5458b712441b6a9699fe9a806ee1eb019b32"
     },
     {
       "module": "cffi.commontypes",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/cffi/commontypes.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/cffi/commontypes.py",
       "sha256": "ecdeb33ed08596fc57316847574f29b148dd6082b65e0b0ddf2a39760b9afefe"
     },
     {
       "module": "cffi.cparser",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/cffi/cparser.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/cffi/cparser.py",
       "sha256": "598fa8c785064ae552613b609b4d8598681b99cb9a6812b79a816591d1529ac5"
     },
     {
       "module": "cffi.error",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/cffi/error.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/cffi/error.py",
       "sha256": "bfac53892e14d24bc3732e21fc10d1a39bf7f5942e8fe20c4582efe444dd759b"
     },
     {
       "module": "cffi.lock",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/cffi/lock.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/cffi/lock.py",
       "sha256": "97d4d37703083298ba8c39091a742013d72f4c847b0809ed209afc1061edde96"
     },
     {
       "module": "cffi.model",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/cffi/model.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/cffi/model.py",
       "sha256": "700f9b10089b70751bb5ba9f80cab408b42314f02357425247333229588d805e"
     },
     {
@@ -3065,52 +3065,52 @@
     },
     {
       "module": "cytoolz",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/cytoolz/__init__.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/cytoolz/__init__.py",
       "sha256": "dce40fdaa0f6fea1b2546266b3c4ee1e66f26870ac384fc2feed3c0063945131"
     },
     {
       "module": "cytoolz._signatures",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/cytoolz/_signatures.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/cytoolz/_signatures.py",
       "sha256": "c6b1fe933a100fe12e232e0f17dd39cc5073284a2aefefbda66ed47be76bf962"
     },
     {
       "module": "cytoolz.curried",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/cytoolz/curried/__init__.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/cytoolz/curried/__init__.py",
       "sha256": "a3ecec5e1284b2281ecda4ea3386be21cdd90ac433c6a7d49d3cce8bd82f9a15"
     },
     {
       "module": "cytoolz.curried.exceptions",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/cytoolz/curried/exceptions.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/cytoolz/curried/exceptions.py",
       "sha256": "c35bfd4c6122e8cd98c9942a046ba8fd9c3696472af332229298124753bb448f"
     },
     {
       "module": "cytoolz.curried.operator",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/cytoolz/curried/operator.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/cytoolz/curried/operator.py",
       "sha256": "21f60d99003cc93e0b3e996ad61764135c80aad2c5b6835df3ace62a0735a9eb"
     },
     {
       "module": "cytoolz.dicttoolz",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/cytoolz/dicttoolz.cpython-314-darwin.so",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/cytoolz/dicttoolz.cpython-314-darwin.so",
       "sha256": "ac840a5976f066210757e8435f1c026ec8bc00bdaaf93788004bda37a5c6a114"
     },
     {
       "module": "cytoolz.functoolz",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/cytoolz/functoolz.cpython-314-darwin.so",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/cytoolz/functoolz.cpython-314-darwin.so",
       "sha256": "72c420db0ab3e66784b8acd4725e3fb7cba05eaec7e654f5be4328ab14caa6e8"
     },
     {
       "module": "cytoolz.itertoolz",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/cytoolz/itertoolz.cpython-314-darwin.so",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/cytoolz/itertoolz.cpython-314-darwin.so",
       "sha256": "0eeffaec813071c0ff83e2da9186eade7445d7ba4569f6f5dda38324b46bc0db"
     },
     {
       "module": "cytoolz.recipes",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/cytoolz/recipes.cpython-314-darwin.so",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/cytoolz/recipes.cpython-314-darwin.so",
       "sha256": "0c2131e20ac418fb3b1d249a20ab767e87ba4ec98b356876fad994c17a90bdda"
     },
     {
       "module": "cytoolz.utils",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/cytoolz/utils.cpython-314-darwin.so",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/cytoolz/utils.cpython-314-darwin.so",
       "sha256": "afca35f1fcf2f4b2108031f3967bb07a6876060e37bdcc474dd1179d38f08801"
     },
     {
@@ -3235,287 +3235,287 @@
     },
     {
       "module": "eth_hash",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/eth_hash/__init__.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_hash/__init__.py",
       "sha256": "ad6c4641e1ba23f70786d3ca841aeb74874d064b3cb483e1e36914c1325d5d36"
     },
     {
       "module": "eth_hash.abc",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/eth_hash/abc.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_hash/abc.py",
       "sha256": "dbedaea641baeb126556d316f530527843f61ac77e9e8fdc37c517b47aea287b"
     },
     {
       "module": "eth_hash.auto",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/eth_hash/auto.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_hash/auto.py",
       "sha256": "78cbb00b9cf3e557ce4521c17f9db5af25fe538fa78661db588628a267580ae6"
     },
     {
       "module": "eth_hash.backends",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/eth_hash/backends/__init__.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_hash/backends/__init__.py",
       "sha256": "e08ab033712d2acfe190faf26baeece3f4c608955d05f033466285dfb3f4487c"
     },
     {
       "module": "eth_hash.backends.auto",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/eth_hash/backends/auto.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_hash/backends/auto.py",
       "sha256": "df599c8cc710d302b54503760d1266f828cdc54de48d9d91b231cfc10a737251"
     },
     {
       "module": "eth_hash.backends.pycryptodome",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/eth_hash/backends/pycryptodome.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_hash/backends/pycryptodome.py",
       "sha256": "a3e4ae5265c5ace4d145e7b6f0000df8bf05ba663a0455da13d1d100771903e8"
     },
     {
       "module": "eth_hash.main",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/eth_hash/main.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_hash/main.py",
       "sha256": "e814595cd4710774f77c23b64d4afba7a63c1d71a7cbd2e79fcf0c9bb13cc115"
     },
     {
       "module": "eth_hash.utils",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/eth_hash/utils.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_hash/utils.py",
       "sha256": "70c0f9b20ff60962a0624abad0d471b9b856eb9d5c9e42a136c1a55a201e9c85"
     },
     {
       "module": "eth_keys",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/eth_keys/__init__.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_keys/__init__.py",
       "sha256": "820f6dee1586acafdaf85119047ffc4cdeddfa2ae48ee1cc220d9c831309a5c0"
     },
     {
       "module": "eth_keys.backends",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/eth_keys/backends/__init__.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_keys/backends/__init__.py",
       "sha256": "a3aeb728f7a646d6b696778452ecd45d8e37dcd993b6c4250eed2bb5f8888f72"
     },
     {
       "module": "eth_keys.backends.base",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/eth_keys/backends/base.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_keys/backends/base.py",
       "sha256": "b4cbb1843cede66717bd67d9850673aec5263e4d9cb8e6de9eed0cf6212791af"
     },
     {
       "module": "eth_keys.backends.coincurve",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/eth_keys/backends/coincurve.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_keys/backends/coincurve.py",
       "sha256": "cc0606bb55b293fc70e61d0e5e44c5afc5141fbd93a8071d64c188573bfc7fd5"
     },
     {
       "module": "eth_keys.backends.native",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/eth_keys/backends/native/__init__.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_keys/backends/native/__init__.py",
       "sha256": "a4d410bfa0528c71386449da7eb66d18e36f84f7a52165b233513fe22b1be870"
     },
     {
       "module": "eth_keys.backends.native.ecdsa",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/eth_keys/backends/native/ecdsa.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_keys/backends/native/ecdsa.py",
       "sha256": "f004fccb31c5d12ffc627a27a4e191586ae1ba22420602841442f96d2b861a96"
     },
     {
       "module": "eth_keys.backends.native.jacobian",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/eth_keys/backends/native/jacobian.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_keys/backends/native/jacobian.py",
       "sha256": "7ec2fb1cdc111b417cb7b3a25a9828da0e829c28a355e8c96b28ccfd186f3162"
     },
     {
       "module": "eth_keys.backends.native.main",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/eth_keys/backends/native/main.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_keys/backends/native/main.py",
       "sha256": "bfa3194e395dc760310402ac336368912ceeab21cd7ff72fe6bf7475b81babb8"
     },
     {
       "module": "eth_keys.constants",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/eth_keys/constants.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_keys/constants.py",
       "sha256": "bd3418b24048e12031e8a90e62fa8a485f9f6654a9c3db9afad2a4a57f50eeab"
     },
     {
       "module": "eth_keys.datatypes",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/eth_keys/datatypes.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_keys/datatypes.py",
       "sha256": "0db756cac46977b1f1fa67622a3b53f9fffba67abffc16e1b35a1b7ca62289c7"
     },
     {
       "module": "eth_keys.exceptions",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/eth_keys/exceptions.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_keys/exceptions.py",
       "sha256": "fe3b7899cf47da14a52be62d349c50be06cba4fa18bd5ad128bf9e6c013206a8"
     },
     {
       "module": "eth_keys.main",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/eth_keys/main.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_keys/main.py",
       "sha256": "67230ee7532588a13119dc3b62001a2654c5693e0dade95d0bf9b34abf235803"
     },
     {
       "module": "eth_keys.utils",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/eth_keys/utils/__init__.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_keys/utils/__init__.py",
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
     {
       "module": "eth_keys.utils.address",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/eth_keys/utils/address.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_keys/utils/address.py",
       "sha256": "0c04c56d5067019b21529f1e60b095f010af244655e821e3d4f70ac90259f7a7"
     },
     {
       "module": "eth_keys.utils.der",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/eth_keys/utils/der.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_keys/utils/der.py",
       "sha256": "a3f0dbd69d6712d03a97180a8f77372fdc4dc049c11fa39abef937c3b31fc2bc"
     },
     {
       "module": "eth_keys.utils.module_loading",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/eth_keys/utils/module_loading.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_keys/utils/module_loading.py",
       "sha256": "dea4f6785b1982c82d4b1d29b31e7064137babb4d1649b7f952a032e8cf1bc8f"
     },
     {
       "module": "eth_keys.utils.numeric",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/eth_keys/utils/numeric.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_keys/utils/numeric.py",
       "sha256": "52015f33690514ca69b94200ed980e60af426ae48c899ea313b3a6087fd1abc2"
     },
     {
       "module": "eth_keys.utils.padding",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/eth_keys/utils/padding.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_keys/utils/padding.py",
       "sha256": "ab2fe58254908973299ce005bfcf40b71b223ee6f0d927a3c7cd8d61a928803a"
     },
     {
       "module": "eth_keys.validation",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/eth_keys/validation.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_keys/validation.py",
       "sha256": "d69a5d120482a45ecd6f5b6b644eaf86bb427a1eab817535ec3714ac9938fe9d"
     },
     {
       "module": "eth_typing",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/eth_typing/__init__.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_typing/__init__.py",
       "sha256": "9b9e04fabd42fe9d17738a2cee8898f325f76a4fbfd7c9c3e701f03a25abe49b"
     },
     {
       "module": "eth_typing.abi",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/eth_typing/abi.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_typing/abi.py",
       "sha256": "919020e95842ad647ff7be8545da65b16199b8bfde624b6914bfbacf0c852859"
     },
     {
       "module": "eth_typing.bls",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/eth_typing/bls.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_typing/bls.py",
       "sha256": "5a9e23c666cd36c759c37adcbad5efad86fb5386ce80aeb5f2e1695e4b326f80"
     },
     {
       "module": "eth_typing.discovery",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/eth_typing/discovery.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_typing/discovery.py",
       "sha256": "75aa9c2307becd748f48649e1d76f317f92e6bffaacd67524b5b6af3210d2a9e"
     },
     {
       "module": "eth_typing.encoding",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/eth_typing/encoding.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_typing/encoding.py",
       "sha256": "09840363d857ae2683513ecee210c5d5b7ad110caafdac71f1d4b5aab8a1764f"
     },
     {
       "module": "eth_typing.enums",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/eth_typing/enums.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_typing/enums.py",
       "sha256": "8f0537afebb9c581f6e3bce41ade8220df045c96ef3218f959c1482df33bfeb6"
     },
     {
       "module": "eth_typing.evm",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/eth_typing/evm.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_typing/evm.py",
       "sha256": "41dfdd45f89644f10992a5be42856a3c3b98e89e39ab0cf0d43be3fa5d26e177"
     },
     {
       "module": "eth_typing.exceptions",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/eth_typing/exceptions.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_typing/exceptions.py",
       "sha256": "4111a487a5b68fc080dd30197e665f1924fa7e365ce29587dab79ab73cc403c7"
     },
     {
       "module": "eth_typing.networks",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/eth_typing/networks.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_typing/networks.py",
       "sha256": "bce8b4b30a22043914bcd2e734637ae05be0450a5b732d9d059f9be72871763d"
     },
     {
       "module": "eth_utils",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/eth_utils/__init__.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_utils/__init__.py",
       "sha256": "d02aeedf1395fb1f41cb5558d2bb5993c0c9b33b11e22463beaee0ff2162c498"
     },
     {
       "module": "eth_utils.abi",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/eth_utils/abi.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_utils/abi.py",
       "sha256": "1665b6edb5aa56ae4982a2327ad684d9818f35a3e10782bdf2f013ef9173d812"
     },
     {
       "module": "eth_utils.address",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/eth_utils/address.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_utils/address.py",
       "sha256": "27cda7582b9448d2f2db3a7d1886843aadc3b0e030a483377f86dadbd985b254"
     },
     {
       "module": "eth_utils.applicators",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/eth_utils/applicators.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_utils/applicators.py",
       "sha256": "a58e77ed8033e918a613ac0b5816847d64b5291eb31e8b4ee503688c70755783"
     },
     {
       "module": "eth_utils.conversions",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/eth_utils/conversions.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_utils/conversions.py",
       "sha256": "1dd27ffeeba05f4cf0b352f7e0f0af4e305c99245c3d01a3118675026c46acff"
     },
     {
       "module": "eth_utils.crypto",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/eth_utils/crypto.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_utils/crypto.py",
       "sha256": "67d395224f6c1f6cba8e55278dbc08e7af737647e25a1c5e4fdff6568ec08dca"
     },
     {
       "module": "eth_utils.currency",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/eth_utils/currency.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_utils/currency.py",
       "sha256": "cce492e6eef589cdce24a22cf4d52fe95481ceace34cc32b4c92d4ff4da2fd18"
     },
     {
       "module": "eth_utils.decorators",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/eth_utils/decorators.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_utils/decorators.py",
       "sha256": "907dddabbda84e5138b03206c069346de6534f23ec72f6317915ef0eb79f63a0"
     },
     {
       "module": "eth_utils.encoding",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/eth_utils/encoding.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_utils/encoding.py",
       "sha256": "d6a7c37ae8a72d9d355e3620927a66fe9f4bb96c1a62f89c624608f264b588c7"
     },
     {
       "module": "eth_utils.exceptions",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/eth_utils/exceptions.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_utils/exceptions.py",
       "sha256": "de774ceb397842849ce86ba957d4f52a5cfd4c1c8cf30db3af87b3f1426fcdec"
     },
     {
       "module": "eth_utils.functional",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/eth_utils/functional.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_utils/functional.py",
       "sha256": "de1b3cc35a26f02f72fd79d58895c570a3d86b8c5d681cd192c0f515b59cfbf5"
     },
     {
       "module": "eth_utils.hexadecimal",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/eth_utils/hexadecimal.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_utils/hexadecimal.py",
       "sha256": "eb7da2ae49a7e61fa056ca6bf36b8e09eafe578305bb7728bded2776749aa251"
     },
     {
       "module": "eth_utils.humanize",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/eth_utils/humanize.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_utils/humanize.py",
       "sha256": "ad2054380ebf5826000e1ca120ea2a4ccbb7a6800cbb8679c332b6513f6fed53"
     },
     {
       "module": "eth_utils.logging",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/eth_utils/logging.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_utils/logging.py",
       "sha256": "b158f433df090530d8d954ca45a2de7ad07370a31a26a320ddb431254e85be18"
     },
     {
       "module": "eth_utils.module_loading",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/eth_utils/module_loading.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_utils/module_loading.py",
       "sha256": "0c22cce1d121d60aabf0dcbe156c03fbfa4836a787cdb2d2ba9cf8648a42080c"
     },
     {
       "module": "eth_utils.network",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/eth_utils/network.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_utils/network.py",
       "sha256": "14373f76c73abc3430dfdf74efb60fd23a389666d0f7354f8442c9fe3194a357"
     },
     {
       "module": "eth_utils.numeric",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/eth_utils/numeric.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_utils/numeric.py",
       "sha256": "46b5dd5c8f9b861904b33dda06dc47b8695cff6649bd41a9bcc738ef0c78d3c6"
     },
     {
       "module": "eth_utils.pydantic",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/eth_utils/pydantic.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_utils/pydantic.py",
       "sha256": "1ead80a49659472fa101d41e10723dab4d0c07a926e1316cc5f0854403241633"
     },
     {
       "module": "eth_utils.toolz",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/eth_utils/toolz.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_utils/toolz.py",
       "sha256": "3262ead8939a2943ff9f5773dadb963f25f9614856954b5249b00af27aadf5d8"
     },
     {
       "module": "eth_utils.types",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/eth_utils/types.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_utils/types.py",
       "sha256": "4bac36db1cd85f3c8111555844b898617778dfb3adfa9bb2a9e6f91525661a88"
     },
     {
       "module": "eth_utils.units",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/eth_utils/units.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_utils/units.py",
       "sha256": "8d1a3ca7ab6bc70b884819d3f247f14cd57277f4d2779bd56396a228379f0755"
     },
     {
@@ -3710,117 +3710,117 @@
     },
     {
       "module": "nacl",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/nacl/__init__.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/nacl/__init__.py",
       "sha256": "e8f4e02f589edeaacad9fb665e5de0bf8fd17fe3d173069e9a2bc529797a0bb7"
     },
     {
       "module": "nacl._sodium",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/nacl/_sodium.abi3.so",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/nacl/_sodium.abi3.so",
       "sha256": "dbc73de77581797e963721c65ce9980afc2e4127e6ef4cdf3680590d4341e90b"
     },
     {
       "module": "nacl.bindings",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/nacl/bindings/__init__.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/nacl/bindings/__init__.py",
       "sha256": "fc250d01caf65e01d052496ff0706a6fda9d1f354359620d461c61438f0deee5"
     },
     {
       "module": "nacl.bindings.crypto_aead",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/nacl/bindings/crypto_aead.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/nacl/bindings/crypto_aead.py",
       "sha256": "5ce670643de7cac3abf38e67d022526bccb2a2596339d71dbc9cd16fc5eb02bc"
     },
     {
       "module": "nacl.bindings.crypto_box",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/nacl/bindings/crypto_box.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/nacl/bindings/crypto_box.py",
       "sha256": "32f6cdf964eb9779fdc60bb9217b4e5ec97e4a8a6d5e7cb724dcd0f0d109e71d"
     },
     {
       "module": "nacl.bindings.crypto_core",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/nacl/bindings/crypto_core.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/nacl/bindings/crypto_core.py",
       "sha256": "9301f155177261208b46d9287b50ddf3bbc53b0e62ceaf16ba6c339691b06b91"
     },
     {
       "module": "nacl.bindings.crypto_generichash",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/nacl/bindings/crypto_generichash.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/nacl/bindings/crypto_generichash.py",
       "sha256": "f665f40c6208ce272bfae5eba853359d4e2d8ab6ac6e2c43c1b71d7d5ed6d5f7"
     },
     {
       "module": "nacl.bindings.crypto_hash",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/nacl/bindings/crypto_hash.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/nacl/bindings/crypto_hash.py",
       "sha256": "460d6bb04c04ddace1b104fe74d54f038341f55a202402a7d447f162dd293ded"
     },
     {
       "module": "nacl.bindings.crypto_kx",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/nacl/bindings/crypto_kx.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/nacl/bindings/crypto_kx.py",
       "sha256": "1b55fc5fb3f5d1d0e104ec6718c1b5aad7065c6cc1201fe1c63414460affa593"
     },
     {
       "module": "nacl.bindings.crypto_pwhash",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/nacl/bindings/crypto_pwhash.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/nacl/bindings/crypto_pwhash.py",
       "sha256": "495e4a2ff084ce3a07ef08de3be5880ad47e8d8a27a8544a7bc789f29d256196"
     },
     {
       "module": "nacl.bindings.crypto_scalarmult",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/nacl/bindings/crypto_scalarmult.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/nacl/bindings/crypto_scalarmult.py",
       "sha256": "fc35fe9acb76b829f38e8e9f3f91d14e786fd410bde41f609897372ffa2bd7a8"
     },
     {
       "module": "nacl.bindings.crypto_secretbox",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/nacl/bindings/crypto_secretbox.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/nacl/bindings/crypto_secretbox.py",
       "sha256": "abc8fd1bf91d0d408aaaff84a54e168468196dcebe74805b1dca828f725e6b33"
     },
     {
       "module": "nacl.bindings.crypto_secretstream",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/nacl/bindings/crypto_secretstream.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/nacl/bindings/crypto_secretstream.py",
       "sha256": "774f7b8d2490e586c29e84d943479d207e74bea56534ccea52f818741809133c"
     },
     {
       "module": "nacl.bindings.crypto_shorthash",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/nacl/bindings/crypto_shorthash.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/nacl/bindings/crypto_shorthash.py",
       "sha256": "3d053b7631d32c319d56cfb0fd3b22be31471e9e442b9936621ea9fbacf44fad"
     },
     {
       "module": "nacl.bindings.crypto_sign",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/nacl/bindings/crypto_sign.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/nacl/bindings/crypto_sign.py",
       "sha256": "3f948b91f440ab9963e452db03506e06b283c305b45e30caff1a67f091386aa2"
     },
     {
       "module": "nacl.bindings.randombytes",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/nacl/bindings/randombytes.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/nacl/bindings/randombytes.py",
       "sha256": "b812b75b859c8e09e365d59a9eb5f47e3619a6bf4a1db06034c97daee8be3a37"
     },
     {
       "module": "nacl.bindings.sodium_core",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/nacl/bindings/sodium_core.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/nacl/bindings/sodium_core.py",
       "sha256": "f58f425fefacabe4da3da4113d1a71f12583492f4f24e8dafc2a9bfb2ab224d4"
     },
     {
       "module": "nacl.bindings.utils",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/nacl/bindings/utils.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/nacl/bindings/utils.py",
       "sha256": "283c109da75778d31ba840354a6a4dc82568e64f0c89441ad3b40ceba5737d73"
     },
     {
       "module": "nacl.encoding",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/nacl/encoding.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/nacl/encoding.py",
       "sha256": "a9300f7363174a4761e1ca83558d2b6ba907c95887302984a3fadeedc806939c"
     },
     {
       "module": "nacl.exceptions",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/nacl/exceptions.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/nacl/exceptions.py",
       "sha256": "8f954ecc355f348ec3b95965a78028a1e01f99bb77477375d9f9e2b5813b7ea5"
     },
     {
       "module": "nacl.public",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/nacl/public.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/nacl/public.py",
       "sha256": "dbefb1b43d960beec4960c629a6a787b61e4244292d5327b9683630879a57012"
     },
     {
       "module": "nacl.signing",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/nacl/signing.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/nacl/signing.py",
       "sha256": "d96e50f4d33cd7bd00aefbf5fbd066a3e6591cec5a15275bb3351f1cd188f61d"
     },
     {
       "module": "nacl.utils",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/nacl/utils.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/nacl/utils.py",
       "sha256": "8269530f5c7d64dc331ddf0ba402c7d421ee77e1edbfc7a345bdf2ed3c92f5fd"
     },
     {
@@ -3880,247 +3880,247 @@
     },
     {
       "module": "pycparser",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/pycparser/__init__.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/pycparser/__init__.py",
       "sha256": "35922781317a3f15be51e6676d8fc2c6690f1b9c8f108d5705fff94835e34a14"
     },
     {
       "module": "pycparser.ast_transforms",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/pycparser/ast_transforms.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/pycparser/ast_transforms.py",
       "sha256": "cbc35d509a8b833cb00732666c92ef6dcb0d46d2b3da0dd87ea42f8062fecf58"
     },
     {
       "module": "pycparser.c_ast",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/pycparser/c_ast.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/pycparser/c_ast.py",
       "sha256": "042a060231e60d1f12d1dd061ab114384e0d506605651b7e5bd6e9d257781896"
     },
     {
       "module": "pycparser.c_lexer",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/pycparser/c_lexer.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/pycparser/c_lexer.py",
       "sha256": "ef5e16cc8031c4880672978d0080b59e9bd94a5b2cd66e16c0b52cf1dfbe105e"
     },
     {
       "module": "pycparser.c_parser",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/pycparser/c_parser.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/pycparser/c_parser.py",
       "sha256": "b8c9a31bc8e57a075de2c44821995ba339653fa19d29e2dfbe2ea864a7381e48"
     },
     {
       "module": "pydantic",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/pydantic/__init__.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/pydantic/__init__.py",
       "sha256": "e5248cb9bbe293b3536dbed7fea54326dcdf3c03370ae5f03d794c58496ec01b"
     },
     {
       "module": "pydantic._internal",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/pydantic/_internal/__init__.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/pydantic/_internal/__init__.py",
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
     {
       "module": "pydantic._internal._config",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/pydantic/_internal/_config.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/pydantic/_internal/_config.py",
       "sha256": "bb17fc1949ba1f3b01789feb6220a7516c4562df0bb51652b79e2e48735e3d00"
     },
     {
       "module": "pydantic._internal._core_metadata",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/pydantic/_internal/_core_metadata.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/pydantic/_internal/_core_metadata.py",
       "sha256": "63f836b778bbba5b8afb05c266fcc97d114c3d4336dda0582df69ee05cc13f2d"
     },
     {
       "module": "pydantic._internal._core_utils",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/pydantic/_internal/_core_utils.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/pydantic/_internal/_core_utils.py",
       "sha256": "8a8bec150d2ef70b4fbc45cd4aa42d5c64855dca4f13f693028d525ccef91b51"
     },
     {
       "module": "pydantic._internal._decorators",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/pydantic/_internal/_decorators.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/pydantic/_internal/_decorators.py",
       "sha256": "66a6a829cc2d5ae7566be5aca298b11d265e03be58188908f463a2802988ce59"
     },
     {
       "module": "pydantic._internal._discriminated_union",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/pydantic/_internal/_discriminated_union.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/pydantic/_internal/_discriminated_union.py",
       "sha256": "1dd44bd97385a02795f79acad189312563e149d9995a7bad45a68192643ad07b"
     },
     {
       "module": "pydantic._internal._docs_extraction",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/pydantic/_internal/_docs_extraction.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/pydantic/_internal/_docs_extraction.py",
       "sha256": "f14627032f86c4278f7345e81f8de822474d02a1662022f28e9e3c48cb46a02c"
     },
     {
       "module": "pydantic._internal._fields",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/pydantic/_internal/_fields.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/pydantic/_internal/_fields.py",
       "sha256": "fa54b28a9972f53b67c79d568549dac57be767461e9bfa99c61eef512a6dab2a"
     },
     {
       "module": "pydantic._internal._forward_ref",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/pydantic/_internal/_forward_ref.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/pydantic/_internal/_forward_ref.py",
       "sha256": "aba490856f30a3dbcf662b9727aeb555f83b3e0a2a7890504c0ddda489d75a50"
     },
     {
       "module": "pydantic._internal._generate_schema",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/pydantic/_internal/_generate_schema.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/pydantic/_internal/_generate_schema.py",
       "sha256": "759371011c1c94390c786da3fd2d7a312f05bc303d19d9cd87a5426a212216b0"
     },
     {
       "module": "pydantic._internal._generics",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/pydantic/_internal/_generics.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/pydantic/_internal/_generics.py",
       "sha256": "e16a419b9d7c73e6473a24f77edd612bd24da1c22e664c738d7b3c7756e769f8"
     },
     {
       "module": "pydantic._internal._import_utils",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/pydantic/_internal/_import_utils.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/pydantic/_internal/_import_utils.py",
       "sha256": "4d18710f93ae63a094a2c8a805d05c254b34a26ec820e36265d60057bcd0f233"
     },
     {
       "module": "pydantic._internal._known_annotated_metadata",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/pydantic/_internal/_known_annotated_metadata.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/pydantic/_internal/_known_annotated_metadata.py",
       "sha256": "29239b749dda7f86113c470b151eb95c18b3245df78796297247aef4902f2b14"
     },
     {
       "module": "pydantic._internal._mock_val_ser",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/pydantic/_internal/_mock_val_ser.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/pydantic/_internal/_mock_val_ser.py",
       "sha256": "56a6ec20e81e9e841088cf8db05325f6e63b8ad8094ae3cda5754a698ec0d293"
     },
     {
       "module": "pydantic._internal._model_construction",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/pydantic/_internal/_model_construction.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/pydantic/_internal/_model_construction.py",
       "sha256": "e9f8b178522454c24ff04b3d7b734665b20b9e3b6ed4c9b5d7d5fe5ad019cee3"
     },
     {
       "module": "pydantic._internal._namespace_utils",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/pydantic/_internal/_namespace_utils.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/pydantic/_internal/_namespace_utils.py",
       "sha256": "f3f4252ebefbde498fcc8182bbc463131049846c019f44408ca316825cdabfeb"
     },
     {
       "module": "pydantic._internal._repr",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/pydantic/_internal/_repr.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/pydantic/_internal/_repr.py",
       "sha256": "30d91ae289c2f6efad5c9bd5dabb33dc95ecbb1aa5c0a6ca9ddd7afad831ae2c"
     },
     {
       "module": "pydantic._internal._schema_gather",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/pydantic/_internal/_schema_gather.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/pydantic/_internal/_schema_gather.py",
       "sha256": "d2a19b8b3e2975c7ef74c887ec9b9e275d2d43c73be748353a4674c723ffdb44"
     },
     {
       "module": "pydantic._internal._schema_generation_shared",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/pydantic/_internal/_schema_generation_shared.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/pydantic/_internal/_schema_generation_shared.py",
       "sha256": "f272ec49aaa011e6f1785dba3b088f06dd1954f8a91aa5b5215e346a09117f1c"
     },
     {
       "module": "pydantic._internal._signature",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/pydantic/_internal/_signature.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/pydantic/_internal/_signature.py",
       "sha256": "eb827244927c19ff8939fad96b6c53354746a5ded11aa74d2d815760e16e3d95"
     },
     {
       "module": "pydantic._internal._type_refs",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/pydantic/_internal/_type_refs.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/pydantic/_internal/_type_refs.py",
       "sha256": "9f1260561c30c6248e7106eb7357b92daf83a66e7053fe1248a254064a7484e5"
     },
     {
       "module": "pydantic._internal._typing_extra",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/pydantic/_internal/_typing_extra.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/pydantic/_internal/_typing_extra.py",
       "sha256": "e56811574315b19a9a87da56e28fc16e6b2eef70449842d584eee4db73543704"
     },
     {
       "module": "pydantic._internal._utils",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/pydantic/_internal/_utils.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/pydantic/_internal/_utils.py",
       "sha256": "23de5935186553e9bc579a6a0594ab3f6b0c20d63e8b0e5a6dc3d451185a0678"
     },
     {
       "module": "pydantic._internal._validators",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/pydantic/_internal/_validators.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/pydantic/_internal/_validators.py",
       "sha256": "f98f5abb8473a20d0274c11e387b3bedcf7df0c4ef81a1167d1360c432f67389"
     },
     {
       "module": "pydantic._migration",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/pydantic/_migration.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/pydantic/_migration.py",
       "sha256": "24ecb6a0c319ac9bc8b0f4655a1d056c2d7a6d68b112b8c60afb22c1071ca733"
     },
     {
       "module": "pydantic.alias_generators",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/pydantic/alias_generators.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/pydantic/alias_generators.py",
       "sha256": "28cd67deee097cb48197552e620de1a181f35c90fecaf82b9eaf2ed5c73087f0"
     },
     {
       "module": "pydantic.aliases",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/pydantic/aliases.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/pydantic/aliases.py",
       "sha256": "7ca40cf66ee92d9d94a1322a2be6cca31b3971634836b1f1a61c73b01e9501df"
     },
     {
       "module": "pydantic.annotated_handlers",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/pydantic/annotated_handlers.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/pydantic/annotated_handlers.py",
       "sha256": "f6bace2c54e0f723d6e1945b40089e5af0c4fe41bac4b3ce789f8b9f524de899"
     },
     {
       "module": "pydantic.config",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/pydantic/config.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/pydantic/config.py",
       "sha256": "ce6280cd61c4d3ce852122e3f75996711baed907ccab1b609a9aebf6f1a12171"
     },
     {
       "module": "pydantic.errors",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/pydantic/errors.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/pydantic/errors.py",
       "sha256": "e8d3f2c9de372b30c9765da667da8a316b98311dac4f5ffffaf8c50aa4b36509"
     },
     {
       "module": "pydantic.fields",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/pydantic/fields.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/pydantic/fields.py",
       "sha256": "70538e4988a6748f96d7a991ace8ef8a56983bbd5f589afc13d31150531ebca7"
     },
     {
       "module": "pydantic.functional_validators",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/pydantic/functional_validators.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/pydantic/functional_validators.py",
       "sha256": "ba78239e3ba03f1021eef3e153b629ee4eb374f51f299aed3856d1ccdd3ae1fc"
     },
     {
       "module": "pydantic.json_schema",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/pydantic/json_schema.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/pydantic/json_schema.py",
       "sha256": "ad107fbc52542d7aec4ccb0855a853c88b1ad27257f283182defe684fcea6d20"
     },
     {
       "module": "pydantic.main",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/pydantic/main.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/pydantic/main.py",
       "sha256": "84335fc05a112a2834af4a048f71c6a7c46b90f4468bee541da36e438a387190"
     },
     {
       "module": "pydantic.plugin",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/pydantic/plugin/__init__.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/pydantic/plugin/__init__.py",
       "sha256": "4ab557f570db50acede8154d0512972a612ac5e704444aba0385a857f44c2617"
     },
     {
       "module": "pydantic.plugin._loader",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/pydantic/plugin/_loader.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/pydantic/plugin/_loader.py",
       "sha256": "8408e04a58e82211b1dc0569229baac3948fb6d04d35e181493aea48c9cd8899"
     },
     {
       "module": "pydantic.plugin._schema_validator",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/pydantic/plugin/_schema_validator.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/pydantic/plugin/_schema_validator.py",
       "sha256": "ffff5fdede9a759c4d832cda8ee35d6b9b2222f2960c35ecb04e900fc8735c1e"
     },
     {
       "module": "pydantic.types",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/pydantic/types.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/pydantic/types.py",
       "sha256": "e4814eeef3981f268f7f8544d9b462f5a51d1f5098f8d8000e3a580dfc085904"
     },
     {
       "module": "pydantic.version",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/pydantic/version.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/pydantic/version.py",
       "sha256": "f5a7c3f959d8274092ec6d057572821165b920f63e64746c6d4f844c3cb2b220"
     },
     {
       "module": "pydantic.warnings",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/pydantic/warnings.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/pydantic/warnings.py",
       "sha256": "b48844f9808d8963603b9dddc28ee361d385bfb007cc999391b31d10664b124a"
     },
     {
       "module": "pydantic_core",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/pydantic_core/__init__.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/pydantic_core/__init__.py",
       "sha256": "5910c2b902fc9462ff577c298eff0fceeb8b0bdea8711e1389f23e1107304610"
     },
     {
       "module": "pydantic_core._pydantic_core",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/pydantic_core/_pydantic_core.cpython-314-darwin.so",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/pydantic_core/_pydantic_core.cpython-314-darwin.so",
       "sha256": "3d0fffd6abc935e05258b57598c7847cc1938358d8c93a3e450ad282dfaf24e7"
     },
     {
       "module": "pydantic_core.core_schema",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/pydantic_core/core_schema.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/pydantic_core/core_schema.py",
       "sha256": "e7e4605bb19781b72fee45995d71da8a560bcfca65d8bed1bab5709fba00f93c"
     },
     {
@@ -4165,7 +4165,7 @@
     },
     {
       "module": "reporting",
-      "path": "/private/tmp/x402-independent-publication-20261026/v0/checker-python-independent/reporting.py",
+      "path": "<temporary-directory>/v0/checker-python-independent/reporting.py",
       "sha256": "87528dc20aba05d2efcd4d9fc5ef59d86bd86dd1ba8c04dbbaa881b9bf436ee2"
     },
     {
@@ -4175,12 +4175,12 @@
     },
     {
       "module": "rfc8785",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/rfc8785/__init__.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/rfc8785/__init__.py",
       "sha256": "fa44927afd547caf7547247078bcf28863d1e69caf116d258c532b3f20ffd154"
     },
     {
       "module": "rfc8785._impl",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/rfc8785/_impl.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/rfc8785/_impl.py",
       "sha256": "c25bc3a046528482d53bee3487b837f31dd9c05f33e8f13288c7aab320932cec"
     },
     {
@@ -4265,67 +4265,67 @@
     },
     {
       "module": "toolz",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/toolz/__init__.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/toolz/__init__.py",
       "sha256": "f7d49e00a3888d25c2b691aae94aff3d87d55e65a38e1e9ad553fdc622129c8f"
     },
     {
       "module": "toolz._signatures",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/toolz/_signatures.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/toolz/_signatures.py",
       "sha256": "3e64c279860119baa807cade3940daa1e9bd8e121de29f626b7116f869807061"
     },
     {
       "module": "toolz.curried",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/toolz/curried/__init__.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/toolz/curried/__init__.py",
       "sha256": "53f7749c594e5983750c97399f9276ad3a1ab8753b4047b8e42304d6344b4f56"
     },
     {
       "module": "toolz.curried.exceptions",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/toolz/curried/exceptions.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/toolz/curried/exceptions.py",
       "sha256": "df543d23e468f88300dde46e0c2e704905d0058969771a279c9af8169d21aae2"
     },
     {
       "module": "toolz.curried.operator",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/toolz/curried/operator.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/toolz/curried/operator.py",
       "sha256": "6f700bd66102db994ec0917ef184fc7074341e8fe1822da3bca614278740ee1f"
     },
     {
       "module": "toolz.dicttoolz",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/toolz/dicttoolz.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/toolz/dicttoolz.py",
       "sha256": "b04f3094634b7b385d9a446a07681073149bc1b3baf9cfb84956d8fb2163ba81"
     },
     {
       "module": "toolz.functoolz",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/toolz/functoolz.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/toolz/functoolz.py",
       "sha256": "029b6879a9f4256e4c97a83619fa0953f3f6aaefcc738175150ac6c685e3cf66"
     },
     {
       "module": "toolz.itertoolz",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/toolz/itertoolz.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/toolz/itertoolz.py",
       "sha256": "93e4d79bc7c6d68250657846454303ba95c0694c9ef165cb7a8e0bdf150711c6"
     },
     {
       "module": "toolz.recipes",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/toolz/recipes.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/toolz/recipes.py",
       "sha256": "aff8fbd35520dbfa0ee1b1ee9e8cb5c62ce4d0dfa6f5007039bc8221326e1742"
     },
     {
       "module": "toolz.sandbox",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/toolz/sandbox/__init__.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/toolz/sandbox/__init__.py",
       "sha256": "cac01821a1913a96cdcb6fa56047a255f9490aa10e5fd31620700847d05ce800"
     },
     {
       "module": "toolz.sandbox.core",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/toolz/sandbox/core.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/toolz/sandbox/core.py",
       "sha256": "90a6eb5f3a1a29433980e9b63624b88b52287251cc6082bb9b8736b7e13baab4"
     },
     {
       "module": "toolz.sandbox.parallel",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/toolz/sandbox/parallel.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/toolz/sandbox/parallel.py",
       "sha256": "045b5e798b9d471d654040280f1b169724823ebc891dd7257671e9c42aab6e37"
     },
     {
       "module": "toolz.utils",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/toolz/utils.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/toolz/utils.py",
       "sha256": "24b957b7cc7f26a4957af98b64f9ede5b649b1d28c0498096f923095c7ce9ec7"
     },
     {
@@ -4345,22 +4345,22 @@
     },
     {
       "module": "typing_extensions",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/typing_extensions.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/typing_extensions.py",
       "sha256": "4040ca1a1ecbee00d1385c12a93084d1c5bd46f0b774f07e5ae7e91c4f55e696"
     },
     {
       "module": "typing_inspection",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/typing_inspection/__init__.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/typing_inspection/__init__.py",
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
     {
       "module": "typing_inspection.introspection",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/typing_inspection/introspection.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/typing_inspection/introspection.py",
       "sha256": "5888c45bd627da692d9527699e3f549adf35651596b1656772310e12181b4396"
     },
     {
       "module": "typing_inspection.typing_objects",
-      "path": "/private/tmp/x402-independent-reader-4swCDK/.venv/lib/python3.14/site-packages/typing_inspection/typing_objects.py",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/typing_inspection/typing_objects.py",
       "sha256": "a778d6290d51581c9c9a23e0263af2a4604c76def5c4d40a7cd1a375b0046ff6"
     },
     {
@@ -4380,7 +4380,7 @@
     },
     {
       "module": "verifier",
-      "path": "/private/tmp/x402-independent-publication-20261026/v0/checker-python-independent/verifier.py",
+      "path": "<temporary-directory>/v0/checker-python-independent/verifier.py",
       "sha256": "213f0919111b37bb9bb60d70d7cbc9a0911c95a4b48523d2613cc02f3ef47111"
     },
     {
@@ -4395,7 +4395,7 @@
     },
     {
       "module": "wire",
-      "path": "/private/tmp/x402-independent-publication-20261026/v0/checker-python-independent/wire.py",
+      "path": "<temporary-directory>/v0/checker-python-independent/wire.py",
       "sha256": "333e8b5746381ffd1e3b64c09c4d2e9c06ce7402d493dfa37fd166c23320c354"
     },
     {
@@ -4455,8 +4455,8 @@
     }
   ],
   "checker_source": {
-    "repository": "https://github.com/CNSLabs/x402-acceptance-conformance",
-    "commit": "a53de10f1ede36f84c1d5eb28a5afcfe2f29abb0",
+    "repository": "(private source repository; locator withheld)",
+    "commit": "(private source commit; locator withheld)",
     "path": "v0/checker-python-independent",
     "visibility": "private",
     "inspected": "2026-10-26"

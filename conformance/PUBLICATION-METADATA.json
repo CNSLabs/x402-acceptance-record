@@ -1,0 +1,106 @@
+{
+  "format": 1,
+  "scope": "Publication metadata copies; not a new execution or a new freeze",
+  "changed_files": {
+    "README.md": {
+      "original_sha256": "65cb27d8dabfa1014568cb5841e033a5b675b0eae532515980452836920214ea",
+      "export_sha256": "684e070311f13583f4420a14cc86868d22fe2882fad3c9daf207998342e52108"
+    },
+    "checker-blind/BRIEF.md": {
+      "original_sha256": "2c5d3afbe91111b4fbb2a2fdf37a6892d3d1182b3e8bb929ec8abe2d5b448be0",
+      "export_sha256": "f51fe8067edaf118ecc78be417e4e5539a4d6123e315b0f260a1b3ad970ce22e"
+    },
+    "checker-blind/ENVIRONMENT-NOTES.md": {
+      "original_sha256": "9562b5cd03c51f19d448fae84f4f9aa077628b41a3a2ebae5f3bd88b2e12e487",
+      "export_sha256": "44f5ee3377a30ea227abe5fb39fbf7f63c6a5cc55fc292ed474eb0b918c45c42"
+    },
+    "checker-blind/REPORT.md": {
+      "original_sha256": "2e397eb2858f2e892526143a38124ff1e1cc2c93e7349a4cd98fa2f9e516a0c1",
+      "export_sha256": "e36bc9c2e94547a43fd1e754d7cd0a58222b6099de06e02b3c1c430c595831d4"
+    },
+    "checker-blind/provenance/build-logs/dependencies-install-py313.txt": {
+      "original_sha256": "8680807f2cfef944e3ef794c7f65254aaa057e7533a687803e626cfbd39838e5",
+      "export_sha256": "6d8aa370f1757133ad16960eaf4fc599ca34dad82ce5afc03c09d0b935a6a1a8"
+    },
+    "checker-blind/provenance/build-logs/dependencies-install-py314.txt": {
+      "original_sha256": "ddaeed09c9102ecfc00371e12e9e9a6c835a13a17936020f1e7e37d9c1acbfae",
+      "export_sha256": "0479a398a2123bf7cad5c14ed41f7db7c51b858d525afb76fcfc4a055244f529"
+    },
+    "checker-blind/provenance/build-logs/freeze.txt": {
+      "original_sha256": "e82ec446cc35c6ae44dbe11baf7326628fe22e462faa3144d2b59a9a2c04eb0e",
+      "export_sha256": "e13dad2451c2d8c6bb9a3035bda5bad3e47a4bd78d56fa796c975a112be7db89"
+    },
+    "checker-blind/r1/review-repro/results-frozen.json": {
+      "original_sha256": "dbd1b40545863846b113f812beb13286ed75b801e941756f7d257d7ee891e181",
+      "export_sha256": "a61d68c06ba46672cc2b76a7062eb85772d98b2820b0159c92973ae6b6670ffc"
+    },
+    "checker-python-independent/ARTIFACT-SHA256.json": {
+      "original_sha256": "f1f140be633591407e5d39a45bfb6afa111087d5e2056e030aa0c8108547d294",
+      "export_sha256": "a425572ce5b16a16bb62a3b2cceaec2b67407baf31217eb23821e489e72aa7e8"
+    },
+    "checker-python-independent/PACKAGING.md": {
+      "original_sha256": "498d12edded99a12854460d6ff5a6262484e1c5b2498eca08758936b69fa9458",
+      "export_sha256": "f0b31ee14dcc62ced9d4432839809f565247f9da5b4466af4035d5649cf427f0"
+    },
+    "checker-python-independent/PROVENANCE.md": {
+      "original_sha256": "a9a03af64d03b5f232ee58ebdfbce7371f6c6a96d1573094ac1002f1f6dbbe5e",
+      "export_sha256": "48d2c2422cbfc9af61d4c698a203ba3a1a5d01d65ed7ca48124bba12b6340b25"
+    },
+    "checker-python-independent/access-log.json": {
+      "original_sha256": "ef20d136c24af5dd8b678d23f8c43c5c273777cc72c3aabac9ac53c2feb0af7f",
+      "export_sha256": "fd8a85bf74fa6427c25fc4745f7e56ad5955598ce3793fdaa4c87656dd31b076"
+    },
+    "checker-python-independent/inputs/SOURCE-MANIFEST.json": {
+      "original_sha256": "a30157ad0300a0b01f89b99976b00e5c2f732a9bff26ee3e9e253e59ceb299f0",
+      "export_sha256": "07167aaf6c219aa15ca4c3e29353bb4fc57ba241d81735858bca95cc90e5e71b"
+    },
+    "checker-python-independent/results/corrected-run-2026-10-26.json": {
+      "original_sha256": "9658a60aa4e6e79267c0adff0affa59f12c4f242ceea9d57da3b04c197e5b15a",
+      "export_sha256": "c80701fcdccb1080f4acf3625bef1bf235ad89be603360b137a0ffb39c8c552e"
+    },
+    "checker-python-independent/results/first-run-2026-10-26.json": {
+      "original_sha256": "8bd3d67844903a34b843c14519e58da103e19c56496c3056f33c3ff55c0ffaba",
+      "export_sha256": "8ad6cedc2c5cd121b2c48ab034d70496900fe2734d7f55030fc4ba9fd352a883"
+    },
+    "checker-python-independent/results/numeric-first-run-2026-10-26.json": {
+      "original_sha256": "ac65a6cb9baed05744e7de4157344d271541cad7684a441766c5a068126dfc84",
+      "export_sha256": "a6dd590914c0d8a211f09d5db8845cf3778b03a43cf708cc0fdb63ad3f64f22a"
+    },
+    "checker-python-independent/results/numeric-rerun-vic-2026-10-26.json": {
+      "original_sha256": "0763313186410468713c83cbb56ec3926db937cee5c4e0ab0285ac0cc697ef46",
+      "export_sha256": "38cf1a9d405f7a7106241c6fe5ae98d50eb151e2ac1b69f0fce6267970ec716a"
+    },
+    "checker-python-independent/results/rerun-vic-2026-10-26.json": {
+      "original_sha256": "539907239b037847b4ac82170e670f81cd07fb975d330a0b5578ce014f69f605",
+      "export_sha256": "be880f1aef22b45c745153b08a98f27a781fd3ab1f0c6094faed04e4ee5ef92f"
+    },
+    "checker-python-independent/results/review-probes-before-fixes-2026-10-26.json": {
+      "original_sha256": "aa85beba72b120a9979abc63af5058b80eab8dc20a13dae2e37604e6b4be483d",
+      "export_sha256": "558da749836d4909ef8eaf4dad7a809228a51ac4ffba7f75f14ebbbda4b4ef69"
+    },
+    "checker-python-independent/results/selftests-first-run-2026-10-26.json": {
+      "original_sha256": "26ff1520b9c77a876fc8db0a5f550d7c01eec370c11abc72b34e93ece2a0a752",
+      "export_sha256": "c2b24e4575979a7c658f5f071f9275b0913953ce62227a3f9c87d6cd03066c21"
+    },
+    "checker/run-vectors.ts": {
+      "original_sha256": "57b35160822bdc049f22de1c6a8304b944bfb423c4b38b4eadbbeff1083de0fc",
+      "export_sha256": "1d09d6f9cd236789c84a29d07f5f98640925ee31a005673338c78eddb61af3ab"
+    },
+    "results/checker-ts-0b35fdc.json": {
+      "original_sha256": "b4ccdfcc2c4f97b089d0f044dad3c4f32bfe5deec490f56d06408791d321bc68",
+      "export_sha256": "76bdb3e2c09ec7b9893a1c42ae1f1e7ae4c86c5f4597c5bffa8150c25ed2fbfc"
+    },
+    "results/rerun-vic-2026-10-26.json": {
+      "original_sha256": "83b47bf7bdc03eb60a649de97b07c2304e19547a450678e81601dd9098ae066c",
+      "export_sha256": "6d684bde553860cbf44d8a0a03771fc94ddb3ed9c22e0c09546f4e564e25c8aa"
+    },
+    "results/rerun-vic-2026-10-26.md": {
+      "original_sha256": "a2eaea8fc644b64351918557935a91f69b41c6e31ff2786e3dbe7908dd2328c4",
+      "export_sha256": "48e7645171c78248a960cd1f7012328a8b66d6f66821ad0bc0c608d79f1b72d0"
+    },
+    "review/2026-10-26-vic-repro/repro.json": {
+      "original_sha256": "17316bc33d452444a8cac7e39df4f08b5f839877fea6580b025e936a6bbc50c3",
+      "export_sha256": "835190f6e89699c5d100b80c4350535649373012ab4cb718b569180beb4d865f"
+    }
+  }
+}

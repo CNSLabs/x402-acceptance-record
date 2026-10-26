@@ -1,11 +1,13 @@
-# Clean-room checker for the x402 acceptance record v0 — brief (2026-10-26, Mike's decision, Telegram 48761)
+> Publication copy: private locators were removed from metadata. The [export manifest](../PUBLICATION-METADATA.json) records original and public hashes; inputs, outputs, timestamps and source snapshots retain their original meaning.
+
+# Clean-room checker for the x402 acceptance record v0 — brief (2026-10-26, Mike's decision, private authorization locator withheld)
 
 Objective: build an independent verifier ("checker") for the x402 acceptance record, version 0, written from the specification text alone, then run it against the published vectors and record the result. The deliverable's value depends entirely on provenance discipline. Two stages, in order.
 
-Working directory (write only inside it): /Users/moltmike/.openclaw/state/x402-cleanroom-checker-20261026
+Working directory (write only inside it): <checker-workspace>
 
 ## Stage 1 — spec only
-Allowed reading: `inputs/stage1-spec-only/` only: SPEC.md, CASES.md, README.md, LICENSE, and `upstream-pinned/*`, which are the two upstream texts SPEC.md pins by commit (offer-and-receipt extension at faa1c694; execution evidence `x402ev/1` at 23b5c21). Nothing else about this project: do not open `inputs/stage2-vectors-after-freeze/`; do not open any other directory under `~/.openclaw/state` or `~/.openclaw/workspace`; do not use gh, git, curl or a browser to fetch anything from CNSLabs or x402-foundation beyond what is staged; do not search the web for implementations of this spec. Standard library and crypto-library documentation is fine. Keep `READ-LOG.md` listing every file you read, with UTC timestamps, in order.
+Allowed reading: `inputs/stage1-spec-only/` only: SPEC.md, CASES.md, README.md, LICENSE, and `upstream-pinned/*`, which are the two upstream texts SPEC.md pins by commit (offer-and-receipt extension at faa1c694; execution evidence `x402ev/1` at 23b5c21). Nothing else about this project: do not open `inputs/stage2-vectors-after-freeze/`; do not open any other directory under `<other-task-directories>` or `<other-workspace>`; do not use gh, git, curl or a browser to fetch anything from CNSLabs or x402-foundation beyond what is staged; do not search the web for implementations of this spec. Standard library and crypto-library documentation is fine. Keep `READ-LOG.md` listing every file you read, with UTC timestamps, in order.
 
 Deliverable: `checker/` implementing `verify` per SPEC.md section 8 (the AR-* steps, in order), both signing forms (EIP-712 and JWS), the verifier inputs of section 5 and the output of AR-36. Language: TypeScript on Node 22+ or Python 3.12+, your choice. Pinned dependencies with a lockfile; well-known crypto libraries allowed (for example @noble/curves and @noble/hashes, or cryptography, pycryptodome, coincurve); no network at runtime. CLI: `verify <inputs.json>` prints the AR-36 output object as JSON; `selftest` uses only synthetic keys you generate plus the spec's own illustrative examples. `checker/README.md`: inputs read, design, how to run.
 

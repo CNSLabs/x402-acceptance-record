@@ -114,3 +114,7 @@ results are in [checker-blind/r1/review-repro/](checker-blind/r1/review-repro/).
 [package rerun instructions](checker-blind/README.md#reproduce) for both the frozen and corrected revisions.
 
 [Integration verification](results/package-integration-review-2026-10-26.md) records the assembled package checks.
+
+## Publication metadata
+
+See [PUBLICATION.md](PUBLICATION.md) for metadata redactions and the original/export hash manifests. Frozen checker bundles, source snapshots, signed inputs and recorded result bodies are preserved.

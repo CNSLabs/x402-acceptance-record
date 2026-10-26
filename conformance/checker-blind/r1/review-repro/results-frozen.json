@@ -1,7 +1,7 @@
 {
   "checker_commit": "bec16636ff3c2afa0b7ec7a0a32ab2179f96817c",
   "checker_dirty": false,
-  "python": "/Users/moltmike/.openclaw/state/x402-cleanroom-checker-20261026/.venv313/bin/python",
+  "python": "<checker-workspace>/.venv313/bin/python",
   "cases": {
     "A1_jws_eip155_baseline": {
       "cli_exit": 0,

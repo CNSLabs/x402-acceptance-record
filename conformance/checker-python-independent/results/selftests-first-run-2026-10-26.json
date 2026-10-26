@@ -40,7 +40,7 @@
     {
       "test": "__main__.VerifierTests.test_bad_reference_form_skips_only_dependent_comparison",
       "passed": false,
-      "failure": "Traceback (most recent call last):\n  File \"/private/tmp/x402-independent-reader-4swCDK/selftests.py\", line 100, in test_bad_reference_form_skips_only_dependent_comparison\n    self.assertEqual(set(verify(**args)['conditions']),\n    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n                     {'acceptance_member_invalid', 'acceptance_outcome_digest_mismatch', 'acceptance_precedes_outcome'})\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Items in the second set but not the first:\n'acceptance_precedes_outcome'\n'acceptance_outcome_digest_mismatch'\n"
+      "failure": "Traceback (most recent call last):\n  File \"<temporary-directory>/selftests.py\", line 100, in test_bad_reference_form_skips_only_dependent_comparison\n    self.assertEqual(set(verify(**args)['conditions']),\n    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n                     {'acceptance_member_invalid', 'acceptance_outcome_digest_mismatch', 'acceptance_precedes_outcome'})\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Items in the second set but not the first:\n'acceptance_precedes_outcome'\n'acceptance_outcome_digest_mismatch'\n"
     },
     {
       "test": "__main__.VerifierTests.test_duplicate_trust_kid_refused_without_result",
@@ -65,7 +65,7 @@
     {
       "test": "__main__.VerifierTests.test_rfc8032_known_signature",
       "passed": false,
-      "error": "Traceback (most recent call last):\n  File \"/private/tmp/x402-independent-reader-4swCDK/selftests.py\", line 149, in test_rfc8032_known_signature\n    sig = bytes.fromhex('e5564300c360ac729086e2cc806e828a84877f1eb8e5d974d873e06522490155f'\n                        'b8821590a33bacc61e39701cf9b46bd25bf5f0595bbe24655141438e7a100b')\nValueError: fromhex() arg must contain an even number of hexadecimal digits\n"
+      "error": "Traceback (most recent call last):\n  File \"<temporary-directory>/selftests.py\", line 149, in test_rfc8032_known_signature\n    sig = bytes.fromhex('e5564300c360ac729086e2cc806e828a84877f1eb8e5d974d873e06522490155f'\n                        'b8821590a33bacc61e39701cf9b46bd25bf5f0595bbe24655141438e7a100b')\nValueError: fromhex() arg must contain an even number of hexadecimal digits\n"
     },
     {
       "test": "__main__.VerifierTests.test_stateless_after_unknown_and_bad_signature",
@@ -82,7 +82,7 @@
     {
       "test": "__main__.VerifierTests.test_zero_payer_is_null_entity",
       "passed": false,
-      "error": "Traceback (most recent call last):\n  File \"/private/tmp/x402-independent-reader-4swCDK/selftests.py\", line 123, in test_zero_payer_is_null_entity\n    self.assertEqual(verify(**args)['reason'], 'evidence_unavailable')\n                     ~~~~~~~~~~~~~~^^^^^^^^^^\nKeyError: 'reason'\n"
+      "error": "Traceback (most recent call last):\n  File \"<temporary-directory>/selftests.py\", line 123, in test_zero_payer_is_null_entity\n    self.assertEqual(verify(**args)['reason'], 'evidence_unavailable')\n                     ~~~~~~~~~~~~~~^^^^^^^^^^\nKeyError: 'reason'\n"
     }
   ],
   "summary": {

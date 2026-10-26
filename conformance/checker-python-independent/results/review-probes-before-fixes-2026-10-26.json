@@ -49,12 +49,12 @@
     {
       "test": "__main__.VerifierTests.test_eip712_offer_integral_exponent_expiration",
       "passed": false,
-      "failure": "Traceback (most recent call last):\n  File \"/private/tmp/x402-independent-reader-4swCDK/selftests.py\", line 145, in test_eip712_offer_integral_exponent_expiration\n    self.assertEqual(verify(**args)['result'], 'verified')\n    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 'unknown' != 'verified'\n- unknown\n+ verified\n\n"
+      "failure": "Traceback (most recent call last):\n  File \"<temporary-directory>/selftests.py\", line 145, in test_eip712_offer_integral_exponent_expiration\n    self.assertEqual(verify(**args)['result'], 'verified')\n    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 'unknown' != 'verified'\n- unknown\n+ verified\n\n"
     },
     {
       "test": "__main__.VerifierTests.test_eip712_offer_integral_float_version",
       "passed": false,
-      "failure": "Traceback (most recent call last):\n  File \"/private/tmp/x402-independent-reader-4swCDK/selftests.py\", line 140, in test_eip712_offer_integral_float_version\n    self.assertEqual(verify(**args)['result'], 'verified')\n    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 'unknown' != 'verified'\n- unknown\n+ verified\n\n"
+      "failure": "Traceback (most recent call last):\n  File \"<temporary-directory>/selftests.py\", line 140, in test_eip712_offer_integral_float_version\n    self.assertEqual(verify(**args)['result'], 'verified')\n    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 'unknown' != 'verified'\n- unknown\n+ verified\n\n"
     },
     {
       "test": "__main__.VerifierTests.test_expiration_boundary_and_no_clock",
@@ -71,7 +71,7 @@
     {
       "test": "__main__.VerifierTests.test_jws_offer_requires_caip2_network",
       "passed": false,
-      "failure": "Traceback (most recent call last):\n  File \"/private/tmp/x402-independent-reader-4swCDK/selftests.py\", line 160, in test_jws_offer_requires_caip2_network\n    self.assertEqual(actual['result'], 'unknown')\n    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 'verified' != 'unknown'\n- verified\n+ unknown\n\n"
+      "failure": "Traceback (most recent call last):\n  File \"<temporary-directory>/selftests.py\", line 160, in test_jws_offer_requires_caip2_network\n    self.assertEqual(actual['result'], 'unknown')\n    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 'verified' != 'unknown'\n- verified\n+ unknown\n\n"
     },
     {
       "test": "__main__.VerifierTests.test_missing_key_before_body_form",
