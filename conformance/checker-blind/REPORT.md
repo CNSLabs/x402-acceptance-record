@@ -16,7 +16,7 @@ The checker was written entirely by an AI agent in a clean context from the spec
 
 **127 passed / 0 failed / 127 vectors.** There are no failures to classify. No checker changes, v2 commit or second result were needed. The separate runner only decodes transport and renames documented input-binding fields; it never changes verification logic or signed data. The first result is preserved unchanged.
 
-Result: [rerun-cnslabs-cleanroom-sol-2026-10-26.json](../results/rerun-cnslabs-cleanroom-sol-2026-10-26.json).
+Result: [rerun-cnslabs-cleanroom-sol-2026-10-26.json](../results/rerun-mike-2026-10-26.json).
 
 ## Exact executed commands and outputs
 

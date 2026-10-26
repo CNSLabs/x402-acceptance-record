@@ -1,0 +1,31 @@
+{
+  "checker_commit": "68bb522d71aa5a0e4a65da28020bae474ec5dbc8",
+  "checker_version": "0.1.1",
+  "cases": {
+    "A1_jws_eip155_baseline": {
+      "cli_exit": 0,
+      "cli_stdout": "{\"result\":\"verified\",\"conditions\":[],\"disposition\":\"accepted\"}",
+      "cli_stderr": ""
+    },
+    "A2_jws_network_base": {
+      "cli_exit": 0,
+      "cli_stdout": "{\"result\":\"unknown\",\"conditions\":[],\"reason\":\"evidence_unavailable\",\"disposition\":\"accepted\"}",
+      "cli_stderr": ""
+    },
+    "B1_eip712_baseline": {
+      "cli_exit": 0,
+      "cli_stdout": "{\"result\":\"verified\",\"conditions\":[],\"disposition\":\"accepted\"}",
+      "cli_stderr": ""
+    },
+    "B2_eip712_version_1.0": {
+      "cli_exit": 0,
+      "cli_stdout": "{\"result\":\"verified\",\"conditions\":[],\"disposition\":\"accepted\"}",
+      "cli_stderr": ""
+    },
+    "B3_eip712_validUntil_1e2": {
+      "cli_exit": 0,
+      "cli_stdout": "{\"result\":\"verified\",\"conditions\":[],\"disposition\":\"accepted\"}",
+      "cli_stderr": ""
+    }
+  }
+}

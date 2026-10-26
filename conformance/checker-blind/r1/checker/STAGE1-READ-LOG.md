@@ -1,0 +1,41 @@
+# File read log
+
+- 2026-10-26T18:54:17.688003+00:00 — `BRIEF.md` (task instructions)
+- 2026-10-26T18:54:22.788125+00:00 — `inputs/stage1-spec-only/SPEC.md`
+- 2026-10-26T18:54:22.788518+00:00 — `inputs/stage1-spec-only/CASES.md`
+- 2026-10-26T18:54:22.788715+00:00 — `inputs/stage1-spec-only/README.md`
+- 2026-10-26T18:54:22.788887+00:00 — `inputs/stage1-spec-only/LICENSE`
+- 2026-10-26T18:54:32.736462+00:00 — `inputs/stage1-spec-only/SPEC.md` lines 310–end (reread after tool truncation)
+- 2026-10-26T18:54:38.716282+00:00 — `inputs/stage1-spec-only/SPEC.md` lines 287–310
+- 2026-10-26T18:54:38.716559+00:00 — `inputs/stage1-spec-only/CASES.md` lines 1–115
+- 2026-10-26T18:54:38.716696+00:00 — `inputs/stage1-spec-only/upstream-pinned/execution_evidence.md@23b5c21.md` lines 1–260
+- 2026-10-26T18:54:44.514460+00:00 — `inputs/stage1-spec-only/upstream-pinned/execution_evidence.md@23b5c21.md` lines 260–290
+- 2026-10-26T18:54:44.514669+00:00 — `inputs/stage1-spec-only/upstream-pinned/extension-offer-and-receipt.md@faa1c694.md` lines 1–240
+- 2026-10-26T18:54:52.584182+00:00 — `inputs/stage1-spec-only/upstream-pinned/extension-offer-and-receipt.md@faa1c694.md` lines 240–520
+- 2026-10-26T18:55:18.074529+00:00 — `inputs/stage1-spec-only/upstream-pinned/extension-offer-and-receipt.md@faa1c694.md` lines 521–892
+- 2026-10-26T18:58:22.024168+00:00 — `checker/requirements.in` (dependency install; first environment used system Python 3.9.6, retained unused; supported environment follows)
+- 2026-10-26T19:00:11.840429+00:00 — `checker/requirements.in` (supported Python 3.13 install; 3.14 build failed in dependency tooling; root-local TMPDIR now explicit)
+- 2026-10-26T19:00:30.278545+00:00 — `checker/cli.py` (synthetic selftest execution/import; installed library imports are runtime dependencies, not project evidence)
+- 2026-10-26T19:00:30.278641+00:00 — `checker/acceptance.py` (synthetic selftest execution/import; installed library imports are runtime dependencies, not project evidence)
+- 2026-10-26T19:00:30.278643+00:00 — `checker/selftest.py` (synthetic selftest execution/import; installed library imports are runtime dependencies, not project evidence)
+- 2026-10-26T19:02:30.491608+00:00 — `checker/acceptance.py` (pre-freeze dependency-suppression review/edit)
+- 2026-10-26T19:03:07.183979+00:00 — `inputs/stage1-spec-only/SPEC.md` (source SHA-256; LICENSE also copied into checker)
+- 2026-10-26T19:03:07.184301+00:00 — `inputs/stage1-spec-only/CASES.md` (source SHA-256; LICENSE also copied into checker)
+- 2026-10-26T19:03:07.184435+00:00 — `inputs/stage1-spec-only/README.md` (source SHA-256; LICENSE also copied into checker)
+- 2026-10-26T19:03:07.184595+00:00 — `inputs/stage1-spec-only/LICENSE` (source SHA-256; LICENSE also copied into checker)
+- 2026-10-26T19:03:07.184887+00:00 — `inputs/stage1-spec-only/upstream-pinned/extension-offer-and-receipt.md@faa1c694.md` (source SHA-256; LICENSE also copied into checker)
+- 2026-10-26T19:03:07.185060+00:00 — `inputs/stage1-spec-only/upstream-pinned/execution_evidence.md@23b5c21.md` (source SHA-256; LICENSE also copied into checker)
+- 2026-10-26T19:03:07.185157+00:00 — `checker/cli.py` (final stage-one selftest execution/import)
+- 2026-10-26T19:03:07.185159+00:00 — `checker/acceptance.py` (final stage-one selftest execution/import)
+- 2026-10-26T19:03:07.185160+00:00 — `checker/selftest.py` (final stage-one selftest execution/import)
+- 2026-10-26T19:03:24.849332+00:00 — `checker/.gitignore` (git add/commit snapshot; no stage-two exposure)
+- 2026-10-26T19:03:24.849458+00:00 — `checker/IMPLEMENTATION-NOTES.md` (git add/commit snapshot; no stage-two exposure)
+- 2026-10-26T19:03:24.849475+00:00 — `checker/LICENSE` (git add/commit snapshot; no stage-two exposure)
+- 2026-10-26T19:03:24.849487+00:00 — `checker/README.md` (git add/commit snapshot; no stage-two exposure)
+- 2026-10-26T19:03:24.849497+00:00 — `checker/SOURCE-MANIFEST.json` (git add/commit snapshot; no stage-two exposure)
+- 2026-10-26T19:03:24.849506+00:00 — `checker/acceptance.py` (git add/commit snapshot; no stage-two exposure)
+- 2026-10-26T19:03:24.849515+00:00 — `checker/cli.py` (git add/commit snapshot; no stage-two exposure)
+- 2026-10-26T19:03:24.849524+00:00 — `checker/requirements.in` (git add/commit snapshot; no stage-two exposure)
+- 2026-10-26T19:03:24.849533+00:00 — `checker/requirements.lock` (git add/commit snapshot; no stage-two exposure)
+- 2026-10-26T19:03:24.849541+00:00 — `checker/selftest.py` (git add/commit snapshot; no stage-two exposure)
+- 2026-10-26T19:03:24.849549+00:00 — `READ-LOG.md` (snapshot into checker/STAGE1-READ-LOG.md before freeze)

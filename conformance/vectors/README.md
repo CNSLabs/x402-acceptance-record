@@ -129,7 +129,7 @@ they are listed so a checker author can see what the bytes assume.
 
 Three checkers consume this file. The TypeScript one below; the Python one in `../checker-python-independent/` has
 its own README with a pinned environment and reads its frozen copy of this file, identical byte for byte; the
-clean-room Python one in `../checker-python-cleanroom/` reads it through a post-freeze adapter, as its README says.
+blind Python one in `../checker-blind/` reads it through a post-freeze adapter, as its README says.
 
 From the package root, the directory above this one: `npm install`, then `npm test` runs the checker in `checker/` over this file and prints one line
 per vector and the totals. `npm run check` regenerates the vectors from the seeds and fails if any byte differs
