@@ -1,0 +1,93 @@
+{
+  "created_utc": "2026-10-26T17:37:49.399673+00:00",
+  "runtime": {
+    "python": "3.14.3 (main, Feb  3 2026, 15:32:20) [Clang 17.0.0 (clang-1700.6.3.2)]",
+    "implementation": "CPython",
+    "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+    "machine": "arm64",
+    "libraries": {
+      "PyNaCl": "1.6.0",
+      "annotated-types": "0.8.0",
+      "cffi": "2.1.1",
+      "cytoolz": "1.2.0",
+      "eth-hash": "0.8.0",
+      "eth-keys": "0.7.0",
+      "eth-typing": "6.0.0",
+      "eth-utils": "6.0.0",
+      "pip": "26.0",
+      "pycparser": "3.12",
+      "pycryptodome": "3.23.0",
+      "pydantic": "2.14.1",
+      "pydantic_core": "2.50.1",
+      "rfc8785": "0.1.4",
+      "toolz": "1.2.0",
+      "typing-inspection": "0.4.4",
+      "typing_extensions": "4.16.0"
+    },
+    "libsodium": "not exposed by PyNaCl binary",
+    "ecdsa_backend": "eth_keys.backends.NativeECCBackend"
+  },
+  "checker_sources": {
+    "cli.py": "99bf2e8693bb37191cd3676aea7286ff5fbbfe5fc3321ad3c7f315e41f23b237",
+    "numeric_tests.py": "bc38d4c7366dcff59c2dec2c377330db483739c3ff2bfb4c88b0c2a8cb94a7de",
+    "reporting.py": "87528dc20aba05d2efcd4d9fc5ef59d86bd86dd1ba8c04dbbaa881b9bf436ee2",
+    "requirements.lock": "9c93616af33d1c238e8eb5f7a9d8ca30c4605286c20381be3b93ce3323085996",
+    "run_vectors.py": "bd51d58338676a1399053f543e5cf1844c0e1548ba9ebe9d5cdebc73b8bca903",
+    "selftests.py": "efc1e9cc623e342649a885d43dc2e152003cf4517574821b969b8bf04c44ac70",
+    "verifier.py": "67177a4575bf00610660375d14fa26d0bdaf17c22f0c9f5066e387f071b54432"
+  },
+  "tests": [
+    {
+      "test": "__main__.VerifierTests.test_bad_reference_form_skips_only_dependent_comparison",
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"/private/tmp/x402-independent-reader-4swCDK/selftests.py\", line 100, in test_bad_reference_form_skips_only_dependent_comparison\n    self.assertEqual(set(verify(**args)['conditions']),\n    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n                     {'acceptance_member_invalid', 'acceptance_outcome_digest_mismatch', 'acceptance_precedes_outcome'})\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Items in the second set but not the first:\n'acceptance_precedes_outcome'\n'acceptance_outcome_digest_mismatch'\n"
+    },
+    {
+      "test": "__main__.VerifierTests.test_duplicate_trust_kid_refused_without_result",
+      "passed": true
+    },
+    {
+      "test": "__main__.VerifierTests.test_expiration_boundary_and_no_clock",
+      "passed": true
+    },
+    {
+      "test": "__main__.VerifierTests.test_independent_signed_delivery",
+      "passed": true
+    },
+    {
+      "test": "__main__.VerifierTests.test_invalid_signature_precedes_noncanonical_payload",
+      "passed": true
+    },
+    {
+      "test": "__main__.VerifierTests.test_missing_key_before_body_form",
+      "passed": true
+    },
+    {
+      "test": "__main__.VerifierTests.test_rfc8032_known_signature",
+      "passed": false,
+      "error": "Traceback (most recent call last):\n  File \"/private/tmp/x402-independent-reader-4swCDK/selftests.py\", line 149, in test_rfc8032_known_signature\n    sig = bytes.fromhex('e5564300c360ac729086e2cc806e828a84877f1eb8e5d974d873e06522490155f'\n                        'b8821590a33bacc61e39701cf9b46bd25bf5f0595bbe24655141438e7a100b')\nValueError: fromhex() arg must contain an even number of hexadecimal digits\n"
+    },
+    {
+      "test": "__main__.VerifierTests.test_stateless_after_unknown_and_bad_signature",
+      "passed": true
+    },
+    {
+      "test": "__main__.VerifierTests.test_strict_parser",
+      "passed": true
+    },
+    {
+      "test": "__main__.VerifierTests.test_unicode_utf16_key_order",
+      "passed": true
+    },
+    {
+      "test": "__main__.VerifierTests.test_zero_payer_is_null_entity",
+      "passed": false,
+      "error": "Traceback (most recent call last):\n  File \"/private/tmp/x402-independent-reader-4swCDK/selftests.py\", line 123, in test_zero_payer_is_null_entity\n    self.assertEqual(verify(**args)['reason'], 'evidence_unavailable')\n                     ~~~~~~~~~~~~~~^^^^^^^^^^\nKeyError: 'reason'\n"
+    }
+  ],
+  "summary": {
+    "total": 11,
+    "failures": 1,
+    "errors": 2
+  }
+}

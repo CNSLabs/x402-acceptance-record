@@ -1,0 +1,167 @@
+[
+  {
+    "source": "/private/tmp/x402-independent-reader-4swCDK/inputs/SPEC.md",
+    "kind": "permitted-input",
+    "sha256": "82881ba0efdeb70fe64594f5af0c912ceb8e9190d7e91d5ed583335bf0176f4b",
+    "opened_utc": "2026-10-26T17:32:36.299325+00:00"
+  },
+  {
+    "source": "/private/tmp/x402-independent-reader-4swCDK/inputs/CASES.md",
+    "kind": "permitted-input",
+    "sha256": "0a56953e55919a6b63a464359eb6050aee938c82c6585cb924cf415f3caba744",
+    "opened_utc": "2026-10-26T17:32:36.299612+00:00"
+  },
+  {
+    "source": "/private/tmp/x402-independent-reader-4swCDK/inputs/VECTOR-FORMAT.md",
+    "kind": "permitted-input",
+    "sha256": "2fe82622dcc3ac585321a3c7daacb9dee85720f6610871fd9fa1fbe323340a97",
+    "opened_utc": "2026-10-26T17:32:36.299782+00:00"
+  },
+  {
+    "source": "/private/tmp/x402-independent-reader-4swCDK/inputs/execution_evidence.md",
+    "kind": "permitted-input",
+    "sha256": "176be2dc3d69cdd97c6b4b1878fd55a5eec49a6d89dc203b416e2b263976c9a3",
+    "opened_utc": "2026-10-26T17:32:36.299949+00:00"
+  },
+  {
+    "source": "/private/tmp/x402-independent-reader-4swCDK/inputs/extension-offer-and-receipt.md",
+    "kind": "permitted-input",
+    "sha256": "960cf286224f35c056fda7b3b0e1187f6b2abe3f67f609f1e61749c9438dba96",
+    "opened_utc": "2026-10-26T17:32:36.300140+00:00"
+  },
+  {
+    "source": "/private/tmp/x402-independent-reader-4swCDK/inputs/SOURCE-MANIFEST.json",
+    "kind": "permitted-input",
+    "sha256": "a43b0a6f5b2be2f452b0d54cd73f3de5c4b5b56506a5d0a9ebc580c3796b35f3",
+    "opened_utc": "2026-10-26T17:32:36.300318+00:00"
+  },
+  {
+    "source": "https://www.rfc-editor.org/rfc/rfc8785",
+    "kind": "official-normative-or-library-documentation",
+    "opened_utc": "2026-10-26T17:33:58.408044+00:00"
+  },
+  {
+    "source": "https://doc.libsodium.org/advanced/point-arithmetic",
+    "kind": "official-normative-or-library-documentation",
+    "opened_utc": "2026-10-26T17:33:58.408044+00:00"
+  },
+  {
+    "source": "https://pypi.org/project/rfc8785/",
+    "kind": "official-normative-or-library-documentation",
+    "opened_utc": "2026-10-26T17:33:58.408044+00:00"
+  },
+  {
+    "source": "https://ofek.dev/coincurve/api/",
+    "kind": "official-normative-or-library-documentation",
+    "opened_utc": "2026-10-26T17:33:58.408044+00:00"
+  },
+  {
+    "source": "https://pynacl.readthedocs.io/en/latest/signing/",
+    "kind": "official-normative-or-library-documentation",
+    "opened_utc": "2026-10-26T17:33:58.408044+00:00"
+  },
+  {
+    "source": "/private/tmp/x402-independent-reader-4swCDK/inputs/vectors.json",
+    "kind": "permitted-input-expected-results-visible",
+    "sha256": "8c20c905ae9af000f9664ee78bf73a6ac2c47f501c221789b835121a0af16ec5",
+    "opened_utc": "2026-10-26T17:33:58.408044+00:00"
+  },
+  {
+    "source": "/private/tmp/x402-independent-reader-4swCDK/inputs/SOURCE-MANIFEST.json",
+    "kind": "packet-update",
+    "sha256": "a30157ad0300a0b01f89b99976b00e5c2f732a9bff26ee3e9e253e59ceb299f0",
+    "opened_utc": "2026-10-26T17:34:15.964520+00:00",
+    "note": "Parent corrected only an appended newline in the two upstream specification files."
+  },
+  {
+    "source": "/private/tmp/x402-independent-reader-4swCDK/inputs/execution_evidence.md",
+    "kind": "packet-update",
+    "sha256": "97b084e5ee4ebf29aee81f31e4c2150d72388f3e578a0cd60c181a83a68d3491",
+    "opened_utc": "2026-10-26T17:34:15.964520+00:00",
+    "note": "Parent corrected only an appended newline in the two upstream specification files."
+  },
+  {
+    "source": "/private/tmp/x402-independent-reader-4swCDK/inputs/extension-offer-and-receipt.md",
+    "kind": "packet-update",
+    "sha256": "51151bd2b7dd174bc4a44b712234c074e45ca6c752c44ce077a94a4d97596ae9",
+    "opened_utc": "2026-10-26T17:34:15.964520+00:00",
+    "note": "Parent corrected only an appended newline in the two upstream specification files."
+  },
+  {
+    "source": "/private/tmp/x402-independent-reader-4swCDK/inputs/numeric-probes/FROZEN.txt",
+    "kind": "permitted-frozen-numeric-probe",
+    "sha256": "83f2e40d838a619be907467df81c7b3ddb99f2743e5325da8ead11748cdd6454",
+    "opened_utc": "2026-10-26T17:34:15.964520+00:00"
+  },
+  {
+    "source": "/private/tmp/x402-independent-reader-4swCDK/inputs/numeric-probes/jcs-number-vectors.tsv",
+    "kind": "permitted-frozen-numeric-probe",
+    "sha256": "e8e019cb13b505707364cdbb31ab5c9c3c65caa3b63edf0f9876463b55e6dd11",
+    "opened_utc": "2026-10-26T17:34:15.964520+00:00"
+  },
+  {
+    "source": "/private/tmp/x402-independent-reader-4swCDK/inputs/numeric-probes/stillmarcus-inputs.txt",
+    "kind": "permitted-frozen-numeric-probe",
+    "sha256": "fed4ecf1ab3c313365919d471e271ee1978019b069198b543d4e2d5bf4dfdbf2",
+    "opened_utc": "2026-10-26T17:34:15.964520+00:00"
+  },
+  {
+    "source": "/private/tmp/x402-independent-reader-4swCDK/inputs/numeric-probes/stillmarcus-vectors.json",
+    "kind": "permitted-frozen-numeric-probe",
+    "sha256": "caa2fc291b728da8fa50606a89596a1dc15f816b4e907d56c4b0d3e07b747f05",
+    "opened_utc": "2026-10-26T17:34:15.964520+00:00"
+  },
+  {
+    "source": "https://pypi.org/project/eth-keys/0.7.0/",
+    "kind": "official-normative-or-library-documentation",
+    "opened_utc": "2026-10-26T17:39:29.653595+00:00"
+  },
+  {
+    "source": "https://www.pycryptodome.org/src/hash/keccak",
+    "kind": "official-normative-or-library-documentation",
+    "opened_utc": "2026-10-26T17:39:29.653595+00:00"
+  },
+  {
+    "source": "https://eips.ethereum.org/EIPS/eip-712",
+    "kind": "official-normative-or-library-documentation",
+    "opened_utc": "2026-10-26T17:39:29.653595+00:00"
+  },
+  {
+    "source": "https://datatracker.ietf.org/doc/html/rfc8032#section-7.1",
+    "kind": "official-normative-or-library-documentation",
+    "opened_utc": "2026-10-26T17:39:29.653595+00:00"
+  },
+  {
+    "source": "https://www.rfc-editor.org/rfc/rfc8032.txt",
+    "kind": "official-documentation-fetch-attempt",
+    "opened_utc": "2026-10-26T17:39:29.653595+00:00",
+    "outcome": "429: no document content obtained"
+  },
+  {
+    "source": "/private/tmp/x402-independent-reader-4swCDK/inputs/execution_evidence.md",
+    "kind": "packet-byte-recheck",
+    "opened_utc": "2026-10-26T17:39:29.653595+00:00",
+    "sha256": "97b084e5ee4ebf29aee81f31e4c2150d72388f3e578a0cd60c181a83a68d3491",
+    "with_one_extra_lf_sha256": "176be2dc3d69cdd97c6b4b1878fd55a5eec49a6d89dc203b416e2b263976c9a3",
+    "note": "Adding exactly one LF reproduces originally supplied hash; no semantic source change."
+  },
+  {
+    "source": "/private/tmp/x402-independent-reader-4swCDK/inputs/extension-offer-and-receipt.md",
+    "kind": "packet-byte-recheck",
+    "opened_utc": "2026-10-26T17:39:29.653595+00:00",
+    "sha256": "51151bd2b7dd174bc4a44b712234c074e45ca6c752c44ce077a94a4d97596ae9",
+    "with_one_extra_lf_sha256": "960cf286224f35c056fda7b3b0e1187f6b2abe3f67f609f1e61749c9438dba96",
+    "note": "Adding exactly one LF reproduces originally supplied hash; no semantic source change."
+  },
+  {
+    "source": "https://standards.chainagnostic.org/CAIPs/caip-2",
+    "kind": "official-normative-documentation",
+    "opened_utc": "2026-10-26T17:40:52.942717+00:00"
+  },
+  {
+    "source": "parent-delivered fresh-context review message after first corpus run",
+    "kind": "supplemental-independent-audit-feedback",
+    "opened_utc": "2026-10-26T17:40:52.942717+00:00",
+    "content": "Candidates: EIP-712 offers must accept integral JSON float spellings; signed JWS offers must validate CAIP-2 network syntax. Reviewer read first implementation and normative packet only. No acceptance reference implementation contents supplied."
+  }
+]

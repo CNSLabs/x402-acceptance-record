@@ -1,0 +1,7 @@
+# Fully resolved and pinned runtime dependencies (Python 3.13.14).
+cffi==2.1.1
+coincurve==21.0.0
+cryptography==46.0.3
+pycparser==3.12
+pycryptodome==3.23.0
+rfc8785==0.1.4

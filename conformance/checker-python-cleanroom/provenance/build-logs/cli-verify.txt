@@ -1,0 +1,3 @@
+$ .venv313/bin/python -B checker/cli.py verify runner/baseline-inputs.json
+{"result":"verified","conditions":[],"disposition":"accepted"}
+exit_status=0

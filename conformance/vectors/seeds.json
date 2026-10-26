@@ -1,0 +1,13 @@
+{
+  "description": "Seeds for every test key of the x402 acceptance record version 0 vectors. Ed25519 seeds: ks (seller, kid did:web:seller.example#ks), kb (buyer, kid cp-1), kx (never listed in trust.keys), ky (never listed in trust.issuers). secp256k1 private keys: buyer, other, seller. All throwaway, derived from labels, never funded on any chain. WALLET, PAYEE and ASSET are keccak-derived pseudo-addresses with no key.",
+  "derivation": "seed(name) = sha256(utf8(\"x402-acceptance-record/v0 conformance seed: \" + name)); pseudoAddress(label) = last 20 bytes of keccak256(utf8(\"x402-acceptance-record/v0 conformance address: \" + label))",
+  "seeds": {
+    "ks": "0x11e78f401e139b4f7e099c1c2bdb6a419904de15f571e4afd96c06e08f23377a",
+    "kb": "0xe10480cbf1b3fcb80e4b7b0cb1064424d146b911a11aba79e876ff5b1f5a742b",
+    "kx": "0x01cdb17b8540a8251590935eb2a4369a0d5d2cb50aee454c18f7f240447172e7",
+    "ky": "0x453088592669676563742013742b8b3c959a727255b270a75c14e2c3ecfe42c2",
+    "buyer": "0xe0aec0c232515898b1d34a326592f566fc20fb85eedfbf8005c3c4537fd5976c",
+    "other": "0xf797a3351b01d7046c2ca5f140e572f74cd7ae181d112957adcd15208c16db20",
+    "seller": "0x8e236d55296b00ff45f33737fba4495da06276161428408dbcf577173323c5e9"
+  }
+}

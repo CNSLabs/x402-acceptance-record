@@ -1,0 +1,3 @@
+$ .venv313/bin/python -B checker/cli.py selftest
+selftest: 84 passed; 0 failed (fresh synthetic keys; no published vectors read)
+exit_status=0

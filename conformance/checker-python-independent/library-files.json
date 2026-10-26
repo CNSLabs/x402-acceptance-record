@@ -1,0 +1,454 @@
+[
+  {
+    "distribution": "eth-typing",
+    "version": "6.0.0",
+    "metadata": [
+      {
+        "path": ".venv/lib/python3.14/site-packages/eth_typing-6.0.0.dist-info/METADATA",
+        "sha256": "69f0dd322943800bc1dbc8edb4769de94e5e6ae477202bb35f6a197833fdaf34"
+      },
+      {
+        "path": ".venv/lib/python3.14/site-packages/eth_typing-6.0.0.dist-info/RECORD",
+        "sha256": "0aa049def29c71b3dab46b5165f0b971a07479cd25163fdb335c5918e9429d7c"
+      }
+    ],
+    "binaries": []
+  },
+  {
+    "distribution": "PyNaCl",
+    "version": "1.6.0",
+    "metadata": [
+      {
+        "path": ".venv/lib/python3.14/site-packages/pynacl-1.6.0.dist-info/METADATA",
+        "sha256": "c5ca7abf57780b97a67cf876811cbcb180527576afd1f604803fa0895ddaf043"
+      },
+      {
+        "path": ".venv/lib/python3.14/site-packages/pynacl-1.6.0.dist-info/RECORD",
+        "sha256": "1a90e75dc714a1da3d411304d77265e4b7c92f52b792e517d04422d4523887c4"
+      }
+    ],
+    "binaries": [
+      {
+        "path": ".venv/lib/python3.14/site-packages/nacl/_sodium.abi3.so",
+        "sha256": "dbc73de77581797e963721c65ce9980afc2e4127e6ef4cdf3680590d4341e90b"
+      }
+    ]
+  },
+  {
+    "distribution": "toolz",
+    "version": "1.2.0",
+    "metadata": [
+      {
+        "path": ".venv/lib/python3.14/site-packages/toolz-1.2.0.dist-info/METADATA",
+        "sha256": "d4f718dcebfaec34c8073aec7ab43c6de48112a65149899c29963a7e94302f7b"
+      },
+      {
+        "path": ".venv/lib/python3.14/site-packages/toolz-1.2.0.dist-info/RECORD",
+        "sha256": "57b2637949b78390726b9760ef82cc5b55d5feb1b8079fa518b3fa242dc0d4c3"
+      }
+    ],
+    "binaries": []
+  },
+  {
+    "distribution": "pycparser",
+    "version": "3.12",
+    "metadata": [
+      {
+        "path": ".venv/lib/python3.14/site-packages/pycparser-3.12.dist-info/METADATA",
+        "sha256": "ad8db5fe2b0e0a3b0e8419fe5041b80be92470a40b06bd9c1462a0a8bb637c92"
+      },
+      {
+        "path": ".venv/lib/python3.14/site-packages/pycparser-3.12.dist-info/RECORD",
+        "sha256": "52fa72541056cba91919ac55ef98525537ac6ab95b3719e22117a9195df5f208"
+      }
+    ],
+    "binaries": []
+  },
+  {
+    "distribution": "cytoolz",
+    "version": "1.2.0",
+    "metadata": [
+      {
+        "path": ".venv/lib/python3.14/site-packages/cytoolz-1.2.0.dist-info/METADATA",
+        "sha256": "e4ca3e857e0e3adcb2faa7b5227f400bb699bb918d70c6474141092b28972946"
+      },
+      {
+        "path": ".venv/lib/python3.14/site-packages/cytoolz-1.2.0.dist-info/RECORD",
+        "sha256": "0b93d127eda5eb3a8c9b95adcef5b45dc87bdc3167ad72b923ee112e4ffc67f8"
+      }
+    ],
+    "binaries": [
+      {
+        "path": ".venv/lib/python3.14/site-packages/cytoolz/dicttoolz.cpython-314-darwin.so",
+        "sha256": "ac840a5976f066210757e8435f1c026ec8bc00bdaaf93788004bda37a5c6a114"
+      },
+      {
+        "path": ".venv/lib/python3.14/site-packages/cytoolz/functoolz.cpython-314-darwin.so",
+        "sha256": "72c420db0ab3e66784b8acd4725e3fb7cba05eaec7e654f5be4328ab14caa6e8"
+      },
+      {
+        "path": ".venv/lib/python3.14/site-packages/cytoolz/itertoolz.cpython-314-darwin.so",
+        "sha256": "0eeffaec813071c0ff83e2da9186eade7445d7ba4569f6f5dda38324b46bc0db"
+      },
+      {
+        "path": ".venv/lib/python3.14/site-packages/cytoolz/recipes.cpython-314-darwin.so",
+        "sha256": "0c2131e20ac418fb3b1d249a20ab767e87ba4ec98b356876fad994c17a90bdda"
+      },
+      {
+        "path": ".venv/lib/python3.14/site-packages/cytoolz/utils.cpython-314-darwin.so",
+        "sha256": "afca35f1fcf2f4b2108031f3967bb07a6876060e37bdcc474dd1179d38f08801"
+      }
+    ]
+  },
+  {
+    "distribution": "eth-hash",
+    "version": "0.8.0",
+    "metadata": [
+      {
+        "path": ".venv/lib/python3.14/site-packages/eth_hash-0.8.0.dist-info/METADATA",
+        "sha256": "b6e8caf81e873a864d7024d406acad86d5722d6efae6a5bbf034871ab4bf68bf"
+      },
+      {
+        "path": ".venv/lib/python3.14/site-packages/eth_hash-0.8.0.dist-info/RECORD",
+        "sha256": "b3dd5a2980e3af6f0fe5e8ece79f6bfa059d79849dfe1bfc56ccec66abcaa8d0"
+      }
+    ],
+    "binaries": []
+  },
+  {
+    "distribution": "eth-utils",
+    "version": "6.0.0",
+    "metadata": [
+      {
+        "path": ".venv/lib/python3.14/site-packages/eth_utils-6.0.0.dist-info/METADATA",
+        "sha256": "6761b51e6def925bb16ca323d2a16163bb6c9b16a166c0fdd3ccff0edf821a48"
+      },
+      {
+        "path": ".venv/lib/python3.14/site-packages/eth_utils-6.0.0.dist-info/RECORD",
+        "sha256": "595e3073566ae7e5d4241aa1a1df9020ca454fc6f6b2783e59835c291ac6b932"
+      }
+    ],
+    "binaries": []
+  },
+  {
+    "distribution": "pydantic_core",
+    "version": "2.50.1",
+    "metadata": [
+      {
+        "path": ".venv/lib/python3.14/site-packages/pydantic_core-2.50.1.dist-info/METADATA",
+        "sha256": "ae6817764b603fa2300cd31b9566ecc33476df46163c4150fffc353121a166f2"
+      },
+      {
+        "path": ".venv/lib/python3.14/site-packages/pydantic_core-2.50.1.dist-info/RECORD",
+        "sha256": "ea9a83fff85abdea2360c0919f32ad773d99dbb2554173804e18718b2e5b06cf"
+      }
+    ],
+    "binaries": [
+      {
+        "path": ".venv/lib/python3.14/site-packages/pydantic_core/_pydantic_core.cpython-314-darwin.so",
+        "sha256": "3d0fffd6abc935e05258b57598c7847cc1938358d8c93a3e450ad282dfaf24e7"
+      }
+    ]
+  },
+  {
+    "distribution": "cffi",
+    "version": "2.1.1",
+    "metadata": [
+      {
+        "path": ".venv/lib/python3.14/site-packages/cffi-2.1.1.dist-info/METADATA",
+        "sha256": "558bafb9093a8e790175d9ecff9688382981d744877dad86fd6770db0f4dc918"
+      },
+      {
+        "path": ".venv/lib/python3.14/site-packages/cffi-2.1.1.dist-info/RECORD",
+        "sha256": "8f15c5baf98e9b14b2ab9ced2bf77de3bd04931e6ebc1fd9032a48e98651068c"
+      }
+    ],
+    "binaries": [
+      {
+        "path": ".venv/lib/python3.14/site-packages/_cffi_backend.cpython-314-darwin.so",
+        "sha256": "7a3ea590a8ba470a09d11267ca583fe7c3a08b15b2699578ef5e048041127684"
+      }
+    ]
+  },
+  {
+    "distribution": "rfc8785",
+    "version": "0.1.4",
+    "metadata": [
+      {
+        "path": ".venv/lib/python3.14/site-packages/rfc8785-0.1.4.dist-info/METADATA",
+        "sha256": "9dfbf420c8c18077dd7697ec12fe2838b5901683573ae128df2d3403330f7aa9"
+      },
+      {
+        "path": ".venv/lib/python3.14/site-packages/rfc8785-0.1.4.dist-info/RECORD",
+        "sha256": "b9114196ca0204c04f33232c6f111f48db2da66b37c9fa0f8318504bc33dec66"
+      }
+    ],
+    "binaries": []
+  },
+  {
+    "distribution": "annotated-types",
+    "version": "0.8.0",
+    "metadata": [
+      {
+        "path": ".venv/lib/python3.14/site-packages/annotated_types-0.8.0.dist-info/METADATA",
+        "sha256": "614985b278f601b8ef863f82783b991cc3ada4b89f592eb71c7c48c5f2ef2298"
+      },
+      {
+        "path": ".venv/lib/python3.14/site-packages/annotated_types-0.8.0.dist-info/RECORD",
+        "sha256": "4f33fd1514a6c54c6613de4a21a31ceacf075a0e848cb5af2f09ee7ec806cf3d"
+      }
+    ],
+    "binaries": []
+  },
+  {
+    "distribution": "typing-inspection",
+    "version": "0.4.4",
+    "metadata": [
+      {
+        "path": ".venv/lib/python3.14/site-packages/typing_inspection-0.4.4.dist-info/METADATA",
+        "sha256": "bad3d9e6342ef6750cf5128ec942327b8bebdce0b6e4d6f67cb15b27ae5118da"
+      },
+      {
+        "path": ".venv/lib/python3.14/site-packages/typing_inspection-0.4.4.dist-info/RECORD",
+        "sha256": "4adb8e26759fe3230c9886b76a09e859faed9dbdf4c20e2090b50fed0fe9a3be"
+      }
+    ],
+    "binaries": []
+  },
+  {
+    "distribution": "typing_extensions",
+    "version": "4.16.0",
+    "metadata": [
+      {
+        "path": ".venv/lib/python3.14/site-packages/typing_extensions-4.16.0.dist-info/METADATA",
+        "sha256": "b05084ca1d50879865178d9fff9fabeab61bdfb1f361bfbde95421ffc8f9be46"
+      },
+      {
+        "path": ".venv/lib/python3.14/site-packages/typing_extensions-4.16.0.dist-info/RECORD",
+        "sha256": "d9c7c4c2b4b297c98f532b40a1f736672ca210e7bc59beefc2736c6849cbf59c"
+      }
+    ],
+    "binaries": []
+  },
+  {
+    "distribution": "pydantic",
+    "version": "2.14.1",
+    "metadata": [
+      {
+        "path": ".venv/lib/python3.14/site-packages/pydantic-2.14.1.dist-info/METADATA",
+        "sha256": "4d4c8e8d5e6a27d5208f0d7949f25628e6747133034969d4d1399b1ad5394036"
+      },
+      {
+        "path": ".venv/lib/python3.14/site-packages/pydantic-2.14.1.dist-info/RECORD",
+        "sha256": "8bd548dcee9acaf7a7f21e2987f2499db6b9cb027f2ef2f84a6125126ef611b6"
+      }
+    ],
+    "binaries": []
+  },
+  {
+    "distribution": "pycryptodome",
+    "version": "3.23.0",
+    "metadata": [
+      {
+        "path": ".venv/lib/python3.14/site-packages/pycryptodome-3.23.0.dist-info/METADATA",
+        "sha256": "fc29b3a17474c193f016e46d3be8226cbc5a77d76d1a12e360b1797bf47dda66"
+      },
+      {
+        "path": ".venv/lib/python3.14/site-packages/pycryptodome-3.23.0.dist-info/RECORD",
+        "sha256": "65cca876a5c7e0ed61d516c02c8d33b906944d08eaecb96d85ca71e72dafc075"
+      }
+    ],
+    "binaries": [
+      {
+        "path": ".venv/lib/python3.14/site-packages/Crypto/Cipher/_ARC4.abi3.so",
+        "sha256": "d7adda2f733222af4ab9c9d98397f27e54e97770661cb19ebbe6cf54992d0a7e"
+      },
+      {
+        "path": ".venv/lib/python3.14/site-packages/Crypto/Cipher/_Salsa20.abi3.so",
+        "sha256": "78532b2f59ac0f53635270fe9b8516ac6fcdd515fce79f0a0e27c98e0e3e3c72"
+      },
+      {
+        "path": ".venv/lib/python3.14/site-packages/Crypto/Cipher/_chacha20.abi3.so",
+        "sha256": "fb257ebb2de7243c7aeb65f37aca18546749a3a510afee8300aad119b5c893cd"
+      },
+      {
+        "path": ".venv/lib/python3.14/site-packages/Crypto/Cipher/_pkcs1_decode.abi3.so",
+        "sha256": "e1303404134f17bbcdb9ddc02cb5dcc38f2e77fc4d5f1c4e73af7cfb0d2583eb"
+      },
+      {
+        "path": ".venv/lib/python3.14/site-packages/Crypto/Cipher/_raw_aes.abi3.so",
+        "sha256": "b45bf13fc9aa043d8f69291305eded49e147f09b5bbc6590db85124966078ff8"
+      },
+      {
+        "path": ".venv/lib/python3.14/site-packages/Crypto/Cipher/_raw_arc2.abi3.so",
+        "sha256": "6b2ab6e7159b6d7db48c321c0e2438854738a12da648058e18f6f6027e82b58b"
+      },
+      {
+        "path": ".venv/lib/python3.14/site-packages/Crypto/Cipher/_raw_blowfish.abi3.so",
+        "sha256": "562a83ab0a67a2ddb742ad2451a43f56ea1e444e12e8a6c922990dbd8b94c17b"
+      },
+      {
+        "path": ".venv/lib/python3.14/site-packages/Crypto/Cipher/_raw_cast.abi3.so",
+        "sha256": "23c28f9f50bbf1b3e9781d6a3c382e9acd95fe646387cbdb54daa36f45283de7"
+      },
+      {
+        "path": ".venv/lib/python3.14/site-packages/Crypto/Cipher/_raw_cbc.abi3.so",
+        "sha256": "9a59b0b29ed4febf6f9497cf87a6f3589d03faa477fe8e37029f08cb4048c10c"
+      },
+      {
+        "path": ".venv/lib/python3.14/site-packages/Crypto/Cipher/_raw_cfb.abi3.so",
+        "sha256": "de4f1944db6e6c3e5526bc8117139b408b50220fad33b5bdf9b65a3bbf540e00"
+      },
+      {
+        "path": ".venv/lib/python3.14/site-packages/Crypto/Cipher/_raw_ctr.abi3.so",
+        "sha256": "8a20f8c1ef2884fa81ce678b91956ed9810c19d68519c324f7976d88b58c28ad"
+      },
+      {
+        "path": ".venv/lib/python3.14/site-packages/Crypto/Cipher/_raw_des.abi3.so",
+        "sha256": "d67bf862345ccf2f68b0ea31b9372cb7fa009d444d63125a414318c576f2e810"
+      },
+      {
+        "path": ".venv/lib/python3.14/site-packages/Crypto/Cipher/_raw_des3.abi3.so",
+        "sha256": "f1d9e8b44bb6babeb7e827885a802073df66a2dbaf8f77ca5ced71f6ce99c05a"
+      },
+      {
+        "path": ".venv/lib/python3.14/site-packages/Crypto/Cipher/_raw_ecb.abi3.so",
+        "sha256": "4fddb8a87150accc9d465ab115c676c8a47d1c1f7b1312aa7ebeee10b76d5ca5"
+      },
+      {
+        "path": ".venv/lib/python3.14/site-packages/Crypto/Cipher/_raw_eksblowfish.abi3.so",
+        "sha256": "892d075d2f386c51041b9ee755c195d99dcb003dd2dc83f68e0a4ac12bb9f87c"
+      },
+      {
+        "path": ".venv/lib/python3.14/site-packages/Crypto/Cipher/_raw_ocb.abi3.so",
+        "sha256": "037305312830662e748207b5e5ba59bff6383e96e2b725b39d43c2ec2d56c061"
+      },
+      {
+        "path": ".venv/lib/python3.14/site-packages/Crypto/Cipher/_raw_ofb.abi3.so",
+        "sha256": "9533d546b746434b1f39cede844261ada8806e96998bc34a37c891b1616cf7e0"
+      },
+      {
+        "path": ".venv/lib/python3.14/site-packages/Crypto/Hash/_BLAKE2b.abi3.so",
+        "sha256": "5c53a3d0ebacfa751ca497ebdd8c71b85a133372c9c8d36ec7f4ef1a2cc924c5"
+      },
+      {
+        "path": ".venv/lib/python3.14/site-packages/Crypto/Hash/_BLAKE2s.abi3.so",
+        "sha256": "3641efdab3682a4e11556104d2e3f83a8ae37f31ed677dd1241ffe75a8143cba"
+      },
+      {
+        "path": ".venv/lib/python3.14/site-packages/Crypto/Hash/_MD2.abi3.so",
+        "sha256": "b268cba360444bad271cddc288a3971a4d02912615ede3ada26bee5a05a8e7db"
+      },
+      {
+        "path": ".venv/lib/python3.14/site-packages/Crypto/Hash/_MD4.abi3.so",
+        "sha256": "9e5aa30f0ade1e633aaa4fb8f8bc88659bfd357d8507b29a4e6c57a4ef21db6c"
+      },
+      {
+        "path": ".venv/lib/python3.14/site-packages/Crypto/Hash/_MD5.abi3.so",
+        "sha256": "eb556d249784be7e4d9e03cf10097ef71fc0a53fe19ef77d30fed82c7caef1df"
+      },
+      {
+        "path": ".venv/lib/python3.14/site-packages/Crypto/Hash/_RIPEMD160.abi3.so",
+        "sha256": "fc7c50e8436f6c9ba05496e4adc767384b468ae7e399196afeae7ecefc6e819e"
+      },
+      {
+        "path": ".venv/lib/python3.14/site-packages/Crypto/Hash/_SHA1.abi3.so",
+        "sha256": "2c7e2a10a3f6c1bba7a1d3f94d01aa97fba84cc2228bee75f7321e023297d0fb"
+      },
+      {
+        "path": ".venv/lib/python3.14/site-packages/Crypto/Hash/_SHA224.abi3.so",
+        "sha256": "440415165a94b404c841dcda79c1ba1e36a172226458536a7a69fbd917d964ff"
+      },
+      {
+        "path": ".venv/lib/python3.14/site-packages/Crypto/Hash/_SHA256.abi3.so",
+        "sha256": "9db8cabe9f83cc2a6de82c4b0f6311fe0174d0c741ad8b42d388edd2d25dc630"
+      },
+      {
+        "path": ".venv/lib/python3.14/site-packages/Crypto/Hash/_SHA384.abi3.so",
+        "sha256": "07bf0a81eaf5356a7af9dbb33b7a1b9aada0ad7a6c7c376a77611ec07b11b35c"
+      },
+      {
+        "path": ".venv/lib/python3.14/site-packages/Crypto/Hash/_SHA512.abi3.so",
+        "sha256": "bd43cfe5156caa0231a87b962a2021034b26e8df587a05b597202dbbb4c12e3a"
+      },
+      {
+        "path": ".venv/lib/python3.14/site-packages/Crypto/Hash/_ghash_portable.abi3.so",
+        "sha256": "9f80aacf65a8c71b993a815e6052ae8866b92316cc83ef87429e48fcef4d5df6"
+      },
+      {
+        "path": ".venv/lib/python3.14/site-packages/Crypto/Hash/_keccak.abi3.so",
+        "sha256": "1dd7ffa9ae2d8245c300121906219b5bef4578cca28fe0bc266979206abe7a4c"
+      },
+      {
+        "path": ".venv/lib/python3.14/site-packages/Crypto/Hash/_poly1305.abi3.so",
+        "sha256": "c1297ce8728a496b36134a463d22b3898b413d4454d5de226a45559c59956da1"
+      },
+      {
+        "path": ".venv/lib/python3.14/site-packages/Crypto/Math/_modexp.abi3.so",
+        "sha256": "61a962a46e554866ca456cf347c50905cedc77efccf54d4508384fb7b91cd847"
+      },
+      {
+        "path": ".venv/lib/python3.14/site-packages/Crypto/Protocol/_scrypt.abi3.so",
+        "sha256": "2d7b3c87d759ecf8657e46b1e29d5af656b19ad43eb5f4490e17dbad29754a0a"
+      },
+      {
+        "path": ".venv/lib/python3.14/site-packages/Crypto/PublicKey/_curve25519.abi3.so",
+        "sha256": "e5a526219903af1a4b55b9b98d5590692e2ec9e8f789f3edf8fc80498777cafd"
+      },
+      {
+        "path": ".venv/lib/python3.14/site-packages/Crypto/PublicKey/_curve448.abi3.so",
+        "sha256": "e3e0f13a3747879688b3bf67dc83b15314603671f9c8a73701977262645b6c4b"
+      },
+      {
+        "path": ".venv/lib/python3.14/site-packages/Crypto/PublicKey/_ec_ws.abi3.so",
+        "sha256": "9bba188fecde6f347a23587302cc1604f93245e4d35af1ea1f344464ce56a438"
+      },
+      {
+        "path": ".venv/lib/python3.14/site-packages/Crypto/PublicKey/_ed25519.abi3.so",
+        "sha256": "18a2f09a9bccedbf932c82d64d987dd3249d361afd5125f755e3f2f77d0f19c3"
+      },
+      {
+        "path": ".venv/lib/python3.14/site-packages/Crypto/PublicKey/_ed448.abi3.so",
+        "sha256": "0578369d522e8c598a0879cb40936693e25f43c5ec9977a1e72f3e26977a7bc3"
+      },
+      {
+        "path": ".venv/lib/python3.14/site-packages/Crypto/Util/_cpuid_c.abi3.so",
+        "sha256": "0a876fbce215ae4c8e65d5727e96da8466fc762e07737ad9f95156d86172899d"
+      },
+      {
+        "path": ".venv/lib/python3.14/site-packages/Crypto/Util/_strxor.abi3.so",
+        "sha256": "a84a6e055e0edb83a0d240029ebfb2a0287457c6a5c1d489fe9ec97ee52eb775"
+      }
+    ]
+  },
+  {
+    "distribution": "pip",
+    "version": "26.0",
+    "metadata": [
+      {
+        "path": ".venv/lib/python3.14/site-packages/pip-26.0.dist-info/METADATA",
+        "sha256": "09cab52f0b9d16a8b84a3d41e615391c40fb3c7bf0870b2a9d2899941b9ffac8"
+      },
+      {
+        "path": ".venv/lib/python3.14/site-packages/pip-26.0.dist-info/RECORD",
+        "sha256": "ca53a1e9b361d93b16a1205d16a668c04a64ad866b150346bd60d6325af1575e"
+      }
+    ],
+    "binaries": []
+  },
+  {
+    "distribution": "eth-keys",
+    "version": "0.7.0",
+    "metadata": [
+      {
+        "path": ".venv/lib/python3.14/site-packages/eth_keys-0.7.0.dist-info/METADATA",
+        "sha256": "45a4358140d547b81b384d464964e7441ab370ffe15c3ae39dd59a38881f7dbf"
+      },
+      {
+        "path": ".venv/lib/python3.14/site-packages/eth_keys-0.7.0.dist-info/RECORD",
+        "sha256": "4eabbf5d754382f21aec5352ba42980e8ca5c5c4ba2bc3f57eda2b3aec3ff1b7"
+      }
+    ],
+    "binaries": []
+  }
+]

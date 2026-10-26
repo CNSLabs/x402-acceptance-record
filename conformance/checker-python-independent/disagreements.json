@@ -1,0 +1,99 @@
+{
+  "first_corpus_run": {
+    "report": "results/first-run-2026-10-26.json",
+    "normative_verdict_mismatches": 0,
+    "statement_identity_mismatches": 1
+  },
+  "items": [
+    {
+      "id": "identity-AR-C21-g-jws",
+      "classification": "checker defect",
+      "component": "supplemental runner identity extraction",
+      "initial": "127/127 normative outputs matched; 88/89 supplemental statement IDs matched. The runner reported EncodingError: Non-zero unused bits instead of the statement ID for AR-C21-g-jws.",
+      "reason": "AR-21 identifies the decoded body independently of the envelope signature encoding. This vector intentionally has invalid unused bits in its signature segment, while its body remains valid. Reusing full JWS preflight to extract an informative body identity incorrectly made signature validity a prerequisite.",
+      "correction": "Decode only the payload segment for supplemental body-identity calculation. Leave verifier preflight rejection unchanged.",
+      "status": "corrected; first failing source/report retained where applicable; final corpus and supplementary selftests pass"
+    },
+    {
+      "id": "selftest-dependent-skip-granularity",
+      "classification": "checker defect",
+      "component": "malformed-pass evidence availability",
+      "initial": "A signed JWS with subject.reference null, wrong outcomeDigest and early issuedAt reported only acceptance_member_invalid.",
+      "reason": "AR-35 skips only comparisons that depend on a member of the wrong form. A known subject.profile and authenticated supplied subject still permit outcome and timestamp comparisons even when subject.reference has the wrong form.",
+      "correction": "Determine profile availability from subject.profile; guard the reference comparison separately.",
+      "status": "corrected; first failing source/report retained where applicable; final corpus and supplementary selftests pass"
+    },
+    {
+      "id": "selftest-rfc8032-transcription",
+      "classification": "checker defect",
+      "component": "selftest fixture",
+      "initial": "The manually transcribed RFC 8032 test signature had an odd number of hex digits, so the selftest raised ValueError before verification.",
+      "reason": "The independent test fixture omitted one hex digit. This is a test transcription defect, not a verifier result or a supplied-vector defect.",
+      "correction": "Re-read the official RFC 8032 test and correct the transcription.",
+      "status": "corrected; first failing source/report retained where applicable; final corpus and supplementary selftests pass"
+    },
+    {
+      "id": "selftest-zero-address-null-entity",
+      "classification": "spec ambiguity",
+      "component": "x402ev/1 upstream rule 1",
+      "initial": "An independently signed receipt naming the zero EVM address as payer was accepted as evidence. The exploratory test expected evidence_unavailable and therefore raised KeyError when no reason member existed.",
+      "reason": "The upstream rule requires distinct non-null entities but does not define whether the syntactically valid zero EVM address is a null entity. The acceptance spec explicitly excludes a zero signer address under AR-11 but does not repeat that exclusion for receipt payer/payee. The exploratory assertion was stronger than unambiguous text.",
+      "correction": "Keep the original verifier behavior and convert this exploratory assertion to a documented diagnostic with no asserted normative verdict. Request textual clarification through the final disagreement report, not a new test expectation in the released corpus.",
+      "status": "open textual interpretation; no corpus output affected"
+    },
+    {
+      "id": "review-eip712-offer-integral-number-spelling",
+      "classification": "checker defect",
+      "component": "upstream offer uint encoding",
+      "initial": "Two supplemental freshly signed EIP-712 offer probes returned unknown/evidence_unavailable after rewriting version 1 to 1.0 or validUntil 100 to 1e2 without changing the numeric value.",
+      "reason": "Upstream offer fields are numbers; the acceptance-only lexical restriction does not apply. Integral float values are valid EIP-712 uint values and JCS canonicalizes both spellings identically.",
+      "correction": "Accept integral finite int/float values in uint encoding, while acceptance body preflight remains strict plain-decimal integers.",
+      "source": "Fresh-context audit feedback after first corpus run, corroborated by normative text and freshly signed local regression tests.",
+      "status": "corrected; first failing source/report retained where applicable; final corpus and supplementary selftests pass"
+    },
+    {
+      "id": "review-jws-offer-caip2-network",
+      "classification": "checker defect",
+      "component": "upstream offer field validation",
+      "initial": "A newly signed JWS offer using network base qualified against a newly signed receipt with the same network, yielding verified.",
+      "reason": "The upstream offer fields require CAIP-2 network identifiers and explicitly require converting v1 human-readable names. A byte match to the receipt does not waive the upstream field requirement.",
+      "correction": "Validate the general CAIP-2 namespace:reference syntax for offers in both forms; retain the additional EIP-712 eip155-specific rule.",
+      "source": "Fresh-context audit feedback after first corpus run, independently reproduced with self-authored signed data.",
+      "status": "corrected; first failing source/report retained where applicable; final corpus and supplementary selftests pass"
+    },
+    {
+      "id": "api-omitted-record-default",
+      "classification": "checker defect",
+      "component": "public verify API",
+      "initial": "Calling verify() without a record keyword would raise TypeError, even though SPEC section 5 permits the record input to be absent. All published vectors supplied record:null, so the corpus did not expose this API limitation.",
+      "reason": "AR-35 step 1 and AR-37 require no_record for an absent record.",
+      "correction": "Default the public record parameter to None and add an omitted-record API selftest.",
+      "status": "corrected; first failing source/report retained where applicable; final corpus and supplementary selftests pass"
+    }
+  ],
+  "final": {
+    "report": "results/rerun-vic-2026-10-26.json",
+    "normative": {
+      "passed": 127,
+      "total": 127
+    },
+    "statement_identity": {
+      "passed": 89,
+      "total": 89
+    },
+    "selftests": {
+      "passed": 14,
+      "total": 14
+    },
+    "numeric": {
+      "RFC8785": 26,
+      "requested": 11,
+      "catalog": 1001,
+      "failed": 0
+    },
+    "remaining_ambiguities": [
+      "selftest-zero-address-null-entity"
+    ],
+    "supplied_vector_defects": []
+  }
+}

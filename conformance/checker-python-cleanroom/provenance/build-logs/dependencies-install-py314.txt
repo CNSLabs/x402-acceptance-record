@@ -1,0 +1,43 @@
+Collecting coincurve==21.0.0 (from -r /Users/moltmike/.openclaw/state/x402-cleanroom-checker-20261026/checker/requirements.in (line 1))
+  Downloading coincurve-21.0.0.tar.gz (128 kB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Installing backend dependencies: started
+  Installing backend dependencies: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'error'
+  error: subprocess-exited-with-error
+  
+  × Preparing metadata (pyproject.toml) did not run successfully.
+  │ exit code: 1
+  ╰─> [18 lines of output]
+      Traceback (most recent call last):
+        File "/Users/moltmike/.openclaw/state/x402-cleanroom-checker-20261026/.venv314/lib/python3.14/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 389, in <module>
+          main()
+          ~~~~^^
+        File "/Users/moltmike/.openclaw/state/x402-cleanroom-checker-20261026/.venv314/lib/python3.14/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 373, in main
+          json_out["return_val"] = hook(**hook_input["kwargs"])
+                                   ~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+        File "/Users/moltmike/.openclaw/state/x402-cleanroom-checker-20261026/.venv314/lib/python3.14/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 178, in prepare_metadata_for_build_wheel
+          whl_basename = backend.build_wheel(metadata_directory, config_settings)
+        File "/Users/moltmike/.openclaw/tmp/pip-build-env-pltzfldj/overlay/lib/python3.14/site-packages/hatchling/build.py", line 58, in build_wheel
+          return os.path.basename(next(builder.build(directory=wheel_directory, versions=["standard"])))
+                                  ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        File "/Users/moltmike/.openclaw/tmp/pip-build-env-pltzfldj/overlay/lib/python3.14/site-packages/hatchling/builders/plugin/interface.py", line 158, in build
+          build_hook.initialize(version, build_data)
+          ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+        File "/Users/moltmike/.openclaw/tmp/pip-install-to6dh2nr/coincurve_bd25bebe24dc4dc1add19d812ff2e9b0/hatch_build.py", line 34, in initialize
+          raise RuntimeError(message)
+      RuntimeError: Expected exactly one LICENSE file in cffi distribution, got 0
+      [end of output]
+  
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+error: metadata-generation-failed
+
+× Encountered error while generating package metadata.
+╰─> coincurve
+
+note: This is an issue with the package mentioned above, not pip.
+hint: See above for details.

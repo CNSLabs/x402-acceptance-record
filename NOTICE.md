@@ -6,12 +6,19 @@ x402 acceptance record, version 0 (draft). Shodai (CNS Labs).
 
 - The specification and documentation (README.md, SPEC.md, NOTICE.md) are licensed under the Apache License,
   Version 2.0 (LICENSE).
-- The requirement cases (CASES.md), and the vectors that will follow them, are dedicated to the public domain under
-  CC0 1.0 Universal (LICENSE-CC0).
+- The requirement cases (CASES.md), the vectors and seeds (conformance/vectors/) and the recorded runs
+  (conformance/results/) are dedicated to the public domain under CC0 1.0 Universal (LICENSE-CC0).
+- The generator and the checkers (conformance/generator/, conformance/checker/,
+  conformance/checker-python-independent/, conformance/checker-python-cleanroom/) are licensed under the Apache
+  License, Version 2.0 (LICENSE).
 
 ## Third-party material
 
-No third-party text, vectors or keys are reproduced. Works named under Credits are referenced, not copied.
+The fresh-context Python checker's frozen input packet (conformance/checker-python-independent/inputs/) reproduces the two x402
+extension texts it was built from (Apache-2.0), stillmarcus24's RFC 8785 number probes (MIT) and the aos-standard
+catalog's number corpus (CC0), each credited with its licence in
+conformance/checker-python-independent/THIRD-PARTY-NOTICES.md. Nothing else is reproduced; works named under Credits
+are referenced, not copied.
 
 ## Credits
 

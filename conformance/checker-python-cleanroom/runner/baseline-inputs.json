@@ -1,0 +1,89 @@
+{
+  "record": "{\"format\":\"eip712\",\"payload\":{\"authority\":{\"mode\":\"direct\",\"profile\":\"payer/0\",\"reference\":\"\"},\"confirmingParty\":\"eip155:84532:0x36f336f1a68fa49112e2e85255cff6c9414d5c18\",\"contextId\":\"0xd91e2850c03f01001a34750fe526b47c7d1129fa7317c3c7134207cbc61481d7\",\"deliveryIssuer\":\"did:web:seller.example\",\"disposition\":\"accepted\",\"issuedAt\":1791500600,\"outcomeDigest\":\"0x700d8cea137c32c31e4865aaf5ae327931067ae454bc78777f8572dadf9c9809\",\"signer\":\"eip155:84532:0x36f336f1a68fa49112e2e85255cff6c9414d5c18\",\"subject\":{\"profile\":\"x402ev/1\",\"reference\":\"x402ev/1:sha256:d91e2850c03f01001a34750fe526b47c7d1129fa7317c3c7134207cbc61481d7\"},\"termsDigest\":\"0x8de19ff44ce814ceba998cd60cac5cca8fe269c01b4b1649f53e5483c3b4ff79\",\"version\":0},\"signature\":\"0x5053882e038f0ba8002ec806c34e98e1e59831bf4cb19a8c4be3e1191f4c17111d4c710d359aedbac2346c2cda9c4ee5e08d223fee60b35083b27116209710861b\"}",
+  "subject": {
+    "canonicalization": "RFC8785",
+    "delivery": {
+      "contentDigest": "sha256:700d8cea137c32c31e4865aaf5ae327931067ae454bc78777f8572dadf9c9809",
+      "contentType": "application/json",
+      "latencyMs": 42,
+      "statusCode": 200,
+      "timestamp": 1791500000
+    },
+    "evidenceRef": "x402ev/1:sha256:d91e2850c03f01001a34750fe526b47c7d1129fa7317c3c7134207cbc61481d7",
+    "payment": {
+      "amount": "10000",
+      "asset": "0xc8d0bdf6d7164c230ec38017ed25f2da3b420025",
+      "network": "eip155:84532",
+      "payee": "0x7a393e9d0d34341a1873cfd29a1e56f683a6ff06",
+      "payer": "0x36F336F1a68FA49112e2e85255cFF6C9414D5C18"
+    },
+    "request": {
+      "clientNonce": "7c1d0e5a9b3f2468",
+      "method": "GET",
+      "timestamp": 1791499998,
+      "urlHash": "sha256:fb1f3981f5dd618ca4c459d06829fcc7bb33cc5007a7dc1cd79f105f374d4175"
+    },
+    "scheme": "x402ev/1",
+    "signer": {
+      "keyType": "Ed25519",
+      "publicKey": "zGYQw2f1EQInpCgH13Y_PVoBJ6-9QzaaaeEfzNPma8s",
+      "signature": "base64url:SMw2o3PJXO3qBzjdND65tFgiUosB0z68xnEjxoGa5GdTzLS31KtQRihJxqOscyqy38xLdfIycFEZ_7yQsVg6AQ"
+    }
+  },
+  "terms": [
+    {
+      "format": "jws",
+      "signature": "eyJhbGciOiJFZERTQSIsImtpZCI6ImRpZDp3ZWI6c2VsbGVyLmV4YW1wbGUja3MifQ.eyJhbW91bnQiOiIxMDAwMCIsImFzc2V0IjoiMHhDOGQwYkRmNmQ3MTY0QzIzMEVDMzgwMTdFZDI1RjJEQTNiNDIwMDI1IiwibmV0d29yayI6ImVpcDE1NTo4NDUzMiIsInBheVRvIjoiMHg3QTM5M2U5ZDBkMzQzNDFhMTg3M0NmRDI5QTFlNTZGNjgzYTZmZjA2IiwicmVzb3VyY2VVcmwiOiJodHRwczovL3NlbGxlci5leGFtcGxlL3JlcG9ydCIsInNjaGVtZSI6ImV4YWN0IiwidmFsaWRVbnRpbCI6MTc5MTUwMzYwMCwidmVyc2lvbiI6MX0.CAk93PxSYsxDD9NvW29DTYJwEzHTe7OOFFZmbCH1qPS2qBWqQyiEySbh4tpgB9SQJuGVMJ44sSXzDfc4ryinCQ"
+    }
+  ],
+  "trust": {
+    "issuers": [
+      {
+        "issuer": "did:web:seller.example",
+        "keys": [
+          {
+            "kid": "did:web:seller.example#ks",
+            "key": "zGYQw2f1EQInpCgH13Y_PVoBJ6-9QzaaaeEfzNPma8s"
+          }
+        ]
+      }
+    ],
+    "keys": [
+      {
+        "kid": "cp-1",
+        "signer": "did:example:buyer",
+        "key": "xgfrgQ8O2uvTbLPZCG2EcErbo7WTeU_qvAW2NVLV7aM"
+      }
+    ],
+    "authority": [
+      {
+        "confirmingParty": "did:example:buyer",
+        "signer": "did:example:buyer",
+        "subjectProfile": "x402ev/1",
+        "subjectReference": "x402ev/1:sha256:d91e2850c03f01001a34750fe526b47c7d1129fa7317c3c7134207cbc61481d7"
+      }
+    ]
+  },
+  "chain": [
+    {
+      "chainId": 84532,
+      "block": 1000,
+      "account": "0x36f336f1a68fa49112e2e85255cff6c9414d5c18",
+      "hasCode": false
+    },
+    {
+      "chainId": 84532,
+      "block": 1000,
+      "account": "0xaf88c5c4b2ac35fdf35b2d1434a9f762ef03d015",
+      "hasCode": false
+    },
+    {
+      "chainId": 84532,
+      "block": 1000,
+      "account": "0x271e1c49b3db37a3eb5137a2ffbaeeabff47bdc9",
+      "calls": [],
+      "hasCode": true
+    }
+  ],
+  "contractAccounts": true
+}
