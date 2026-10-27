@@ -1,0 +1,269 @@
+{
+  "reviewed_pr_head": "d6afe8cb1960d170e534c8e65d9a2baa23e02ffd",
+  "frozen_checker_commit": "bec16636ff3c2afa0b7ec7a0a32ab2179f96817c",
+  "fixture_source": "../../checker-python-independent/selftests.py",
+  "comparison_note": "Only result, conditions (as a set), disposition, reason and policy_refusal are compared. Optional statementId is not a difference. These synthetic tests supplement the original corpus; they do not alter its 127/127 result.",
+  "cases": [
+    {
+      "id": "valid-jws-baseline",
+      "inputs": {
+        "record": "eyJmb3JtYXQiOiJqd3MiLCJzaWduYXR1cmUiOiJleUpoYkdjaU9pSkZaRVJUUVNJc0ltdHBaQ0k2SW5SbGMzUXRZblY1WlhJaUxDSjBlWEFpT2lKNE5EQXlMV0ZqWTJWd2RHRnVZMlVyYW5kekluMC5leUpoZFhSb2IzSnBkSGtpT25zaWJXOWtaU0k2SW1SbFkyeGhjbVZrSWl3aWNISnZabWxzWlNJNkltUmxZMnhoY21Wa0xXVjJhV1JsYm1ObEx6QWlMQ0p5WldabGNtVnVZMlVpT2lJaWZTd2lZMjl1Wm1seWJXbHVaMUJoY25SNUlqb2lZblY1WlhJaUxDSmpiMjUwWlhoMFNXUWlPaUl3ZURNeU5qVTBNbUpqTkdRNVpUSmpObVUzTWpJeE5XWmxORFkzTXpRek9ETTNZakF3Wm1GaE1qaGlOVGc0TkRBNU5EazFOelJoWVRFd1pHRTFOemt5WVRVaUxDSmtaV3hwZG1WeWVVbHpjM1ZsY2lJNkluTmxiR3hsY2lJc0ltUnBjM0J2YzJsMGFXOXVJam9pWVdOalpYQjBaV1FpTENKcGMzTjFaV1JCZENJNk5ESXNJbTkxZEdOdmJXVkVhV2RsYzNRaU9pSXdlREkxWVRZelpUVXlZVGs0WmpabVpHRmhOakU0TjJSaE5UVTVZVEJoTTJFMU5XUTRORFZrTURNeU1tTmhNVGd6WVdRMllXUTFaVEF3Tm1NMFpXUTJORFlpTENKemFXZHVaWElpT2lKaWRYbGxjaUlzSW5OMVltcGxZM1FpT25zaWNISnZabWxzWlNJNkluZzBNREpsZGk4eElpd2ljbVZtWlhKbGJtTmxJam9pZURRd01tVjJMekU2YzJoaE1qVTJPak15TmpVME1tSmpOR1E1WlRKak5tVTNNakl4TldabE5EWTNNelF6T0RNM1lqQXdabUZoTWpoaU5UZzROREE1TkRrMU56UmhZVEV3WkdFMU56a3lZVFVpZlN3aWRHVnliWE5FYVdkbGMzUWlPaUl3ZUdZMk16SXhOMlpoT1RjMVpqazRNR1E1TVRFNU5HRTVNVFpsWkRNME5qQTVZVE5rWVRNMVkyRm1OMlJsTkdKa09HUmpNemMzWVdVeVpXTTVNemM1WTJJaUxDSjJaWEp6YVc5dUlqb3dmUS5ZOHFDNFhoUTZ6c2JOVTZOdzJ2bkFkb3lXUTFHTzlrb1UtRUlxZmtmNm1KWHB0SUg3cmZrekpKRWhqOFotY1ItaGVEZjdpMGxweDVYS3duRGZOeDBCdyJ9",
+        "subject": "eyJjYW5vbmljYWxpemF0aW9uIjoiUkZDODc4NSIsImRlbGl2ZXJ5Ijp7ImNvbnRlbnREaWdlc3QiOiJzaGEyNTY6MjVhNjNlNTJhOThmNmZkYWE2MTg3ZGE1NTlhMGEzYTU1ZDg0NWQwMzIyY2ExODNhZDZhZDVlMDA2YzRlZDY0NiIsInRpbWVzdGFtcCI6NDJ9LCJldmlkZW5jZVJlZiI6Ing0MDJldi8xOnNoYTI1NjozMjY1NDJiYzRkOWUyYzZlNzIyMTVmZTQ2NzM0MzgzN2IwMGZhYTI4YjU4ODQwOTQ5NTc0YWExMGRhNTc5MmE1IiwicGF5bWVudCI6eyJhbW91bnQiOiIyNyIsImFzc2V0IjoibmF0aXZlIiwibmV0d29yayI6ImVpcDE1NToxIiwicGF5ZWUiOiIweDM0MzQzNDM0MzQzNDM0MzQzNDM0MzQzNDM0MzQzNDM0MzQzNDM0MzQiLCJwYXllciI6IjB4MTIxMjEyMTIxMjEyMTIxMjEyMTIxMjEyMTIxMjEyMTIxMjEyMTIxMiJ9LCJyZXF1ZXN0Ijp7fSwic2NoZW1lIjoieDQwMmV2LzEiLCJzaWduZXIiOnsia2V5VHlwZSI6IkVkMjU1MTkiLCJwdWJsaWNLZXkiOiJBNkVIdl9QT0VMNGRjTjBZNTB2QW1XZmsxakNicFExZkhkeUdaQkpWTWJnIiwic2lnbmF0dXJlIjoiYmFzZTY0dXJsOlBNdnJEWWtYcDhJYTNzVVNXSHpoZGxjMmJkOVd1TWZ6Zy1XVElNRkhJOGtzVmZHZkZEUmVHZWsxZVNPRnYwMzVjMUZVQTlyWUxJZEhVdnJCNWxMN0FnIn19",
+        "terms": [
+          "eyJmb3JtYXQiOiJqd3MiLCJzaWduYXR1cmUiOiJleUpoYkdjaU9pSkZaRVJUUVNJc0ltdHBaQ0k2SW5SbGMzUXRjMlZzYkdWeUluMC5leUpoYlc5MWJuUWlPaUl5TnlJc0ltRnpjMlYwSWpvaWJtRjBhWFpsSWl3aWJtVjBkMjl5YXlJNkltVnBjREUxTlRveElpd2ljR0Y1Vkc4aU9pSXdlRE0wTXpRek5ETTBNelF6TkRNME16UXpORE0wTXpRek5ETTBNelF6TkRNME16UXpORE0wTXpRaUxDSnlaWE52ZFhKalpWVnliQ0k2SW1oMGRIQnpPaTh2WlhoaGJYQnNaUzUwWlhOMEwzZ2lMQ0p6WTJobGJXVWlPaUpsZUdGamRDSXNJblpoYkdsa1ZXNTBhV3dpT2pFd01Dd2lkbVZ5YzJsdmJpSTZNWDAud1VYREpiSWFlb1FOZXA3eGpEd00xWG1QUC1WV2l3UmN1NzVRZzlzSUk2V292SURKaWNtREhLS0F1OGgwcG90VjNsT0UwZzJpcmpEMkJ5cU5WOGZEQXcifQ"
+        ],
+        "trust": {
+          "issuers": [
+            {
+              "issuer": "seller",
+              "keys": [
+                {
+                  "kid": "test-seller",
+                  "ed25519": "A6EHv_POEL4dcN0Y50vAmWfk1jCbpQ1fHdyGZBJVMbg"
+                }
+              ]
+            }
+          ],
+          "keys": [
+            {
+              "kid": "test-buyer",
+              "signer": "buyer",
+              "key": "Kay64UG8yvCyLhqU000LxzYeUm0L_hLIl5S8kyKWbdc"
+            }
+          ],
+          "authority": [
+            {
+              "confirmingParty": "buyer",
+              "signer": "buyer",
+              "subjectProfile": "x402ev/1",
+              "subjectReference": "x402ev/1:sha256:326542bc4d9e2c6e72215fe467343837b00faa28b58840949574aa10da5792a5"
+            }
+          ]
+        }
+      },
+      "our_result": {
+        "result": "verified",
+        "conditions": [],
+        "disposition": "accepted",
+        "statementId": "x402accept/0:sha256:cb36c087583e50028a1d142f13608d6922d44af1cd98416c1776ad1d44884cdc"
+      },
+      "mike_result": {
+        "result": "verified",
+        "conditions": [],
+        "disposition": "accepted"
+      },
+      "same_normative_output": true
+    },
+    {
+      "id": "valid-eip712-offer-baseline",
+      "inputs": {
+        "record": "eyJmb3JtYXQiOiJqd3MiLCJzaWduYXR1cmUiOiJleUpoYkdjaU9pSkZaRVJUUVNJc0ltdHBaQ0k2SW5SbGMzUXRZblY1WlhJaUxDSjBlWEFpT2lKNE5EQXlMV0ZqWTJWd2RHRnVZMlVyYW5kekluMC5leUpoZFhSb2IzSnBkSGtpT25zaWJXOWtaU0k2SW1SbFkyeGhjbVZrSWl3aWNISnZabWxzWlNJNkltUmxZMnhoY21Wa0xXVjJhV1JsYm1ObEx6QWlMQ0p5WldabGNtVnVZMlVpT2lJaWZTd2lZMjl1Wm1seWJXbHVaMUJoY25SNUlqb2lZblY1WlhJaUxDSmpiMjUwWlhoMFNXUWlPaUl3ZURNeU5qVTBNbUpqTkdRNVpUSmpObVUzTWpJeE5XWmxORFkzTXpRek9ETTNZakF3Wm1GaE1qaGlOVGc0TkRBNU5EazFOelJoWVRFd1pHRTFOemt5WVRVaUxDSmtaV3hwZG1WeWVVbHpjM1ZsY2lJNkluTmxiR3hsY2lJc0ltUnBjM0J2YzJsMGFXOXVJam9pWVdOalpYQjBaV1FpTENKcGMzTjFaV1JCZENJNk5ESXNJbTkxZEdOdmJXVkVhV2RsYzNRaU9pSXdlREkxWVRZelpUVXlZVGs0WmpabVpHRmhOakU0TjJSaE5UVTVZVEJoTTJFMU5XUTRORFZrTURNeU1tTmhNVGd6WVdRMllXUTFaVEF3Tm1NMFpXUTJORFlpTENKemFXZHVaWElpT2lKaWRYbGxjaUlzSW5OMVltcGxZM1FpT25zaWNISnZabWxzWlNJNkluZzBNREpsZGk4eElpd2ljbVZtWlhKbGJtTmxJam9pZURRd01tVjJMekU2YzJoaE1qVTJPak15TmpVME1tSmpOR1E1WlRKak5tVTNNakl4TldabE5EWTNNelF6T0RNM1lqQXdabUZoTWpoaU5UZzROREE1TkRrMU56UmhZVEV3WkdFMU56a3lZVFVpZlN3aWRHVnliWE5FYVdkbGMzUWlPaUl3ZUdZMk16SXhOMlpoT1RjMVpqazRNR1E1TVRFNU5HRTVNVFpsWkRNME5qQTVZVE5rWVRNMVkyRm1OMlJsTkdKa09HUmpNemMzWVdVeVpXTTVNemM1WTJJaUxDSjJaWEp6YVc5dUlqb3dmUS5ZOHFDNFhoUTZ6c2JOVTZOdzJ2bkFkb3lXUTFHTzlrb1UtRUlxZmtmNm1KWHB0SUg3cmZrekpKRWhqOFotY1ItaGVEZjdpMGxweDVYS3duRGZOeDBCdyJ9",
+        "subject": "eyJjYW5vbmljYWxpemF0aW9uIjoiUkZDODc4NSIsImRlbGl2ZXJ5Ijp7ImNvbnRlbnREaWdlc3QiOiJzaGEyNTY6MjVhNjNlNTJhOThmNmZkYWE2MTg3ZGE1NTlhMGEzYTU1ZDg0NWQwMzIyY2ExODNhZDZhZDVlMDA2YzRlZDY0NiIsInRpbWVzdGFtcCI6NDJ9LCJldmlkZW5jZVJlZiI6Ing0MDJldi8xOnNoYTI1NjozMjY1NDJiYzRkOWUyYzZlNzIyMTVmZTQ2NzM0MzgzN2IwMGZhYTI4YjU4ODQwOTQ5NTc0YWExMGRhNTc5MmE1IiwicGF5bWVudCI6eyJhbW91bnQiOiIyNyIsImFzc2V0IjoibmF0aXZlIiwibmV0d29yayI6ImVpcDE1NToxIiwicGF5ZWUiOiIweDM0MzQzNDM0MzQzNDM0MzQzNDM0MzQzNDM0MzQzNDM0MzQzNDM0MzQiLCJwYXllciI6IjB4MTIxMjEyMTIxMjEyMTIxMjEyMTIxMjEyMTIxMjEyMTIxMjEyMTIxMiJ9LCJyZXF1ZXN0Ijp7fSwic2NoZW1lIjoieDQwMmV2LzEiLCJzaWduZXIiOnsia2V5VHlwZSI6IkVkMjU1MTkiLCJwdWJsaWNLZXkiOiJBNkVIdl9QT0VMNGRjTjBZNTB2QW1XZmsxakNicFExZkhkeUdaQkpWTWJnIiwic2lnbmF0dXJlIjoiYmFzZTY0dXJsOlBNdnJEWWtYcDhJYTNzVVNXSHpoZGxjMmJkOVd1TWZ6Zy1XVElNRkhJOGtzVmZHZkZEUmVHZWsxZVNPRnYwMzVjMUZVQTlyWUxJZEhVdnJCNWxMN0FnIn19",
+        "terms": [
+          "eyJmb3JtYXQiOiJlaXA3MTIiLCJwYXlsb2FkIjp7ImFtb3VudCI6IjI3IiwiYXNzZXQiOiJuYXRpdmUiLCJuZXR3b3JrIjoiZWlwMTU1OjEiLCJwYXlUbyI6IjB4MzQzNDM0MzQzNDM0MzQzNDM0MzQzNDM0MzQzNDM0MzQzNDM0MzQzNCIsInJlc291cmNlVXJsIjoiaHR0cHM6Ly9leGFtcGxlLnRlc3QveCIsInNjaGVtZSI6ImV4YWN0IiwidmFsaWRVbnRpbCI6MTAwLCJ2ZXJzaW9uIjoxfSwic2lnbmF0dXJlIjoiMHhiNGU4YTMwMTFkZTBhZjlhOTNmYzcwZWJiYmM1OWNlYjAwZWUwMWViZmQ2MzUwNzcxMTdlY2E4YTJhYjYxZDFiMGY5MmMyNzlmNGRhODNlOTlhNWM2ZWY3NzNmOGI5NzBjZDM0NTJhN2JhNWEzYzczNjFiODNjNWIzNjc2NDY1YzFjIn0"
+        ],
+        "trust": {
+          "issuers": [
+            {
+              "issuer": "seller",
+              "keys": [
+                {
+                  "kid": "test-seller",
+                  "ed25519": "A6EHv_POEL4dcN0Y50vAmWfk1jCbpQ1fHdyGZBJVMbg"
+                },
+                {
+                  "address": "0x4a62316623ad457f02cdc5d997ded67a383ec569"
+                }
+              ]
+            }
+          ],
+          "keys": [
+            {
+              "kid": "test-buyer",
+              "signer": "buyer",
+              "key": "Kay64UG8yvCyLhqU000LxzYeUm0L_hLIl5S8kyKWbdc"
+            }
+          ],
+          "authority": [
+            {
+              "confirmingParty": "buyer",
+              "signer": "buyer",
+              "subjectProfile": "x402ev/1",
+              "subjectReference": "x402ev/1:sha256:326542bc4d9e2c6e72215fe467343837b00faa28b58840949574aa10da5792a5"
+            }
+          ]
+        }
+      },
+      "our_result": {
+        "result": "verified",
+        "conditions": [],
+        "disposition": "accepted",
+        "statementId": "x402accept/0:sha256:cb36c087583e50028a1d142f13608d6922d44af1cd98416c1776ad1d44884cdc"
+      },
+      "mike_result": {
+        "result": "verified",
+        "conditions": [],
+        "disposition": "accepted"
+      },
+      "same_normative_output": true
+    },
+    {
+      "id": "integral-float-offer-version",
+      "inputs": {
+        "record": "eyJmb3JtYXQiOiJqd3MiLCJzaWduYXR1cmUiOiJleUpoYkdjaU9pSkZaRVJUUVNJc0ltdHBaQ0k2SW5SbGMzUXRZblY1WlhJaUxDSjBlWEFpT2lKNE5EQXlMV0ZqWTJWd2RHRnVZMlVyYW5kekluMC5leUpoZFhSb2IzSnBkSGtpT25zaWJXOWtaU0k2SW1SbFkyeGhjbVZrSWl3aWNISnZabWxzWlNJNkltUmxZMnhoY21Wa0xXVjJhV1JsYm1ObEx6QWlMQ0p5WldabGNtVnVZMlVpT2lJaWZTd2lZMjl1Wm1seWJXbHVaMUJoY25SNUlqb2lZblY1WlhJaUxDSmpiMjUwWlhoMFNXUWlPaUl3ZURNeU5qVTBNbUpqTkdRNVpUSmpObVUzTWpJeE5XWmxORFkzTXpRek9ETTNZakF3Wm1GaE1qaGlOVGc0TkRBNU5EazFOelJoWVRFd1pHRTFOemt5WVRVaUxDSmtaV3hwZG1WeWVVbHpjM1ZsY2lJNkluTmxiR3hsY2lJc0ltUnBjM0J2YzJsMGFXOXVJam9pWVdOalpYQjBaV1FpTENKcGMzTjFaV1JCZENJNk5ESXNJbTkxZEdOdmJXVkVhV2RsYzNRaU9pSXdlREkxWVRZelpUVXlZVGs0WmpabVpHRmhOakU0TjJSaE5UVTVZVEJoTTJFMU5XUTRORFZrTURNeU1tTmhNVGd6WVdRMllXUTFaVEF3Tm1NMFpXUTJORFlpTENKemFXZHVaWElpT2lKaWRYbGxjaUlzSW5OMVltcGxZM1FpT25zaWNISnZabWxzWlNJNkluZzBNREpsZGk4eElpd2ljbVZtWlhKbGJtTmxJam9pZURRd01tVjJMekU2YzJoaE1qVTJPak15TmpVME1tSmpOR1E1WlRKak5tVTNNakl4TldabE5EWTNNelF6T0RNM1lqQXdabUZoTWpoaU5UZzROREE1TkRrMU56UmhZVEV3WkdFMU56a3lZVFVpZlN3aWRHVnliWE5FYVdkbGMzUWlPaUl3ZUdZMk16SXhOMlpoT1RjMVpqazRNR1E1TVRFNU5HRTVNVFpsWkRNME5qQTVZVE5rWVRNMVkyRm1OMlJsTkdKa09HUmpNemMzWVdVeVpXTTVNemM1WTJJaUxDSjJaWEp6YVc5dUlqb3dmUS5ZOHFDNFhoUTZ6c2JOVTZOdzJ2bkFkb3lXUTFHTzlrb1UtRUlxZmtmNm1KWHB0SUg3cmZrekpKRWhqOFotY1ItaGVEZjdpMGxweDVYS3duRGZOeDBCdyJ9",
+        "subject": "eyJjYW5vbmljYWxpemF0aW9uIjoiUkZDODc4NSIsImRlbGl2ZXJ5Ijp7ImNvbnRlbnREaWdlc3QiOiJzaGEyNTY6MjVhNjNlNTJhOThmNmZkYWE2MTg3ZGE1NTlhMGEzYTU1ZDg0NWQwMzIyY2ExODNhZDZhZDVlMDA2YzRlZDY0NiIsInRpbWVzdGFtcCI6NDJ9LCJldmlkZW5jZVJlZiI6Ing0MDJldi8xOnNoYTI1NjozMjY1NDJiYzRkOWUyYzZlNzIyMTVmZTQ2NzM0MzgzN2IwMGZhYTI4YjU4ODQwOTQ5NTc0YWExMGRhNTc5MmE1IiwicGF5bWVudCI6eyJhbW91bnQiOiIyNyIsImFzc2V0IjoibmF0aXZlIiwibmV0d29yayI6ImVpcDE1NToxIiwicGF5ZWUiOiIweDM0MzQzNDM0MzQzNDM0MzQzNDM0MzQzNDM0MzQzNDM0MzQzNDM0MzQiLCJwYXllciI6IjB4MTIxMjEyMTIxMjEyMTIxMjEyMTIxMjEyMTIxMjEyMTIxMjEyMTIxMiJ9LCJyZXF1ZXN0Ijp7fSwic2NoZW1lIjoieDQwMmV2LzEiLCJzaWduZXIiOnsia2V5VHlwZSI6IkVkMjU1MTkiLCJwdWJsaWNLZXkiOiJBNkVIdl9QT0VMNGRjTjBZNTB2QW1XZmsxakNicFExZkhkeUdaQkpWTWJnIiwic2lnbmF0dXJlIjoiYmFzZTY0dXJsOlBNdnJEWWtYcDhJYTNzVVNXSHpoZGxjMmJkOVd1TWZ6Zy1XVElNRkhJOGtzVmZHZkZEUmVHZWsxZVNPRnYwMzVjMUZVQTlyWUxJZEhVdnJCNWxMN0FnIn19",
+        "terms": [
+          "eyJmb3JtYXQiOiJlaXA3MTIiLCJwYXlsb2FkIjp7ImFtb3VudCI6IjI3IiwiYXNzZXQiOiJuYXRpdmUiLCJuZXR3b3JrIjoiZWlwMTU1OjEiLCJwYXlUbyI6IjB4MzQzNDM0MzQzNDM0MzQzNDM0MzQzNDM0MzQzNDM0MzQzNDM0MzQzNCIsInJlc291cmNlVXJsIjoiaHR0cHM6Ly9leGFtcGxlLnRlc3QveCIsInNjaGVtZSI6ImV4YWN0IiwidmFsaWRVbnRpbCI6MTAwLCJ2ZXJzaW9uIjoxLjB9LCJzaWduYXR1cmUiOiIweGI0ZThhMzAxMWRlMGFmOWE5M2ZjNzBlYmJiYzU5Y2ViMDBlZTAxZWJmZDYzNTA3NzExN2VjYThhMmFiNjFkMWIwZjkyYzI3OWY0ZGE4M2U5OWE1YzZlZjc3M2Y4Yjk3MGNkMzQ1MmE3YmE1YTNjNzM2MWI4M2M1YjM2NzY0NjVjMWMifQ"
+        ],
+        "trust": {
+          "issuers": [
+            {
+              "issuer": "seller",
+              "keys": [
+                {
+                  "kid": "test-seller",
+                  "ed25519": "A6EHv_POEL4dcN0Y50vAmWfk1jCbpQ1fHdyGZBJVMbg"
+                },
+                {
+                  "address": "0x4a62316623ad457f02cdc5d997ded67a383ec569"
+                }
+              ]
+            }
+          ],
+          "keys": [
+            {
+              "kid": "test-buyer",
+              "signer": "buyer",
+              "key": "Kay64UG8yvCyLhqU000LxzYeUm0L_hLIl5S8kyKWbdc"
+            }
+          ],
+          "authority": [
+            {
+              "confirmingParty": "buyer",
+              "signer": "buyer",
+              "subjectProfile": "x402ev/1",
+              "subjectReference": "x402ev/1:sha256:326542bc4d9e2c6e72215fe467343837b00faa28b58840949574aa10da5792a5"
+            }
+          ]
+        }
+      },
+      "our_result": {
+        "result": "verified",
+        "conditions": [],
+        "disposition": "accepted",
+        "statementId": "x402accept/0:sha256:cb36c087583e50028a1d142f13608d6922d44af1cd98416c1776ad1d44884cdc"
+      },
+      "mike_result": {
+        "result": "unknown",
+        "conditions": [],
+        "reason": "evidence_unavailable",
+        "disposition": "accepted"
+      },
+      "same_normative_output": false
+    },
+    {
+      "id": "integral-exponent-offer-expiry",
+      "inputs": {
+        "record": "eyJmb3JtYXQiOiJqd3MiLCJzaWduYXR1cmUiOiJleUpoYkdjaU9pSkZaRVJUUVNJc0ltdHBaQ0k2SW5SbGMzUXRZblY1WlhJaUxDSjBlWEFpT2lKNE5EQXlMV0ZqWTJWd2RHRnVZMlVyYW5kekluMC5leUpoZFhSb2IzSnBkSGtpT25zaWJXOWtaU0k2SW1SbFkyeGhjbVZrSWl3aWNISnZabWxzWlNJNkltUmxZMnhoY21Wa0xXVjJhV1JsYm1ObEx6QWlMQ0p5WldabGNtVnVZMlVpT2lJaWZTd2lZMjl1Wm1seWJXbHVaMUJoY25SNUlqb2lZblY1WlhJaUxDSmpiMjUwWlhoMFNXUWlPaUl3ZURNeU5qVTBNbUpqTkdRNVpUSmpObVUzTWpJeE5XWmxORFkzTXpRek9ETTNZakF3Wm1GaE1qaGlOVGc0TkRBNU5EazFOelJoWVRFd1pHRTFOemt5WVRVaUxDSmtaV3hwZG1WeWVVbHpjM1ZsY2lJNkluTmxiR3hsY2lJc0ltUnBjM0J2YzJsMGFXOXVJam9pWVdOalpYQjBaV1FpTENKcGMzTjFaV1JCZENJNk5ESXNJbTkxZEdOdmJXVkVhV2RsYzNRaU9pSXdlREkxWVRZelpUVXlZVGs0WmpabVpHRmhOakU0TjJSaE5UVTVZVEJoTTJFMU5XUTRORFZrTURNeU1tTmhNVGd6WVdRMllXUTFaVEF3Tm1NMFpXUTJORFlpTENKemFXZHVaWElpT2lKaWRYbGxjaUlzSW5OMVltcGxZM1FpT25zaWNISnZabWxzWlNJNkluZzBNREpsZGk4eElpd2ljbVZtWlhKbGJtTmxJam9pZURRd01tVjJMekU2YzJoaE1qVTJPak15TmpVME1tSmpOR1E1WlRKak5tVTNNakl4TldabE5EWTNNelF6T0RNM1lqQXdabUZoTWpoaU5UZzROREE1TkRrMU56UmhZVEV3WkdFMU56a3lZVFVpZlN3aWRHVnliWE5FYVdkbGMzUWlPaUl3ZUdZMk16SXhOMlpoT1RjMVpqazRNR1E1TVRFNU5HRTVNVFpsWkRNME5qQTVZVE5rWVRNMVkyRm1OMlJsTkdKa09HUmpNemMzWVdVeVpXTTVNemM1WTJJaUxDSjJaWEp6YVc5dUlqb3dmUS5ZOHFDNFhoUTZ6c2JOVTZOdzJ2bkFkb3lXUTFHTzlrb1UtRUlxZmtmNm1KWHB0SUg3cmZrekpKRWhqOFotY1ItaGVEZjdpMGxweDVYS3duRGZOeDBCdyJ9",
+        "subject": "eyJjYW5vbmljYWxpemF0aW9uIjoiUkZDODc4NSIsImRlbGl2ZXJ5Ijp7ImNvbnRlbnREaWdlc3QiOiJzaGEyNTY6MjVhNjNlNTJhOThmNmZkYWE2MTg3ZGE1NTlhMGEzYTU1ZDg0NWQwMzIyY2ExODNhZDZhZDVlMDA2YzRlZDY0NiIsInRpbWVzdGFtcCI6NDJ9LCJldmlkZW5jZVJlZiI6Ing0MDJldi8xOnNoYTI1NjozMjY1NDJiYzRkOWUyYzZlNzIyMTVmZTQ2NzM0MzgzN2IwMGZhYTI4YjU4ODQwOTQ5NTc0YWExMGRhNTc5MmE1IiwicGF5bWVudCI6eyJhbW91bnQiOiIyNyIsImFzc2V0IjoibmF0aXZlIiwibmV0d29yayI6ImVpcDE1NToxIiwicGF5ZWUiOiIweDM0MzQzNDM0MzQzNDM0MzQzNDM0MzQzNDM0MzQzNDM0MzQzNDM0MzQiLCJwYXllciI6IjB4MTIxMjEyMTIxMjEyMTIxMjEyMTIxMjEyMTIxMjEyMTIxMjEyMTIxMiJ9LCJyZXF1ZXN0Ijp7fSwic2NoZW1lIjoieDQwMmV2LzEiLCJzaWduZXIiOnsia2V5VHlwZSI6IkVkMjU1MTkiLCJwdWJsaWNLZXkiOiJBNkVIdl9QT0VMNGRjTjBZNTB2QW1XZmsxakNicFExZkhkeUdaQkpWTWJnIiwic2lnbmF0dXJlIjoiYmFzZTY0dXJsOlBNdnJEWWtYcDhJYTNzVVNXSHpoZGxjMmJkOVd1TWZ6Zy1XVElNRkhJOGtzVmZHZkZEUmVHZWsxZVNPRnYwMzVjMUZVQTlyWUxJZEhVdnJCNWxMN0FnIn19",
+        "terms": [
+          "eyJmb3JtYXQiOiJlaXA3MTIiLCJwYXlsb2FkIjp7ImFtb3VudCI6IjI3IiwiYXNzZXQiOiJuYXRpdmUiLCJuZXR3b3JrIjoiZWlwMTU1OjEiLCJwYXlUbyI6IjB4MzQzNDM0MzQzNDM0MzQzNDM0MzQzNDM0MzQzNDM0MzQzNDM0MzQzNCIsInJlc291cmNlVXJsIjoiaHR0cHM6Ly9leGFtcGxlLnRlc3QveCIsInNjaGVtZSI6ImV4YWN0IiwidmFsaWRVbnRpbCI6MWUyLCJ2ZXJzaW9uIjoxfSwic2lnbmF0dXJlIjoiMHhiNGU4YTMwMTFkZTBhZjlhOTNmYzcwZWJiYmM1OWNlYjAwZWUwMWViZmQ2MzUwNzcxMTdlY2E4YTJhYjYxZDFiMGY5MmMyNzlmNGRhODNlOTlhNWM2ZWY3NzNmOGI5NzBjZDM0NTJhN2JhNWEzYzczNjFiODNjNWIzNjc2NDY1YzFjIn0"
+        ],
+        "trust": {
+          "issuers": [
+            {
+              "issuer": "seller",
+              "keys": [
+                {
+                  "kid": "test-seller",
+                  "ed25519": "A6EHv_POEL4dcN0Y50vAmWfk1jCbpQ1fHdyGZBJVMbg"
+                },
+                {
+                  "address": "0x4a62316623ad457f02cdc5d997ded67a383ec569"
+                }
+              ]
+            }
+          ],
+          "keys": [
+            {
+              "kid": "test-buyer",
+              "signer": "buyer",
+              "key": "Kay64UG8yvCyLhqU000LxzYeUm0L_hLIl5S8kyKWbdc"
+            }
+          ],
+          "authority": [
+            {
+              "confirmingParty": "buyer",
+              "signer": "buyer",
+              "subjectProfile": "x402ev/1",
+              "subjectReference": "x402ev/1:sha256:326542bc4d9e2c6e72215fe467343837b00faa28b58840949574aa10da5792a5"
+            }
+          ]
+        }
+      },
+      "our_result": {
+        "result": "verified",
+        "conditions": [],
+        "disposition": "accepted",
+        "statementId": "x402accept/0:sha256:cb36c087583e50028a1d142f13608d6922d44af1cd98416c1776ad1d44884cdc"
+      },
+      "mike_result": {
+        "result": "unknown",
+        "conditions": [],
+        "reason": "evidence_unavailable",
+        "disposition": "accepted"
+      },
+      "same_normative_output": false
+    },
+    {
+      "id": "invalid-caip2-offer-network",
+      "inputs": {
+        "record": "eyJmb3JtYXQiOiJqd3MiLCJzaWduYXR1cmUiOiJleUpoYkdjaU9pSkZaRVJUUVNJc0ltdHBaQ0k2SW5SbGMzUXRZblY1WlhJaUxDSjBlWEFpT2lKNE5EQXlMV0ZqWTJWd2RHRnVZMlVyYW5kekluMC5leUpoZFhSb2IzSnBkSGtpT25zaWJXOWtaU0k2SW1SbFkyeGhjbVZrSWl3aWNISnZabWxzWlNJNkltUmxZMnhoY21Wa0xXVjJhV1JsYm1ObEx6QWlMQ0p5WldabGNtVnVZMlVpT2lJaWZTd2lZMjl1Wm1seWJXbHVaMUJoY25SNUlqb2lZblY1WlhJaUxDSmpiMjUwWlhoMFNXUWlPaUl3ZUdWbVltSm1ZVFU1TkRZd01UZzBPV1JrTlRFME5UZ3lNVGhtTTJWbE9XVTRZVEUzTWpka01qUmpORE0yTVRrNE1tWXhNVEF6WTJabU1qQXdNRGRoTUdRaUxDSmtaV3hwZG1WeWVVbHpjM1ZsY2lJNkluTmxiR3hsY2lJc0ltUnBjM0J2YzJsMGFXOXVJam9pWVdOalpYQjBaV1FpTENKcGMzTjFaV1JCZENJNk5ESXNJbTkxZEdOdmJXVkVhV2RsYzNRaU9pSXdlREkxWVRZelpUVXlZVGs0WmpabVpHRmhOakU0TjJSaE5UVTVZVEJoTTJFMU5XUTRORFZrTURNeU1tTmhNVGd6WVdRMllXUTFaVEF3Tm1NMFpXUTJORFlpTENKemFXZHVaWElpT2lKaWRYbGxjaUlzSW5OMVltcGxZM1FpT25zaWNISnZabWxzWlNJNkluZzBNREpsZGk4eElpd2ljbVZtWlhKbGJtTmxJam9pZURRd01tVjJMekU2YzJoaE1qVTJPbVZtWW1KbVlUVTVORFl3TVRnME9XUmtOVEUwTlRneU1UaG1NMlZsT1dVNFlURTNNamRrTWpSak5ETTJNVGs0TW1ZeE1UQXpZMlptTWpBd01EZGhNR1FpZlN3aWRHVnliWE5FYVdkbGMzUWlPaUl3ZUdZd1l6SmtPVFV4WWpka1lqRTJaRFJrTURnek5HTXlOakptTlRWbU1HUTVOR000WldRNE5EUXhaVFUzTVRFNE9ESXpZemsyWm1Vek9ETTFNRFU1TmpjaUxDSjJaWEp6YVc5dUlqb3dmUS45SnlLYVgyaHU5VzI2TWxrWFEwTWZ4QTNpM285X29mNU5lWHo1Y2lyek9aVlAwMzdDUDNaZmZWajJqR0FicHFNUHppZy0tbEV0TDA4OEUtLVJDbldEdyJ9",
+        "subject": "eyJjYW5vbmljYWxpemF0aW9uIjoiUkZDODc4NSIsImRlbGl2ZXJ5Ijp7ImNvbnRlbnREaWdlc3QiOiJzaGEyNTY6MjVhNjNlNTJhOThmNmZkYWE2MTg3ZGE1NTlhMGEzYTU1ZDg0NWQwMzIyY2ExODNhZDZhZDVlMDA2YzRlZDY0NiIsInRpbWVzdGFtcCI6NDJ9LCJldmlkZW5jZVJlZiI6Ing0MDJldi8xOnNoYTI1NjplZmJiZmE1OTQ2MDE4NDlkZDUxNDU4MjE4ZjNlZTllOGExNzI3ZDI0YzQzNjE5ODJmMTEwM2NmZjIwMDA3YTBkIiwicGF5bWVudCI6eyJhbW91bnQiOiIyNyIsImFzc2V0IjoibmF0aXZlIiwibmV0d29yayI6ImJhc2UiLCJwYXllZSI6IjB4MzQzNDM0MzQzNDM0MzQzNDM0MzQzNDM0MzQzNDM0MzQzNDM0MzQzNCIsInBheWVyIjoiMHgxMjEyMTIxMjEyMTIxMjEyMTIxMjEyMTIxMjEyMTIxMjEyMTIxMjEyIn0sInJlcXVlc3QiOnt9LCJzY2hlbWUiOiJ4NDAyZXYvMSIsInNpZ25lciI6eyJrZXlUeXBlIjoiRWQyNTUxOSIsInB1YmxpY0tleSI6IkE2RUh2X1BPRUw0ZGNOMFk1MHZBbVdmazFqQ2JwUTFmSGR5R1pCSlZNYmciLCJzaWduYXR1cmUiOiJiYXNlNjR1cmw6cjJnYXdiZTRTNUdwTzRjOUNDR2tScF9VUFRHRlhrTFZWckJ4cW94OWxqVWJzMFQwVHFjZk9leFhabVUyWFJmQVdhbWxKYmxYVnRpNVFVNzJMLW9RQmcifX0",
+        "terms": [
+          "eyJmb3JtYXQiOiJqd3MiLCJzaWduYXR1cmUiOiJleUpoYkdjaU9pSkZaRVJUUVNJc0ltdHBaQ0k2SW5SbGMzUXRjMlZzYkdWeUluMC5leUpoYlc5MWJuUWlPaUl5TnlJc0ltRnpjMlYwSWpvaWJtRjBhWFpsSWl3aWJtVjBkMjl5YXlJNkltSmhjMlVpTENKd1lYbFVieUk2SWpCNE16UXpORE0wTXpRek5ETTBNelF6TkRNME16UXpORE0wTXpRek5ETTBNelF6TkRNME16UXpOQ0lzSW5KbGMyOTFjbU5sVlhKc0lqb2lhSFIwY0hNNkx5OWxlR0Z0Y0d4bExuUmxjM1F2ZUNJc0luTmphR1Z0WlNJNkltVjRZV04wSWl3aWRtRnNhV1JWYm5ScGJDSTZNVEF3TENKMlpYSnphVzl1SWpveGZRLmRMOWdTck9obGEteUstU3FlTm9wMjZISmtpdkZOS2xVMlhjdmtjbU9zMHFyUEd0U280ZG1YU1N4U1hkVHRpWGhjblg5M3BYTmFRcjlRc0ZRNS1oZEFnIn0"
+        ],
+        "trust": {
+          "issuers": [
+            {
+              "issuer": "seller",
+              "keys": [
+                {
+                  "kid": "test-seller",
+                  "ed25519": "A6EHv_POEL4dcN0Y50vAmWfk1jCbpQ1fHdyGZBJVMbg"
+                }
+              ]
+            }
+          ],
+          "keys": [
+            {
+              "kid": "test-buyer",
+              "signer": "buyer",
+              "key": "Kay64UG8yvCyLhqU000LxzYeUm0L_hLIl5S8kyKWbdc"
+            }
+          ],
+          "authority": [
+            {
+              "confirmingParty": "buyer",
+              "signer": "buyer",
+              "subjectProfile": "x402ev/1",
+              "subjectReference": "x402ev/1:sha256:efbbfa594601849dd51458218f3ee9e8a1727d24c4361982f1103cff20007a0d"
+            }
+          ]
+        }
+      },
+      "our_result": {
+        "result": "unknown",
+        "conditions": [],
+        "disposition": "accepted",
+        "reason": "evidence_unavailable"
+      },
+      "mike_result": {
+        "result": "verified",
+        "conditions": [],
+        "disposition": "accepted"
+      },
+      "same_normative_output": false
+    }
+  ]
+}

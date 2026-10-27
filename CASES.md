@@ -4,8 +4,8 @@ Shodai (CNS Labs). Draft, not ratified.
 
 These 25 cases state what a verifier built from [SPEC.md](SPEC.md) must return. Each case gives its inputs as a
 change to the baseline fixture below, the operation it runs, the expected output, and the requirements it tests.
-Exact input and output bytes for every case follow as separate vector files; nothing in this file is a signed
-artifact, and no value here has been run.
+Exact input and output bytes for every case are in [conformance/vectors/vectors.json](conformance/vectors/vectors.json);
+nothing in this file is a signed artifact, and no value here has been run.
 
 **Reading a row.**
 - **Form.** `EIP-712` or `JWS`: the case runs in that form only. `both`: the case runs in each form with the same

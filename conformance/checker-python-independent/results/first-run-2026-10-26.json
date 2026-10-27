@@ -1,0 +1,4449 @@
+{
+  "created_utc": "2026-10-26T17:36:30.768351+00:00",
+  "method": "Fresh-context Python implementation; reference acceptance implementations unopened; expectations visible to implementer but not verifier.",
+  "pins": {
+    "spec_commit": "ad53b54ad59df93bd5d3258963f27acccdcec23c",
+    "corpus_commit": "b3bd7cb228cce98803cadcdfb75bc847e4455df8",
+    "upstream_execution_evidence_commit": "23b5c21125982961a2d4c13faf3cb5a6d6d7c03b",
+    "upstream_offer_receipt_commit": "faa1c694c66a3732aaabbce93bdae140e521a67d",
+    "files": {
+      "CASES.md": "0a56953e55919a6b63a464359eb6050aee938c82c6585cb924cf415f3caba744",
+      "SPEC.md": "82881ba0efdeb70fe64594f5af0c912ceb8e9190d7e91d5ed583335bf0176f4b",
+      "VECTOR-FORMAT.md": "2fe82622dcc3ac585321a3c7daacb9dee85720f6610871fd9fa1fbe323340a97",
+      "execution_evidence.md": "97b084e5ee4ebf29aee81f31e4c2150d72388f3e578a0cd60c181a83a68d3491",
+      "extension-offer-and-receipt.md": "51151bd2b7dd174bc4a44b712234c074e45ca6c752c44ce077a94a4d97596ae9",
+      "numeric-probes/FROZEN.txt": "83f2e40d838a619be907467df81c7b3ddb99f2743e5325da8ead11748cdd6454",
+      "numeric-probes/jcs-number-vectors.tsv": "e8e019cb13b505707364cdbb31ab5c9c3c65caa3b63edf0f9876463b55e6dd11",
+      "numeric-probes/stillmarcus-inputs.txt": "fed4ecf1ab3c313365919d471e271ee1978019b069198b543d4e2d5bf4dfdbf2",
+      "numeric-probes/stillmarcus-vectors.json": "caa2fc291b728da8fa50606a89596a1dc15f816b4e907d56c4b0d3e07b747f05",
+      "vectors.json": "8c20c905ae9af000f9664ee78bf73a6ac2c47f501c221789b835121a0af16ec5"
+    },
+    "numeric_sources": {
+      "stillmarcus24/assurance-run": "335ed5df8ca16658ec2c5b5e0cb34449bf1dc6f0",
+      "aos-standard/catalog": "40b21297af1289dde5849da1ea6f1caa3ab8d140"
+    }
+  },
+  "corpus_sha256_before": "8c20c905ae9af000f9664ee78bf73a6ac2c47f501c221789b835121a0af16ec5",
+  "runtime": {
+    "python": "3.14.3 (main, Feb  3 2026, 15:32:20) [Clang 17.0.0 (clang-1700.6.3.2)]",
+    "implementation": "CPython",
+    "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+    "machine": "arm64",
+    "libraries": {
+      "PyNaCl": "1.6.0",
+      "annotated-types": "0.8.0",
+      "cffi": "2.1.1",
+      "cytoolz": "1.2.0",
+      "eth-hash": "0.8.0",
+      "eth-keys": "0.7.0",
+      "eth-typing": "6.0.0",
+      "eth-utils": "6.0.0",
+      "pip": "26.0",
+      "pycparser": "3.12",
+      "pycryptodome": "3.23.0",
+      "pydantic": "2.14.1",
+      "pydantic_core": "2.50.1",
+      "rfc8785": "0.1.4",
+      "toolz": "1.2.0",
+      "typing-inspection": "0.4.4",
+      "typing_extensions": "4.16.0"
+    },
+    "libsodium": "not exposed by PyNaCl binary",
+    "ecdsa_backend": "eth_keys.backends.NativeECCBackend"
+  },
+  "checker_sources": {
+    "cli.py": "99bf2e8693bb37191cd3676aea7286ff5fbbfe5fc3321ad3c7f315e41f23b237",
+    "reporting.py": "87528dc20aba05d2efcd4d9fc5ef59d86bd86dd1ba8c04dbbaa881b9bf436ee2",
+    "requirements.lock": "9c93616af33d1c238e8eb5f7a9d8ca30c4605286c20381be3b93ce3323085996",
+    "run_vectors.py": "bd51d58338676a1399053f543e5cf1844c0e1548ba9ebe9d5cdebc73b8bca903",
+    "verifier.py": "67177a4575bf00610660375d14fa26d0bdaf17c22f0c9f5066e387f071b54432"
+  },
+  "summary": {
+    "total": 127,
+    "passed": 127,
+    "failed": 0,
+    "identity_total": 89,
+    "identity_passed": 88
+  },
+  "vectors": [
+    {
+      "id": "AR-C01-a-eip712",
+      "actual": {
+        "result": "verified",
+        "conditions": [],
+        "disposition": "accepted",
+        "statementId": "x402accept/0:sha256:519aa64c0682fafbe3413603938180af065a06d09e981fb89c075bc9120d4744",
+        "chainEvidence": {
+          "chainId": 84532,
+          "account": "0x36f336f1a68fa49112e2e85255cff6c9414d5c18",
+          "block": 1000
+        }
+      },
+      "expected": {
+        "result": "verified",
+        "conditions": [],
+        "disposition": "accepted"
+      },
+      "passed": true,
+      "differences": [],
+      "statementId": {
+        "actual": "x402accept/0:sha256:519aa64c0682fafbe3413603938180af065a06d09e981fb89c075bc9120d4744",
+        "expected": "x402accept/0:sha256:519aa64c0682fafbe3413603938180af065a06d09e981fb89c075bc9120d4744",
+        "passed": true
+      }
+    },
+    {
+      "id": "AR-C01-a-jws",
+      "actual": {
+        "result": "verified",
+        "conditions": [],
+        "disposition": "accepted",
+        "statementId": "x402accept/0:sha256:f518d6ce1696d82135e2007a1746cd3573abcfcbe89e0b9927b76aa86b51d156"
+      },
+      "expected": {
+        "result": "verified",
+        "conditions": [],
+        "disposition": "accepted"
+      },
+      "passed": true,
+      "differences": [],
+      "statementId": {
+        "actual": "x402accept/0:sha256:f518d6ce1696d82135e2007a1746cd3573abcfcbe89e0b9927b76aa86b51d156",
+        "expected": "x402accept/0:sha256:f518d6ce1696d82135e2007a1746cd3573abcfcbe89e0b9927b76aa86b51d156",
+        "passed": true
+      }
+    },
+    {
+      "id": "AR-C01-b-eip712",
+      "actual": {
+        "result": "verified",
+        "conditions": [],
+        "disposition": "accepted",
+        "statementId": "x402accept/0:sha256:519aa64c0682fafbe3413603938180af065a06d09e981fb89c075bc9120d4744",
+        "chainEvidence": {
+          "chainId": 84532,
+          "account": "0x36f336f1a68fa49112e2e85255cff6c9414d5c18",
+          "block": 1000
+        }
+      },
+      "expected": {
+        "result": "verified",
+        "conditions": [],
+        "disposition": "accepted"
+      },
+      "passed": true,
+      "differences": [],
+      "statementId": {
+        "actual": "x402accept/0:sha256:519aa64c0682fafbe3413603938180af065a06d09e981fb89c075bc9120d4744",
+        "expected": "x402accept/0:sha256:519aa64c0682fafbe3413603938180af065a06d09e981fb89c075bc9120d4744",
+        "passed": true
+      }
+    },
+    {
+      "id": "AR-C01-b-jws",
+      "actual": {
+        "result": "verified",
+        "conditions": [],
+        "disposition": "accepted",
+        "statementId": "x402accept/0:sha256:f518d6ce1696d82135e2007a1746cd3573abcfcbe89e0b9927b76aa86b51d156"
+      },
+      "expected": {
+        "result": "verified",
+        "conditions": [],
+        "disposition": "accepted"
+      },
+      "passed": true,
+      "differences": [],
+      "statementId": {
+        "actual": "x402accept/0:sha256:f518d6ce1696d82135e2007a1746cd3573abcfcbe89e0b9927b76aa86b51d156",
+        "expected": "x402accept/0:sha256:f518d6ce1696d82135e2007a1746cd3573abcfcbe89e0b9927b76aa86b51d156",
+        "passed": true
+      }
+    },
+    {
+      "id": "AR-C01-c-eip712",
+      "actual": {
+        "result": "verified",
+        "conditions": [],
+        "disposition": "accepted",
+        "statementId": "x402accept/0:sha256:4cbc5fdf5a6ec5a5582f4bde4602c8cfad2df3b20c99ae60579a3bd6deebf00c",
+        "chainEvidence": {
+          "chainId": 84532,
+          "account": "0x36f336f1a68fa49112e2e85255cff6c9414d5c18",
+          "block": 1000
+        }
+      },
+      "expected": {
+        "result": "verified",
+        "conditions": [],
+        "disposition": "accepted"
+      },
+      "passed": true,
+      "differences": [],
+      "statementId": {
+        "actual": "x402accept/0:sha256:4cbc5fdf5a6ec5a5582f4bde4602c8cfad2df3b20c99ae60579a3bd6deebf00c",
+        "expected": "x402accept/0:sha256:4cbc5fdf5a6ec5a5582f4bde4602c8cfad2df3b20c99ae60579a3bd6deebf00c",
+        "passed": true
+      }
+    },
+    {
+      "id": "AR-C01-d-eip712",
+      "actual": {
+        "result": "verified",
+        "conditions": [],
+        "disposition": "accepted",
+        "statementId": "x402accept/0:sha256:a7ab1d52814a5630d0a88eb151b33739e277a554c6e2c6b75645522798ff9ff9",
+        "chainEvidence": {
+          "chainId": 84532,
+          "account": "0x36f336f1a68fa49112e2e85255cff6c9414d5c18",
+          "block": 1000
+        }
+      },
+      "expected": {
+        "result": "verified",
+        "conditions": [],
+        "disposition": "accepted"
+      },
+      "passed": true,
+      "differences": [],
+      "statementId": {
+        "actual": "x402accept/0:sha256:a7ab1d52814a5630d0a88eb151b33739e277a554c6e2c6b75645522798ff9ff9",
+        "expected": "x402accept/0:sha256:a7ab1d52814a5630d0a88eb151b33739e277a554c6e2c6b75645522798ff9ff9",
+        "passed": true
+      }
+    },
+    {
+      "id": "AR-C01-d-jws",
+      "actual": {
+        "result": "verified",
+        "conditions": [],
+        "disposition": "accepted",
+        "statementId": "x402accept/0:sha256:bbeb8031029eccafc23e73b18278c5f7a0106685e8e73553678ecc93d12cee31"
+      },
+      "expected": {
+        "result": "verified",
+        "conditions": [],
+        "disposition": "accepted"
+      },
+      "passed": true,
+      "differences": [],
+      "statementId": {
+        "actual": "x402accept/0:sha256:bbeb8031029eccafc23e73b18278c5f7a0106685e8e73553678ecc93d12cee31",
+        "expected": "x402accept/0:sha256:bbeb8031029eccafc23e73b18278c5f7a0106685e8e73553678ecc93d12cee31",
+        "passed": true
+      }
+    },
+    {
+      "id": "AR-C02-record-A-eip712",
+      "actual": {
+        "result": "verified",
+        "conditions": [],
+        "disposition": "accepted",
+        "statementId": "x402accept/0:sha256:519aa64c0682fafbe3413603938180af065a06d09e981fb89c075bc9120d4744",
+        "chainEvidence": {
+          "chainId": 84532,
+          "account": "0x36f336f1a68fa49112e2e85255cff6c9414d5c18",
+          "block": 1000
+        }
+      },
+      "expected": {
+        "result": "verified",
+        "conditions": [],
+        "disposition": "accepted"
+      },
+      "passed": true,
+      "differences": [],
+      "statementId": {
+        "actual": "x402accept/0:sha256:519aa64c0682fafbe3413603938180af065a06d09e981fb89c075bc9120d4744",
+        "expected": "x402accept/0:sha256:519aa64c0682fafbe3413603938180af065a06d09e981fb89c075bc9120d4744",
+        "passed": true
+      }
+    },
+    {
+      "id": "AR-C02-record-D-eip712",
+      "actual": {
+        "result": "verified",
+        "conditions": [],
+        "disposition": "disputed",
+        "statementId": "x402accept/0:sha256:57a5993280dcf1d2c10a75b505c239dd7879a9896051f6155c611799681745ec",
+        "chainEvidence": {
+          "chainId": 84532,
+          "account": "0x36f336f1a68fa49112e2e85255cff6c9414d5c18",
+          "block": 1000
+        }
+      },
+      "expected": {
+        "result": "verified",
+        "conditions": [],
+        "disposition": "disputed"
+      },
+      "passed": true,
+      "differences": [],
+      "statementId": {
+        "actual": "x402accept/0:sha256:57a5993280dcf1d2c10a75b505c239dd7879a9896051f6155c611799681745ec",
+        "expected": "x402accept/0:sha256:57a5993280dcf1d2c10a75b505c239dd7879a9896051f6155c611799681745ec",
+        "passed": true
+      }
+    },
+    {
+      "id": "AR-C03-a-none",
+      "actual": {
+        "result": "no_record",
+        "conditions": []
+      },
+      "expected": {
+        "result": "no_record",
+        "conditions": []
+      },
+      "passed": true,
+      "differences": []
+    },
+    {
+      "id": "AR-C04-a-eip712",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "passed": true,
+      "differences": [],
+      "statementId": {
+        "actual": "x402accept/0:sha256:75bf1246bb914a7394fca49ede0df2af5188a14df3a8d7caf24b2c78ab00d1c8",
+        "expected": "x402accept/0:sha256:75bf1246bb914a7394fca49ede0df2af5188a14df3a8d7caf24b2c78ab00d1c8",
+        "passed": true
+      }
+    },
+    {
+      "id": "AR-C04-a-jws",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "passed": true,
+      "differences": [],
+      "statementId": {
+        "actual": "x402accept/0:sha256:b6350375dd0d37a14576c32db255c727f4f00311bdad538cecc07e5a9d459f63",
+        "expected": "x402accept/0:sha256:b6350375dd0d37a14576c32db255c727f4f00311bdad538cecc07e5a9d459f63",
+        "passed": true
+      }
+    },
+    {
+      "id": "AR-C05-a-eip712",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "passed": true,
+      "differences": []
+    },
+    {
+      "id": "AR-C05-a-jws",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "passed": true,
+      "differences": []
+    },
+    {
+      "id": "AR-C05-d-eip712",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "passed": true,
+      "differences": []
+    },
+    {
+      "id": "AR-C05-d-jws",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "passed": true,
+      "differences": []
+    },
+    {
+      "id": "AR-C05-e-eip712",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "passed": true,
+      "differences": []
+    },
+    {
+      "id": "AR-C05-e-jws",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "passed": true,
+      "differences": []
+    },
+    {
+      "id": "AR-C05-l-eip712",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "passed": true,
+      "differences": []
+    },
+    {
+      "id": "AR-C05-l-jws",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "passed": true,
+      "differences": []
+    },
+    {
+      "id": "AR-C05-f-eip712",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "passed": true,
+      "differences": []
+    },
+    {
+      "id": "AR-C05-g-eip712",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "passed": true,
+      "differences": []
+    },
+    {
+      "id": "AR-C05-o-eip712",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "passed": true,
+      "differences": []
+    },
+    {
+      "id": "AR-C05-p-eip712",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "passed": true,
+      "differences": []
+    },
+    {
+      "id": "AR-C06-a-eip712",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "confirming_party_absent"
+        ]
+      },
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "confirming_party_absent"
+        ]
+      },
+      "passed": true,
+      "differences": [],
+      "statementId": {
+        "actual": "x402accept/0:sha256:a93f69c9d0e6be74a8e228ea1f65220f6be514bae84c2ca8e5475ec72a7fc1c0",
+        "expected": "x402accept/0:sha256:a93f69c9d0e6be74a8e228ea1f65220f6be514bae84c2ca8e5475ec72a7fc1c0",
+        "passed": true
+      }
+    },
+    {
+      "id": "AR-C06-a-jws",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "confirming_party_absent"
+        ]
+      },
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "confirming_party_absent"
+        ]
+      },
+      "passed": true,
+      "differences": [],
+      "statementId": {
+        "actual": "x402accept/0:sha256:1438aa30b7e08304a364f6db481315b72438cbe0975787768ae59fdaf9794d56",
+        "expected": "x402accept/0:sha256:1438aa30b7e08304a364f6db481315b72438cbe0975787768ae59fdaf9794d56",
+        "passed": true
+      }
+    },
+    {
+      "id": "AR-C07-a-jws",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_signer_is_issuer"
+        ]
+      },
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_signer_is_issuer"
+        ]
+      },
+      "passed": true,
+      "differences": [],
+      "statementId": {
+        "actual": "x402accept/0:sha256:f518d6ce1696d82135e2007a1746cd3573abcfcbe89e0b9927b76aa86b51d156",
+        "expected": "x402accept/0:sha256:f518d6ce1696d82135e2007a1746cd3573abcfcbe89e0b9927b76aa86b51d156",
+        "passed": true
+      }
+    },
+    {
+      "id": "AR-C07-b-jws",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_signer_is_issuer"
+        ]
+      },
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_signer_is_issuer"
+        ]
+      },
+      "passed": true,
+      "differences": [],
+      "statementId": {
+        "actual": "x402accept/0:sha256:e5ee732c30b7743df7058ef22fd84ac2f87cc83341890eb34f0a7ecb015ea7e6",
+        "expected": "x402accept/0:sha256:e5ee732c30b7743df7058ef22fd84ac2f87cc83341890eb34f0a7ecb015ea7e6",
+        "passed": true
+      }
+    },
+    {
+      "id": "AR-C07-c-eip712",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_signer_is_issuer"
+        ]
+      },
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_signer_is_issuer"
+        ]
+      },
+      "passed": true,
+      "differences": [],
+      "statementId": {
+        "actual": "x402accept/0:sha256:519aa64c0682fafbe3413603938180af065a06d09e981fb89c075bc9120d4744",
+        "expected": "x402accept/0:sha256:519aa64c0682fafbe3413603938180af065a06d09e981fb89c075bc9120d4744",
+        "passed": true
+      }
+    },
+    {
+      "id": "AR-C08-a-eip712",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_terms_digest_mismatch"
+        ]
+      },
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_terms_digest_mismatch"
+        ]
+      },
+      "passed": true,
+      "differences": [],
+      "statementId": {
+        "actual": "x402accept/0:sha256:467d309aa03a596b2acc07431fc0423d9ca2a5ac11880a08a995f1c9072dbd18",
+        "expected": "x402accept/0:sha256:467d309aa03a596b2acc07431fc0423d9ca2a5ac11880a08a995f1c9072dbd18",
+        "passed": true
+      }
+    },
+    {
+      "id": "AR-C08-a-jws",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_terms_digest_mismatch"
+        ]
+      },
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_terms_digest_mismatch"
+        ]
+      },
+      "passed": true,
+      "differences": [],
+      "statementId": {
+        "actual": "x402accept/0:sha256:c325157cdaa822ff6515b967b4e459e7e24c608a2447afb5f26f7bcbdf664ac0",
+        "expected": "x402accept/0:sha256:c325157cdaa822ff6515b967b4e459e7e24c608a2447afb5f26f7bcbdf664ac0",
+        "passed": true
+      }
+    },
+    {
+      "id": "AR-C09-a-eip712",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_outcome_digest_mismatch"
+        ]
+      },
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_outcome_digest_mismatch"
+        ]
+      },
+      "passed": true,
+      "differences": [],
+      "statementId": {
+        "actual": "x402accept/0:sha256:890af74384aa82ad693da51c45b7512ef069fa81aa4e79cbdb937ab98aac8373",
+        "expected": "x402accept/0:sha256:890af74384aa82ad693da51c45b7512ef069fa81aa4e79cbdb937ab98aac8373",
+        "passed": true
+      }
+    },
+    {
+      "id": "AR-C09-a-jws",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_outcome_digest_mismatch"
+        ]
+      },
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_outcome_digest_mismatch"
+        ]
+      },
+      "passed": true,
+      "differences": [],
+      "statementId": {
+        "actual": "x402accept/0:sha256:8e8d87a6dc649284ea0aa51b94197ae282a356c16c9d0131f4c6ff5cda0d3d81",
+        "expected": "x402accept/0:sha256:8e8d87a6dc649284ea0aa51b94197ae282a356c16c9d0131f4c6ff5cda0d3d81",
+        "passed": true
+      }
+    },
+    {
+      "id": "AR-C09-b-eip712",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_outcome_digest_mismatch"
+        ]
+      },
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_outcome_digest_mismatch"
+        ]
+      },
+      "passed": true,
+      "differences": [],
+      "statementId": {
+        "actual": "x402accept/0:sha256:519aa64c0682fafbe3413603938180af065a06d09e981fb89c075bc9120d4744",
+        "expected": "x402accept/0:sha256:519aa64c0682fafbe3413603938180af065a06d09e981fb89c075bc9120d4744",
+        "passed": true
+      }
+    },
+    {
+      "id": "AR-C09-b-jws",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_outcome_digest_mismatch"
+        ]
+      },
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_outcome_digest_mismatch"
+        ]
+      },
+      "passed": true,
+      "differences": [],
+      "statementId": {
+        "actual": "x402accept/0:sha256:f518d6ce1696d82135e2007a1746cd3573abcfcbe89e0b9927b76aa86b51d156",
+        "expected": "x402accept/0:sha256:f518d6ce1696d82135e2007a1746cd3573abcfcbe89e0b9927b76aa86b51d156",
+        "passed": true
+      }
+    },
+    {
+      "id": "AR-C10-a-eip712",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_record_digest_mismatch"
+        ]
+      },
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_record_digest_mismatch"
+        ]
+      },
+      "passed": true,
+      "differences": [],
+      "statementId": {
+        "actual": "x402accept/0:sha256:519aa64c0682fafbe3413603938180af065a06d09e981fb89c075bc9120d4744",
+        "expected": "x402accept/0:sha256:519aa64c0682fafbe3413603938180af065a06d09e981fb89c075bc9120d4744",
+        "passed": true
+      }
+    },
+    {
+      "id": "AR-C10-a-jws",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_record_digest_mismatch"
+        ]
+      },
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_record_digest_mismatch"
+        ]
+      },
+      "passed": true,
+      "differences": [],
+      "statementId": {
+        "actual": "x402accept/0:sha256:f518d6ce1696d82135e2007a1746cd3573abcfcbe89e0b9927b76aa86b51d156",
+        "expected": "x402accept/0:sha256:f518d6ce1696d82135e2007a1746cd3573abcfcbe89e0b9927b76aa86b51d156",
+        "passed": true
+      }
+    },
+    {
+      "id": "AR-C10-b-eip712",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_record_digest_mismatch"
+        ]
+      },
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_record_digest_mismatch"
+        ]
+      },
+      "passed": true,
+      "differences": [],
+      "statementId": {
+        "actual": "x402accept/0:sha256:9cda6b6a553f7701278792f8e75f91ede00ff5b3c77e69f7ae07ff4a3eddcc2d",
+        "expected": "x402accept/0:sha256:9cda6b6a553f7701278792f8e75f91ede00ff5b3c77e69f7ae07ff4a3eddcc2d",
+        "passed": true
+      }
+    },
+    {
+      "id": "AR-C10-b-jws",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_record_digest_mismatch"
+        ]
+      },
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_record_digest_mismatch"
+        ]
+      },
+      "passed": true,
+      "differences": [],
+      "statementId": {
+        "actual": "x402accept/0:sha256:5d39abc77fe3359b9c8921f7c3313d02d6eac662aca8e188d1d9c947cf83f9f5",
+        "expected": "x402accept/0:sha256:5d39abc77fe3359b9c8921f7c3313d02d6eac662aca8e188d1d9c947cf83f9f5",
+        "passed": true
+      }
+    },
+    {
+      "id": "AR-C11-a-eip712",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_precedes_outcome"
+        ]
+      },
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_precedes_outcome"
+        ]
+      },
+      "passed": true,
+      "differences": [],
+      "statementId": {
+        "actual": "x402accept/0:sha256:dca48920c0518aa9e41a69e9520d25e867fed7f7d57dba5e5a6ba34834b5a144",
+        "expected": "x402accept/0:sha256:dca48920c0518aa9e41a69e9520d25e867fed7f7d57dba5e5a6ba34834b5a144",
+        "passed": true
+      }
+    },
+    {
+      "id": "AR-C11-a-jws",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_precedes_outcome"
+        ]
+      },
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_precedes_outcome"
+        ]
+      },
+      "passed": true,
+      "differences": [],
+      "statementId": {
+        "actual": "x402accept/0:sha256:57a0bd38ea2d6c697b172715b3d765eab19cb869464b95a0f435d51b26db087d",
+        "expected": "x402accept/0:sha256:57a0bd38ea2d6c697b172715b3d765eab19cb869464b95a0f435d51b26db087d",
+        "passed": true
+      }
+    },
+    {
+      "id": "AR-C12-a-eip712",
+      "actual": {
+        "result": "verified",
+        "conditions": [],
+        "disposition": "rejected",
+        "statementId": "x402accept/0:sha256:ddc232d8ef02f06a8d750b44db1e9406c9b1d2fef8886262f1db4a42bd29202d",
+        "chainEvidence": {
+          "chainId": 84532,
+          "account": "0x36f336f1a68fa49112e2e85255cff6c9414d5c18",
+          "block": 1000
+        }
+      },
+      "expected": {
+        "result": "verified",
+        "conditions": [],
+        "disposition": "rejected"
+      },
+      "passed": true,
+      "differences": [],
+      "statementId": {
+        "actual": "x402accept/0:sha256:ddc232d8ef02f06a8d750b44db1e9406c9b1d2fef8886262f1db4a42bd29202d",
+        "expected": "x402accept/0:sha256:ddc232d8ef02f06a8d750b44db1e9406c9b1d2fef8886262f1db4a42bd29202d",
+        "passed": true
+      }
+    },
+    {
+      "id": "AR-C13-a-jws",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid",
+          "acceptance_terms_digest_mismatch"
+        ]
+      },
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid",
+          "acceptance_terms_digest_mismatch"
+        ]
+      },
+      "passed": true,
+      "differences": []
+    },
+    {
+      "id": "AR-C14-a-eip712",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "signature_invalid"
+        ]
+      },
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "signature_invalid"
+        ]
+      },
+      "passed": true,
+      "differences": []
+    },
+    {
+      "id": "AR-C15-a-eip712",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "signature_invalid"
+        ]
+      },
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "signature_invalid"
+        ]
+      },
+      "passed": true,
+      "differences": [],
+      "statementId": {
+        "actual": "x402accept/0:sha256:519aa64c0682fafbe3413603938180af065a06d09e981fb89c075bc9120d4744",
+        "expected": "x402accept/0:sha256:519aa64c0682fafbe3413603938180af065a06d09e981fb89c075bc9120d4744",
+        "passed": true
+      }
+    },
+    {
+      "id": "AR-C15-b-eip712",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "signature_invalid"
+        ]
+      },
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "signature_invalid"
+        ]
+      },
+      "passed": true,
+      "differences": [],
+      "statementId": {
+        "actual": "x402accept/0:sha256:519aa64c0682fafbe3413603938180af065a06d09e981fb89c075bc9120d4744",
+        "expected": "x402accept/0:sha256:519aa64c0682fafbe3413603938180af065a06d09e981fb89c075bc9120d4744",
+        "passed": true
+      }
+    },
+    {
+      "id": "AR-C15-c-eip712",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "signature_invalid"
+        ]
+      },
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "signature_invalid"
+        ]
+      },
+      "passed": true,
+      "differences": [],
+      "statementId": {
+        "actual": "x402accept/0:sha256:519aa64c0682fafbe3413603938180af065a06d09e981fb89c075bc9120d4744",
+        "expected": "x402accept/0:sha256:519aa64c0682fafbe3413603938180af065a06d09e981fb89c075bc9120d4744",
+        "passed": true
+      }
+    },
+    {
+      "id": "AR-C15-d-eip712",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "signature_invalid"
+        ]
+      },
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "signature_invalid"
+        ]
+      },
+      "passed": true,
+      "differences": []
+    },
+    {
+      "id": "AR-C15-e-eip712",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "signature_invalid"
+        ]
+      },
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "signature_invalid"
+        ]
+      },
+      "passed": true,
+      "differences": [],
+      "statementId": {
+        "actual": "x402accept/0:sha256:519aa64c0682fafbe3413603938180af065a06d09e981fb89c075bc9120d4744",
+        "expected": "x402accept/0:sha256:519aa64c0682fafbe3413603938180af065a06d09e981fb89c075bc9120d4744",
+        "passed": true
+      }
+    },
+    {
+      "id": "AR-C16-a-eip712",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "signature_invalid"
+        ]
+      },
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "signature_invalid"
+        ]
+      },
+      "passed": true,
+      "differences": [],
+      "statementId": {
+        "actual": "x402accept/0:sha256:519aa64c0682fafbe3413603938180af065a06d09e981fb89c075bc9120d4744",
+        "expected": "x402accept/0:sha256:519aa64c0682fafbe3413603938180af065a06d09e981fb89c075bc9120d4744",
+        "passed": true
+      }
+    },
+    {
+      "id": "AR-C16-b-eip712",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "signature_invalid"
+        ]
+      },
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "signature_invalid"
+        ]
+      },
+      "passed": true,
+      "differences": [],
+      "statementId": {
+        "actual": "x402accept/0:sha256:519aa64c0682fafbe3413603938180af065a06d09e981fb89c075bc9120d4744",
+        "expected": "x402accept/0:sha256:519aa64c0682fafbe3413603938180af065a06d09e981fb89c075bc9120d4744",
+        "passed": true
+      }
+    },
+    {
+      "id": "AR-C16-c-eip712",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "signature_invalid"
+        ]
+      },
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "signature_invalid"
+        ]
+      },
+      "passed": true,
+      "differences": [],
+      "statementId": {
+        "actual": "x402accept/0:sha256:519aa64c0682fafbe3413603938180af065a06d09e981fb89c075bc9120d4744",
+        "expected": "x402accept/0:sha256:519aa64c0682fafbe3413603938180af065a06d09e981fb89c075bc9120d4744",
+        "passed": true
+      }
+    },
+    {
+      "id": "AR-C16-d-eip712",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "signature_invalid"
+        ]
+      },
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "signature_invalid"
+        ]
+      },
+      "passed": true,
+      "differences": [],
+      "statementId": {
+        "actual": "x402accept/0:sha256:519aa64c0682fafbe3413603938180af065a06d09e981fb89c075bc9120d4744",
+        "expected": "x402accept/0:sha256:519aa64c0682fafbe3413603938180af065a06d09e981fb89c075bc9120d4744",
+        "passed": true
+      }
+    },
+    {
+      "id": "AR-C16-e-eip712",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "signature_invalid"
+        ]
+      },
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "signature_invalid"
+        ]
+      },
+      "passed": true,
+      "differences": [],
+      "statementId": {
+        "actual": "x402accept/0:sha256:0d6b7f70cf0c39aaa5ccd3d4131767715568f472ee3235fd008edd1e2d229868",
+        "expected": "x402accept/0:sha256:0d6b7f70cf0c39aaa5ccd3d4131767715568f472ee3235fd008edd1e2d229868",
+        "passed": true
+      }
+    },
+    {
+      "id": "AR-C16-j-eip712",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "signature_invalid"
+        ]
+      },
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "signature_invalid"
+        ]
+      },
+      "passed": true,
+      "differences": [],
+      "statementId": {
+        "actual": "x402accept/0:sha256:519aa64c0682fafbe3413603938180af065a06d09e981fb89c075bc9120d4744",
+        "expected": "x402accept/0:sha256:519aa64c0682fafbe3413603938180af065a06d09e981fb89c075bc9120d4744",
+        "passed": true
+      }
+    },
+    {
+      "id": "AR-C16-k-eip712",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "signature_invalid"
+        ]
+      },
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "signature_invalid"
+        ]
+      },
+      "passed": true,
+      "differences": [],
+      "statementId": {
+        "actual": "x402accept/0:sha256:0d6b7f70cf0c39aaa5ccd3d4131767715568f472ee3235fd008edd1e2d229868",
+        "expected": "x402accept/0:sha256:0d6b7f70cf0c39aaa5ccd3d4131767715568f472ee3235fd008edd1e2d229868",
+        "passed": true
+      }
+    },
+    {
+      "id": "AR-C16-l-eip712",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "signature_invalid"
+        ]
+      },
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "signature_invalid"
+        ]
+      },
+      "passed": true,
+      "differences": [],
+      "statementId": {
+        "actual": "x402accept/0:sha256:0d6b7f70cf0c39aaa5ccd3d4131767715568f472ee3235fd008edd1e2d229868",
+        "expected": "x402accept/0:sha256:0d6b7f70cf0c39aaa5ccd3d4131767715568f472ee3235fd008edd1e2d229868",
+        "passed": true
+      }
+    },
+    {
+      "id": "AR-C16-m-eip712",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "signature_invalid"
+        ]
+      },
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "signature_invalid"
+        ]
+      },
+      "passed": true,
+      "differences": [],
+      "statementId": {
+        "actual": "x402accept/0:sha256:0d6b7f70cf0c39aaa5ccd3d4131767715568f472ee3235fd008edd1e2d229868",
+        "expected": "x402accept/0:sha256:0d6b7f70cf0c39aaa5ccd3d4131767715568f472ee3235fd008edd1e2d229868",
+        "passed": true
+      }
+    },
+    {
+      "id": "AR-C16-f-jws",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "signature_invalid"
+        ]
+      },
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "signature_invalid"
+        ]
+      },
+      "passed": true,
+      "differences": [],
+      "statementId": {
+        "actual": "x402accept/0:sha256:f518d6ce1696d82135e2007a1746cd3573abcfcbe89e0b9927b76aa86b51d156",
+        "expected": "x402accept/0:sha256:f518d6ce1696d82135e2007a1746cd3573abcfcbe89e0b9927b76aa86b51d156",
+        "passed": true
+      }
+    },
+    {
+      "id": "AR-C16-g-jws",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "signature_invalid"
+        ]
+      },
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "signature_invalid"
+        ]
+      },
+      "passed": true,
+      "differences": [],
+      "statementId": {
+        "actual": "x402accept/0:sha256:f518d6ce1696d82135e2007a1746cd3573abcfcbe89e0b9927b76aa86b51d156",
+        "expected": "x402accept/0:sha256:f518d6ce1696d82135e2007a1746cd3573abcfcbe89e0b9927b76aa86b51d156",
+        "passed": true
+      }
+    },
+    {
+      "id": "AR-C16-h-jws",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "signature_invalid"
+        ]
+      },
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "signature_invalid"
+        ]
+      },
+      "passed": true,
+      "differences": [],
+      "statementId": {
+        "actual": "x402accept/0:sha256:f518d6ce1696d82135e2007a1746cd3573abcfcbe89e0b9927b76aa86b51d156",
+        "expected": "x402accept/0:sha256:f518d6ce1696d82135e2007a1746cd3573abcfcbe89e0b9927b76aa86b51d156",
+        "passed": true
+      }
+    },
+    {
+      "id": "AR-C16-i-jws",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "signature_invalid"
+        ]
+      },
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "signature_invalid"
+        ]
+      },
+      "passed": true,
+      "differences": [],
+      "statementId": {
+        "actual": "x402accept/0:sha256:f518d6ce1696d82135e2007a1746cd3573abcfcbe89e0b9927b76aa86b51d156",
+        "expected": "x402accept/0:sha256:f518d6ce1696d82135e2007a1746cd3573abcfcbe89e0b9927b76aa86b51d156",
+        "passed": true
+      }
+    },
+    {
+      "id": "AR-C17-a-eip712",
+      "actual": {
+        "result": "verified",
+        "conditions": [],
+        "disposition": "accepted",
+        "statementId": "x402accept/0:sha256:0d6b7f70cf0c39aaa5ccd3d4131767715568f472ee3235fd008edd1e2d229868",
+        "chainEvidence": {
+          "chainId": 84532,
+          "account": "0x271e1c49b3db37a3eb5137a2ffbaeeabff47bdc9",
+          "block": 1000
+        }
+      },
+      "expected": {
+        "result": "verified",
+        "conditions": [],
+        "disposition": "accepted"
+      },
+      "passed": true,
+      "differences": [],
+      "statementId": {
+        "actual": "x402accept/0:sha256:0d6b7f70cf0c39aaa5ccd3d4131767715568f472ee3235fd008edd1e2d229868",
+        "expected": "x402accept/0:sha256:0d6b7f70cf0c39aaa5ccd3d4131767715568f472ee3235fd008edd1e2d229868",
+        "passed": true
+      }
+    },
+    {
+      "id": "AR-C17-b-eip712",
+      "actual": {
+        "result": "verified",
+        "conditions": [],
+        "disposition": "accepted",
+        "statementId": "x402accept/0:sha256:0d6b7f70cf0c39aaa5ccd3d4131767715568f472ee3235fd008edd1e2d229868",
+        "chainEvidence": {
+          "chainId": 84532,
+          "account": "0x271e1c49b3db37a3eb5137a2ffbaeeabff47bdc9",
+          "block": 1000
+        }
+      },
+      "expected": {
+        "result": "verified",
+        "conditions": [],
+        "disposition": "accepted"
+      },
+      "passed": true,
+      "differences": [],
+      "statementId": {
+        "actual": "x402accept/0:sha256:0d6b7f70cf0c39aaa5ccd3d4131767715568f472ee3235fd008edd1e2d229868",
+        "expected": "x402accept/0:sha256:0d6b7f70cf0c39aaa5ccd3d4131767715568f472ee3235fd008edd1e2d229868",
+        "passed": true
+      }
+    },
+    {
+      "id": "AR-C18-a-eip712",
+      "actual": {
+        "result": "key_unresolved",
+        "conditions": [],
+        "reason": "chain_state_unavailable",
+        "policy_refusal": false
+      },
+      "expected": {
+        "result": "key_unresolved",
+        "conditions": [],
+        "reason": "chain_state_unavailable",
+        "policy_refusal": false
+      },
+      "passed": true,
+      "differences": [],
+      "statementId": {
+        "actual": "x402accept/0:sha256:0d6b7f70cf0c39aaa5ccd3d4131767715568f472ee3235fd008edd1e2d229868",
+        "expected": "x402accept/0:sha256:0d6b7f70cf0c39aaa5ccd3d4131767715568f472ee3235fd008edd1e2d229868",
+        "passed": true
+      }
+    },
+    {
+      "id": "AR-C18-b-eip712",
+      "actual": {
+        "result": "key_unresolved",
+        "conditions": [],
+        "reason": "contract_accounts_unsupported",
+        "policy_refusal": false
+      },
+      "expected": {
+        "result": "key_unresolved",
+        "conditions": [],
+        "reason": "contract_accounts_unsupported",
+        "policy_refusal": false
+      },
+      "passed": true,
+      "differences": [],
+      "statementId": {
+        "actual": "x402accept/0:sha256:0d6b7f70cf0c39aaa5ccd3d4131767715568f472ee3235fd008edd1e2d229868",
+        "expected": "x402accept/0:sha256:0d6b7f70cf0c39aaa5ccd3d4131767715568f472ee3235fd008edd1e2d229868",
+        "passed": true
+      }
+    },
+    {
+      "id": "AR-C18-c-eip712",
+      "actual": {
+        "result": "key_unresolved",
+        "conditions": [],
+        "reason": "chain_state_unavailable",
+        "policy_refusal": false
+      },
+      "expected": {
+        "result": "key_unresolved",
+        "conditions": [],
+        "reason": "chain_state_unavailable",
+        "policy_refusal": false
+      },
+      "passed": true,
+      "differences": [],
+      "statementId": {
+        "actual": "x402accept/0:sha256:3c313a71435b2b9e01a312edc3d2fdcb9f13c9ecf8b3b1373e4675080afd84ec",
+        "expected": "x402accept/0:sha256:3c313a71435b2b9e01a312edc3d2fdcb9f13c9ecf8b3b1373e4675080afd84ec",
+        "passed": true
+      }
+    },
+    {
+      "id": "AR-C18-d-eip712",
+      "actual": {
+        "result": "key_unresolved",
+        "conditions": [],
+        "reason": "chain_state_unavailable",
+        "policy_refusal": false
+      },
+      "expected": {
+        "result": "key_unresolved",
+        "conditions": [],
+        "reason": "chain_state_unavailable",
+        "policy_refusal": false
+      },
+      "passed": true,
+      "differences": [],
+      "statementId": {
+        "actual": "x402accept/0:sha256:0d6b7f70cf0c39aaa5ccd3d4131767715568f472ee3235fd008edd1e2d229868",
+        "expected": "x402accept/0:sha256:0d6b7f70cf0c39aaa5ccd3d4131767715568f472ee3235fd008edd1e2d229868",
+        "passed": true
+      }
+    },
+    {
+      "id": "AR-C19-a-jws",
+      "actual": {
+        "result": "key_unresolved",
+        "conditions": [],
+        "reason": "key_missing",
+        "policy_refusal": true
+      },
+      "expected": {
+        "result": "key_unresolved",
+        "conditions": [],
+        "reason": "key_missing",
+        "policy_refusal": true
+      },
+      "passed": true,
+      "differences": [],
+      "statementId": {
+        "actual": "x402accept/0:sha256:f518d6ce1696d82135e2007a1746cd3573abcfcbe89e0b9927b76aa86b51d156",
+        "expected": "x402accept/0:sha256:f518d6ce1696d82135e2007a1746cd3573abcfcbe89e0b9927b76aa86b51d156",
+        "passed": true
+      }
+    },
+    {
+      "id": "AR-C19-b-jws",
+      "actual": {
+        "result": "key_unresolved",
+        "conditions": [],
+        "reason": "signer_mismatch",
+        "policy_refusal": true
+      },
+      "expected": {
+        "result": "key_unresolved",
+        "conditions": [],
+        "reason": "signer_mismatch",
+        "policy_refusal": true
+      },
+      "passed": true,
+      "differences": [],
+      "statementId": {
+        "actual": "x402accept/0:sha256:d66969faa7abed687bb6616d57c5ee38fb7178137f06b91ad2f6304ceb1bfc0d",
+        "expected": "x402accept/0:sha256:d66969faa7abed687bb6616d57c5ee38fb7178137f06b91ad2f6304ceb1bfc0d",
+        "passed": true
+      }
+    },
+    {
+      "id": "AR-C19-c-jws",
+      "actual": {
+        "result": "key_unresolved",
+        "conditions": [],
+        "reason": "key_missing",
+        "policy_refusal": true
+      },
+      "expected": {
+        "result": "key_unresolved",
+        "conditions": [],
+        "reason": "key_missing",
+        "policy_refusal": true
+      },
+      "passed": true,
+      "differences": []
+    },
+    {
+      "id": "AR-C20-a-jws",
+      "actual": {
+        "result": "key_unresolved",
+        "conditions": [],
+        "reason": "key_refused",
+        "policy_refusal": false
+      },
+      "expected": {
+        "result": "key_unresolved",
+        "conditions": [],
+        "reason": "key_refused",
+        "policy_refusal": false
+      },
+      "passed": true,
+      "differences": [],
+      "statementId": {
+        "actual": "x402accept/0:sha256:f518d6ce1696d82135e2007a1746cd3573abcfcbe89e0b9927b76aa86b51d156",
+        "expected": "x402accept/0:sha256:f518d6ce1696d82135e2007a1746cd3573abcfcbe89e0b9927b76aa86b51d156",
+        "passed": true
+      }
+    },
+    {
+      "id": "AR-C20-b-jws",
+      "actual": {
+        "result": "key_unresolved",
+        "conditions": [],
+        "reason": "key_refused",
+        "policy_refusal": false
+      },
+      "expected": {
+        "result": "key_unresolved",
+        "conditions": [],
+        "reason": "key_refused",
+        "policy_refusal": false
+      },
+      "passed": true,
+      "differences": [],
+      "statementId": {
+        "actual": "x402accept/0:sha256:f518d6ce1696d82135e2007a1746cd3573abcfcbe89e0b9927b76aa86b51d156",
+        "expected": "x402accept/0:sha256:f518d6ce1696d82135e2007a1746cd3573abcfcbe89e0b9927b76aa86b51d156",
+        "passed": true
+      }
+    },
+    {
+      "id": "AR-C20-c-jws",
+      "actual": {
+        "result": "key_unresolved",
+        "conditions": [],
+        "reason": "key_refused",
+        "policy_refusal": false
+      },
+      "expected": {
+        "result": "key_unresolved",
+        "conditions": [],
+        "reason": "key_refused",
+        "policy_refusal": false
+      },
+      "passed": true,
+      "differences": [],
+      "statementId": {
+        "actual": "x402accept/0:sha256:f518d6ce1696d82135e2007a1746cd3573abcfcbe89e0b9927b76aa86b51d156",
+        "expected": "x402accept/0:sha256:f518d6ce1696d82135e2007a1746cd3573abcfcbe89e0b9927b76aa86b51d156",
+        "passed": true
+      }
+    },
+    {
+      "id": "AR-C21-a-jws",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "passed": true,
+      "differences": []
+    },
+    {
+      "id": "AR-C21-b-jws",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "passed": true,
+      "differences": []
+    },
+    {
+      "id": "AR-C21-c-jws",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "passed": true,
+      "differences": []
+    },
+    {
+      "id": "AR-C21-d-jws",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "passed": true,
+      "differences": [],
+      "statementId": {
+        "actual": "x402accept/0:sha256:f518d6ce1696d82135e2007a1746cd3573abcfcbe89e0b9927b76aa86b51d156",
+        "expected": "x402accept/0:sha256:f518d6ce1696d82135e2007a1746cd3573abcfcbe89e0b9927b76aa86b51d156",
+        "passed": true
+      }
+    },
+    {
+      "id": "AR-C21-e-jws",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "passed": true,
+      "differences": []
+    },
+    {
+      "id": "AR-C21-f-jws",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "passed": true,
+      "differences": []
+    },
+    {
+      "id": "AR-C21-g-jws",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "passed": true,
+      "differences": [],
+      "statementId": {
+        "actual": "EncodingError: Non-zero unused bits",
+        "expected": "x402accept/0:sha256:f518d6ce1696d82135e2007a1746cd3573abcfcbe89e0b9927b76aa86b51d156",
+        "passed": false
+      }
+    },
+    {
+      "id": "AR-C22-a-eip712",
+      "actual": {
+        "result": "unknown",
+        "conditions": [
+          "acceptance_authority_unresolved"
+        ],
+        "disposition": "accepted"
+      },
+      "expected": {
+        "result": "unknown",
+        "conditions": [
+          "acceptance_authority_unresolved"
+        ],
+        "disposition": "accepted"
+      },
+      "passed": true,
+      "differences": [],
+      "statementId": {
+        "actual": "x402accept/0:sha256:01720b077ec7d9a7e642b8005c254464377ac88e1b3e84496faf282db2a38952",
+        "expected": "x402accept/0:sha256:01720b077ec7d9a7e642b8005c254464377ac88e1b3e84496faf282db2a38952",
+        "passed": true
+      }
+    },
+    {
+      "id": "AR-C22-b-eip712",
+      "actual": {
+        "result": "unknown",
+        "conditions": [
+          "acceptance_authority_unresolved"
+        ],
+        "disposition": "accepted"
+      },
+      "expected": {
+        "result": "unknown",
+        "conditions": [
+          "acceptance_authority_unresolved"
+        ],
+        "disposition": "accepted"
+      },
+      "passed": true,
+      "differences": [],
+      "statementId": {
+        "actual": "x402accept/0:sha256:8861e23f67c7e50404c7fa3d0f06ace28e46389ac7bedd142d29198d162a4fbb",
+        "expected": "x402accept/0:sha256:8861e23f67c7e50404c7fa3d0f06ace28e46389ac7bedd142d29198d162a4fbb",
+        "passed": true
+      }
+    },
+    {
+      "id": "AR-C22-e-eip712",
+      "actual": {
+        "result": "unknown",
+        "conditions": [
+          "acceptance_authority_unresolved"
+        ],
+        "disposition": "accepted"
+      },
+      "expected": {
+        "result": "unknown",
+        "conditions": [
+          "acceptance_authority_unresolved"
+        ],
+        "disposition": "accepted"
+      },
+      "passed": true,
+      "differences": [],
+      "statementId": {
+        "actual": "x402accept/0:sha256:e6916ebaa7a94fa0612f838e6f18ced61b85d8ab492754821a9005f0929264c7",
+        "expected": "x402accept/0:sha256:e6916ebaa7a94fa0612f838e6f18ced61b85d8ab492754821a9005f0929264c7",
+        "passed": true
+      }
+    },
+    {
+      "id": "AR-C22-f-eip712",
+      "actual": {
+        "result": "unknown",
+        "conditions": [
+          "acceptance_authority_unresolved"
+        ],
+        "disposition": "accepted"
+      },
+      "expected": {
+        "result": "unknown",
+        "conditions": [
+          "acceptance_authority_unresolved"
+        ],
+        "disposition": "accepted"
+      },
+      "passed": true,
+      "differences": [],
+      "statementId": {
+        "actual": "x402accept/0:sha256:f358ed03f61780f5a8ad95670e2a6338c9d92cc5e76fc8b5521e7a25ea3627e6",
+        "expected": "x402accept/0:sha256:f358ed03f61780f5a8ad95670e2a6338c9d92cc5e76fc8b5521e7a25ea3627e6",
+        "passed": true
+      }
+    },
+    {
+      "id": "AR-C22-g-eip712",
+      "actual": {
+        "result": "unknown",
+        "conditions": [
+          "acceptance_authority_unresolved"
+        ],
+        "disposition": "accepted"
+      },
+      "expected": {
+        "result": "unknown",
+        "conditions": [
+          "acceptance_authority_unresolved"
+        ],
+        "disposition": "accepted"
+      },
+      "passed": true,
+      "differences": [],
+      "statementId": {
+        "actual": "x402accept/0:sha256:478e2c0c20c938cfba01a65d52489c99d9c4d7a62addcc41f04a5d804c6a1bfb",
+        "expected": "x402accept/0:sha256:478e2c0c20c938cfba01a65d52489c99d9c4d7a62addcc41f04a5d804c6a1bfb",
+        "passed": true
+      }
+    },
+    {
+      "id": "AR-C22-h-eip712",
+      "actual": {
+        "result": "unknown",
+        "conditions": [
+          "acceptance_authority_unresolved"
+        ],
+        "disposition": "accepted"
+      },
+      "expected": {
+        "result": "unknown",
+        "conditions": [
+          "acceptance_authority_unresolved"
+        ],
+        "disposition": "accepted"
+      },
+      "passed": true,
+      "differences": [],
+      "statementId": {
+        "actual": "x402accept/0:sha256:d17d2d44dbe6cf62797488e2d1659252864d7446e009ec005be2dd85762cfce0",
+        "expected": "x402accept/0:sha256:d17d2d44dbe6cf62797488e2d1659252864d7446e009ec005be2dd85762cfce0",
+        "passed": true
+      }
+    },
+    {
+      "id": "AR-C22-c-jws",
+      "actual": {
+        "result": "unknown",
+        "conditions": [
+          "acceptance_authority_unresolved"
+        ],
+        "disposition": "accepted"
+      },
+      "expected": {
+        "result": "unknown",
+        "conditions": [
+          "acceptance_authority_unresolved"
+        ],
+        "disposition": "accepted"
+      },
+      "passed": true,
+      "differences": [],
+      "statementId": {
+        "actual": "x402accept/0:sha256:f518d6ce1696d82135e2007a1746cd3573abcfcbe89e0b9927b76aa86b51d156",
+        "expected": "x402accept/0:sha256:f518d6ce1696d82135e2007a1746cd3573abcfcbe89e0b9927b76aa86b51d156",
+        "passed": true
+      }
+    },
+    {
+      "id": "AR-C22-d-jws",
+      "actual": {
+        "result": "unknown",
+        "conditions": [
+          "acceptance_authority_unresolved"
+        ],
+        "disposition": "accepted"
+      },
+      "expected": {
+        "result": "unknown",
+        "conditions": [
+          "acceptance_authority_unresolved"
+        ],
+        "disposition": "accepted"
+      },
+      "passed": true,
+      "differences": [],
+      "statementId": {
+        "actual": "x402accept/0:sha256:f518d6ce1696d82135e2007a1746cd3573abcfcbe89e0b9927b76aa86b51d156",
+        "expected": "x402accept/0:sha256:f518d6ce1696d82135e2007a1746cd3573abcfcbe89e0b9927b76aa86b51d156",
+        "passed": true
+      }
+    },
+    {
+      "id": "AR-C23-a-eip712",
+      "actual": {
+        "result": "unknown",
+        "conditions": [],
+        "disposition": "accepted",
+        "reason": "profile_unavailable"
+      },
+      "expected": {
+        "result": "unknown",
+        "conditions": [],
+        "reason": "profile_unavailable",
+        "disposition": "accepted"
+      },
+      "passed": true,
+      "differences": [],
+      "statementId": {
+        "actual": "x402accept/0:sha256:19333a1bc8100b1bd5840b1a68a662797d4362b276def408b91f7b253396d27d",
+        "expected": "x402accept/0:sha256:19333a1bc8100b1bd5840b1a68a662797d4362b276def408b91f7b253396d27d",
+        "passed": true
+      }
+    },
+    {
+      "id": "AR-C23-a-jws",
+      "actual": {
+        "result": "unknown",
+        "conditions": [],
+        "disposition": "accepted",
+        "reason": "profile_unavailable"
+      },
+      "expected": {
+        "result": "unknown",
+        "conditions": [],
+        "reason": "profile_unavailable",
+        "disposition": "accepted"
+      },
+      "passed": true,
+      "differences": [],
+      "statementId": {
+        "actual": "x402accept/0:sha256:0a6e29d5df2f2be7e0d637f72272b6327856302aaeda9e3d1f6965963d52aa88",
+        "expected": "x402accept/0:sha256:0a6e29d5df2f2be7e0d637f72272b6327856302aaeda9e3d1f6965963d52aa88",
+        "passed": true
+      }
+    },
+    {
+      "id": "AR-C24-a-eip712",
+      "actual": {
+        "result": "unknown",
+        "conditions": [],
+        "disposition": "accepted",
+        "reason": "evidence_unavailable"
+      },
+      "expected": {
+        "result": "unknown",
+        "conditions": [],
+        "reason": "evidence_unavailable",
+        "disposition": "accepted"
+      },
+      "passed": true,
+      "differences": [],
+      "statementId": {
+        "actual": "x402accept/0:sha256:519aa64c0682fafbe3413603938180af065a06d09e981fb89c075bc9120d4744",
+        "expected": "x402accept/0:sha256:519aa64c0682fafbe3413603938180af065a06d09e981fb89c075bc9120d4744",
+        "passed": true
+      }
+    },
+    {
+      "id": "AR-C24-a-jws",
+      "actual": {
+        "result": "unknown",
+        "conditions": [],
+        "disposition": "accepted",
+        "reason": "evidence_unavailable"
+      },
+      "expected": {
+        "result": "unknown",
+        "conditions": [],
+        "reason": "evidence_unavailable",
+        "disposition": "accepted"
+      },
+      "passed": true,
+      "differences": [],
+      "statementId": {
+        "actual": "x402accept/0:sha256:f518d6ce1696d82135e2007a1746cd3573abcfcbe89e0b9927b76aa86b51d156",
+        "expected": "x402accept/0:sha256:f518d6ce1696d82135e2007a1746cd3573abcfcbe89e0b9927b76aa86b51d156",
+        "passed": true
+      }
+    },
+    {
+      "id": "AR-C24-b-eip712",
+      "actual": {
+        "result": "unknown",
+        "conditions": [],
+        "disposition": "accepted",
+        "reason": "evidence_unavailable"
+      },
+      "expected": {
+        "result": "unknown",
+        "conditions": [],
+        "reason": "evidence_unavailable",
+        "disposition": "accepted"
+      },
+      "passed": true,
+      "differences": [],
+      "statementId": {
+        "actual": "x402accept/0:sha256:519aa64c0682fafbe3413603938180af065a06d09e981fb89c075bc9120d4744",
+        "expected": "x402accept/0:sha256:519aa64c0682fafbe3413603938180af065a06d09e981fb89c075bc9120d4744",
+        "passed": true
+      }
+    },
+    {
+      "id": "AR-C24-b-jws",
+      "actual": {
+        "result": "unknown",
+        "conditions": [],
+        "disposition": "accepted",
+        "reason": "evidence_unavailable"
+      },
+      "expected": {
+        "result": "unknown",
+        "conditions": [],
+        "reason": "evidence_unavailable",
+        "disposition": "accepted"
+      },
+      "passed": true,
+      "differences": [],
+      "statementId": {
+        "actual": "x402accept/0:sha256:f518d6ce1696d82135e2007a1746cd3573abcfcbe89e0b9927b76aa86b51d156",
+        "expected": "x402accept/0:sha256:f518d6ce1696d82135e2007a1746cd3573abcfcbe89e0b9927b76aa86b51d156",
+        "passed": true
+      }
+    },
+    {
+      "id": "AR-C24-c-eip712",
+      "actual": {
+        "result": "unknown",
+        "conditions": [],
+        "disposition": "accepted",
+        "reason": "evidence_unavailable"
+      },
+      "expected": {
+        "result": "unknown",
+        "conditions": [],
+        "reason": "evidence_unavailable",
+        "disposition": "accepted"
+      },
+      "passed": true,
+      "differences": [],
+      "statementId": {
+        "actual": "x402accept/0:sha256:519aa64c0682fafbe3413603938180af065a06d09e981fb89c075bc9120d4744",
+        "expected": "x402accept/0:sha256:519aa64c0682fafbe3413603938180af065a06d09e981fb89c075bc9120d4744",
+        "passed": true
+      }
+    },
+    {
+      "id": "AR-C24-c-jws",
+      "actual": {
+        "result": "unknown",
+        "conditions": [],
+        "disposition": "accepted",
+        "reason": "evidence_unavailable"
+      },
+      "expected": {
+        "result": "unknown",
+        "conditions": [],
+        "reason": "evidence_unavailable",
+        "disposition": "accepted"
+      },
+      "passed": true,
+      "differences": [],
+      "statementId": {
+        "actual": "x402accept/0:sha256:f518d6ce1696d82135e2007a1746cd3573abcfcbe89e0b9927b76aa86b51d156",
+        "expected": "x402accept/0:sha256:f518d6ce1696d82135e2007a1746cd3573abcfcbe89e0b9927b76aa86b51d156",
+        "passed": true
+      }
+    },
+    {
+      "id": "AR-C24-d-eip712",
+      "actual": {
+        "result": "unknown",
+        "conditions": [],
+        "disposition": "accepted",
+        "reason": "evidence_unavailable"
+      },
+      "expected": {
+        "result": "unknown",
+        "conditions": [],
+        "reason": "evidence_unavailable",
+        "disposition": "accepted"
+      },
+      "passed": true,
+      "differences": [],
+      "statementId": {
+        "actual": "x402accept/0:sha256:519aa64c0682fafbe3413603938180af065a06d09e981fb89c075bc9120d4744",
+        "expected": "x402accept/0:sha256:519aa64c0682fafbe3413603938180af065a06d09e981fb89c075bc9120d4744",
+        "passed": true
+      }
+    },
+    {
+      "id": "AR-C24-d-jws",
+      "actual": {
+        "result": "unknown",
+        "conditions": [],
+        "disposition": "accepted",
+        "reason": "evidence_unavailable"
+      },
+      "expected": {
+        "result": "unknown",
+        "conditions": [],
+        "reason": "evidence_unavailable",
+        "disposition": "accepted"
+      },
+      "passed": true,
+      "differences": [],
+      "statementId": {
+        "actual": "x402accept/0:sha256:f518d6ce1696d82135e2007a1746cd3573abcfcbe89e0b9927b76aa86b51d156",
+        "expected": "x402accept/0:sha256:f518d6ce1696d82135e2007a1746cd3573abcfcbe89e0b9927b76aa86b51d156",
+        "passed": true
+      }
+    },
+    {
+      "id": "AR-C24-e-eip712",
+      "actual": {
+        "result": "unknown",
+        "conditions": [],
+        "disposition": "accepted",
+        "reason": "evidence_unavailable"
+      },
+      "expected": {
+        "result": "unknown",
+        "conditions": [],
+        "reason": "evidence_unavailable",
+        "disposition": "accepted"
+      },
+      "passed": true,
+      "differences": [],
+      "statementId": {
+        "actual": "x402accept/0:sha256:bc97b57376686d23f47a24200c4f147097f1fcdd9d2fe5d157b0c2b30be15148",
+        "expected": "x402accept/0:sha256:bc97b57376686d23f47a24200c4f147097f1fcdd9d2fe5d157b0c2b30be15148",
+        "passed": true
+      }
+    },
+    {
+      "id": "AR-C24-e-jws",
+      "actual": {
+        "result": "unknown",
+        "conditions": [],
+        "disposition": "accepted",
+        "reason": "evidence_unavailable"
+      },
+      "expected": {
+        "result": "unknown",
+        "conditions": [],
+        "reason": "evidence_unavailable",
+        "disposition": "accepted"
+      },
+      "passed": true,
+      "differences": [],
+      "statementId": {
+        "actual": "x402accept/0:sha256:902a3490d139c4cc689bd7e537155dbfc9e7f35eaaba4e1686902b8b5d1157ec",
+        "expected": "x402accept/0:sha256:902a3490d139c4cc689bd7e537155dbfc9e7f35eaaba4e1686902b8b5d1157ec",
+        "passed": true
+      }
+    },
+    {
+      "id": "AR-C24-f-eip712",
+      "actual": {
+        "result": "unknown",
+        "conditions": [],
+        "disposition": "accepted",
+        "reason": "evidence_unavailable"
+      },
+      "expected": {
+        "result": "unknown",
+        "conditions": [],
+        "reason": "evidence_unavailable",
+        "disposition": "accepted"
+      },
+      "passed": true,
+      "differences": [],
+      "statementId": {
+        "actual": "x402accept/0:sha256:519aa64c0682fafbe3413603938180af065a06d09e981fb89c075bc9120d4744",
+        "expected": "x402accept/0:sha256:519aa64c0682fafbe3413603938180af065a06d09e981fb89c075bc9120d4744",
+        "passed": true
+      }
+    },
+    {
+      "id": "AR-C24-f-jws",
+      "actual": {
+        "result": "unknown",
+        "conditions": [],
+        "disposition": "accepted",
+        "reason": "evidence_unavailable"
+      },
+      "expected": {
+        "result": "unknown",
+        "conditions": [],
+        "reason": "evidence_unavailable",
+        "disposition": "accepted"
+      },
+      "passed": true,
+      "differences": [],
+      "statementId": {
+        "actual": "x402accept/0:sha256:f518d6ce1696d82135e2007a1746cd3573abcfcbe89e0b9927b76aa86b51d156",
+        "expected": "x402accept/0:sha256:f518d6ce1696d82135e2007a1746cd3573abcfcbe89e0b9927b76aa86b51d156",
+        "passed": true
+      }
+    },
+    {
+      "id": "AR-C24-g-eip712",
+      "actual": {
+        "result": "unknown",
+        "conditions": [],
+        "disposition": "accepted",
+        "reason": "evidence_unavailable"
+      },
+      "expected": {
+        "result": "unknown",
+        "conditions": [],
+        "reason": "evidence_unavailable",
+        "disposition": "accepted"
+      },
+      "passed": true,
+      "differences": [],
+      "statementId": {
+        "actual": "x402accept/0:sha256:519aa64c0682fafbe3413603938180af065a06d09e981fb89c075bc9120d4744",
+        "expected": "x402accept/0:sha256:519aa64c0682fafbe3413603938180af065a06d09e981fb89c075bc9120d4744",
+        "passed": true
+      }
+    },
+    {
+      "id": "AR-C24-g-jws",
+      "actual": {
+        "result": "unknown",
+        "conditions": [],
+        "disposition": "accepted",
+        "reason": "evidence_unavailable"
+      },
+      "expected": {
+        "result": "unknown",
+        "conditions": [],
+        "reason": "evidence_unavailable",
+        "disposition": "accepted"
+      },
+      "passed": true,
+      "differences": [],
+      "statementId": {
+        "actual": "x402accept/0:sha256:f518d6ce1696d82135e2007a1746cd3573abcfcbe89e0b9927b76aa86b51d156",
+        "expected": "x402accept/0:sha256:f518d6ce1696d82135e2007a1746cd3573abcfcbe89e0b9927b76aa86b51d156",
+        "passed": true
+      }
+    },
+    {
+      "id": "AR-C24-h-eip712",
+      "actual": {
+        "result": "unknown",
+        "conditions": [],
+        "disposition": "accepted",
+        "reason": "evidence_unavailable"
+      },
+      "expected": {
+        "result": "unknown",
+        "conditions": [],
+        "reason": "evidence_unavailable",
+        "disposition": "accepted"
+      },
+      "passed": true,
+      "differences": [],
+      "statementId": {
+        "actual": "x402accept/0:sha256:f0ae89d3dd8a7837d73f4df19ca205586bc7102661dae680ab0a932deede32f4",
+        "expected": "x402accept/0:sha256:f0ae89d3dd8a7837d73f4df19ca205586bc7102661dae680ab0a932deede32f4",
+        "passed": true
+      }
+    },
+    {
+      "id": "AR-C24-h-jws",
+      "actual": {
+        "result": "unknown",
+        "conditions": [],
+        "disposition": "accepted",
+        "reason": "evidence_unavailable"
+      },
+      "expected": {
+        "result": "unknown",
+        "conditions": [],
+        "reason": "evidence_unavailable",
+        "disposition": "accepted"
+      },
+      "passed": true,
+      "differences": [],
+      "statementId": {
+        "actual": "x402accept/0:sha256:6c61beb292b50b3e702cf8beb08bbc26371f315737d71bd0ea4a6388fe263d18",
+        "expected": "x402accept/0:sha256:6c61beb292b50b3e702cf8beb08bbc26371f315737d71bd0ea4a6388fe263d18",
+        "passed": true
+      }
+    },
+    {
+      "id": "AR-C24-i-eip712",
+      "actual": {
+        "result": "unknown",
+        "conditions": [],
+        "disposition": "accepted",
+        "reason": "evidence_unavailable"
+      },
+      "expected": {
+        "result": "unknown",
+        "conditions": [],
+        "reason": "evidence_unavailable",
+        "disposition": "accepted"
+      },
+      "passed": true,
+      "differences": [],
+      "statementId": {
+        "actual": "x402accept/0:sha256:519aa64c0682fafbe3413603938180af065a06d09e981fb89c075bc9120d4744",
+        "expected": "x402accept/0:sha256:519aa64c0682fafbe3413603938180af065a06d09e981fb89c075bc9120d4744",
+        "passed": true
+      }
+    },
+    {
+      "id": "AR-C24-i-jws",
+      "actual": {
+        "result": "unknown",
+        "conditions": [],
+        "disposition": "accepted",
+        "reason": "evidence_unavailable"
+      },
+      "expected": {
+        "result": "unknown",
+        "conditions": [],
+        "reason": "evidence_unavailable",
+        "disposition": "accepted"
+      },
+      "passed": true,
+      "differences": [],
+      "statementId": {
+        "actual": "x402accept/0:sha256:f518d6ce1696d82135e2007a1746cd3573abcfcbe89e0b9927b76aa86b51d156",
+        "expected": "x402accept/0:sha256:f518d6ce1696d82135e2007a1746cd3573abcfcbe89e0b9927b76aa86b51d156",
+        "passed": true
+      }
+    },
+    {
+      "id": "AR-C24-j-eip712",
+      "actual": {
+        "result": "unknown",
+        "conditions": [],
+        "disposition": "accepted",
+        "reason": "evidence_unavailable"
+      },
+      "expected": {
+        "result": "unknown",
+        "conditions": [],
+        "reason": "evidence_unavailable",
+        "disposition": "accepted"
+      },
+      "passed": true,
+      "differences": [],
+      "statementId": {
+        "actual": "x402accept/0:sha256:a2c3554dfc7a267857c645573711b07b6609271c2d05b454f64b6b6a41e72f61",
+        "expected": "x402accept/0:sha256:a2c3554dfc7a267857c645573711b07b6609271c2d05b454f64b6b6a41e72f61",
+        "passed": true
+      }
+    },
+    {
+      "id": "AR-C24-j-jws",
+      "actual": {
+        "result": "unknown",
+        "conditions": [],
+        "disposition": "accepted",
+        "reason": "evidence_unavailable"
+      },
+      "expected": {
+        "result": "unknown",
+        "conditions": [],
+        "reason": "evidence_unavailable",
+        "disposition": "accepted"
+      },
+      "passed": true,
+      "differences": [],
+      "statementId": {
+        "actual": "x402accept/0:sha256:fcec10077b97393b616389db8134e89bd2fe9ca51988edc96deb77c0253154a6",
+        "expected": "x402accept/0:sha256:fcec10077b97393b616389db8134e89bd2fe9ca51988edc96deb77c0253154a6",
+        "passed": true
+      }
+    },
+    {
+      "id": "AR-C25-b-eip712",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "passed": true,
+      "differences": []
+    },
+    {
+      "id": "AR-C25-b-jws",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "passed": true,
+      "differences": []
+    },
+    {
+      "id": "AR-C25-c-eip712",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "passed": true,
+      "differences": []
+    },
+    {
+      "id": "AR-C25-c-jws",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "passed": true,
+      "differences": []
+    },
+    {
+      "id": "AR-C25-h-eip712",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "passed": true,
+      "differences": []
+    },
+    {
+      "id": "AR-C25-h-jws",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "passed": true,
+      "differences": []
+    },
+    {
+      "id": "AR-C25-i-eip712",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "passed": true,
+      "differences": []
+    },
+    {
+      "id": "AR-C25-i-jws",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "passed": true,
+      "differences": []
+    },
+    {
+      "id": "AR-C25-j-eip712",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "passed": true,
+      "differences": []
+    },
+    {
+      "id": "AR-C25-j-jws",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "passed": true,
+      "differences": []
+    },
+    {
+      "id": "AR-C25-k-eip712",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "passed": true,
+      "differences": []
+    },
+    {
+      "id": "AR-C25-k-jws",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "passed": true,
+      "differences": []
+    },
+    {
+      "id": "AR-C25-m-eip712",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "passed": true,
+      "differences": []
+    },
+    {
+      "id": "AR-C25-m-jws",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "passed": true,
+      "differences": []
+    },
+    {
+      "id": "AR-C25-n-eip712",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "passed": true,
+      "differences": []
+    },
+    {
+      "id": "AR-C25-n-jws",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "passed": true,
+      "differences": []
+    }
+  ],
+  "corpus_sha256_after": "8c20c905ae9af000f9664ee78bf73a6ac2c47f501c221789b835121a0af16ec5",
+  "loaded_library_and_module_sources": [
+    {
+      "module": "Crypto",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/Crypto/__init__.py",
+      "sha256": "4051cc37a6a43b5ca1cd6bc08284ba3593831a92f71d9faa46f559eeffe9bd4f"
+    },
+    {
+      "module": "Crypto.Hash",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/Crypto/Hash/__init__.py",
+      "sha256": "df08b30541432c1e94800f18f0e228fb50928adc7de6a2f79e4b4cabb857911b"
+    },
+    {
+      "module": "Crypto.Hash.keccak",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/Crypto/Hash/keccak.py",
+      "sha256": "f798f27e64aa5bd3ebd9dbea293cba4930de3c26d6579a0e805b8c2abac6a244"
+    },
+    {
+      "module": "Crypto.Util",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/Crypto/Util/__init__.py",
+      "sha256": "3e4749c1c86b4b1778b72ef5b1dd1e757b2df434a29c8e60060cde45faba364a"
+    },
+    {
+      "module": "Crypto.Util._file_system",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/Crypto/Util/_file_system.py",
+      "sha256": "3917ef9a5c0a26d9460393c236beb8e94f21bb34da6ecd9be3777f1436ae1be2"
+    },
+    {
+      "module": "Crypto.Util._raw_api",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/Crypto/Util/_raw_api.py",
+      "sha256": "4e2c3e290cf7d03c048a12fe6e462deaec836e3931d46524d876fdcef7f346fc"
+    },
+    {
+      "module": "Crypto.Util.py3compat",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/Crypto/Util/py3compat.py",
+      "sha256": "347d6ab99290190edcdc0537f7b983cb7bbdfb0222c327ab217d4056542cc406"
+    },
+    {
+      "module": "__future__",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/__future__.py",
+      "sha256": "981d4c398849f9ebcab72300d9c1fe288fd6d7f28957b3b3fa3a493a5836d95c"
+    },
+    {
+      "module": "__main__",
+      "path": "<temporary-directory>/run_vectors.py",
+      "sha256": "bd51d58338676a1399053f543e5cf1844c0e1548ba9ebe9d5cdebc73b8bca903"
+    },
+    {
+      "module": "_bisect",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/lib-dynload/_bisect.cpython-314-darwin.so",
+      "sha256": "f1c8bec242226c42f6422d3ae2e1263e53726aa3aa0eb9410ca32dabc48cf02b"
+    },
+    {
+      "module": "_blake2",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/lib-dynload/_blake2.cpython-314-darwin.so",
+      "sha256": "aca8fcf6a1ec9e7a1b0bebd6fff7894dcd21b896ddc7066c2aa4333294e6ca53"
+    },
+    {
+      "module": "_bz2",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/lib-dynload/_bz2.cpython-314-darwin.so",
+      "sha256": "302d77097242a78092b8d9ff2a86d3eae8616cf2497ff79d103d3c0041c07e11"
+    },
+    {
+      "module": "_cffi_backend",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/_cffi_backend.cpython-314-darwin.so",
+      "sha256": "7a3ea590a8ba470a09d11267ca583fe7c3a08b15b2699578ef5e048041127684"
+    },
+    {
+      "module": "_collections_abc",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/_collections_abc.py",
+      "sha256": "50beebb1f309d83fd3af45f0e4c98c9dbfe0edd2f40edc8dc79e5cf0072cfbea"
+    },
+    {
+      "module": "_colorize",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/_colorize.py",
+      "sha256": "15db41bec8e25fd1ba81cf234df2cc7446d0fbc10285fda73186176365efd730"
+    },
+    {
+      "module": "_ctypes",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/lib-dynload/_ctypes.cpython-314-darwin.so",
+      "sha256": "50132e97cffc1fc702a4de56fe30329088ac30876bbff846d6667a4a99356296"
+    },
+    {
+      "module": "_decimal",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/lib-dynload/_decimal.cpython-314-darwin.so",
+      "sha256": "91520b22e9e2d7393f7a42c06fa3eb144ca8b9e0c97f78680318414bf905d5ac"
+    },
+    {
+      "module": "_frozen_importlib",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/importlib/_bootstrap.py",
+      "sha256": "9cb541ddc6807aaba91e4243de57d869baa7f423565b1ac27024b9e826b50e1c"
+    },
+    {
+      "module": "_frozen_importlib_external",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/importlib/_bootstrap_external.py",
+      "sha256": "9750820035459ff08336cc59409d92c2f32f6f633c1831ba14c1ad9c3a56d9f2"
+    },
+    {
+      "module": "_hashlib",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/lib-dynload/_hashlib.cpython-314-darwin.so",
+      "sha256": "e0002309643071b82219d09ef7efa5044f8216915630b4a2d113a432a6e3745a"
+    },
+    {
+      "module": "_heapq",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/lib-dynload/_heapq.cpython-314-darwin.so",
+      "sha256": "dd3b8658950319a62f7355381842459c92f569a58854703013ddb83ee32aa2a2"
+    },
+    {
+      "module": "_hmac",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/lib-dynload/_hmac.cpython-314-darwin.so",
+      "sha256": "9872bc69edfe0c8246efe9686505acd6139881bbc36bda49b313adcad3307da5"
+    },
+    {
+      "module": "_json",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/lib-dynload/_json.cpython-314-darwin.so",
+      "sha256": "a17e2f1076b173e5dfd553b0e046771198e6d6e4d332229f10932e0bda165821"
+    },
+    {
+      "module": "_lzma",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/lib-dynload/_lzma.cpython-314-darwin.so",
+      "sha256": "62fa2f69a29e84c24893bdc3c8d2da7be454db41e49881f665e9a58507dd1d23"
+    },
+    {
+      "module": "_opcode_metadata",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/_opcode_metadata.py",
+      "sha256": "d9badc5ab19a66415e230bf8f4299491b2207d584981a92b6e7c447cfa1aeac3"
+    },
+    {
+      "module": "_osx_support",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/_osx_support.py",
+      "sha256": "363d3240acbba18a270bd3161f1ddb478f8492dc14fc451b2dc314db5c5ee09c"
+    },
+    {
+      "module": "_posixsubprocess",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/lib-dynload/_posixsubprocess.cpython-314-darwin.so",
+      "sha256": "3093d70314857f9d5dffd97b3a9a6e47f42e3721f3bd1a7420530c76d9a02426"
+    },
+    {
+      "module": "_py_warnings",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/_py_warnings.py",
+      "sha256": "16604a696fcf69c0d85cd9a93dbd0c2a7fcd1de168a37ecf2da3b812b22ace77"
+    },
+    {
+      "module": "_random",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/lib-dynload/_random.cpython-314-darwin.so",
+      "sha256": "a7bd8d2b834f6c4eb3ca1a1901f8cb53d7a2a2097a66330255455c31ade8e8e7"
+    },
+    {
+      "module": "_sitebuiltins",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/_sitebuiltins.py",
+      "sha256": "f688c89b860d5839aff1047d4f3df6c9695f136e2ae8a167bbbfa51846bbdaa5"
+    },
+    {
+      "module": "_sodium",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/nacl/_sodium.abi3.so",
+      "sha256": "dbc73de77581797e963721c65ce9980afc2e4127e6ef4cdf3680590d4341e90b"
+    },
+    {
+      "module": "_struct",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/lib-dynload/_struct.cpython-314-darwin.so",
+      "sha256": "ac266e63101158e422888d7c1bc6060a83ed4cd4fc3ee4d8bb37541123f859f6"
+    },
+    {
+      "module": "_sysconfigdata__darwin_darwin",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/_sysconfigdata__darwin_darwin.py",
+      "sha256": "855669d627484826342f908d45b23c6c3e42253194a21dfaf38abbcd2db7d0d9"
+    },
+    {
+      "module": "_uuid",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/lib-dynload/_uuid.cpython-314-darwin.so",
+      "sha256": "421a04b3f0d5cc6cfa4fc2973d6afd3bf493e133ee6bbcd6fab870e0ca9dc630"
+    },
+    {
+      "module": "_weakrefset",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/_weakrefset.py",
+      "sha256": "2dd7cb459d654fe78b00c5c47ee8e786c037ee77763304603f5e976dd62cbf81"
+    },
+    {
+      "module": "_zoneinfo",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/lib-dynload/_zoneinfo.cpython-314-darwin.so",
+      "sha256": "d8f695da73efeac5d7cb6d5eea75c58e4c5a546e50e78db4f3a916bff772a859"
+    },
+    {
+      "module": "_zstd",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/lib-dynload/_zstd.cpython-314-darwin.so",
+      "sha256": "c2a973a7ce9797cd7facb1564d6e7abf4ae2c3654117e7b48f2c0a75003368b6"
+    },
+    {
+      "module": "abc",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/abc.py",
+      "sha256": "e558702a95cdce3febd289da021715d2b92bc43995b8a1bc58dfa1c3d8010287"
+    },
+    {
+      "module": "annotated_types",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/annotated_types/__init__.py",
+      "sha256": "a7104a4d439b27a9f74fc0be236b9ba1b7831e6044026802a205abc1298a9bc8"
+    },
+    {
+      "module": "annotationlib",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/annotationlib.py",
+      "sha256": "3b8a0f169da1855b873179e2242ea2229413644c738c5e2713864df7206dbc19"
+    },
+    {
+      "module": "argparse",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/argparse.py",
+      "sha256": "1a006f224514b6731c799540a39d038f3c85fcd4d9f44128edb0bcb7e8e48040"
+    },
+    {
+      "module": "ast",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/ast.py",
+      "sha256": "5ea9a796353544bea0d706153516f04ef3d92be305d15a73238403837d77e34c"
+    },
+    {
+      "module": "base64",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/base64.py",
+      "sha256": "202d288f0b6d25ed1b206640f86e934381e6766fa0496f6f8d87d9c1bf92cdef"
+    },
+    {
+      "module": "binascii",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/lib-dynload/binascii.cpython-314-darwin.so",
+      "sha256": "07ef7a38004f01c462bf60db354b6b27e236b545fc936d6449e921fd0ea9692b"
+    },
+    {
+      "module": "bisect",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/bisect.py",
+      "sha256": "f1cf7b85fc36b5da249813fc5ab97d9464f8cc1bc817f7146206fa2713e35999"
+    },
+    {
+      "module": "bz2",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/bz2.py",
+      "sha256": "368b9ee55f0b6dbfc81b15e1a17c51cccddb009389eae8e9a7acf2402ca4109a"
+    },
+    {
+      "module": "cffi",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/cffi/__init__.py",
+      "sha256": "c47b2db28c5f197e242d4dd4af95b7ebb0da65763fc76972cafd06f93e942cda"
+    },
+    {
+      "module": "cffi.api",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/cffi/api.py",
+      "sha256": "7165f5665b1c98ec9392fb61881a5458b712441b6a9699fe9a806ee1eb019b32"
+    },
+    {
+      "module": "cffi.commontypes",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/cffi/commontypes.py",
+      "sha256": "ecdeb33ed08596fc57316847574f29b148dd6082b65e0b0ddf2a39760b9afefe"
+    },
+    {
+      "module": "cffi.cparser",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/cffi/cparser.py",
+      "sha256": "598fa8c785064ae552613b609b4d8598681b99cb9a6812b79a816591d1529ac5"
+    },
+    {
+      "module": "cffi.error",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/cffi/error.py",
+      "sha256": "bfac53892e14d24bc3732e21fc10d1a39bf7f5942e8fe20c4582efe444dd759b"
+    },
+    {
+      "module": "cffi.lock",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/cffi/lock.py",
+      "sha256": "97d4d37703083298ba8c39091a742013d72f4c847b0809ed209afc1061edde96"
+    },
+    {
+      "module": "cffi.model",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/cffi/model.py",
+      "sha256": "700f9b10089b70751bb5ba9f80cab408b42314f02357425247333229588d805e"
+    },
+    {
+      "module": "codecs",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/codecs.py",
+      "sha256": "718f39b3ea68fe934214d789c5bce3005fa828040b03a72d2f715fc5e2647b7e"
+    },
+    {
+      "module": "codeop",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/codeop.py",
+      "sha256": "6777d19fa0f88c415d615c78e214ede057dd7507db8494744ca2c53fe9911a3a"
+    },
+    {
+      "module": "collections",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/collections/__init__.py",
+      "sha256": "dbd563752a57c6633b7566b1e9c95bc8ea81df1a1d213b23f61c5335424e5af5"
+    },
+    {
+      "module": "collections.abc",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/_collections_abc.py",
+      "sha256": "50beebb1f309d83fd3af45f0e4c98c9dbfe0edd2f40edc8dc79e5cf0072cfbea"
+    },
+    {
+      "module": "compression",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/compression/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "compression._common",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/compression/_common/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "compression._common._streams",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/compression/_common/_streams.py",
+      "sha256": "8b8e943815c748d030e540a023400cb87fb13f75c2f0615a63ec42ef9f156c92"
+    },
+    {
+      "module": "compression.zstd",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/compression/zstd/__init__.py",
+      "sha256": "a4a2da5a3f729baf74dc9873afe02da7919a5e394e665dc7beb24438d105cc76"
+    },
+    {
+      "module": "compression.zstd._zstdfile",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/compression/zstd/_zstdfile.py",
+      "sha256": "662c2fc97fae490e6dc0e1ceb6a4363bea76ffa05b0acd788aec1274157c4216"
+    },
+    {
+      "module": "contextlib",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/contextlib.py",
+      "sha256": "c1e0d67b2007de11ae93cd36cf6faf38d9ab32656a832d592a49325eec579f96"
+    },
+    {
+      "module": "contextvars",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/contextvars.py",
+      "sha256": "cf0d77b49a9cde369bb6fc3e5c3e51658e8878cb9dab64a883b70caa86119007"
+    },
+    {
+      "module": "copy",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/copy.py",
+      "sha256": "15154fde290d6e65b5007905689a47a9a5a724822c5e06eec35d9ffbb2a3aa69"
+    },
+    {
+      "module": "copyreg",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/copyreg.py",
+      "sha256": "6376eb5722806396f5842997ac18add369ea9ac3ff4fcfe1460c41a088cac425"
+    },
+    {
+      "module": "ctypes",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/ctypes/__init__.py",
+      "sha256": "77dd2b5905652d1e1960034bce46320a900891116d8c1278c3b27bcfad2e809c"
+    },
+    {
+      "module": "ctypes._endian",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/ctypes/_endian.py",
+      "sha256": "499773a028a41ee18153fedfe0a00a26efb2a650f568b9bc17e2f3a914a23468"
+    },
+    {
+      "module": "cytoolz",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/cytoolz/__init__.py",
+      "sha256": "dce40fdaa0f6fea1b2546266b3c4ee1e66f26870ac384fc2feed3c0063945131"
+    },
+    {
+      "module": "cytoolz._signatures",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/cytoolz/_signatures.py",
+      "sha256": "c6b1fe933a100fe12e232e0f17dd39cc5073284a2aefefbda66ed47be76bf962"
+    },
+    {
+      "module": "cytoolz.curried",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/cytoolz/curried/__init__.py",
+      "sha256": "a3ecec5e1284b2281ecda4ea3386be21cdd90ac433c6a7d49d3cce8bd82f9a15"
+    },
+    {
+      "module": "cytoolz.curried.exceptions",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/cytoolz/curried/exceptions.py",
+      "sha256": "c35bfd4c6122e8cd98c9942a046ba8fd9c3696472af332229298124753bb448f"
+    },
+    {
+      "module": "cytoolz.curried.operator",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/cytoolz/curried/operator.py",
+      "sha256": "21f60d99003cc93e0b3e996ad61764135c80aad2c5b6835df3ace62a0735a9eb"
+    },
+    {
+      "module": "cytoolz.dicttoolz",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/cytoolz/dicttoolz.cpython-314-darwin.so",
+      "sha256": "ac840a5976f066210757e8435f1c026ec8bc00bdaaf93788004bda37a5c6a114"
+    },
+    {
+      "module": "cytoolz.functoolz",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/cytoolz/functoolz.cpython-314-darwin.so",
+      "sha256": "72c420db0ab3e66784b8acd4725e3fb7cba05eaec7e654f5be4328ab14caa6e8"
+    },
+    {
+      "module": "cytoolz.itertoolz",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/cytoolz/itertoolz.cpython-314-darwin.so",
+      "sha256": "0eeffaec813071c0ff83e2da9186eade7445d7ba4569f6f5dda38324b46bc0db"
+    },
+    {
+      "module": "cytoolz.recipes",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/cytoolz/recipes.cpython-314-darwin.so",
+      "sha256": "0c2131e20ac418fb3b1d249a20ab767e87ba4ec98b356876fad994c17a90bdda"
+    },
+    {
+      "module": "cytoolz.utils",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/cytoolz/utils.cpython-314-darwin.so",
+      "sha256": "afca35f1fcf2f4b2108031f3967bb07a6876060e37bdcc474dd1179d38f08801"
+    },
+    {
+      "module": "dataclasses",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/dataclasses.py",
+      "sha256": "cd1435e8cd7b7fd8b0128e05c2583445ea3f76fb437b065d22cb7587206afca8"
+    },
+    {
+      "module": "datetime",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/datetime.py",
+      "sha256": "742884b0c8e7dc69911858245db4f34d42e8ec0f769d580c570bd56032b0866c"
+    },
+    {
+      "module": "decimal",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/decimal.py",
+      "sha256": "af29fa99aa720a68cab5a6384c7beba4c8e9480a6c1d53a512efeeb5a7e5c781"
+    },
+    {
+      "module": "dis",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/dis.py",
+      "sha256": "17d4d9a9195c9ee5aa27a96f3e0871f9363fd501e3a64ef20cb1cc876d7ad553"
+    },
+    {
+      "module": "email",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/email/__init__.py",
+      "sha256": "dafca994154b9a6eb2b69d0e6e69e7596f397c2aec9bc62702259f4b39bd111a"
+    },
+    {
+      "module": "email._encoded_words",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/email/_encoded_words.py",
+      "sha256": "f856ad8d42b87d60c596de64beb9bcc1d0bb1fa189af79ea4bfb0a6f5564b7b4"
+    },
+    {
+      "module": "email._parseaddr",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/email/_parseaddr.py",
+      "sha256": "59924815da3537e55342625a254288931e0585733cb65892bd500adb4b837e69"
+    },
+    {
+      "module": "email._policybase",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/email/_policybase.py",
+      "sha256": "b39778a6dd7803ca768e99c0f3c2f814af8b6fc9ec6a7c8265fcb15e53f2a3f3"
+    },
+    {
+      "module": "email.base64mime",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/email/base64mime.py",
+      "sha256": "f9afd67a21d496a2cb571595ecbf79db1f1d4140e6b8b453a569a7eb8a688822"
+    },
+    {
+      "module": "email.charset",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/email/charset.py",
+      "sha256": "37f291f2390447e43314229202ed7aee2251420ad47e2fb1aa51b3b5b90c1054"
+    },
+    {
+      "module": "email.encoders",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/email/encoders.py",
+      "sha256": "cc09bd113246fd8084162298948bdf64c3684ed2c8780f03814c7897ce32dca3"
+    },
+    {
+      "module": "email.errors",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/email/errors.py",
+      "sha256": "16e9ae1143667e7224e2ab4048339d0175ed02f3e4946f30daf94d98a25968be"
+    },
+    {
+      "module": "email.feedparser",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/email/feedparser.py",
+      "sha256": "2e68e34c6e956e94bdbd5077d75f1fff3e0d2423726914555f5695fc5cb2bacd"
+    },
+    {
+      "module": "email.header",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/email/header.py",
+      "sha256": "0af6a163dca4e3405c0b1be9093d0e9f6bb9d3f661a453dfbcf11c286af1e27e"
+    },
+    {
+      "module": "email.iterators",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/email/iterators.py",
+      "sha256": "3fa231c15961a6cf3f61ef8362d9558417b23ab93ce43ab5fc66cb5847e5fcf2"
+    },
+    {
+      "module": "email.message",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/email/message.py",
+      "sha256": "65620d24398c60137ea750c3830365916193978af32bd0b412131ee3fa6c7ee7"
+    },
+    {
+      "module": "email.parser",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/email/parser.py",
+      "sha256": "5af6ef2ef9eb5aed6cae264ec2418ac466fe4316b41fd3f7ece4b149d521a1ee"
+    },
+    {
+      "module": "email.quoprimime",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/email/quoprimime.py",
+      "sha256": "d7e20e65fd1947daec86f0ef4d07e12b11b5be62368f584654cd7113f9e0effd"
+    },
+    {
+      "module": "email.utils",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/email/utils.py",
+      "sha256": "628766d0bb6a4dfab2aa6f1da4aeb3088b31e5c23b6a37e3a9155a118ba37a19"
+    },
+    {
+      "module": "encodings",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/encodings/__init__.py",
+      "sha256": "dadc37a3e430ce905b113d2e2a73ee2762dda8a4ad30567b83eb4b44eda147eb"
+    },
+    {
+      "module": "encodings.aliases",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/encodings/aliases.py",
+      "sha256": "e38fc524cc8b2355807921411c918c0d971419c4d6ba6147409785db42d257a3"
+    },
+    {
+      "module": "encodings.utf_16_be",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/encodings/utf_16_be.py",
+      "sha256": "3357196f3fa52433326a6626880e34964e00c5570aee50e9a0a0a7c6d86f6e4f"
+    },
+    {
+      "module": "encodings.utf_8",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/encodings/utf_8.py",
+      "sha256": "ba0cac060269583523ca9506473a755203037c57d466a11aa89a30a5f6756f3d"
+    },
+    {
+      "module": "enum",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/enum.py",
+      "sha256": "982843c2dd6dbec992bfed44abe9ef5464be81876a180d977ccd1a69e26ec16d"
+    },
+    {
+      "module": "eth_hash",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_hash/__init__.py",
+      "sha256": "ad6c4641e1ba23f70786d3ca841aeb74874d064b3cb483e1e36914c1325d5d36"
+    },
+    {
+      "module": "eth_hash.abc",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_hash/abc.py",
+      "sha256": "dbedaea641baeb126556d316f530527843f61ac77e9e8fdc37c517b47aea287b"
+    },
+    {
+      "module": "eth_hash.auto",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_hash/auto.py",
+      "sha256": "78cbb00b9cf3e557ce4521c17f9db5af25fe538fa78661db588628a267580ae6"
+    },
+    {
+      "module": "eth_hash.backends",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_hash/backends/__init__.py",
+      "sha256": "e08ab033712d2acfe190faf26baeece3f4c608955d05f033466285dfb3f4487c"
+    },
+    {
+      "module": "eth_hash.backends.auto",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_hash/backends/auto.py",
+      "sha256": "df599c8cc710d302b54503760d1266f828cdc54de48d9d91b231cfc10a737251"
+    },
+    {
+      "module": "eth_hash.backends.pycryptodome",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_hash/backends/pycryptodome.py",
+      "sha256": "a3e4ae5265c5ace4d145e7b6f0000df8bf05ba663a0455da13d1d100771903e8"
+    },
+    {
+      "module": "eth_hash.main",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_hash/main.py",
+      "sha256": "e814595cd4710774f77c23b64d4afba7a63c1d71a7cbd2e79fcf0c9bb13cc115"
+    },
+    {
+      "module": "eth_hash.utils",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_hash/utils.py",
+      "sha256": "70c0f9b20ff60962a0624abad0d471b9b856eb9d5c9e42a136c1a55a201e9c85"
+    },
+    {
+      "module": "eth_keys",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_keys/__init__.py",
+      "sha256": "820f6dee1586acafdaf85119047ffc4cdeddfa2ae48ee1cc220d9c831309a5c0"
+    },
+    {
+      "module": "eth_keys.backends",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_keys/backends/__init__.py",
+      "sha256": "a3aeb728f7a646d6b696778452ecd45d8e37dcd993b6c4250eed2bb5f8888f72"
+    },
+    {
+      "module": "eth_keys.backends.base",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_keys/backends/base.py",
+      "sha256": "b4cbb1843cede66717bd67d9850673aec5263e4d9cb8e6de9eed0cf6212791af"
+    },
+    {
+      "module": "eth_keys.backends.coincurve",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_keys/backends/coincurve.py",
+      "sha256": "cc0606bb55b293fc70e61d0e5e44c5afc5141fbd93a8071d64c188573bfc7fd5"
+    },
+    {
+      "module": "eth_keys.backends.native",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_keys/backends/native/__init__.py",
+      "sha256": "a4d410bfa0528c71386449da7eb66d18e36f84f7a52165b233513fe22b1be870"
+    },
+    {
+      "module": "eth_keys.backends.native.ecdsa",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_keys/backends/native/ecdsa.py",
+      "sha256": "f004fccb31c5d12ffc627a27a4e191586ae1ba22420602841442f96d2b861a96"
+    },
+    {
+      "module": "eth_keys.backends.native.jacobian",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_keys/backends/native/jacobian.py",
+      "sha256": "7ec2fb1cdc111b417cb7b3a25a9828da0e829c28a355e8c96b28ccfd186f3162"
+    },
+    {
+      "module": "eth_keys.backends.native.main",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_keys/backends/native/main.py",
+      "sha256": "bfa3194e395dc760310402ac336368912ceeab21cd7ff72fe6bf7475b81babb8"
+    },
+    {
+      "module": "eth_keys.constants",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_keys/constants.py",
+      "sha256": "bd3418b24048e12031e8a90e62fa8a485f9f6654a9c3db9afad2a4a57f50eeab"
+    },
+    {
+      "module": "eth_keys.datatypes",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_keys/datatypes.py",
+      "sha256": "0db756cac46977b1f1fa67622a3b53f9fffba67abffc16e1b35a1b7ca62289c7"
+    },
+    {
+      "module": "eth_keys.exceptions",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_keys/exceptions.py",
+      "sha256": "fe3b7899cf47da14a52be62d349c50be06cba4fa18bd5ad128bf9e6c013206a8"
+    },
+    {
+      "module": "eth_keys.main",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_keys/main.py",
+      "sha256": "67230ee7532588a13119dc3b62001a2654c5693e0dade95d0bf9b34abf235803"
+    },
+    {
+      "module": "eth_keys.utils",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_keys/utils/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "eth_keys.utils.address",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_keys/utils/address.py",
+      "sha256": "0c04c56d5067019b21529f1e60b095f010af244655e821e3d4f70ac90259f7a7"
+    },
+    {
+      "module": "eth_keys.utils.der",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_keys/utils/der.py",
+      "sha256": "a3f0dbd69d6712d03a97180a8f77372fdc4dc049c11fa39abef937c3b31fc2bc"
+    },
+    {
+      "module": "eth_keys.utils.module_loading",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_keys/utils/module_loading.py",
+      "sha256": "dea4f6785b1982c82d4b1d29b31e7064137babb4d1649b7f952a032e8cf1bc8f"
+    },
+    {
+      "module": "eth_keys.utils.numeric",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_keys/utils/numeric.py",
+      "sha256": "52015f33690514ca69b94200ed980e60af426ae48c899ea313b3a6087fd1abc2"
+    },
+    {
+      "module": "eth_keys.utils.padding",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_keys/utils/padding.py",
+      "sha256": "ab2fe58254908973299ce005bfcf40b71b223ee6f0d927a3c7cd8d61a928803a"
+    },
+    {
+      "module": "eth_keys.validation",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_keys/validation.py",
+      "sha256": "d69a5d120482a45ecd6f5b6b644eaf86bb427a1eab817535ec3714ac9938fe9d"
+    },
+    {
+      "module": "eth_typing",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_typing/__init__.py",
+      "sha256": "9b9e04fabd42fe9d17738a2cee8898f325f76a4fbfd7c9c3e701f03a25abe49b"
+    },
+    {
+      "module": "eth_typing.abi",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_typing/abi.py",
+      "sha256": "919020e95842ad647ff7be8545da65b16199b8bfde624b6914bfbacf0c852859"
+    },
+    {
+      "module": "eth_typing.bls",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_typing/bls.py",
+      "sha256": "5a9e23c666cd36c759c37adcbad5efad86fb5386ce80aeb5f2e1695e4b326f80"
+    },
+    {
+      "module": "eth_typing.discovery",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_typing/discovery.py",
+      "sha256": "75aa9c2307becd748f48649e1d76f317f92e6bffaacd67524b5b6af3210d2a9e"
+    },
+    {
+      "module": "eth_typing.encoding",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_typing/encoding.py",
+      "sha256": "09840363d857ae2683513ecee210c5d5b7ad110caafdac71f1d4b5aab8a1764f"
+    },
+    {
+      "module": "eth_typing.enums",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_typing/enums.py",
+      "sha256": "8f0537afebb9c581f6e3bce41ade8220df045c96ef3218f959c1482df33bfeb6"
+    },
+    {
+      "module": "eth_typing.evm",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_typing/evm.py",
+      "sha256": "41dfdd45f89644f10992a5be42856a3c3b98e89e39ab0cf0d43be3fa5d26e177"
+    },
+    {
+      "module": "eth_typing.exceptions",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_typing/exceptions.py",
+      "sha256": "4111a487a5b68fc080dd30197e665f1924fa7e365ce29587dab79ab73cc403c7"
+    },
+    {
+      "module": "eth_typing.networks",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_typing/networks.py",
+      "sha256": "bce8b4b30a22043914bcd2e734637ae05be0450a5b732d9d059f9be72871763d"
+    },
+    {
+      "module": "eth_utils",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_utils/__init__.py",
+      "sha256": "d02aeedf1395fb1f41cb5558d2bb5993c0c9b33b11e22463beaee0ff2162c498"
+    },
+    {
+      "module": "eth_utils.abi",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_utils/abi.py",
+      "sha256": "1665b6edb5aa56ae4982a2327ad684d9818f35a3e10782bdf2f013ef9173d812"
+    },
+    {
+      "module": "eth_utils.address",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_utils/address.py",
+      "sha256": "27cda7582b9448d2f2db3a7d1886843aadc3b0e030a483377f86dadbd985b254"
+    },
+    {
+      "module": "eth_utils.applicators",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_utils/applicators.py",
+      "sha256": "a58e77ed8033e918a613ac0b5816847d64b5291eb31e8b4ee503688c70755783"
+    },
+    {
+      "module": "eth_utils.conversions",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_utils/conversions.py",
+      "sha256": "1dd27ffeeba05f4cf0b352f7e0f0af4e305c99245c3d01a3118675026c46acff"
+    },
+    {
+      "module": "eth_utils.crypto",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_utils/crypto.py",
+      "sha256": "67d395224f6c1f6cba8e55278dbc08e7af737647e25a1c5e4fdff6568ec08dca"
+    },
+    {
+      "module": "eth_utils.currency",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_utils/currency.py",
+      "sha256": "cce492e6eef589cdce24a22cf4d52fe95481ceace34cc32b4c92d4ff4da2fd18"
+    },
+    {
+      "module": "eth_utils.decorators",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_utils/decorators.py",
+      "sha256": "907dddabbda84e5138b03206c069346de6534f23ec72f6317915ef0eb79f63a0"
+    },
+    {
+      "module": "eth_utils.encoding",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_utils/encoding.py",
+      "sha256": "d6a7c37ae8a72d9d355e3620927a66fe9f4bb96c1a62f89c624608f264b588c7"
+    },
+    {
+      "module": "eth_utils.exceptions",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_utils/exceptions.py",
+      "sha256": "de774ceb397842849ce86ba957d4f52a5cfd4c1c8cf30db3af87b3f1426fcdec"
+    },
+    {
+      "module": "eth_utils.functional",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_utils/functional.py",
+      "sha256": "de1b3cc35a26f02f72fd79d58895c570a3d86b8c5d681cd192c0f515b59cfbf5"
+    },
+    {
+      "module": "eth_utils.hexadecimal",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_utils/hexadecimal.py",
+      "sha256": "eb7da2ae49a7e61fa056ca6bf36b8e09eafe578305bb7728bded2776749aa251"
+    },
+    {
+      "module": "eth_utils.humanize",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_utils/humanize.py",
+      "sha256": "ad2054380ebf5826000e1ca120ea2a4ccbb7a6800cbb8679c332b6513f6fed53"
+    },
+    {
+      "module": "eth_utils.logging",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_utils/logging.py",
+      "sha256": "b158f433df090530d8d954ca45a2de7ad07370a31a26a320ddb431254e85be18"
+    },
+    {
+      "module": "eth_utils.module_loading",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_utils/module_loading.py",
+      "sha256": "0c22cce1d121d60aabf0dcbe156c03fbfa4836a787cdb2d2ba9cf8648a42080c"
+    },
+    {
+      "module": "eth_utils.network",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_utils/network.py",
+      "sha256": "14373f76c73abc3430dfdf74efb60fd23a389666d0f7354f8442c9fe3194a357"
+    },
+    {
+      "module": "eth_utils.numeric",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_utils/numeric.py",
+      "sha256": "46b5dd5c8f9b861904b33dda06dc47b8695cff6649bd41a9bcc738ef0c78d3c6"
+    },
+    {
+      "module": "eth_utils.pydantic",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_utils/pydantic.py",
+      "sha256": "1ead80a49659472fa101d41e10723dab4d0c07a926e1316cc5f0854403241633"
+    },
+    {
+      "module": "eth_utils.toolz",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_utils/toolz.py",
+      "sha256": "3262ead8939a2943ff9f5773dadb963f25f9614856954b5249b00af27aadf5d8"
+    },
+    {
+      "module": "eth_utils.types",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_utils/types.py",
+      "sha256": "4bac36db1cd85f3c8111555844b898617778dfb3adfa9bb2a9e6f91525661a88"
+    },
+    {
+      "module": "eth_utils.units",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/eth_utils/units.py",
+      "sha256": "8d1a3ca7ab6bc70b884819d3f247f14cd57277f4d2779bd56396a228379f0755"
+    },
+    {
+      "module": "fcntl",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/lib-dynload/fcntl.cpython-314-darwin.so",
+      "sha256": "16c60f941d51da1dd4df7eb94e185a241f58584559b35e63d25904b7473ea56b"
+    },
+    {
+      "module": "fnmatch",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/fnmatch.py",
+      "sha256": "ce582bc266922e4c682e2a85d72095124430a6bf58716c6f2537103480eae742"
+    },
+    {
+      "module": "fractions",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/fractions.py",
+      "sha256": "7a95f1c506c9ac4b2277df5f2bdd9d61cc67b520c45021a5a961939770221ef6"
+    },
+    {
+      "module": "functools",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/functools.py",
+      "sha256": "046ec9660146db48862c7b22c78e2ef3818eaed6920e5cbf35f551ef09fec6cd"
+    },
+    {
+      "module": "genericpath",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/genericpath.py",
+      "sha256": "cdac5a68dd738051e0d66fc81d5947d6a1776248fc6fe862253477608d870ec4"
+    },
+    {
+      "module": "gettext",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/gettext.py",
+      "sha256": "54c00df11915aafb017ed23860dcb5197ed063f7ee07e5612625ec86afadcaf5"
+    },
+    {
+      "module": "glob",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/glob.py",
+      "sha256": "403f046e49ce9967cef50d2f72e7986f7f08c6ba942376fcfe78520e005502f9"
+    },
+    {
+      "module": "grp",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/lib-dynload/grp.cpython-314-darwin.so",
+      "sha256": "3cd98dbd1f65a8d3b177825f8aa489087229feeed14eda89b226cbd99a2d9a44"
+    },
+    {
+      "module": "hashlib",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/hashlib.py",
+      "sha256": "88fa624821fbdee7eb2ef87c2437b207afe328cf117c7463367e2db5eb1af492"
+    },
+    {
+      "module": "heapq",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/heapq.py",
+      "sha256": "f2d644de141a488db66fc13608a794ef5f2d33162299f6751ea92c3cb0b4c9ea"
+    },
+    {
+      "module": "hmac",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/hmac.py",
+      "sha256": "10e8952ae06300f63a1a8f4898f7f828e8e5ad17bf29240d4e2d106418f0226b"
+    },
+    {
+      "module": "importlib",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/importlib/__init__.py",
+      "sha256": "72b07de4133a7e39b2f6a7920465669aa04626f217e800779587bc0713fe002e"
+    },
+    {
+      "module": "importlib._abc",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/importlib/_abc.py",
+      "sha256": "80aab7931dc999dee581c8b8b56fcd973fe156335a96ceeaf6acfc03cebf10e8"
+    },
+    {
+      "module": "importlib._bootstrap",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/importlib/_bootstrap.py",
+      "sha256": "9cb541ddc6807aaba91e4243de57d869baa7f423565b1ac27024b9e826b50e1c"
+    },
+    {
+      "module": "importlib._bootstrap_external",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/importlib/_bootstrap_external.py",
+      "sha256": "9750820035459ff08336cc59409d92c2f32f6f633c1831ba14c1ad9c3a56d9f2"
+    },
+    {
+      "module": "importlib.abc",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/importlib/abc.py",
+      "sha256": "66da663909ac110b77d89d4402589574308aac2a5b524bba014fabd65f34cc99"
+    },
+    {
+      "module": "importlib.machinery",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/importlib/machinery.py",
+      "sha256": "34b7583fd83ebb2629b7645c0dd293839ce16b19cf8742801e21a21fe08f5811"
+    },
+    {
+      "module": "importlib.metadata",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/importlib/metadata/__init__.py",
+      "sha256": "5476c7c22a65f9e8b5a07b799336d87fa70e792758fd95b161b53b530e3b2654"
+    },
+    {
+      "module": "importlib.metadata._adapters",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/importlib/metadata/_adapters.py",
+      "sha256": "c46791664cc0720374649414d0afdf24ca709580ce9feea0a25a4f76441677c1"
+    },
+    {
+      "module": "importlib.metadata._collections",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/importlib/metadata/_collections.py",
+      "sha256": "089d0e4c21c88d6034648552e2fa0e440b27d91e11d9c40112d3ec6442690126"
+    },
+    {
+      "module": "importlib.metadata._functools",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/importlib/metadata/_functools.py",
+      "sha256": "3ec636fb8aeb297e1155e442d681a9d65075a660bd78a37cf3f7fe6c3f6e3a80"
+    },
+    {
+      "module": "importlib.metadata._itertools",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/importlib/metadata/_itertools.py",
+      "sha256": "72faffdaff0145bc5c225e71e6575fa9d1e3848f188bcb3cca4e741bf9e6ea34"
+    },
+    {
+      "module": "importlib.metadata._meta",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/importlib/metadata/_meta.py",
+      "sha256": "9f167b0bc19595c04500a5b254e9ff767ee8b7fb7005c6e6d4d9af8c87ad0472"
+    },
+    {
+      "module": "importlib.metadata._text",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/importlib/metadata/_text.py",
+      "sha256": "1c2b0592c66924b7933f734493f9e0ac079755146d4ebb7287d78e001a113f80"
+    },
+    {
+      "module": "importlib.util",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/importlib/util.py",
+      "sha256": "7bdfadad42664ba169ffac8160765673cd79937f74324f4664de8d820c35b863"
+    },
+    {
+      "module": "inspect",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/inspect.py",
+      "sha256": "99fd8e7072c4082c317cf1c066e154df8191b5f2889c61a5e137d3436b3c9ed8"
+    },
+    {
+      "module": "io",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/io.py",
+      "sha256": "1b75584d4efcc612dc0db2ae98619408276585a106f0544879edb5e25b55430a"
+    },
+    {
+      "module": "ipaddress",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/ipaddress.py",
+      "sha256": "4cba28ab40dc34c685950535cf9adf6251bee5b63c82eed1f315d93853d4eaca"
+    },
+    {
+      "module": "json",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/json/__init__.py",
+      "sha256": "95022d150a27a2bfd54ac21bfce35812c96b53c420bb7b018dcb573f13e52da0"
+    },
+    {
+      "module": "json.decoder",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/json/decoder.py",
+      "sha256": "302ce57cb6f411122d7ef2ad2997c1fc0f184849fab3f1f585752f18f2195c73"
+    },
+    {
+      "module": "json.encoder",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/json/encoder.py",
+      "sha256": "d68a4d04d2cfd95897498307f29349058b42c3f48ea6aa6739714a09200a7d01"
+    },
+    {
+      "module": "json.scanner",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/json/scanner.py",
+      "sha256": "572958017eae8842eeddd0e3d18d3c56cc0a197348224915e1d87ce937841764"
+    },
+    {
+      "module": "keyword",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/keyword.py",
+      "sha256": "18c2be738c04ad20ad375f6a71db34b3823c7f40b0340f5294d0e89f3c9b093b"
+    },
+    {
+      "module": "linecache",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/linecache.py",
+      "sha256": "692daec68e2a419adf46bafc0eb2f8a2fb36c482183fa1ac47e00fec440f7d7e"
+    },
+    {
+      "module": "locale",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/locale.py",
+      "sha256": "0e90907424b4bef150b00feb1bef4687bacb416e6e3f2b463e0758ee34979fe4"
+    },
+    {
+      "module": "logging",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/logging/__init__.py",
+      "sha256": "60682a2e00512c56fe9de436034fbe7a882891964145a8e0b438bb2e6b55cd98"
+    },
+    {
+      "module": "lzma",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/lzma.py",
+      "sha256": "b01a78a04c6a9ba6c645758cace78ed53a53871ea3ff88744e23f6263613d507"
+    },
+    {
+      "module": "math",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/lib-dynload/math.cpython-314-darwin.so",
+      "sha256": "8bdb6401920d20164fec798c4a2c02b86e9b4dea71ebfca954169b8428b261e4"
+    },
+    {
+      "module": "nacl",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/nacl/__init__.py",
+      "sha256": "e8f4e02f589edeaacad9fb665e5de0bf8fd17fe3d173069e9a2bc529797a0bb7"
+    },
+    {
+      "module": "nacl._sodium",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/nacl/_sodium.abi3.so",
+      "sha256": "dbc73de77581797e963721c65ce9980afc2e4127e6ef4cdf3680590d4341e90b"
+    },
+    {
+      "module": "nacl.bindings",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/nacl/bindings/__init__.py",
+      "sha256": "fc250d01caf65e01d052496ff0706a6fda9d1f354359620d461c61438f0deee5"
+    },
+    {
+      "module": "nacl.bindings.crypto_aead",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/nacl/bindings/crypto_aead.py",
+      "sha256": "5ce670643de7cac3abf38e67d022526bccb2a2596339d71dbc9cd16fc5eb02bc"
+    },
+    {
+      "module": "nacl.bindings.crypto_box",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/nacl/bindings/crypto_box.py",
+      "sha256": "32f6cdf964eb9779fdc60bb9217b4e5ec97e4a8a6d5e7cb724dcd0f0d109e71d"
+    },
+    {
+      "module": "nacl.bindings.crypto_core",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/nacl/bindings/crypto_core.py",
+      "sha256": "9301f155177261208b46d9287b50ddf3bbc53b0e62ceaf16ba6c339691b06b91"
+    },
+    {
+      "module": "nacl.bindings.crypto_generichash",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/nacl/bindings/crypto_generichash.py",
+      "sha256": "f665f40c6208ce272bfae5eba853359d4e2d8ab6ac6e2c43c1b71d7d5ed6d5f7"
+    },
+    {
+      "module": "nacl.bindings.crypto_hash",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/nacl/bindings/crypto_hash.py",
+      "sha256": "460d6bb04c04ddace1b104fe74d54f038341f55a202402a7d447f162dd293ded"
+    },
+    {
+      "module": "nacl.bindings.crypto_kx",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/nacl/bindings/crypto_kx.py",
+      "sha256": "1b55fc5fb3f5d1d0e104ec6718c1b5aad7065c6cc1201fe1c63414460affa593"
+    },
+    {
+      "module": "nacl.bindings.crypto_pwhash",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/nacl/bindings/crypto_pwhash.py",
+      "sha256": "495e4a2ff084ce3a07ef08de3be5880ad47e8d8a27a8544a7bc789f29d256196"
+    },
+    {
+      "module": "nacl.bindings.crypto_scalarmult",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/nacl/bindings/crypto_scalarmult.py",
+      "sha256": "fc35fe9acb76b829f38e8e9f3f91d14e786fd410bde41f609897372ffa2bd7a8"
+    },
+    {
+      "module": "nacl.bindings.crypto_secretbox",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/nacl/bindings/crypto_secretbox.py",
+      "sha256": "abc8fd1bf91d0d408aaaff84a54e168468196dcebe74805b1dca828f725e6b33"
+    },
+    {
+      "module": "nacl.bindings.crypto_secretstream",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/nacl/bindings/crypto_secretstream.py",
+      "sha256": "774f7b8d2490e586c29e84d943479d207e74bea56534ccea52f818741809133c"
+    },
+    {
+      "module": "nacl.bindings.crypto_shorthash",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/nacl/bindings/crypto_shorthash.py",
+      "sha256": "3d053b7631d32c319d56cfb0fd3b22be31471e9e442b9936621ea9fbacf44fad"
+    },
+    {
+      "module": "nacl.bindings.crypto_sign",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/nacl/bindings/crypto_sign.py",
+      "sha256": "3f948b91f440ab9963e452db03506e06b283c305b45e30caff1a67f091386aa2"
+    },
+    {
+      "module": "nacl.bindings.randombytes",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/nacl/bindings/randombytes.py",
+      "sha256": "b812b75b859c8e09e365d59a9eb5f47e3619a6bf4a1db06034c97daee8be3a37"
+    },
+    {
+      "module": "nacl.bindings.sodium_core",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/nacl/bindings/sodium_core.py",
+      "sha256": "f58f425fefacabe4da3da4113d1a71f12583492f4f24e8dafc2a9bfb2ab224d4"
+    },
+    {
+      "module": "nacl.bindings.utils",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/nacl/bindings/utils.py",
+      "sha256": "283c109da75778d31ba840354a6a4dc82568e64f0c89441ad3b40ceba5737d73"
+    },
+    {
+      "module": "nacl.encoding",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/nacl/encoding.py",
+      "sha256": "a9300f7363174a4761e1ca83558d2b6ba907c95887302984a3fadeedc806939c"
+    },
+    {
+      "module": "nacl.exceptions",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/nacl/exceptions.py",
+      "sha256": "8f954ecc355f348ec3b95965a78028a1e01f99bb77477375d9f9e2b5813b7ea5"
+    },
+    {
+      "module": "nacl.public",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/nacl/public.py",
+      "sha256": "dbefb1b43d960beec4960c629a6a787b61e4244292d5327b9683630879a57012"
+    },
+    {
+      "module": "nacl.signing",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/nacl/signing.py",
+      "sha256": "d96e50f4d33cd7bd00aefbf5fbd066a3e6591cec5a15275bb3351f1cd188f61d"
+    },
+    {
+      "module": "nacl.utils",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/nacl/utils.py",
+      "sha256": "8269530f5c7d64dc331ddf0ba402c7d421ee77e1edbfc7a345bdf2ed3c92f5fd"
+    },
+    {
+      "module": "ntpath",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/ntpath.py",
+      "sha256": "7c5c992b1b52f97d7dc73ad09ea8b97917475e7e4474563379e71b03015f04ca"
+    },
+    {
+      "module": "numbers",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/numbers.py",
+      "sha256": "e5e73beba4a7674bd5e9a881a202d403a0c3e2b59af4181699155ea4827a7561"
+    },
+    {
+      "module": "opcode",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/opcode.py",
+      "sha256": "1036d90c917bb27c540ac3205d22896ee747214df1f2682458ab915758e4fdf2"
+    },
+    {
+      "module": "operator",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/operator.py",
+      "sha256": "a9f9910965c31f841caad0447ee47299ac539a371422aefe200c86c60f3b4697"
+    },
+    {
+      "module": "os",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/os.py",
+      "sha256": "1494f3b93c6714d7a511963586f2b392dc92f3181c0d1ead82c621a4b0aad969"
+    },
+    {
+      "module": "os.path",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/posixpath.py",
+      "sha256": "8a5bc2b6674e76efe0f507b873a41d746beba466a191153ed18a7580ef6e08e1"
+    },
+    {
+      "module": "pathlib",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/pathlib/__init__.py",
+      "sha256": "042a4d0a5e1ef66778daa86dc269af205bd42d06e793e53d8b99dff4c45928ca"
+    },
+    {
+      "module": "pathlib._os",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/pathlib/_os.py",
+      "sha256": "61e844988e54bdf47c0b11ad2b3fd961f058bb370793428f4c6868bd40cab6f2"
+    },
+    {
+      "module": "platform",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/platform.py",
+      "sha256": "240eba74565cd0dc4f99f182f7afc32bbea0593016ddb34165b529b5bcb6be0a"
+    },
+    {
+      "module": "plistlib",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/plistlib.py",
+      "sha256": "b5fa59256573e4eed3ae682e4c63498bc7f4c90be931b03479d59675358d57df"
+    },
+    {
+      "module": "posixpath",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/posixpath.py",
+      "sha256": "8a5bc2b6674e76efe0f507b873a41d746beba466a191153ed18a7580ef6e08e1"
+    },
+    {
+      "module": "pycparser",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/pycparser/__init__.py",
+      "sha256": "35922781317a3f15be51e6676d8fc2c6690f1b9c8f108d5705fff94835e34a14"
+    },
+    {
+      "module": "pycparser.ast_transforms",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/pycparser/ast_transforms.py",
+      "sha256": "cbc35d509a8b833cb00732666c92ef6dcb0d46d2b3da0dd87ea42f8062fecf58"
+    },
+    {
+      "module": "pycparser.c_ast",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/pycparser/c_ast.py",
+      "sha256": "042a060231e60d1f12d1dd061ab114384e0d506605651b7e5bd6e9d257781896"
+    },
+    {
+      "module": "pycparser.c_lexer",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/pycparser/c_lexer.py",
+      "sha256": "ef5e16cc8031c4880672978d0080b59e9bd94a5b2cd66e16c0b52cf1dfbe105e"
+    },
+    {
+      "module": "pycparser.c_parser",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/pycparser/c_parser.py",
+      "sha256": "b8c9a31bc8e57a075de2c44821995ba339653fa19d29e2dfbe2ea864a7381e48"
+    },
+    {
+      "module": "pydantic",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/pydantic/__init__.py",
+      "sha256": "e5248cb9bbe293b3536dbed7fea54326dcdf3c03370ae5f03d794c58496ec01b"
+    },
+    {
+      "module": "pydantic._internal",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/pydantic/_internal/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "pydantic._internal._config",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/pydantic/_internal/_config.py",
+      "sha256": "bb17fc1949ba1f3b01789feb6220a7516c4562df0bb51652b79e2e48735e3d00"
+    },
+    {
+      "module": "pydantic._internal._core_metadata",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/pydantic/_internal/_core_metadata.py",
+      "sha256": "63f836b778bbba5b8afb05c266fcc97d114c3d4336dda0582df69ee05cc13f2d"
+    },
+    {
+      "module": "pydantic._internal._core_utils",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/pydantic/_internal/_core_utils.py",
+      "sha256": "8a8bec150d2ef70b4fbc45cd4aa42d5c64855dca4f13f693028d525ccef91b51"
+    },
+    {
+      "module": "pydantic._internal._decorators",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/pydantic/_internal/_decorators.py",
+      "sha256": "66a6a829cc2d5ae7566be5aca298b11d265e03be58188908f463a2802988ce59"
+    },
+    {
+      "module": "pydantic._internal._discriminated_union",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/pydantic/_internal/_discriminated_union.py",
+      "sha256": "1dd44bd97385a02795f79acad189312563e149d9995a7bad45a68192643ad07b"
+    },
+    {
+      "module": "pydantic._internal._docs_extraction",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/pydantic/_internal/_docs_extraction.py",
+      "sha256": "f14627032f86c4278f7345e81f8de822474d02a1662022f28e9e3c48cb46a02c"
+    },
+    {
+      "module": "pydantic._internal._fields",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/pydantic/_internal/_fields.py",
+      "sha256": "fa54b28a9972f53b67c79d568549dac57be767461e9bfa99c61eef512a6dab2a"
+    },
+    {
+      "module": "pydantic._internal._forward_ref",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/pydantic/_internal/_forward_ref.py",
+      "sha256": "aba490856f30a3dbcf662b9727aeb555f83b3e0a2a7890504c0ddda489d75a50"
+    },
+    {
+      "module": "pydantic._internal._generate_schema",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/pydantic/_internal/_generate_schema.py",
+      "sha256": "759371011c1c94390c786da3fd2d7a312f05bc303d19d9cd87a5426a212216b0"
+    },
+    {
+      "module": "pydantic._internal._generics",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/pydantic/_internal/_generics.py",
+      "sha256": "e16a419b9d7c73e6473a24f77edd612bd24da1c22e664c738d7b3c7756e769f8"
+    },
+    {
+      "module": "pydantic._internal._import_utils",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/pydantic/_internal/_import_utils.py",
+      "sha256": "4d18710f93ae63a094a2c8a805d05c254b34a26ec820e36265d60057bcd0f233"
+    },
+    {
+      "module": "pydantic._internal._known_annotated_metadata",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/pydantic/_internal/_known_annotated_metadata.py",
+      "sha256": "29239b749dda7f86113c470b151eb95c18b3245df78796297247aef4902f2b14"
+    },
+    {
+      "module": "pydantic._internal._mock_val_ser",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/pydantic/_internal/_mock_val_ser.py",
+      "sha256": "56a6ec20e81e9e841088cf8db05325f6e63b8ad8094ae3cda5754a698ec0d293"
+    },
+    {
+      "module": "pydantic._internal._model_construction",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/pydantic/_internal/_model_construction.py",
+      "sha256": "e9f8b178522454c24ff04b3d7b734665b20b9e3b6ed4c9b5d7d5fe5ad019cee3"
+    },
+    {
+      "module": "pydantic._internal._namespace_utils",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/pydantic/_internal/_namespace_utils.py",
+      "sha256": "f3f4252ebefbde498fcc8182bbc463131049846c019f44408ca316825cdabfeb"
+    },
+    {
+      "module": "pydantic._internal._repr",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/pydantic/_internal/_repr.py",
+      "sha256": "30d91ae289c2f6efad5c9bd5dabb33dc95ecbb1aa5c0a6ca9ddd7afad831ae2c"
+    },
+    {
+      "module": "pydantic._internal._schema_gather",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/pydantic/_internal/_schema_gather.py",
+      "sha256": "d2a19b8b3e2975c7ef74c887ec9b9e275d2d43c73be748353a4674c723ffdb44"
+    },
+    {
+      "module": "pydantic._internal._schema_generation_shared",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/pydantic/_internal/_schema_generation_shared.py",
+      "sha256": "f272ec49aaa011e6f1785dba3b088f06dd1954f8a91aa5b5215e346a09117f1c"
+    },
+    {
+      "module": "pydantic._internal._signature",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/pydantic/_internal/_signature.py",
+      "sha256": "eb827244927c19ff8939fad96b6c53354746a5ded11aa74d2d815760e16e3d95"
+    },
+    {
+      "module": "pydantic._internal._type_refs",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/pydantic/_internal/_type_refs.py",
+      "sha256": "9f1260561c30c6248e7106eb7357b92daf83a66e7053fe1248a254064a7484e5"
+    },
+    {
+      "module": "pydantic._internal._typing_extra",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/pydantic/_internal/_typing_extra.py",
+      "sha256": "e56811574315b19a9a87da56e28fc16e6b2eef70449842d584eee4db73543704"
+    },
+    {
+      "module": "pydantic._internal._utils",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/pydantic/_internal/_utils.py",
+      "sha256": "23de5935186553e9bc579a6a0594ab3f6b0c20d63e8b0e5a6dc3d451185a0678"
+    },
+    {
+      "module": "pydantic._internal._validators",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/pydantic/_internal/_validators.py",
+      "sha256": "f98f5abb8473a20d0274c11e387b3bedcf7df0c4ef81a1167d1360c432f67389"
+    },
+    {
+      "module": "pydantic._migration",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/pydantic/_migration.py",
+      "sha256": "24ecb6a0c319ac9bc8b0f4655a1d056c2d7a6d68b112b8c60afb22c1071ca733"
+    },
+    {
+      "module": "pydantic.alias_generators",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/pydantic/alias_generators.py",
+      "sha256": "28cd67deee097cb48197552e620de1a181f35c90fecaf82b9eaf2ed5c73087f0"
+    },
+    {
+      "module": "pydantic.aliases",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/pydantic/aliases.py",
+      "sha256": "7ca40cf66ee92d9d94a1322a2be6cca31b3971634836b1f1a61c73b01e9501df"
+    },
+    {
+      "module": "pydantic.annotated_handlers",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/pydantic/annotated_handlers.py",
+      "sha256": "f6bace2c54e0f723d6e1945b40089e5af0c4fe41bac4b3ce789f8b9f524de899"
+    },
+    {
+      "module": "pydantic.config",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/pydantic/config.py",
+      "sha256": "ce6280cd61c4d3ce852122e3f75996711baed907ccab1b609a9aebf6f1a12171"
+    },
+    {
+      "module": "pydantic.errors",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/pydantic/errors.py",
+      "sha256": "e8d3f2c9de372b30c9765da667da8a316b98311dac4f5ffffaf8c50aa4b36509"
+    },
+    {
+      "module": "pydantic.fields",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/pydantic/fields.py",
+      "sha256": "70538e4988a6748f96d7a991ace8ef8a56983bbd5f589afc13d31150531ebca7"
+    },
+    {
+      "module": "pydantic.functional_validators",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/pydantic/functional_validators.py",
+      "sha256": "ba78239e3ba03f1021eef3e153b629ee4eb374f51f299aed3856d1ccdd3ae1fc"
+    },
+    {
+      "module": "pydantic.json_schema",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/pydantic/json_schema.py",
+      "sha256": "ad107fbc52542d7aec4ccb0855a853c88b1ad27257f283182defe684fcea6d20"
+    },
+    {
+      "module": "pydantic.main",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/pydantic/main.py",
+      "sha256": "84335fc05a112a2834af4a048f71c6a7c46b90f4468bee541da36e438a387190"
+    },
+    {
+      "module": "pydantic.plugin",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/pydantic/plugin/__init__.py",
+      "sha256": "4ab557f570db50acede8154d0512972a612ac5e704444aba0385a857f44c2617"
+    },
+    {
+      "module": "pydantic.plugin._loader",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/pydantic/plugin/_loader.py",
+      "sha256": "8408e04a58e82211b1dc0569229baac3948fb6d04d35e181493aea48c9cd8899"
+    },
+    {
+      "module": "pydantic.plugin._schema_validator",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/pydantic/plugin/_schema_validator.py",
+      "sha256": "ffff5fdede9a759c4d832cda8ee35d6b9b2222f2960c35ecb04e900fc8735c1e"
+    },
+    {
+      "module": "pydantic.types",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/pydantic/types.py",
+      "sha256": "e4814eeef3981f268f7f8544d9b462f5a51d1f5098f8d8000e3a580dfc085904"
+    },
+    {
+      "module": "pydantic.version",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/pydantic/version.py",
+      "sha256": "f5a7c3f959d8274092ec6d057572821165b920f63e64746c6d4f844c3cb2b220"
+    },
+    {
+      "module": "pydantic.warnings",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/pydantic/warnings.py",
+      "sha256": "b48844f9808d8963603b9dddc28ee361d385bfb007cc999391b31d10664b124a"
+    },
+    {
+      "module": "pydantic_core",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/pydantic_core/__init__.py",
+      "sha256": "5910c2b902fc9462ff577c298eff0fceeb8b0bdea8711e1389f23e1107304610"
+    },
+    {
+      "module": "pydantic_core._pydantic_core",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/pydantic_core/_pydantic_core.cpython-314-darwin.so",
+      "sha256": "3d0fffd6abc935e05258b57598c7847cc1938358d8c93a3e450ad282dfaf24e7"
+    },
+    {
+      "module": "pydantic_core.core_schema",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/pydantic_core/core_schema.py",
+      "sha256": "e7e4605bb19781b72fee45995d71da8a560bcfca65d8bed1bab5709fba00f93c"
+    },
+    {
+      "module": "pyexpat",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/lib-dynload/pyexpat.cpython-314-darwin.so",
+      "sha256": "28284cd7ac83d5dafda621ee75401c3c144b75f15e410480f2f5037ce441287d"
+    },
+    {
+      "module": "quopri",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/quopri.py",
+      "sha256": "744ae69027b180e7155b8be70ea2bb264c2358f7ea4e3af986a215d4c743390f"
+    },
+    {
+      "module": "random",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/random.py",
+      "sha256": "62dca8cdae7482513b99bb093ff038afd5131954e7eb78166d673a772cee871c"
+    },
+    {
+      "module": "re",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/re/__init__.py",
+      "sha256": "741a9de729ed8207bfa19db990f8826f1bf3661f33d0970a80c08cd1338ebc35"
+    },
+    {
+      "module": "re._casefix",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/re/_casefix.py",
+      "sha256": "1b12d9136f23db6c3f6f26053fefc15ca964b886838c7b9c1fabf8d2efc1e5c8"
+    },
+    {
+      "module": "re._compiler",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/re/_compiler.py",
+      "sha256": "d49f30cf9a1dbae33b200ed8befd9d0ce3ac612783a10ac35196536f98923e91"
+    },
+    {
+      "module": "re._constants",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/re/_constants.py",
+      "sha256": "42253b3181b81aad6c46392f44a0ab26dcfa31feea411296f43ba16616a1ab0b"
+    },
+    {
+      "module": "re._parser",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/re/_parser.py",
+      "sha256": "e57bd194a2d42398355ae7c1ccc2ddfb78421dd431eb81e3809dbe8ca9057dc4"
+    },
+    {
+      "module": "reporting",
+      "path": "<temporary-directory>/reporting.py",
+      "sha256": "87528dc20aba05d2efcd4d9fc5ef59d86bd86dd1ba8c04dbbaa881b9bf436ee2"
+    },
+    {
+      "module": "reprlib",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/reprlib.py",
+      "sha256": "b04872e10d76252e44eae50cc785eb0fe478491afc4d7f0825a93f82b2eaba5f"
+    },
+    {
+      "module": "rfc8785",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/rfc8785/__init__.py",
+      "sha256": "fa44927afd547caf7547247078bcf28863d1e69caf116d258c532b3f20ffd154"
+    },
+    {
+      "module": "rfc8785._impl",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/rfc8785/_impl.py",
+      "sha256": "c25bc3a046528482d53bee3487b837f31dd9c05f33e8f13288c7aab320932cec"
+    },
+    {
+      "module": "secrets",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/secrets.py",
+      "sha256": "277000574358a6ecda4bb40e73332ae81a3bc1c8e1fa36f50e5c6a7d4d3f0f17"
+    },
+    {
+      "module": "select",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/lib-dynload/select.cpython-314-darwin.so",
+      "sha256": "72590d08c6dafd3c2fe7ca5079a11ee812e7400a9a7f5d3c192d5cbf30c62420"
+    },
+    {
+      "module": "selectors",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/selectors.py",
+      "sha256": "4b8a60cfbb619d080f87dffe1578372e56e8c0ac826f043224a154cf7b77606d"
+    },
+    {
+      "module": "shutil",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/shutil.py",
+      "sha256": "ab36f39f04e349020cdd13cf41b50905fc399150fb5e6a7cf73d69b22dd949cd"
+    },
+    {
+      "module": "signal",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/signal.py",
+      "sha256": "0363c964c90ac0b3e515de5749205e6e6454051a1211058375d84d91eab6071a"
+    },
+    {
+      "module": "site",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site.py",
+      "sha256": "bf3567b10092d10189a9f7eb12eb1f0c72d023c0d4e72cfa93a5f2e7d3122fd0"
+    },
+    {
+      "module": "sitecustomize",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/sitecustomize.py",
+      "sha256": "cbf9d8d0f07943b63ed5e5983e2b33d91fadc54251e66df7eb7c31f1b816b5d6"
+    },
+    {
+      "module": "stat",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/stat.py",
+      "sha256": "07217986d9b2172b509dab3578d18ac05ba768b418e1f1e8c90e38a8f7c2b3c6"
+    },
+    {
+      "module": "string",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/string/__init__.py",
+      "sha256": "10c1c744ce2518dd739c3debec3831682d453814ce9e228376fadcc83f0f1a4f"
+    },
+    {
+      "module": "struct",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/struct.py",
+      "sha256": "50c14e55f94957804c1e45e975fedbe8e86f7e1dbb745b150370ff681155370a"
+    },
+    {
+      "module": "subprocess",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/subprocess.py",
+      "sha256": "26b3db4e83c14b624f11907ee81f1fc76d54c3bb56617d6888af60c066d21dcd"
+    },
+    {
+      "module": "sysconfig",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/sysconfig/__init__.py",
+      "sha256": "be263076a3c240b9cd38cd1c949f6af4f7b717faf9c5995bfc2201f6d0fe5daf"
+    },
+    {
+      "module": "textwrap",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/textwrap.py",
+      "sha256": "7f05d89c983f5aa8cefcff707a9cc561ed60c51fc8a68e2e3ab61cc6dfa84544"
+    },
+    {
+      "module": "threading",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/threading.py",
+      "sha256": "5323909624ec2165e70b6d31333e4191b63d383d2dc5a7d7d516a3475ea2b7e3"
+    },
+    {
+      "module": "token",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/token.py",
+      "sha256": "61d4270311099c8a0c0b2e45fb363fd1c4e347a720bcc25f682b63dc28c34234"
+    },
+    {
+      "module": "tokenize",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/tokenize.py",
+      "sha256": "65ba1bacdc42e768382208ff27f3001ee77d9d61aafba686c67652d22b84b330"
+    },
+    {
+      "module": "toolz",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/toolz/__init__.py",
+      "sha256": "f7d49e00a3888d25c2b691aae94aff3d87d55e65a38e1e9ad553fdc622129c8f"
+    },
+    {
+      "module": "toolz._signatures",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/toolz/_signatures.py",
+      "sha256": "3e64c279860119baa807cade3940daa1e9bd8e121de29f626b7116f869807061"
+    },
+    {
+      "module": "toolz.curried",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/toolz/curried/__init__.py",
+      "sha256": "53f7749c594e5983750c97399f9276ad3a1ab8753b4047b8e42304d6344b4f56"
+    },
+    {
+      "module": "toolz.curried.exceptions",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/toolz/curried/exceptions.py",
+      "sha256": "df543d23e468f88300dde46e0c2e704905d0058969771a279c9af8169d21aae2"
+    },
+    {
+      "module": "toolz.curried.operator",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/toolz/curried/operator.py",
+      "sha256": "6f700bd66102db994ec0917ef184fc7074341e8fe1822da3bca614278740ee1f"
+    },
+    {
+      "module": "toolz.dicttoolz",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/toolz/dicttoolz.py",
+      "sha256": "b04f3094634b7b385d9a446a07681073149bc1b3baf9cfb84956d8fb2163ba81"
+    },
+    {
+      "module": "toolz.functoolz",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/toolz/functoolz.py",
+      "sha256": "029b6879a9f4256e4c97a83619fa0953f3f6aaefcc738175150ac6c685e3cf66"
+    },
+    {
+      "module": "toolz.itertoolz",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/toolz/itertoolz.py",
+      "sha256": "93e4d79bc7c6d68250657846454303ba95c0694c9ef165cb7a8e0bdf150711c6"
+    },
+    {
+      "module": "toolz.recipes",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/toolz/recipes.py",
+      "sha256": "aff8fbd35520dbfa0ee1b1ee9e8cb5c62ce4d0dfa6f5007039bc8221326e1742"
+    },
+    {
+      "module": "toolz.sandbox",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/toolz/sandbox/__init__.py",
+      "sha256": "cac01821a1913a96cdcb6fa56047a255f9490aa10e5fd31620700847d05ce800"
+    },
+    {
+      "module": "toolz.sandbox.core",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/toolz/sandbox/core.py",
+      "sha256": "90a6eb5f3a1a29433980e9b63624b88b52287251cc6082bb9b8736b7e13baab4"
+    },
+    {
+      "module": "toolz.sandbox.parallel",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/toolz/sandbox/parallel.py",
+      "sha256": "045b5e798b9d471d654040280f1b169724823ebc891dd7257671e9c42aab6e37"
+    },
+    {
+      "module": "toolz.utils",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/toolz/utils.py",
+      "sha256": "24b957b7cc7f26a4957af98b64f9ede5b649b1d28c0498096f923095c7ce9ec7"
+    },
+    {
+      "module": "traceback",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/traceback.py",
+      "sha256": "c7057fe0778bdbe4c277755f91336bd1a652e350e531a4319e6466792a854b0f"
+    },
+    {
+      "module": "types",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/types.py",
+      "sha256": "fcfdd1c5ae56a9c35f207743d774e236da0153bf78e6e4629193a8e0e9438a6b"
+    },
+    {
+      "module": "typing",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/typing.py",
+      "sha256": "b474bb90d72d4ea28d0b4635a4fbc42ac54e459b8468a01034f2773656e47a00"
+    },
+    {
+      "module": "typing_extensions",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/typing_extensions.py",
+      "sha256": "4040ca1a1ecbee00d1385c12a93084d1c5bd46f0b774f07e5ae7e91c4f55e696"
+    },
+    {
+      "module": "typing_inspection",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/typing_inspection/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "typing_inspection.introspection",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/typing_inspection/introspection.py",
+      "sha256": "5888c45bd627da692d9527699e3f549adf35651596b1656772310e12181b4396"
+    },
+    {
+      "module": "typing_inspection.typing_objects",
+      "path": "<temporary-directory>/.venv/lib/python3.14/site-packages/typing_inspection/typing_objects.py",
+      "sha256": "a778d6290d51581c9c9a23e0263af2a4604c76def5c4d40a7cd1a375b0046ff6"
+    },
+    {
+      "module": "urllib",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "urllib.parse",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/parse.py",
+      "sha256": "a220071456b8487b51d09c9daa8f79bb382e345836ec7050efadfc27bbf3b72b"
+    },
+    {
+      "module": "uuid",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/uuid.py",
+      "sha256": "18cf6964825ae92a6c92758c5daab09b92e962dfb50622ea3d0a069a7fbc6857"
+    },
+    {
+      "module": "verifier",
+      "path": "<temporary-directory>/verifier.py",
+      "sha256": "67177a4575bf00610660375d14fa26d0bdaf17c22f0c9f5066e387f071b54432"
+    },
+    {
+      "module": "warnings",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/warnings.py",
+      "sha256": "142225786de63c593f1c9abdacf5b4fc0b05dd847f6bed0ebb4b4aa2d4d93b02"
+    },
+    {
+      "module": "weakref",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/weakref.py",
+      "sha256": "5e5f727a19a858cb4c56dbaf3e0a138ded02fb954a9a58a840a0764216ae9522"
+    },
+    {
+      "module": "xml",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/xml/__init__.py",
+      "sha256": "34296f728e7fe68cccb97a9f6edbf3bf3a686f44044c744fe85f207a92ed4811"
+    },
+    {
+      "module": "xml.parsers",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/xml/parsers/__init__.py",
+      "sha256": "b88497adc30d5d5eda7789c25a2206ee9270c932d584d7ac42680325651da45c"
+    },
+    {
+      "module": "xml.parsers.expat",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/xml/parsers/expat.py",
+      "sha256": "64e1947747c2874117a7458bba1f07c86620cc0ed9a4a4116d262878e4a2aa09"
+    },
+    {
+      "module": "zipfile",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/zipfile/__init__.py",
+      "sha256": "7f86ad3712225caf8ada9c4e2036323023c5def089b40a9486c23d06b8a2582c"
+    },
+    {
+      "module": "zipfile._path",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/zipfile/_path/__init__.py",
+      "sha256": "319c002564b7deca9ca9dc913f5d06bc32a2f376d291094afa635558af6e17ff"
+    },
+    {
+      "module": "zipfile._path.glob",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/zipfile/_path/glob.py",
+      "sha256": "d84da9b313d40544a87657a0ea2f9cf719416fd3c3450724c5d2dde5b475d2b5"
+    },
+    {
+      "module": "zipimport",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/zipimport.py",
+      "sha256": "4de64633a484e16c39fdb46a3f939ce7c577b14a6e9ee49b79871ec1880b4597"
+    },
+    {
+      "module": "zlib",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/lib-dynload/zlib.cpython-314-darwin.so",
+      "sha256": "8990c0a3cc42d50da3e5d6f115040e286230f8fb8a0f9f873f5ada350708c1f8"
+    },
+    {
+      "module": "zoneinfo",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/zoneinfo/__init__.py",
+      "sha256": "9091c902b8d0385f835e9d393017f03b68f92fae7cbe1e31833b2911d65947e6"
+    },
+    {
+      "module": "zoneinfo._common",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/zoneinfo/_common.py",
+      "sha256": "189080b56b9be6b69a06a0b5ed4f2dcfc6b928e4c15407ce22b6a23547c96d49"
+    },
+    {
+      "module": "zoneinfo._tzpath",
+      "path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/zoneinfo/_tzpath.py",
+      "sha256": "e5026fcd64e30a41c2d6c7609e6d77757c4da9f431f5a1e14b1bccaf914489c3"
+    }
+  ]
+}

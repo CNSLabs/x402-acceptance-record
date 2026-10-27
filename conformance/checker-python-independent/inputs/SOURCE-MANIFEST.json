@@ -1,0 +1,22 @@
+{
+  "spec_commit": "ad53b54ad59df93bd5d3258963f27acccdcec23c",
+  "corpus_commit": "b3bd7cb228cce98803cadcdfb75bc847e4455df8",
+  "upstream_execution_evidence_commit": "23b5c21125982961a2d4c13faf3cb5a6d6d7c03b",
+  "upstream_offer_receipt_commit": "faa1c694c66a3732aaabbce93bdae140e521a67d",
+  "files": {
+    "CASES.md": "0a56953e55919a6b63a464359eb6050aee938c82c6585cb924cf415f3caba744",
+    "SPEC.md": "82881ba0efdeb70fe64594f5af0c912ceb8e9190d7e91d5ed583335bf0176f4b",
+    "VECTOR-FORMAT.md": "2fe82622dcc3ac585321a3c7daacb9dee85720f6610871fd9fa1fbe323340a97",
+    "execution_evidence.md": "97b084e5ee4ebf29aee81f31e4c2150d72388f3e578a0cd60c181a83a68d3491",
+    "extension-offer-and-receipt.md": "51151bd2b7dd174bc4a44b712234c074e45ca6c752c44ce077a94a4d97596ae9",
+    "numeric-probes/FROZEN.txt": "83f2e40d838a619be907467df81c7b3ddb99f2743e5325da8ead11748cdd6454",
+    "numeric-probes/jcs-number-vectors.tsv": "e8e019cb13b505707364cdbb31ab5c9c3c65caa3b63edf0f9876463b55e6dd11",
+    "numeric-probes/stillmarcus-inputs.txt": "fed4ecf1ab3c313365919d471e271ee1978019b069198b543d4e2d5bf4dfdbf2",
+    "numeric-probes/stillmarcus-vectors.json": "caa2fc291b728da8fa50606a89596a1dc15f816b4e907d56c4b0d3e07b747f05",
+    "vectors.json": "8c20c905ae9af000f9664ee78bf73a6ac2c47f501c221789b835121a0af16ec5"
+  },
+  "numeric_sources": {
+    "stillmarcus24/assurance-run": "335ed5df8ca16658ec2c5b5e0cb34449bf1dc6f0",
+    "aos-standard/catalog": "40b21297af1289dde5849da1ea6f1caa3ab8d140"
+  }
+}

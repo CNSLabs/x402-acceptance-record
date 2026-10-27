@@ -1,0 +1,2448 @@
+{
+  "author": "CNS Labs clean-context agent (GPT-6.1 Sol, operated by Molt)",
+  "platform": {
+    "os": "macOS-27.0.1-arm64-arm-64bit-Mach-O",
+    "machine": "arm64",
+    "runtime": "Python 3.13.14",
+    "implementation": "CPython"
+  },
+  "checker": {
+    "name": "cleanroom-sol-python",
+    "language": "python",
+    "version": "0.1.0",
+    "commit": "bec16636ff3c2afa0b7ec7a0a32ab2179f96817c",
+    "dirty": false
+  },
+  "vectorFile": {
+    "path": "inputs/stage2-vectors-after-freeze/vectors.json",
+    "sha256": "8c20c905ae9af000f9664ee78bf73a6ac2c47f501c221789b835121a0af16ec5"
+  },
+  "profile": "x402 acceptance record, version 0",
+  "specification": {
+    "repository": "https://github.com/CNSLabs/x402-acceptance-record",
+    "tag": "draft-2026-10-21",
+    "commit": "ad53b54ad59df93bd5d3258963f27acccdcec23c",
+    "files": {
+      "SPEC.md": "82881ba0efdeb70fe64594f5af0c912ceb8e9190d7e91d5ed583335bf0176f4b",
+      "CASES.md": "0a56953e55919a6b63a464359eb6050aee938c82c6585cb924cf415f3caba744"
+    }
+  },
+  "ranAt": "2026-10-26T19:25:21.067Z",
+  "provenance": {
+    "freezeCommit": "bec16636ff3c2afa0b7ec7a0a32ab2179f96817c",
+    "checkerArchiveSha256": "98aa4293a8094aeeeaa76fc153ee97f8dde319a08d0cef301352b5c7a00b22eb",
+    "stageOneSourcesMatchSpecificationPins": true,
+    "runner": "runner/run_vectors.py",
+    "note": "Checker frozen before vector access. Runner only decodes transport and renames input binding fields."
+  },
+  "totals": {
+    "vectors": 127,
+    "passed": 127,
+    "failed": 0
+  },
+  "results": [
+    {
+      "id": "AR-C01-a-eip712",
+      "case": "AR-C01",
+      "variant": "a",
+      "form": "eip712",
+      "expected": {
+        "result": "verified",
+        "conditions": [],
+        "disposition": "accepted"
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "verified",
+        "conditions": [],
+        "disposition": "accepted"
+      }
+    },
+    {
+      "id": "AR-C01-a-jws",
+      "case": "AR-C01",
+      "variant": "a",
+      "form": "jws",
+      "expected": {
+        "result": "verified",
+        "conditions": [],
+        "disposition": "accepted"
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "verified",
+        "conditions": [],
+        "disposition": "accepted"
+      }
+    },
+    {
+      "id": "AR-C01-b-eip712",
+      "case": "AR-C01",
+      "variant": "b",
+      "form": "eip712",
+      "expected": {
+        "result": "verified",
+        "conditions": [],
+        "disposition": "accepted"
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "verified",
+        "conditions": [],
+        "disposition": "accepted"
+      }
+    },
+    {
+      "id": "AR-C01-b-jws",
+      "case": "AR-C01",
+      "variant": "b",
+      "form": "jws",
+      "expected": {
+        "result": "verified",
+        "conditions": [],
+        "disposition": "accepted"
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "verified",
+        "conditions": [],
+        "disposition": "accepted"
+      }
+    },
+    {
+      "id": "AR-C01-c-eip712",
+      "case": "AR-C01",
+      "variant": "c",
+      "form": "eip712",
+      "expected": {
+        "result": "verified",
+        "conditions": [],
+        "disposition": "accepted"
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "verified",
+        "conditions": [],
+        "disposition": "accepted"
+      }
+    },
+    {
+      "id": "AR-C01-d-eip712",
+      "case": "AR-C01",
+      "variant": "d",
+      "form": "eip712",
+      "expected": {
+        "result": "verified",
+        "conditions": [],
+        "disposition": "accepted"
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "verified",
+        "conditions": [],
+        "disposition": "accepted"
+      }
+    },
+    {
+      "id": "AR-C01-d-jws",
+      "case": "AR-C01",
+      "variant": "d",
+      "form": "jws",
+      "expected": {
+        "result": "verified",
+        "conditions": [],
+        "disposition": "accepted"
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "verified",
+        "conditions": [],
+        "disposition": "accepted"
+      }
+    },
+    {
+      "id": "AR-C02-record-A-eip712",
+      "case": "AR-C02",
+      "variant": "record-A",
+      "form": "eip712",
+      "expected": {
+        "result": "verified",
+        "conditions": [],
+        "disposition": "accepted"
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "verified",
+        "conditions": [],
+        "disposition": "accepted"
+      }
+    },
+    {
+      "id": "AR-C02-record-D-eip712",
+      "case": "AR-C02",
+      "variant": "record-D",
+      "form": "eip712",
+      "expected": {
+        "result": "verified",
+        "conditions": [],
+        "disposition": "disputed"
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "verified",
+        "conditions": [],
+        "disposition": "disputed"
+      }
+    },
+    {
+      "id": "AR-C03-a-none",
+      "case": "AR-C03",
+      "variant": "a",
+      "form": "none",
+      "expected": {
+        "result": "no_record",
+        "conditions": []
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "no_record",
+        "conditions": []
+      }
+    },
+    {
+      "id": "AR-C04-a-eip712",
+      "case": "AR-C04",
+      "variant": "a",
+      "form": "eip712",
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      }
+    },
+    {
+      "id": "AR-C04-a-jws",
+      "case": "AR-C04",
+      "variant": "a",
+      "form": "jws",
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      }
+    },
+    {
+      "id": "AR-C05-a-eip712",
+      "case": "AR-C05",
+      "variant": "a",
+      "form": "eip712",
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      }
+    },
+    {
+      "id": "AR-C05-a-jws",
+      "case": "AR-C05",
+      "variant": "a",
+      "form": "jws",
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      }
+    },
+    {
+      "id": "AR-C05-d-eip712",
+      "case": "AR-C05",
+      "variant": "d",
+      "form": "eip712",
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      }
+    },
+    {
+      "id": "AR-C05-d-jws",
+      "case": "AR-C05",
+      "variant": "d",
+      "form": "jws",
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      }
+    },
+    {
+      "id": "AR-C05-e-eip712",
+      "case": "AR-C05",
+      "variant": "e",
+      "form": "eip712",
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      }
+    },
+    {
+      "id": "AR-C05-e-jws",
+      "case": "AR-C05",
+      "variant": "e",
+      "form": "jws",
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      }
+    },
+    {
+      "id": "AR-C05-l-eip712",
+      "case": "AR-C05",
+      "variant": "l",
+      "form": "eip712",
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      }
+    },
+    {
+      "id": "AR-C05-l-jws",
+      "case": "AR-C05",
+      "variant": "l",
+      "form": "jws",
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      }
+    },
+    {
+      "id": "AR-C05-f-eip712",
+      "case": "AR-C05",
+      "variant": "f",
+      "form": "eip712",
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      }
+    },
+    {
+      "id": "AR-C05-g-eip712",
+      "case": "AR-C05",
+      "variant": "g",
+      "form": "eip712",
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      }
+    },
+    {
+      "id": "AR-C05-o-eip712",
+      "case": "AR-C05",
+      "variant": "o",
+      "form": "eip712",
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      }
+    },
+    {
+      "id": "AR-C05-p-eip712",
+      "case": "AR-C05",
+      "variant": "p",
+      "form": "eip712",
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      }
+    },
+    {
+      "id": "AR-C06-a-eip712",
+      "case": "AR-C06",
+      "variant": "a",
+      "form": "eip712",
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "confirming_party_absent"
+        ]
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "confirming_party_absent"
+        ]
+      }
+    },
+    {
+      "id": "AR-C06-a-jws",
+      "case": "AR-C06",
+      "variant": "a",
+      "form": "jws",
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "confirming_party_absent"
+        ]
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "confirming_party_absent"
+        ]
+      }
+    },
+    {
+      "id": "AR-C07-a-jws",
+      "case": "AR-C07",
+      "variant": "a",
+      "form": "jws",
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_signer_is_issuer"
+        ]
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_signer_is_issuer"
+        ]
+      }
+    },
+    {
+      "id": "AR-C07-b-jws",
+      "case": "AR-C07",
+      "variant": "b",
+      "form": "jws",
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_signer_is_issuer"
+        ]
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_signer_is_issuer"
+        ]
+      }
+    },
+    {
+      "id": "AR-C07-c-eip712",
+      "case": "AR-C07",
+      "variant": "c",
+      "form": "eip712",
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_signer_is_issuer"
+        ]
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_signer_is_issuer"
+        ]
+      }
+    },
+    {
+      "id": "AR-C08-a-eip712",
+      "case": "AR-C08",
+      "variant": "a",
+      "form": "eip712",
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_terms_digest_mismatch"
+        ]
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_terms_digest_mismatch"
+        ]
+      }
+    },
+    {
+      "id": "AR-C08-a-jws",
+      "case": "AR-C08",
+      "variant": "a",
+      "form": "jws",
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_terms_digest_mismatch"
+        ]
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_terms_digest_mismatch"
+        ]
+      }
+    },
+    {
+      "id": "AR-C09-a-eip712",
+      "case": "AR-C09",
+      "variant": "a",
+      "form": "eip712",
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_outcome_digest_mismatch"
+        ]
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_outcome_digest_mismatch"
+        ]
+      }
+    },
+    {
+      "id": "AR-C09-a-jws",
+      "case": "AR-C09",
+      "variant": "a",
+      "form": "jws",
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_outcome_digest_mismatch"
+        ]
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_outcome_digest_mismatch"
+        ]
+      }
+    },
+    {
+      "id": "AR-C09-b-eip712",
+      "case": "AR-C09",
+      "variant": "b",
+      "form": "eip712",
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_outcome_digest_mismatch"
+        ]
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_outcome_digest_mismatch"
+        ]
+      }
+    },
+    {
+      "id": "AR-C09-b-jws",
+      "case": "AR-C09",
+      "variant": "b",
+      "form": "jws",
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_outcome_digest_mismatch"
+        ]
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_outcome_digest_mismatch"
+        ]
+      }
+    },
+    {
+      "id": "AR-C10-a-eip712",
+      "case": "AR-C10",
+      "variant": "a",
+      "form": "eip712",
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_record_digest_mismatch"
+        ]
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_record_digest_mismatch"
+        ]
+      }
+    },
+    {
+      "id": "AR-C10-a-jws",
+      "case": "AR-C10",
+      "variant": "a",
+      "form": "jws",
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_record_digest_mismatch"
+        ]
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_record_digest_mismatch"
+        ]
+      }
+    },
+    {
+      "id": "AR-C10-b-eip712",
+      "case": "AR-C10",
+      "variant": "b",
+      "form": "eip712",
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_record_digest_mismatch"
+        ]
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_record_digest_mismatch"
+        ]
+      }
+    },
+    {
+      "id": "AR-C10-b-jws",
+      "case": "AR-C10",
+      "variant": "b",
+      "form": "jws",
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_record_digest_mismatch"
+        ]
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_record_digest_mismatch"
+        ]
+      }
+    },
+    {
+      "id": "AR-C11-a-eip712",
+      "case": "AR-C11",
+      "variant": "a",
+      "form": "eip712",
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_precedes_outcome"
+        ]
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_precedes_outcome"
+        ]
+      }
+    },
+    {
+      "id": "AR-C11-a-jws",
+      "case": "AR-C11",
+      "variant": "a",
+      "form": "jws",
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_precedes_outcome"
+        ]
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_precedes_outcome"
+        ]
+      }
+    },
+    {
+      "id": "AR-C12-a-eip712",
+      "case": "AR-C12",
+      "variant": "a",
+      "form": "eip712",
+      "expected": {
+        "result": "verified",
+        "conditions": [],
+        "disposition": "rejected"
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "verified",
+        "conditions": [],
+        "disposition": "rejected"
+      }
+    },
+    {
+      "id": "AR-C13-a-jws",
+      "case": "AR-C13",
+      "variant": "a",
+      "form": "jws",
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid",
+          "acceptance_terms_digest_mismatch"
+        ]
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid",
+          "acceptance_terms_digest_mismatch"
+        ]
+      }
+    },
+    {
+      "id": "AR-C14-a-eip712",
+      "case": "AR-C14",
+      "variant": "a",
+      "form": "eip712",
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "signature_invalid"
+        ]
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "signature_invalid"
+        ]
+      }
+    },
+    {
+      "id": "AR-C15-a-eip712",
+      "case": "AR-C15",
+      "variant": "a",
+      "form": "eip712",
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "signature_invalid"
+        ]
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "signature_invalid"
+        ]
+      }
+    },
+    {
+      "id": "AR-C15-b-eip712",
+      "case": "AR-C15",
+      "variant": "b",
+      "form": "eip712",
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "signature_invalid"
+        ]
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "signature_invalid"
+        ]
+      }
+    },
+    {
+      "id": "AR-C15-c-eip712",
+      "case": "AR-C15",
+      "variant": "c",
+      "form": "eip712",
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "signature_invalid"
+        ]
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "signature_invalid"
+        ]
+      }
+    },
+    {
+      "id": "AR-C15-d-eip712",
+      "case": "AR-C15",
+      "variant": "d",
+      "form": "eip712",
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "signature_invalid"
+        ]
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "signature_invalid"
+        ]
+      }
+    },
+    {
+      "id": "AR-C15-e-eip712",
+      "case": "AR-C15",
+      "variant": "e",
+      "form": "eip712",
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "signature_invalid"
+        ]
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "signature_invalid"
+        ]
+      }
+    },
+    {
+      "id": "AR-C16-a-eip712",
+      "case": "AR-C16",
+      "variant": "a",
+      "form": "eip712",
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "signature_invalid"
+        ]
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "signature_invalid"
+        ]
+      }
+    },
+    {
+      "id": "AR-C16-b-eip712",
+      "case": "AR-C16",
+      "variant": "b",
+      "form": "eip712",
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "signature_invalid"
+        ]
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "signature_invalid"
+        ]
+      }
+    },
+    {
+      "id": "AR-C16-c-eip712",
+      "case": "AR-C16",
+      "variant": "c",
+      "form": "eip712",
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "signature_invalid"
+        ]
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "signature_invalid"
+        ]
+      }
+    },
+    {
+      "id": "AR-C16-d-eip712",
+      "case": "AR-C16",
+      "variant": "d",
+      "form": "eip712",
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "signature_invalid"
+        ]
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "signature_invalid"
+        ]
+      }
+    },
+    {
+      "id": "AR-C16-e-eip712",
+      "case": "AR-C16",
+      "variant": "e",
+      "form": "eip712",
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "signature_invalid"
+        ]
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "signature_invalid"
+        ]
+      }
+    },
+    {
+      "id": "AR-C16-j-eip712",
+      "case": "AR-C16",
+      "variant": "j",
+      "form": "eip712",
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "signature_invalid"
+        ]
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "signature_invalid"
+        ]
+      }
+    },
+    {
+      "id": "AR-C16-k-eip712",
+      "case": "AR-C16",
+      "variant": "k",
+      "form": "eip712",
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "signature_invalid"
+        ]
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "signature_invalid"
+        ]
+      }
+    },
+    {
+      "id": "AR-C16-l-eip712",
+      "case": "AR-C16",
+      "variant": "l",
+      "form": "eip712",
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "signature_invalid"
+        ]
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "signature_invalid"
+        ]
+      }
+    },
+    {
+      "id": "AR-C16-m-eip712",
+      "case": "AR-C16",
+      "variant": "m",
+      "form": "eip712",
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "signature_invalid"
+        ]
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "signature_invalid"
+        ]
+      }
+    },
+    {
+      "id": "AR-C16-f-jws",
+      "case": "AR-C16",
+      "variant": "f",
+      "form": "jws",
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "signature_invalid"
+        ]
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "signature_invalid"
+        ]
+      }
+    },
+    {
+      "id": "AR-C16-g-jws",
+      "case": "AR-C16",
+      "variant": "g",
+      "form": "jws",
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "signature_invalid"
+        ]
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "signature_invalid"
+        ]
+      }
+    },
+    {
+      "id": "AR-C16-h-jws",
+      "case": "AR-C16",
+      "variant": "h",
+      "form": "jws",
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "signature_invalid"
+        ]
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "signature_invalid"
+        ]
+      }
+    },
+    {
+      "id": "AR-C16-i-jws",
+      "case": "AR-C16",
+      "variant": "i",
+      "form": "jws",
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "signature_invalid"
+        ]
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "signature_invalid"
+        ]
+      }
+    },
+    {
+      "id": "AR-C17-a-eip712",
+      "case": "AR-C17",
+      "variant": "a",
+      "form": "eip712",
+      "expected": {
+        "result": "verified",
+        "conditions": [],
+        "disposition": "accepted"
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "verified",
+        "conditions": [],
+        "disposition": "accepted"
+      }
+    },
+    {
+      "id": "AR-C17-b-eip712",
+      "case": "AR-C17",
+      "variant": "b",
+      "form": "eip712",
+      "expected": {
+        "result": "verified",
+        "conditions": [],
+        "disposition": "accepted"
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "verified",
+        "conditions": [],
+        "disposition": "accepted"
+      }
+    },
+    {
+      "id": "AR-C18-a-eip712",
+      "case": "AR-C18",
+      "variant": "a",
+      "form": "eip712",
+      "expected": {
+        "result": "key_unresolved",
+        "conditions": [],
+        "reason": "chain_state_unavailable",
+        "policy_refusal": false
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "key_unresolved",
+        "conditions": [],
+        "reason": "chain_state_unavailable",
+        "policy_refusal": false
+      }
+    },
+    {
+      "id": "AR-C18-b-eip712",
+      "case": "AR-C18",
+      "variant": "b",
+      "form": "eip712",
+      "expected": {
+        "result": "key_unresolved",
+        "conditions": [],
+        "reason": "contract_accounts_unsupported",
+        "policy_refusal": false
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "key_unresolved",
+        "conditions": [],
+        "reason": "contract_accounts_unsupported",
+        "policy_refusal": false
+      }
+    },
+    {
+      "id": "AR-C18-c-eip712",
+      "case": "AR-C18",
+      "variant": "c",
+      "form": "eip712",
+      "expected": {
+        "result": "key_unresolved",
+        "conditions": [],
+        "reason": "chain_state_unavailable",
+        "policy_refusal": false
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "key_unresolved",
+        "conditions": [],
+        "reason": "chain_state_unavailable",
+        "policy_refusal": false
+      }
+    },
+    {
+      "id": "AR-C18-d-eip712",
+      "case": "AR-C18",
+      "variant": "d",
+      "form": "eip712",
+      "expected": {
+        "result": "key_unresolved",
+        "conditions": [],
+        "reason": "chain_state_unavailable",
+        "policy_refusal": false
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "key_unresolved",
+        "conditions": [],
+        "reason": "chain_state_unavailable",
+        "policy_refusal": false
+      }
+    },
+    {
+      "id": "AR-C19-a-jws",
+      "case": "AR-C19",
+      "variant": "a",
+      "form": "jws",
+      "expected": {
+        "result": "key_unresolved",
+        "conditions": [],
+        "reason": "key_missing",
+        "policy_refusal": true
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "key_unresolved",
+        "conditions": [],
+        "reason": "key_missing",
+        "policy_refusal": true
+      }
+    },
+    {
+      "id": "AR-C19-b-jws",
+      "case": "AR-C19",
+      "variant": "b",
+      "form": "jws",
+      "expected": {
+        "result": "key_unresolved",
+        "conditions": [],
+        "reason": "signer_mismatch",
+        "policy_refusal": true
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "key_unresolved",
+        "conditions": [],
+        "reason": "signer_mismatch",
+        "policy_refusal": true
+      }
+    },
+    {
+      "id": "AR-C19-c-jws",
+      "case": "AR-C19",
+      "variant": "c",
+      "form": "jws",
+      "expected": {
+        "result": "key_unresolved",
+        "conditions": [],
+        "reason": "key_missing",
+        "policy_refusal": true
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "key_unresolved",
+        "conditions": [],
+        "reason": "key_missing",
+        "policy_refusal": true
+      }
+    },
+    {
+      "id": "AR-C20-a-jws",
+      "case": "AR-C20",
+      "variant": "a",
+      "form": "jws",
+      "expected": {
+        "result": "key_unresolved",
+        "conditions": [],
+        "reason": "key_refused",
+        "policy_refusal": false
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "key_unresolved",
+        "conditions": [],
+        "reason": "key_refused",
+        "policy_refusal": false
+      }
+    },
+    {
+      "id": "AR-C20-b-jws",
+      "case": "AR-C20",
+      "variant": "b",
+      "form": "jws",
+      "expected": {
+        "result": "key_unresolved",
+        "conditions": [],
+        "reason": "key_refused",
+        "policy_refusal": false
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "key_unresolved",
+        "conditions": [],
+        "reason": "key_refused",
+        "policy_refusal": false
+      }
+    },
+    {
+      "id": "AR-C20-c-jws",
+      "case": "AR-C20",
+      "variant": "c",
+      "form": "jws",
+      "expected": {
+        "result": "key_unresolved",
+        "conditions": [],
+        "reason": "key_refused",
+        "policy_refusal": false
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "key_unresolved",
+        "conditions": [],
+        "reason": "key_refused",
+        "policy_refusal": false
+      }
+    },
+    {
+      "id": "AR-C21-a-jws",
+      "case": "AR-C21",
+      "variant": "a",
+      "form": "jws",
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      }
+    },
+    {
+      "id": "AR-C21-b-jws",
+      "case": "AR-C21",
+      "variant": "b",
+      "form": "jws",
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      }
+    },
+    {
+      "id": "AR-C21-c-jws",
+      "case": "AR-C21",
+      "variant": "c",
+      "form": "jws",
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      }
+    },
+    {
+      "id": "AR-C21-d-jws",
+      "case": "AR-C21",
+      "variant": "d",
+      "form": "jws",
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      }
+    },
+    {
+      "id": "AR-C21-e-jws",
+      "case": "AR-C21",
+      "variant": "e",
+      "form": "jws",
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      }
+    },
+    {
+      "id": "AR-C21-f-jws",
+      "case": "AR-C21",
+      "variant": "f",
+      "form": "jws",
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      }
+    },
+    {
+      "id": "AR-C21-g-jws",
+      "case": "AR-C21",
+      "variant": "g",
+      "form": "jws",
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      }
+    },
+    {
+      "id": "AR-C22-a-eip712",
+      "case": "AR-C22",
+      "variant": "a",
+      "form": "eip712",
+      "expected": {
+        "result": "unknown",
+        "conditions": [
+          "acceptance_authority_unresolved"
+        ],
+        "disposition": "accepted"
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "unknown",
+        "conditions": [
+          "acceptance_authority_unresolved"
+        ],
+        "disposition": "accepted"
+      }
+    },
+    {
+      "id": "AR-C22-b-eip712",
+      "case": "AR-C22",
+      "variant": "b",
+      "form": "eip712",
+      "expected": {
+        "result": "unknown",
+        "conditions": [
+          "acceptance_authority_unresolved"
+        ],
+        "disposition": "accepted"
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "unknown",
+        "conditions": [
+          "acceptance_authority_unresolved"
+        ],
+        "disposition": "accepted"
+      }
+    },
+    {
+      "id": "AR-C22-e-eip712",
+      "case": "AR-C22",
+      "variant": "e",
+      "form": "eip712",
+      "expected": {
+        "result": "unknown",
+        "conditions": [
+          "acceptance_authority_unresolved"
+        ],
+        "disposition": "accepted"
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "unknown",
+        "conditions": [
+          "acceptance_authority_unresolved"
+        ],
+        "disposition": "accepted"
+      }
+    },
+    {
+      "id": "AR-C22-f-eip712",
+      "case": "AR-C22",
+      "variant": "f",
+      "form": "eip712",
+      "expected": {
+        "result": "unknown",
+        "conditions": [
+          "acceptance_authority_unresolved"
+        ],
+        "disposition": "accepted"
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "unknown",
+        "conditions": [
+          "acceptance_authority_unresolved"
+        ],
+        "disposition": "accepted"
+      }
+    },
+    {
+      "id": "AR-C22-g-eip712",
+      "case": "AR-C22",
+      "variant": "g",
+      "form": "eip712",
+      "expected": {
+        "result": "unknown",
+        "conditions": [
+          "acceptance_authority_unresolved"
+        ],
+        "disposition": "accepted"
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "unknown",
+        "conditions": [
+          "acceptance_authority_unresolved"
+        ],
+        "disposition": "accepted"
+      }
+    },
+    {
+      "id": "AR-C22-h-eip712",
+      "case": "AR-C22",
+      "variant": "h",
+      "form": "eip712",
+      "expected": {
+        "result": "unknown",
+        "conditions": [
+          "acceptance_authority_unresolved"
+        ],
+        "disposition": "accepted"
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "unknown",
+        "conditions": [
+          "acceptance_authority_unresolved"
+        ],
+        "disposition": "accepted"
+      }
+    },
+    {
+      "id": "AR-C22-c-jws",
+      "case": "AR-C22",
+      "variant": "c",
+      "form": "jws",
+      "expected": {
+        "result": "unknown",
+        "conditions": [
+          "acceptance_authority_unresolved"
+        ],
+        "disposition": "accepted"
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "unknown",
+        "conditions": [
+          "acceptance_authority_unresolved"
+        ],
+        "disposition": "accepted"
+      }
+    },
+    {
+      "id": "AR-C22-d-jws",
+      "case": "AR-C22",
+      "variant": "d",
+      "form": "jws",
+      "expected": {
+        "result": "unknown",
+        "conditions": [
+          "acceptance_authority_unresolved"
+        ],
+        "disposition": "accepted"
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "unknown",
+        "conditions": [
+          "acceptance_authority_unresolved"
+        ],
+        "disposition": "accepted"
+      }
+    },
+    {
+      "id": "AR-C23-a-eip712",
+      "case": "AR-C23",
+      "variant": "a",
+      "form": "eip712",
+      "expected": {
+        "result": "unknown",
+        "conditions": [],
+        "reason": "profile_unavailable",
+        "disposition": "accepted"
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "unknown",
+        "conditions": [],
+        "reason": "profile_unavailable",
+        "disposition": "accepted"
+      }
+    },
+    {
+      "id": "AR-C23-a-jws",
+      "case": "AR-C23",
+      "variant": "a",
+      "form": "jws",
+      "expected": {
+        "result": "unknown",
+        "conditions": [],
+        "reason": "profile_unavailable",
+        "disposition": "accepted"
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "unknown",
+        "conditions": [],
+        "reason": "profile_unavailable",
+        "disposition": "accepted"
+      }
+    },
+    {
+      "id": "AR-C24-a-eip712",
+      "case": "AR-C24",
+      "variant": "a",
+      "form": "eip712",
+      "expected": {
+        "result": "unknown",
+        "conditions": [],
+        "reason": "evidence_unavailable",
+        "disposition": "accepted"
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "unknown",
+        "conditions": [],
+        "reason": "evidence_unavailable",
+        "disposition": "accepted"
+      }
+    },
+    {
+      "id": "AR-C24-a-jws",
+      "case": "AR-C24",
+      "variant": "a",
+      "form": "jws",
+      "expected": {
+        "result": "unknown",
+        "conditions": [],
+        "reason": "evidence_unavailable",
+        "disposition": "accepted"
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "unknown",
+        "conditions": [],
+        "reason": "evidence_unavailable",
+        "disposition": "accepted"
+      }
+    },
+    {
+      "id": "AR-C24-b-eip712",
+      "case": "AR-C24",
+      "variant": "b",
+      "form": "eip712",
+      "expected": {
+        "result": "unknown",
+        "conditions": [],
+        "reason": "evidence_unavailable",
+        "disposition": "accepted"
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "unknown",
+        "conditions": [],
+        "reason": "evidence_unavailable",
+        "disposition": "accepted"
+      }
+    },
+    {
+      "id": "AR-C24-b-jws",
+      "case": "AR-C24",
+      "variant": "b",
+      "form": "jws",
+      "expected": {
+        "result": "unknown",
+        "conditions": [],
+        "reason": "evidence_unavailable",
+        "disposition": "accepted"
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "unknown",
+        "conditions": [],
+        "reason": "evidence_unavailable",
+        "disposition": "accepted"
+      }
+    },
+    {
+      "id": "AR-C24-c-eip712",
+      "case": "AR-C24",
+      "variant": "c",
+      "form": "eip712",
+      "expected": {
+        "result": "unknown",
+        "conditions": [],
+        "reason": "evidence_unavailable",
+        "disposition": "accepted"
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "unknown",
+        "conditions": [],
+        "reason": "evidence_unavailable",
+        "disposition": "accepted"
+      }
+    },
+    {
+      "id": "AR-C24-c-jws",
+      "case": "AR-C24",
+      "variant": "c",
+      "form": "jws",
+      "expected": {
+        "result": "unknown",
+        "conditions": [],
+        "reason": "evidence_unavailable",
+        "disposition": "accepted"
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "unknown",
+        "conditions": [],
+        "reason": "evidence_unavailable",
+        "disposition": "accepted"
+      }
+    },
+    {
+      "id": "AR-C24-d-eip712",
+      "case": "AR-C24",
+      "variant": "d",
+      "form": "eip712",
+      "expected": {
+        "result": "unknown",
+        "conditions": [],
+        "reason": "evidence_unavailable",
+        "disposition": "accepted"
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "unknown",
+        "conditions": [],
+        "reason": "evidence_unavailable",
+        "disposition": "accepted"
+      }
+    },
+    {
+      "id": "AR-C24-d-jws",
+      "case": "AR-C24",
+      "variant": "d",
+      "form": "jws",
+      "expected": {
+        "result": "unknown",
+        "conditions": [],
+        "reason": "evidence_unavailable",
+        "disposition": "accepted"
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "unknown",
+        "conditions": [],
+        "reason": "evidence_unavailable",
+        "disposition": "accepted"
+      }
+    },
+    {
+      "id": "AR-C24-e-eip712",
+      "case": "AR-C24",
+      "variant": "e",
+      "form": "eip712",
+      "expected": {
+        "result": "unknown",
+        "conditions": [],
+        "reason": "evidence_unavailable",
+        "disposition": "accepted"
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "unknown",
+        "conditions": [],
+        "reason": "evidence_unavailable",
+        "disposition": "accepted"
+      }
+    },
+    {
+      "id": "AR-C24-e-jws",
+      "case": "AR-C24",
+      "variant": "e",
+      "form": "jws",
+      "expected": {
+        "result": "unknown",
+        "conditions": [],
+        "reason": "evidence_unavailable",
+        "disposition": "accepted"
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "unknown",
+        "conditions": [],
+        "reason": "evidence_unavailable",
+        "disposition": "accepted"
+      }
+    },
+    {
+      "id": "AR-C24-f-eip712",
+      "case": "AR-C24",
+      "variant": "f",
+      "form": "eip712",
+      "expected": {
+        "result": "unknown",
+        "conditions": [],
+        "reason": "evidence_unavailable",
+        "disposition": "accepted"
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "unknown",
+        "conditions": [],
+        "reason": "evidence_unavailable",
+        "disposition": "accepted"
+      }
+    },
+    {
+      "id": "AR-C24-f-jws",
+      "case": "AR-C24",
+      "variant": "f",
+      "form": "jws",
+      "expected": {
+        "result": "unknown",
+        "conditions": [],
+        "reason": "evidence_unavailable",
+        "disposition": "accepted"
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "unknown",
+        "conditions": [],
+        "reason": "evidence_unavailable",
+        "disposition": "accepted"
+      }
+    },
+    {
+      "id": "AR-C24-g-eip712",
+      "case": "AR-C24",
+      "variant": "g",
+      "form": "eip712",
+      "expected": {
+        "result": "unknown",
+        "conditions": [],
+        "reason": "evidence_unavailable",
+        "disposition": "accepted"
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "unknown",
+        "conditions": [],
+        "reason": "evidence_unavailable",
+        "disposition": "accepted"
+      }
+    },
+    {
+      "id": "AR-C24-g-jws",
+      "case": "AR-C24",
+      "variant": "g",
+      "form": "jws",
+      "expected": {
+        "result": "unknown",
+        "conditions": [],
+        "reason": "evidence_unavailable",
+        "disposition": "accepted"
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "unknown",
+        "conditions": [],
+        "reason": "evidence_unavailable",
+        "disposition": "accepted"
+      }
+    },
+    {
+      "id": "AR-C24-h-eip712",
+      "case": "AR-C24",
+      "variant": "h",
+      "form": "eip712",
+      "expected": {
+        "result": "unknown",
+        "conditions": [],
+        "reason": "evidence_unavailable",
+        "disposition": "accepted"
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "unknown",
+        "conditions": [],
+        "reason": "evidence_unavailable",
+        "disposition": "accepted"
+      }
+    },
+    {
+      "id": "AR-C24-h-jws",
+      "case": "AR-C24",
+      "variant": "h",
+      "form": "jws",
+      "expected": {
+        "result": "unknown",
+        "conditions": [],
+        "reason": "evidence_unavailable",
+        "disposition": "accepted"
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "unknown",
+        "conditions": [],
+        "reason": "evidence_unavailable",
+        "disposition": "accepted"
+      }
+    },
+    {
+      "id": "AR-C24-i-eip712",
+      "case": "AR-C24",
+      "variant": "i",
+      "form": "eip712",
+      "expected": {
+        "result": "unknown",
+        "conditions": [],
+        "reason": "evidence_unavailable",
+        "disposition": "accepted"
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "unknown",
+        "conditions": [],
+        "reason": "evidence_unavailable",
+        "disposition": "accepted"
+      }
+    },
+    {
+      "id": "AR-C24-i-jws",
+      "case": "AR-C24",
+      "variant": "i",
+      "form": "jws",
+      "expected": {
+        "result": "unknown",
+        "conditions": [],
+        "reason": "evidence_unavailable",
+        "disposition": "accepted"
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "unknown",
+        "conditions": [],
+        "reason": "evidence_unavailable",
+        "disposition": "accepted"
+      }
+    },
+    {
+      "id": "AR-C24-j-eip712",
+      "case": "AR-C24",
+      "variant": "j",
+      "form": "eip712",
+      "expected": {
+        "result": "unknown",
+        "conditions": [],
+        "reason": "evidence_unavailable",
+        "disposition": "accepted"
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "unknown",
+        "conditions": [],
+        "reason": "evidence_unavailable",
+        "disposition": "accepted"
+      }
+    },
+    {
+      "id": "AR-C24-j-jws",
+      "case": "AR-C24",
+      "variant": "j",
+      "form": "jws",
+      "expected": {
+        "result": "unknown",
+        "conditions": [],
+        "reason": "evidence_unavailable",
+        "disposition": "accepted"
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "unknown",
+        "conditions": [],
+        "reason": "evidence_unavailable",
+        "disposition": "accepted"
+      }
+    },
+    {
+      "id": "AR-C25-b-eip712",
+      "case": "AR-C25",
+      "variant": "b",
+      "form": "eip712",
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      }
+    },
+    {
+      "id": "AR-C25-b-jws",
+      "case": "AR-C25",
+      "variant": "b",
+      "form": "jws",
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      }
+    },
+    {
+      "id": "AR-C25-c-eip712",
+      "case": "AR-C25",
+      "variant": "c",
+      "form": "eip712",
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      }
+    },
+    {
+      "id": "AR-C25-c-jws",
+      "case": "AR-C25",
+      "variant": "c",
+      "form": "jws",
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      }
+    },
+    {
+      "id": "AR-C25-h-eip712",
+      "case": "AR-C25",
+      "variant": "h",
+      "form": "eip712",
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      }
+    },
+    {
+      "id": "AR-C25-h-jws",
+      "case": "AR-C25",
+      "variant": "h",
+      "form": "jws",
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      }
+    },
+    {
+      "id": "AR-C25-i-eip712",
+      "case": "AR-C25",
+      "variant": "i",
+      "form": "eip712",
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      }
+    },
+    {
+      "id": "AR-C25-i-jws",
+      "case": "AR-C25",
+      "variant": "i",
+      "form": "jws",
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      }
+    },
+    {
+      "id": "AR-C25-j-eip712",
+      "case": "AR-C25",
+      "variant": "j",
+      "form": "eip712",
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      }
+    },
+    {
+      "id": "AR-C25-j-jws",
+      "case": "AR-C25",
+      "variant": "j",
+      "form": "jws",
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      }
+    },
+    {
+      "id": "AR-C25-k-eip712",
+      "case": "AR-C25",
+      "variant": "k",
+      "form": "eip712",
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      }
+    },
+    {
+      "id": "AR-C25-k-jws",
+      "case": "AR-C25",
+      "variant": "k",
+      "form": "jws",
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      }
+    },
+    {
+      "id": "AR-C25-m-eip712",
+      "case": "AR-C25",
+      "variant": "m",
+      "form": "eip712",
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      }
+    },
+    {
+      "id": "AR-C25-m-jws",
+      "case": "AR-C25",
+      "variant": "m",
+      "form": "jws",
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      }
+    },
+    {
+      "id": "AR-C25-n-eip712",
+      "case": "AR-C25",
+      "variant": "n",
+      "form": "eip712",
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      }
+    },
+    {
+      "id": "AR-C25-n-jws",
+      "case": "AR-C25",
+      "variant": "n",
+      "form": "jws",
+      "expected": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_member_invalid"
+        ]
+      }
+    }
+  ]
+}

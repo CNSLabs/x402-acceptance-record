@@ -1,0 +1,25 @@
+$ git init -b main
+Initialized empty Git repository in <checker-workspace>/checker/.git/
+
+$ git add .
+
+$ git -c user.name=Clean-context AI checker agent -c user.email=cleanroom@example.invalid -c commit.gpgsign=false commit -m Freeze spec-only x402 acceptance record v0 checker before vector access
+[main (root-commit) bec1663] Freeze spec-only x402 acceptance record v0 checker before vector access
+ 11 files changed, 1402 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 IMPLEMENTATION-NOTES.md
+ create mode 100644 LICENSE
+ create mode 100644 README.md
+ create mode 100644 SOURCE-MANIFEST.json
+ create mode 100644 STAGE1-READ-LOG.md
+ create mode 100644 acceptance.py
+ create mode 100644 cli.py
+ create mode 100644 requirements.in
+ create mode 100644 requirements.lock
+ create mode 100644 selftest.py
+
+$ git rev-parse HEAD
+bec16636ff3c2afa0b7ec7a0a32ab2179f96817c
+$ git archive HEAD | shasum -a 256
+98aa4293a8094aeeeaa76fc153ee97f8dde319a08d0cef301352b5c7a00b22eb  -
+UTC 2026-10-26T19:03:24Z

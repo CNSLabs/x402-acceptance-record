@@ -1,0 +1,87 @@
+{
+  "created_utc": "2026-10-26T17:39:04.672943+00:00",
+  "runtime": {
+    "python": "3.14.3 (main, Feb  3 2026, 15:32:20) [Clang 17.0.0 (clang-1700.6.3.2)]",
+    "implementation": "CPython",
+    "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+    "machine": "arm64",
+    "libraries": {
+      "PyNaCl": "1.6.0",
+      "annotated-types": "0.8.0",
+      "cffi": "2.1.1",
+      "cytoolz": "1.2.0",
+      "eth-hash": "0.8.0",
+      "eth-keys": "0.7.0",
+      "eth-typing": "6.0.0",
+      "eth-utils": "6.0.0",
+      "pip": "26.0",
+      "pycparser": "3.12",
+      "pycryptodome": "3.23.0",
+      "pydantic": "2.14.1",
+      "pydantic_core": "2.50.1",
+      "rfc8785": "0.1.4",
+      "toolz": "1.2.0",
+      "typing-inspection": "0.4.4",
+      "typing_extensions": "4.16.0"
+    },
+    "libsodium": "not exposed by PyNaCl binary",
+    "ecdsa_backend": "eth_keys.backends.NativeECCBackend"
+  },
+  "checker_sources": {
+    "cli.py": "62d689b286cb83a310e1ed1c705d3ec132823beeb5fff99cd67c882a303fcfbe",
+    "numeric_tests.py": "bc38d4c7366dcff59c2dec2c377330db483739c3ff2bfb4c88b0c2a8cb94a7de",
+    "reporting.py": "87528dc20aba05d2efcd4d9fc5ef59d86bd86dd1ba8c04dbbaa881b9bf436ee2",
+    "requirements.lock": "9c93616af33d1c238e8eb5f7a9d8ca30c4605286c20381be3b93ce3323085996",
+    "run_vectors.py": "093f53f60881e154af65adb60610339ba1270e0df1da2db1287d9b31cf732fbc",
+    "selftests.py": "cd241b930f06260d8c5e312e9912c6bb88e8a1c4a2b3fb41778398b0731e43f5",
+    "verifier.py": "c8d9b4b211c9bc81f74304a65263ed3ff9f83ad7e4dec2ec9fe68fbb38685370",
+    "wire.py": "333e8b5746381ffd1e3b64c09c4d2e9c06ce7402d493dfa37fd166c23320c354"
+  },
+  "tests": [
+    {
+      "test": "__main__.VerifierTests.test_bad_reference_form_skips_only_dependent_comparison",
+      "passed": true
+    },
+    {
+      "test": "__main__.VerifierTests.test_duplicate_trust_kid_refused_without_result",
+      "passed": true
+    },
+    {
+      "test": "__main__.VerifierTests.test_expiration_boundary_and_no_clock",
+      "passed": true
+    },
+    {
+      "test": "__main__.VerifierTests.test_independent_signed_delivery",
+      "passed": true
+    },
+    {
+      "test": "__main__.VerifierTests.test_invalid_signature_precedes_noncanonical_payload",
+      "passed": true
+    },
+    {
+      "test": "__main__.VerifierTests.test_missing_key_before_body_form",
+      "passed": true
+    },
+    {
+      "test": "__main__.VerifierTests.test_rfc8032_known_signature",
+      "passed": true
+    },
+    {
+      "test": "__main__.VerifierTests.test_stateless_after_unknown_and_bad_signature",
+      "passed": true
+    },
+    {
+      "test": "__main__.VerifierTests.test_strict_parser",
+      "passed": true
+    },
+    {
+      "test": "__main__.VerifierTests.test_unicode_utf16_key_order",
+      "passed": true
+    }
+  ],
+  "summary": {
+    "total": 10,
+    "failures": 0,
+    "errors": 0
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "created_utc": "2026-10-26T17:39:04.437328+00:00",
+  "classification": "spec ambiguity",
+  "input": {
+    "record": "eyJmb3JtYXQiOiJqd3MiLCJzaWduYXR1cmUiOiJleUpoYkdjaU9pSkZaRVJUUVNJc0ltdHBaQ0k2SW5SbGMzUXRZblY1WlhJaUxDSjBlWEFpT2lKNE5EQXlMV0ZqWTJWd2RHRnVZMlVyYW5kekluMC5leUpoZFhSb2IzSnBkSGtpT25zaWJXOWtaU0k2SW1SbFkyeGhjbVZrSWl3aWNISnZabWxzWlNJNkltUmxZMnhoY21Wa0xXVjJhV1JsYm1ObEx6QWlMQ0p5WldabGNtVnVZMlVpT2lJaWZTd2lZMjl1Wm1seWJXbHVaMUJoY25SNUlqb2lZblY1WlhJaUxDSmpiMjUwWlhoMFNXUWlPaUl3ZUdFM00yRTFNekUzWmpjek16RTNPR1UwTWpGaVlXWTNNakExT1RCbFpHSXhNRFEwWkRKbFpqUTVaVEk0T1RNM1lqZzBNek5sTkRsbFpqQXpOVFZtWWpnaUxDSmtaV3hwZG1WeWVVbHpjM1ZsY2lJNkluTmxiR3hsY2lJc0ltUnBjM0J2YzJsMGFXOXVJam9pWVdOalpYQjBaV1FpTENKcGMzTjFaV1JCZENJNk5ESXNJbTkxZEdOdmJXVkVhV2RsYzNRaU9pSXdlREkxWVRZelpUVXlZVGs0WmpabVpHRmhOakU0TjJSaE5UVTVZVEJoTTJFMU5XUTRORFZrTURNeU1tTmhNVGd6WVdRMllXUTFaVEF3Tm1NMFpXUTJORFlpTENKemFXZHVaWElpT2lKaWRYbGxjaUlzSW5OMVltcGxZM1FpT25zaWNISnZabWxzWlNJNkluZzBNREpsZGk4eElpd2ljbVZtWlhKbGJtTmxJam9pZURRd01tVjJMekU2YzJoaE1qVTJPbUUzTTJFMU16RTNaamN6TXpFM09HVTBNakZpWVdZM01qQTFPVEJsWkdJeE1EUTBaREpsWmpRNVpUSTRPVE0zWWpnME16TmxORGxsWmpBek5UVm1ZamdpZlN3aWRHVnliWE5FYVdkbGMzUWlPaUl3ZUdZMk16SXhOMlpoT1RjMVpqazRNR1E1TVRFNU5HRTVNVFpsWkRNME5qQTVZVE5rWVRNMVkyRm1OMlJsTkdKa09HUmpNemMzWVdVeVpXTTVNemM1WTJJaUxDSjJaWEp6YVc5dUlqb3dmUS43T2VxMG5iTE04em1mSVE5UXNxenRoRjVEdlFEZEQwZGt2VjlnUHBUTVptQWRxdTNRWEluRHRBTXRmbGhBZEZrUlhEMldDTjJTNW9GSG5PWmJWMlVEZyJ9",
+    "subject": "eyJjYW5vbmljYWxpemF0aW9uIjoiUkZDODc4NSIsImRlbGl2ZXJ5Ijp7ImNvbnRlbnREaWdlc3QiOiJzaGEyNTY6MjVhNjNlNTJhOThmNmZkYWE2MTg3ZGE1NTlhMGEzYTU1ZDg0NWQwMzIyY2ExODNhZDZhZDVlMDA2YzRlZDY0NiIsInRpbWVzdGFtcCI6NDJ9LCJldmlkZW5jZVJlZiI6Ing0MDJldi8xOnNoYTI1NjphNzNhNTMxN2Y3MzMxNzhlNDIxYmFmNzIwNTkwZWRiMTA0NGQyZWY0OWUyODkzN2I4NDMzZTQ5ZWYwMzU1ZmI4IiwicGF5bWVudCI6eyJhbW91bnQiOiIyNyIsImFzc2V0IjoibmF0aXZlIiwibmV0d29yayI6ImVpcDE1NToxIiwicGF5ZWUiOiIweDM0MzQzNDM0MzQzNDM0MzQzNDM0MzQzNDM0MzQzNDM0MzQzNDM0MzQiLCJwYXllciI6IjB4MDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMCJ9LCJyZXF1ZXN0Ijp7fSwic2NoZW1lIjoieDQwMmV2LzEiLCJzaWduZXIiOnsia2V5VHlwZSI6IkVkMjU1MTkiLCJwdWJsaWNLZXkiOiJBNkVIdl9QT0VMNGRjTjBZNTB2QW1XZmsxakNicFExZkhkeUdaQkpWTWJnIiwic2lnbmF0dXJlIjoiYmFzZTY0dXJsOjZRUXZhWjk3Mm0tN2h3RnNCOE5sRnhFazRLQVZKV3o2aVYtUGU5dWV4LUdkT3ZSVzJHaW9PTnU2RHVZQXd2NXI5ZVJXTUlIdDBYUHVEU0ozS2pGVkJ3In19",
+    "terms": [
+      "eyJmb3JtYXQiOiJqd3MiLCJzaWduYXR1cmUiOiJleUpoYkdjaU9pSkZaRVJUUVNJc0ltdHBaQ0k2SW5SbGMzUXRjMlZzYkdWeUluMC5leUpoYlc5MWJuUWlPaUl5TnlJc0ltRnpjMlYwSWpvaWJtRjBhWFpsSWl3aWJtVjBkMjl5YXlJNkltVnBjREUxTlRveElpd2ljR0Y1Vkc4aU9pSXdlRE0wTXpRek5ETTBNelF6TkRNME16UXpORE0wTXpRek5ETTBNelF6TkRNME16UXpORE0wTXpRaUxDSnlaWE52ZFhKalpWVnliQ0k2SW1oMGRIQnpPaTh2WlhoaGJYQnNaUzUwWlhOMEwzZ2lMQ0p6WTJobGJXVWlPaUpsZUdGamRDSXNJblpoYkdsa1ZXNTBhV3dpT2pFd01Dd2lkbVZ5YzJsdmJpSTZNWDAud1VYREpiSWFlb1FOZXA3eGpEd00xWG1QUC1WV2l3UmN1NzVRZzlzSUk2V292SURKaWNtREhLS0F1OGgwcG90VjNsT0UwZzJpcmpEMkJ5cU5WOGZEQXcifQ"
+    ],
+    "trust": {
+      "issuers": [
+        {
+          "issuer": "seller",
+          "keys": [
+            {
+              "kid": "test-seller",
+              "ed25519": "A6EHv_POEL4dcN0Y50vAmWfk1jCbpQ1fHdyGZBJVMbg"
+            }
+          ]
+        }
+      ],
+      "keys": [
+        {
+          "kid": "test-buyer",
+          "signer": "buyer",
+          "key": "Kay64UG8yvCyLhqU000LxzYeUm0L_hLIl5S8kyKWbdc"
+        }
+      ],
+      "authority": [
+        {
+          "confirmingParty": "buyer",
+          "signer": "buyer",
+          "subjectProfile": "x402ev/1",
+          "subjectReference": "x402ev/1:sha256:a73a5317f733178e421baf720590edb1044d2ef49e28937b8433e49ef0355fb8"
+        }
+      ]
+    }
+  },
+  "actual": {
+    "result": "verified",
+    "conditions": [],
+    "disposition": "accepted",
+    "statementId": "x402accept/0:sha256:e757496fdcdfce723857389b7745748bc6c658b2d64ce6295441230d3a7dcc2a"
+  },
+  "initial_exploratory_expectation": "unknown/evidence_unavailable",
+  "normative_expected": null,
+  "checker_sources": {
+    "cli.py": "62d689b286cb83a310e1ed1c705d3ec132823beeb5fff99cd67c882a303fcfbe",
+    "numeric_tests.py": "bc38d4c7366dcff59c2dec2c377330db483739c3ff2bfb4c88b0c2a8cb94a7de",
+    "reporting.py": "87528dc20aba05d2efcd4d9fc5ef59d86bd86dd1ba8c04dbbaa881b9bf436ee2",
+    "requirements.lock": "9c93616af33d1c238e8eb5f7a9d8ca30c4605286c20381be3b93ce3323085996",
+    "run_vectors.py": "093f53f60881e154af65adb60610339ba1270e0df1da2db1287d9b31cf732fbc",
+    "selftests.py": "cd241b930f06260d8c5e312e9912c6bb88e8a1c4a2b3fb41778398b0731e43f5",
+    "verifier.py": "c8d9b4b211c9bc81f74304a65263ed3ff9f83ad7e4dec2ec9fe68fbb38685370",
+    "wire.py": "333e8b5746381ffd1e3b64c09c4d2e9c06ce7402d493dfa37fd166c23320c354"
+  },
+  "note": "No resolved normative expectation. Upstream non-null entities is not defined for a syntactically valid zero EVM address. Current verifier behavior retained."
+}
