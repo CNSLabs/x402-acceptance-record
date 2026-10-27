@@ -3,7 +3,7 @@
     "name": "x402-acceptance-record/conformance/checker",
     "language": "typescript",
     "version": "0.1.0",
-    "commit": "(private source commit; locator withheld)",
+    "commit": "0b35fdce6a9837192c26e0b28853bd79458d6067",
     "dirty": false
   },
   "vectorFile": {
