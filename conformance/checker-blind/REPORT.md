@@ -1,3 +1,5 @@
+> Publication copy: private locators were removed from metadata. The [export manifest](../PUBLICATION-METADATA.json) records original and public hashes; inputs, outputs, timestamps and source snapshots retain their original meaning.
+
 # x402 clean-room checker report
 
 The checker was written entirely by an AI agent in a clean context from the specification texts alone. Both stages are complete.
@@ -16,11 +18,11 @@ The checker was written entirely by an AI agent in a clean context from the spec
 
 **127 passed / 0 failed / 127 vectors.** There are no failures to classify. No checker changes, v2 commit or second result were needed. The separate runner only decodes transport and renames documented input-binding fields; it never changes verification logic or signed data. The first result is preserved unchanged.
 
-Result: [rerun-cnslabs-cleanroom-sol-2026-10-26.json](../results/rerun-cnslabs-cleanroom-sol-2026-10-26.json).
+Result: [rerun-cnslabs-cleanroom-sol-2026-10-26.json](../results/rerun-mike-2026-10-26.json).
 
 ## Exact executed commands and outputs
 
-Working directory: `/Users/moltmike/.openclaw/state/x402-cleanroom-checker-20261026`.
+Working directory: `<checker-workspace>`.
 
 ### Synthetic selftest, before freeze
 
@@ -67,6 +69,6 @@ The explicit absence of resource binding and settlement verification is honored;
 
 No external project source, reference implementation or private conformance repository was read; no pushes or messages were sent. The staged `seeds.json` was not opened. Only a results README was staged, so vector layout came from `vectors.json` itself after freeze.
 
-**Write-boundary exception:** initial pip attempts used the host-default `/Users/moltmike/.openclaw/tmp/pip-*` for incidental package build/install temporaries before TMPDIR was explicitly confined to the task directory. Those directories were not opened by the agent and supplied no project context. All agent-authored files are inside the assigned directory. Python 3.9 was unused, a Python 3.14 dependency build failed, and Python 3.13 succeeded; the unused environments and build logs were retained. See `ENVIRONMENT-NOTES.md`. This is disclosed rather than claiming perfect write confinement.
+**Write-boundary exception:** initial pip attempts used the host-default `<host-temporary-directory>/pip-*` for incidental package build/install temporaries before TMPDIR was explicitly confined to the task directory. Those directories were not opened by the agent and supplied no project context. All agent-authored files are inside the assigned directory. Python 3.9 was unused, a Python 3.14 dependency build failed, and Python 3.13 succeeded; the unused environments and build logs were retained. See `ENVIRONMENT-NOTES.md`. This is disclosed rather than claiming perfect write confinement.
 
 Artifacts: `checker/` (frozen implementation, README and synthetic selftest), `runner/` (adapter and CLI fixture), `FREEZE.md`, `READ-LOG.md`, `STAGE2-ANALYSIS.md`, the result JSON and exact execution receipts under `build-logs/`.

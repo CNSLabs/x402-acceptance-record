@@ -1,0 +1,86 @@
+{
+  "format": 1,
+  "scope": "Publication metadata copies; not a new execution or a new freeze",
+  "changed_files": {
+    "README.md": {
+      "original_sha256": "65cb27d8dabfa1014568cb5841e033a5b675b0eae532515980452836920214ea",
+      "export_sha256": "684e070311f13583f4420a14cc86868d22fe2882fad3c9daf207998342e52108"
+    },
+    "checker-blind/BRIEF.md": {
+      "original_sha256": "2c5d3afbe91111b4fbb2a2fdf37a6892d3d1182b3e8bb929ec8abe2d5b448be0",
+      "export_sha256": "f51fe8067edaf118ecc78be417e4e5539a4d6123e315b0f260a1b3ad970ce22e"
+    },
+    "checker-blind/ENVIRONMENT-NOTES.md": {
+      "original_sha256": "9562b5cd03c51f19d448fae84f4f9aa077628b41a3a2ebae5f3bd88b2e12e487",
+      "export_sha256": "44f5ee3377a30ea227abe5fb39fbf7f63c6a5cc55fc292ed474eb0b918c45c42"
+    },
+    "checker-blind/REPORT.md": {
+      "original_sha256": "2e397eb2858f2e892526143a38124ff1e1cc2c93e7349a4cd98fa2f9e516a0c1",
+      "export_sha256": "e36bc9c2e94547a43fd1e754d7cd0a58222b6099de06e02b3c1c430c595831d4"
+    },
+    "checker-blind/provenance/build-logs/dependencies-install-py313.txt": {
+      "original_sha256": "8680807f2cfef944e3ef794c7f65254aaa057e7533a687803e626cfbd39838e5",
+      "export_sha256": "6d8aa370f1757133ad16960eaf4fc599ca34dad82ce5afc03c09d0b935a6a1a8"
+    },
+    "checker-blind/provenance/build-logs/dependencies-install-py314.txt": {
+      "original_sha256": "ddaeed09c9102ecfc00371e12e9e9a6c835a13a17936020f1e7e37d9c1acbfae",
+      "export_sha256": "0479a398a2123bf7cad5c14ed41f7db7c51b858d525afb76fcfc4a055244f529"
+    },
+    "checker-blind/provenance/build-logs/freeze.txt": {
+      "original_sha256": "e82ec446cc35c6ae44dbe11baf7326628fe22e462faa3144d2b59a9a2c04eb0e",
+      "export_sha256": "e13dad2451c2d8c6bb9a3035bda5bad3e47a4bd78d56fa796c975a112be7db89"
+    },
+    "checker-blind/r1/review-repro/results-frozen.json": {
+      "original_sha256": "dbd1b40545863846b113f812beb13286ed75b801e941756f7d257d7ee891e181",
+      "export_sha256": "a61d68c06ba46672cc2b76a7062eb85772d98b2820b0159c92973ae6b6670ffc"
+    },
+    "checker-python-independent/ARTIFACT-SHA256.json": {
+      "original_sha256": "f1f140be633591407e5d39a45bfb6afa111087d5e2056e030aa0c8108547d294",
+      "export_sha256": "6c12fd7fe9df9e89e34b5214aae8dc6105d9ff1891bd94df2ccd9d388ae296cf"
+    },
+    "checker-python-independent/PACKAGING.md": {
+      "original_sha256": "498d12edded99a12854460d6ff5a6262484e1c5b2498eca08758936b69fa9458",
+      "export_sha256": "3a4e4c33f4f36589b2775f87dc529f4a7574e754f6ab6de374a21b003fec76d9"
+    },
+    "checker-python-independent/access-log.json": {
+      "original_sha256": "ef20d136c24af5dd8b678d23f8c43c5c273777cc72c3aabac9ac53c2feb0af7f",
+      "export_sha256": "fd8a85bf74fa6427c25fc4745f7e56ad5955598ce3793fdaa4c87656dd31b076"
+    },
+    "checker-python-independent/results/corrected-run-2026-10-26.json": {
+      "original_sha256": "9658a60aa4e6e79267c0adff0affa59f12c4f242ceea9d57da3b04c197e5b15a",
+      "export_sha256": "f77e19efa8ad39b2d0b68d766b56fabeaa433790b11b327fbd6a214962e418c5"
+    },
+    "checker-python-independent/results/first-run-2026-10-26.json": {
+      "original_sha256": "8bd3d67844903a34b843c14519e58da103e19c56496c3056f33c3ff55c0ffaba",
+      "export_sha256": "a7daf5174075fd5df4aa3bf1609c0cb5ccad6f3960fa5b1055f01715199f2703"
+    },
+    "checker-python-independent/results/rerun-vic-2026-10-26.json": {
+      "original_sha256": "539907239b037847b4ac82170e670f81cd07fb975d330a0b5578ce014f69f605",
+      "export_sha256": "5e62a9719c92aab7d2afeaf8370b800f968471ed3f4e2fa88cbaba542ac0cdb2"
+    },
+    "checker-python-independent/results/review-probes-before-fixes-2026-10-26.json": {
+      "original_sha256": "aa85beba72b120a9979abc63af5058b80eab8dc20a13dae2e37604e6b4be483d",
+      "export_sha256": "558da749836d4909ef8eaf4dad7a809228a51ac4ffba7f75f14ebbbda4b4ef69"
+    },
+    "checker-python-independent/results/selftests-first-run-2026-10-26.json": {
+      "original_sha256": "26ff1520b9c77a876fc8db0a5f550d7c01eec370c11abc72b34e93ece2a0a752",
+      "export_sha256": "c2b24e4575979a7c658f5f071f9275b0913953ce62227a3f9c87d6cd03066c21"
+    },
+    "results/checker-ts-0b35fdc.json": {
+      "original_sha256": "b4ccdfcc2c4f97b089d0f044dad3c4f32bfe5deec490f56d06408791d321bc68",
+      "export_sha256": "e78fbf7dd65c9cf213ff923edf0488b42351bc262e7e7795d33d0b520b9eb9c4"
+    },
+    "results/rerun-vic-2026-10-26.json": {
+      "original_sha256": "83b47bf7bdc03eb60a649de97b07c2304e19547a450678e81601dd9098ae066c",
+      "export_sha256": "d656a8df91e649b1edf7dc2d534f3b8f54e70d51127c7a9c5edec0c3a24ff03e"
+    },
+    "results/rerun-vic-2026-10-26.md": {
+      "original_sha256": "a2eaea8fc644b64351918557935a91f69b41c6e31ff2786e3dbe7908dd2328c4",
+      "export_sha256": "665db8141c0178baaebc5d67b24aa492db07501f78dbf920b3904d71b3341c93"
+    },
+    "review/2026-10-26-vic-repro/repro.json": {
+      "original_sha256": "17316bc33d452444a8cac7e39df4f08b5f839877fea6580b025e936a6bbc50c3",
+      "export_sha256": "835190f6e89699c5d100b80c4350535649373012ab4cb718b569180beb4d865f"
+    }
+  }
+}

@@ -1,5 +1,5 @@
 $ git init -b main
-Initialized empty Git repository in /Users/moltmike/.openclaw/state/x402-cleanroom-checker-20261026/checker/.git/
+Initialized empty Git repository in <checker-workspace>/checker/.git/
 
 $ git add .
 

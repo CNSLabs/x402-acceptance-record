@@ -1,4 +1,4 @@
-Collecting coincurve==21.0.0 (from -r /Users/moltmike/.openclaw/state/x402-cleanroom-checker-20261026/checker/requirements.in (line 1))
+Collecting coincurve==21.0.0 (from -r <checker-workspace>/checker/requirements.in (line 1))
   Downloading coincurve-21.0.0.tar.gz (128 kB)
   Installing build dependencies: started
   Installing build dependencies: finished with status 'done'
@@ -14,21 +14,21 @@ Collecting coincurve==21.0.0 (from -r /Users/moltmike/.openclaw/state/x402-clean
   │ exit code: 1
   ╰─> [18 lines of output]
       Traceback (most recent call last):
-        File "/Users/moltmike/.openclaw/state/x402-cleanroom-checker-20261026/.venv314/lib/python3.14/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 389, in <module>
+        File "<checker-workspace>/.venv314/lib/python3.14/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 389, in <module>
           main()
           ~~~~^^
-        File "/Users/moltmike/.openclaw/state/x402-cleanroom-checker-20261026/.venv314/lib/python3.14/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 373, in main
+        File "<checker-workspace>/.venv314/lib/python3.14/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 373, in main
           json_out["return_val"] = hook(**hook_input["kwargs"])
                                    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^
-        File "/Users/moltmike/.openclaw/state/x402-cleanroom-checker-20261026/.venv314/lib/python3.14/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 178, in prepare_metadata_for_build_wheel
+        File "<checker-workspace>/.venv314/lib/python3.14/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 178, in prepare_metadata_for_build_wheel
           whl_basename = backend.build_wheel(metadata_directory, config_settings)
-        File "/Users/moltmike/.openclaw/tmp/pip-build-env-pltzfldj/overlay/lib/python3.14/site-packages/hatchling/build.py", line 58, in build_wheel
+        File "<host-temporary-directory>/pip-build-env-pltzfldj/overlay/lib/python3.14/site-packages/hatchling/build.py", line 58, in build_wheel
           return os.path.basename(next(builder.build(directory=wheel_directory, versions=["standard"])))
                                   ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-        File "/Users/moltmike/.openclaw/tmp/pip-build-env-pltzfldj/overlay/lib/python3.14/site-packages/hatchling/builders/plugin/interface.py", line 158, in build
+        File "<host-temporary-directory>/pip-build-env-pltzfldj/overlay/lib/python3.14/site-packages/hatchling/builders/plugin/interface.py", line 158, in build
           build_hook.initialize(version, build_data)
           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
-        File "/Users/moltmike/.openclaw/tmp/pip-install-to6dh2nr/coincurve_bd25bebe24dc4dc1add19d812ff2e9b0/hatch_build.py", line 34, in initialize
+        File "<host-temporary-directory>/pip-install-to6dh2nr/coincurve_bd25bebe24dc4dc1add19d812ff2e9b0/hatch_build.py", line 34, in initialize
           raise RuntimeError(message)
       RuntimeError: Expected exactly one LICENSE file in cffi distribution, got 0
       [end of output]

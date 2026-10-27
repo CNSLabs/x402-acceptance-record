@@ -1,0 +1,49 @@
+{
+  "checker_commit": "bec16636ff3c2afa0b7ec7a0a32ab2179f96817c",
+  "checker_dirty": false,
+  "python": "<checker-workspace>/.venv313/bin/python",
+  "cases": {
+    "A1_jws_eip155_baseline": {
+      "cli_exit": 0,
+      "cli_stdout": "{\"result\":\"verified\",\"conditions\":[],\"disposition\":\"accepted\"}",
+      "cli_stderr": ""
+    },
+    "A2_jws_network_base": {
+      "cli_exit": 0,
+      "cli_stdout": "{\"result\":\"verified\",\"conditions\":[],\"disposition\":\"accepted\"}",
+      "cli_stderr": ""
+    },
+    "B1_eip712_baseline": {
+      "cli_exit": 0,
+      "cli_stdout": "{\"result\":\"verified\",\"conditions\":[],\"disposition\":\"accepted\"}",
+      "cli_stderr": "",
+      "api_plain_json_loads": {
+        "result": "verified",
+        "conditions": [],
+        "disposition": "accepted"
+      }
+    },
+    "B2_eip712_version_1.0": {
+      "cli_exit": 0,
+      "cli_stdout": "{\"result\":\"unknown\",\"conditions\":[],\"reason\":\"evidence_unavailable\",\"disposition\":\"accepted\"}",
+      "cli_stderr": "",
+      "api_plain_json_loads": {
+        "result": "unknown",
+        "conditions": [],
+        "reason": "evidence_unavailable",
+        "disposition": "accepted"
+      }
+    },
+    "B3_eip712_validUntil_1e2": {
+      "cli_exit": 0,
+      "cli_stdout": "{\"result\":\"unknown\",\"conditions\":[],\"reason\":\"evidence_unavailable\",\"disposition\":\"accepted\"}",
+      "cli_stderr": "",
+      "api_plain_json_loads": {
+        "result": "unknown",
+        "conditions": [],
+        "reason": "evidence_unavailable",
+        "disposition": "accepted"
+      }
+    }
+  }
+}

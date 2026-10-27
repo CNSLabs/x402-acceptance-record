@@ -9,7 +9,7 @@ import { fileURLToPath } from 'node:url';
 import { b64uDecode, isPlainObject } from './encoding.ts';
 import { verify, type Output, type VerifyInputs } from './verify.ts';
 
-const CHECKER = { name: 'x402-acceptance-conformance/v0/checker', language: 'typescript', version: '0.1.0' };
+const CHECKER = { name: 'x402-acceptance-record/conformance/checker', language: 'typescript', version: '0.1.0' };
 
 /** The git commit the checker ran at, and whether the checker's own files had uncommitted changes. */
 function gitPin(): { commit: string; dirty: boolean } {
