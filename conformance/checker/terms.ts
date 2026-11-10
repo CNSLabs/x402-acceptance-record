@@ -5,10 +5,10 @@ import { addressOrStringEqual, jcs, sha256Hex, utf8 } from './encoding.ts';
 import type { IssuerKeys } from './inputs.ts';
 import { parseStrictJson, toPlain } from './json.ts';
 import { signingInput, splitCompactJws } from './jws.ts';
-import type { SubjectFacts } from './subject.ts';
+import type { X402ev1Facts } from './subject.ts';
 
 /** The digests (0x + hex SHA-256 of JCS of the payload) of every qualifying offer. Empty means no terms evidence. */
-export function qualifyingOfferDigests(terms: Uint8Array[], issuerKeys: IssuerKeys, subject: SubjectFacts): Set<string> {
+export function qualifyingOfferDigests(terms: Uint8Array[], issuerKeys: IssuerKeys, subject: X402ev1Facts): Set<string> {
   const digests = new Set<string>();
   if (!subject.payment) return digests;
   for (const artifact of terms) {
@@ -18,7 +18,7 @@ export function qualifyingOfferDigests(terms: Uint8Array[], issuerKeys: IssuerKe
   return digests;
 }
 
-function qualifyingOfferDigest(artifact: Uint8Array, issuerKeys: IssuerKeys, subject: SubjectFacts): string | null {
+function qualifyingOfferDigest(artifact: Uint8Array, issuerKeys: IssuerKeys, subject: X402ev1Facts): string | null {
   const env = parseStrictJson(artifact);
   if (!env || env.kind !== 'object') return null;
   const format = env.members.get('format');
@@ -66,7 +66,7 @@ function qualifyingOfferDigest(artifact: Uint8Array, issuerKeys: IssuerKeys, sub
 }
 
 /** AR-29: network and amount byte-equal; asset and payTo equal to payment.asset and payment.payee (addresses case-insensitively); validUntil, when non-zero, not earlier than the outcome time. */
-function matchesPayment(payload: Record<string, unknown>, subject: SubjectFacts): boolean {
+function matchesPayment(payload: Record<string, unknown>, subject: X402ev1Facts): boolean {
   const pay = subject.payment!;
   if (payload.network !== pay.network || payload.amount !== pay.amount) return false;
   if (typeof payload.asset !== 'string' || !addressOrStringEqual(payload.asset, pay.asset)) return false;

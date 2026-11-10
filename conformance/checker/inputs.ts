@@ -60,19 +60,26 @@ export interface VerifyInputs {
 /** The keys and addresses `trust.issuers` lists for one issuer. */
 export interface IssuerKeys {
   ed25519: Uint8Array[];
+  /** The same Ed25519 keys with the key id each entry carries, for profiles that match on it. */
+  entries: { kid: string | null; key: Uint8Array }[];
   /** Lowercase `0x` + 40 hex digits. */
   addresses: string[];
 }
 
+export const NO_ISSUER_KEYS: IssuerKeys = { ed25519: [], entries: [], addresses: [] };
+
 export function issuerKeysFor(trust: Trust, issuer: string): IssuerKeys {
-  const out: IssuerKeys = { ed25519: [], addresses: [] };
+  const out: IssuerKeys = { ed25519: [], entries: [], addresses: [] };
   for (const entry of trust.issuers ?? []) {
     if (!entry || entry.issuer !== issuer) continue;
     for (const key of entry.keys ?? []) {
       if (!key) continue;
       if (typeof key.ed25519 === 'string') {
         const bytes = b64uDecode(key.ed25519);
-        if (bytes && bytes.length === 32) out.ed25519.push(bytes);
+        if (bytes && bytes.length === 32) {
+          out.ed25519.push(bytes);
+          out.entries.push({ kid: typeof key.kid === 'string' ? key.kid : null, key: bytes });
+        }
       }
       if (typeof key.address === 'string' && isEthAddress(key.address)) out.addresses.push(key.address.toLowerCase());
     }

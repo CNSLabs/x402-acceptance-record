@@ -1,0 +1,277 @@
+{
+  "checker": {
+    "name": "x402-acceptance-record/conformance/checker",
+    "language": "typescript",
+    "version": "0.1.0",
+    "commit": "1c8bf6c7e97d49c78d818360a345164e6402d95d",
+    "dirty": false
+  },
+  "vectorFile": {
+    "path": "composition/war-1.2/vectors-C01-C16.json",
+    "sha256": "3522b7fa9d54b553539a559cb3d16c5281280808e404641b674f17fea227be37"
+  },
+  "profile": "war/1.2 composition vectors C01-C16 (maximusrufus/work-acceptance-record, composition/vectors at 8ce7f42), bundled unchanged for run-vectors.ts",
+  "ranAt": "2026-11-09T21:59:48.561Z",
+  "totals": {
+    "vectors": 16,
+    "passed": 15,
+    "failed": 1
+  },
+  "results": [
+    {
+      "id": "C01-valid-declared",
+      "expected": {
+        "conditions": [],
+        "disposition": "accepted",
+        "result": "verified"
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "verified",
+        "conditions": [],
+        "disposition": "accepted"
+      }
+    },
+    {
+      "id": "C02-valid-payer",
+      "expected": {
+        "conditions": [],
+        "disposition": "accepted",
+        "result": "verified"
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "verified",
+        "conditions": [],
+        "disposition": "accepted"
+      }
+    },
+    {
+      "id": "C03-digest-mismatch",
+      "expected": {
+        "conditions": [
+          "acceptance_record_digest_mismatch"
+        ],
+        "result": "malformed"
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_record_digest_mismatch"
+        ]
+      }
+    },
+    {
+      "id": "C04-unsupported-profile",
+      "expected": {
+        "conditions": [],
+        "disposition": "accepted",
+        "reason": "profile_unavailable",
+        "result": "unknown"
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "unknown",
+        "conditions": [],
+        "disposition": "accepted",
+        "reason": "profile_unavailable"
+      }
+    },
+    {
+      "id": "C05-wrong-profile",
+      "expected": {
+        "conditions": [],
+        "disposition": "accepted",
+        "reason": "profile_unavailable",
+        "result": "unknown"
+      },
+      "outcome": "fail",
+      "actual": {
+        "result": "unknown",
+        "conditions": [],
+        "disposition": "accepted",
+        "reason": "evidence_unavailable"
+      },
+      "differences": [
+        "reason: expected \"profile_unavailable\", got \"evidence_unavailable\""
+      ]
+    },
+    {
+      "id": "C06-tampered-work-record",
+      "expected": {
+        "conditions": [],
+        "disposition": "accepted",
+        "reason": "evidence_unavailable",
+        "result": "unknown"
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "unknown",
+        "conditions": [],
+        "disposition": "accepted",
+        "reason": "evidence_unavailable"
+      }
+    },
+    {
+      "id": "C07-tampered-acceptance",
+      "expected": {
+        "conditions": [
+          "signature_invalid"
+        ],
+        "result": "malformed"
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "signature_invalid"
+        ]
+      }
+    },
+    {
+      "id": "C08-valid-but-unbound",
+      "expected": {
+        "conditions": [
+          "acceptance_record_digest_mismatch"
+        ],
+        "result": "malformed"
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_record_digest_mismatch"
+        ]
+      }
+    },
+    {
+      "id": "C09-outcome-mismatch",
+      "expected": {
+        "conditions": [
+          "acceptance_outcome_digest_mismatch"
+        ],
+        "result": "malformed"
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_outcome_digest_mismatch"
+        ]
+      }
+    },
+    {
+      "id": "C10-terms-mismatch",
+      "expected": {
+        "conditions": [
+          "acceptance_terms_digest_mismatch"
+        ],
+        "result": "malformed"
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_terms_digest_mismatch"
+        ]
+      }
+    },
+    {
+      "id": "C11-precedes-fractional",
+      "expected": {
+        "conditions": [
+          "acceptance_precedes_outcome"
+        ],
+        "result": "malformed"
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_precedes_outcome"
+        ]
+      }
+    },
+    {
+      "id": "C12-equal-boundary",
+      "expected": {
+        "conditions": [],
+        "disposition": "accepted",
+        "result": "verified"
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "verified",
+        "conditions": [],
+        "disposition": "accepted"
+      }
+    },
+    {
+      "id": "C13-signer-is-issuer",
+      "expected": {
+        "conditions": [
+          "acceptance_signer_is_issuer"
+        ],
+        "result": "malformed"
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "malformed",
+        "conditions": [
+          "acceptance_signer_is_issuer"
+        ]
+      }
+    },
+    {
+      "id": "C14-checker-key-unlisted",
+      "expected": {
+        "conditions": [],
+        "disposition": "accepted",
+        "reason": "evidence_unavailable",
+        "result": "unknown"
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "unknown",
+        "conditions": [],
+        "disposition": "accepted",
+        "reason": "evidence_unavailable"
+      }
+    },
+    {
+      "id": "C15-subject-absent",
+      "expected": {
+        "conditions": [],
+        "disposition": "accepted",
+        "reason": "evidence_unavailable",
+        "result": "unknown"
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "unknown",
+        "conditions": [],
+        "disposition": "accepted",
+        "reason": "evidence_unavailable"
+      }
+    },
+    {
+      "id": "C16-authority-other-record",
+      "expected": {
+        "conditions": [
+          "acceptance_authority_unresolved"
+        ],
+        "disposition": "accepted",
+        "result": "unknown"
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "unknown",
+        "conditions": [
+          "acceptance_authority_unresolved"
+        ],
+        "disposition": "accepted"
+      }
+    }
+  ]
+}

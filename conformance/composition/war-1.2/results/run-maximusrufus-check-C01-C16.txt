@@ -1,0 +1,27 @@
+# maximusrufus/work-acceptance-record composition/vectors/check.py at 8ce7f42, run 2026-11-09 by CNS Labs with python3 -I over his own composition/vectors directory (unchanged)
+
+PASS C01-valid-declared
+PASS C02-valid-payer
+PASS C03-digest-mismatch
+     expected {"conditions": ["acceptance_record_digest_mismatch"], "result": "malformed"}
+     actual   {"conditions": ["acceptance_record_digest_mismatch"], "result": "malformed"}
+PASS C04-unsupported-profile
+PASS C05-wrong-profile
+PASS C06-tampered-work-record
+PASS C07-tampered-acceptance
+PASS C08-valid-but-unbound
+     expected {"conditions": ["acceptance_record_digest_mismatch"], "result": "malformed"}
+     actual   {"conditions": ["acceptance_record_digest_mismatch"], "result": "malformed"}
+PASS C09-outcome-mismatch
+     expected {"conditions": ["acceptance_outcome_digest_mismatch"], "result": "malformed"}
+     actual   {"conditions": ["acceptance_outcome_digest_mismatch"], "result": "malformed"}
+PASS C10-terms-mismatch
+     expected {"conditions": ["acceptance_terms_digest_mismatch"], "result": "malformed"}
+     actual   {"conditions": ["acceptance_terms_digest_mismatch"], "result": "malformed"}
+PASS C11-precedes-fractional
+PASS C12-equal-boundary
+PASS C13-signer-is-issuer
+PASS C14-checker-key-unlisted
+PASS C15-subject-absent
+PASS C16-authority-other-record
+16/16 vectors match

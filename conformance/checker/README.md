@@ -20,8 +20,10 @@ npx tsx checker/selftest.ts                # synthetic checks of the JSON reader
 
 Layout: `verify.ts` (the AR-35 steps, in order), `json.ts` (a strict I-JSON reader over bytes that keeps each
 number's lexeme, for AR-5 and AR-6), `jws.ts` and `eip712.ts` (the two signing forms), `ed25519.ts` (point-order
-and scalar rules of AR-19 and AR-20), `subject.ts` (`x402ev/1`, AR-23 to AR-27), `terms.ts` (signed offers, AR-29),
-`body.ts` (member forms), `inputs.ts` (the input types of SPEC section 5), `encoding.ts`.
+and scalar rules of AR-19 and AR-20), `profile.ts` (what a subject profile supplies, AR-23 to AR-29) and
+`profiles.ts` (the supported ones), `subject.ts` (`x402ev/1`, AR-23 to AR-27), `terms.ts` (signed offers, AR-29),
+`subject-war.ts` (`war/1.2`, maximusrufus's draft composition profile; see `../composition/war-1.2/`), `body.ts`
+(member forms), `inputs.ts` (the input types of SPEC section 5), `encoding.ts`.
 
 It uses no clock and no network: every input comes from the vector, including declared chain state (AR-12, AR-14).
 JCS is `canonicalize`, which serializes numbers with `JSON.stringify`, the ECMAScript rule RFC 8785 requires; a

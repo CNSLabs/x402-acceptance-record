@@ -5,11 +5,11 @@ import {
   acceptanceDigest, buildAcceptanceMessage, CONTRACT_SIGNATURE_FORM, erc1271CallValid, findCall, findDeclaration, recoverOrdinary,
 } from './eip712.ts';
 import { b64uDecode, bytesEqual, jcs, sha256Hex, utf8 } from './encoding.ts';
-import { issuerKeysFor, type IssuerKeys, type Trust, type VerifyInputs } from './inputs.ts';
+import { issuerKeysFor, NO_ISSUER_KEYS, type IssuerKeys, type Trust, type VerifyInputs } from './inputs.ts';
 import { hasExactlyMembers, parseStrictJson, toPlain, type JsonNode } from './json.ts';
 import { acceptanceHeaderKid, signingInput, splitCompactJws, type CompactJws } from './jws.ts';
-import { authenticateX402ev1, contextIdOf, parseX402ev1, subjectSignedBy, X402EV1, type ParsedSubject, type SubjectFacts } from './subject.ts';
-import { qualifyingOfferDigests } from './terms.ts';
+import type { SubjectFacts, SubjectReading } from './profile.ts';
+import { profileFor } from './profiles.ts';
 
 export type { VerifyInputs, Trust, TrustIssuer, TrustKey, TrustAuthority, ChainDeclaration, ChainCall } from './inputs.ts';
 
@@ -183,20 +183,19 @@ function evaluate(pre: Preflight, verifier: Verifier, inputs: VerifyInputs): Out
   if (pre.form === 'jws' && !payloadIsJcsOfBody(pre.jws, pre.body)) conditions.add('acceptance_member_invalid'); // AR-16
   if (facts.confirmingParty === '') conditions.add('confirming_party_absent'); // AR-34
 
-  const issuerKeys: IssuerKeys = facts.deliveryIssuer !== null ? issuerKeysFor(inputs.trust, facts.deliveryIssuer) : { ed25519: [], addresses: [] };
-  const profileKnown = facts.subject !== null && facts.subject.profile === X402EV1;
-  const parsedSubject = inputs.subject ? parseX402ev1(inputs.subject) : null;
-  // AR-23, AR-27: the subject is available only when it authenticates under its profile with a key listed for deliveryIssuer.
-  const subject: SubjectFacts | null = profileKnown && facts.deliveryIssuer !== null && parsedSubject
-    ? authenticateX402ev1(parsedSubject, issuerKeys.ed25519)
-    : null;
+  const issuerKeys: IssuerKeys = facts.deliveryIssuer !== null ? issuerKeysFor(inputs.trust, facts.deliveryIssuer) : NO_ISSUER_KEYS;
+  // AR-23: the subject is read under its named profile, when this verifier supports it (step 6 otherwise), and is
+  // available only when it authenticates there with a key listed for deliveryIssuer.
+  const profile = profileFor(facts.subject?.profile);
+  const reading: SubjectReading | null = profile && inputs.subject ? profile.read(inputs.subject, issuerKeys) : null;
+  const subject: SubjectFacts | null = reading && facts.deliveryIssuer !== null ? reading.facts : null;
 
-  if (signerIsIssuer(facts, verifier, issuerKeys, parsedSubject)) conditions.add('acceptance_signer_is_issuer'); // AR-33
+  if (signerIsIssuer(facts, verifier, issuerKeys, reading)) conditions.add('acceptance_signer_is_issuer'); // AR-33
 
   let termsAvailable = false;
   if (subject) {
     // AR-24: subject.reference equals the identity byte-exact; contextId is its 64 hex digits.
-    if (facts.subject!.reference !== subject.evidenceRef || (facts.contextId !== null && facts.contextId !== contextIdOf(subject.evidenceRef))) {
+    if (facts.subject!.reference !== subject.identity || (facts.contextId !== null && facts.contextId !== subject.contextId)) {
       conditions.add('acceptance_record_digest_mismatch');
     }
     // AR-25: outcomeDigest equals the subject's bound outcome digest, and the SHA-256 of `outcome` when supplied.
@@ -206,8 +205,8 @@ function evaluate(pre: Preflight, verifier: Verifier, inputs: VerifyInputs): Out
     }
     // AR-26: issuedAt is not earlier than the outcome time; equal is allowed.
     if (facts.issuedAt !== null && facts.issuedAt < BigInt(subject.outcomeTime)) conditions.add('acceptance_precedes_outcome');
-    // AR-29: termsDigest equals the digest of a qualifying offer; no qualifying offer is missing evidence, never a mismatch.
-    const digests = qualifyingOfferDigests(inputs.terms ?? [], issuerKeys, subject);
+    // AR-29: termsDigest equals a digest the profile's issuer evidence commits; no evidence is unavailable, never a mismatch.
+    const digests = reading!.termsDigests(inputs.terms ?? []);
     termsAvailable = digests.size > 0;
     if (termsAvailable && facts.termsDigest !== null && !digests.has(facts.termsDigest)) conditions.add('acceptance_terms_digest_mismatch');
   }
@@ -219,7 +218,7 @@ function evaluate(pre: Preflight, verifier: Verifier, inputs: VerifyInputs): Out
   const disposition = facts.disposition as Disposition;
 
   // Step 6: unknown subject profile.
-  if (!profileKnown) return { result: 'unknown', conditions: [], disposition, reason: 'profile_unavailable' };
+  if (!profile) return { result: 'unknown', conditions: [], disposition, reason: 'profile_unavailable' };
 
   // Step 7: subject or terms evidence unavailable.
   if (!subject || !termsAvailable) return { result: 'unknown', conditions: [], disposition, reason: 'evidence_unavailable' };
@@ -240,14 +239,18 @@ function payloadIsJcsOfBody(jws: CompactJws, body: JsonNode): boolean {
   }
 }
 
-/** AR-33: confirmingParty or signer equals deliveryIssuer, or the verifying key or account is listed for deliveryIssuer or signed the subject record. */
-function signerIsIssuer(facts: BodyFacts, verifier: Verifier, issuerKeys: IssuerKeys, parsedSubject: ParsedSubject | null): boolean {
+/**
+ * AR-33: confirmingParty or signer equals deliveryIssuer, or the verifying key or account is listed for deliveryIssuer
+ * or signed the subject record. "Signed the subject record" is read under the subject's named profile, so it is
+ * decided only when this verifier supports that profile.
+ */
+function signerIsIssuer(facts: BodyFacts, verifier: Verifier, issuerKeys: IssuerKeys, reading: SubjectReading | null): boolean {
   if (facts.deliveryIssuer !== null) {
     if (facts.confirmingParty === facts.deliveryIssuer || facts.signer === facts.deliveryIssuer) return true;
     if (verifier.kind === 'account' && issuerKeys.addresses.includes(verifier.account)) return true;
     if (verifier.kind === 'key' && issuerKeys.ed25519.some((k) => bytesEqual(k, verifier.key))) return true;
   }
-  return verifier.kind === 'key' && parsedSubject !== null && subjectSignedBy(parsedSubject, verifier.key);
+  return verifier.kind === 'key' && reading !== null && reading.signedBy(verifier.key);
 }
 
 /** AR-30 to AR-32. */

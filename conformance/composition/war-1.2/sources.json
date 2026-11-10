@@ -1,0 +1,29 @@
+{
+ "repository": "https://github.com/maximusrufus/work-acceptance-record",
+ "commit": "8ce7f42193786af9262294e5bb7c656a2e663de4",
+ "path": "composition",
+ "files": {
+  "C01-valid-declared.json": "f142c4980907c58200ba605207282f8471e5b875a1a6b9c9b8f2751d14bfebaa",
+  "C02-valid-payer.json": "f5e5d99b8f0ac847a1876e2f15489830aa847de24c1a262782b2e674fb6ffa1a",
+  "C03-digest-mismatch.json": "d235a6ffac6b3eb210b14cecf05371a1bd911ef7998d024a25669a910b551cbd",
+  "C04-unsupported-profile.json": "122c65b42997b3141115e0abb809b981b64e079b7e3c8425041165dad430bdea",
+  "C05-wrong-profile.json": "3779d336e4196b0dc424554ddb586b66030dd473a8baf63112052e8442fbbece",
+  "C06-tampered-work-record.json": "1cc2a04df415e15dde0ed0ea61eeeb439991e5c1aa8333337077cfa67c4d6365",
+  "C07-tampered-acceptance.json": "17d1d52ee1d69016528fb6ece1f3b225113cc34b9919807518e8c6461b0280a9",
+  "C08-valid-but-unbound.json": "746705ad150fc0e29adf4f5efade406b8ed1102204c0896b8a8a3318f6e25260",
+  "C09-outcome-mismatch.json": "6c7da7264c8226222bb3d2a81c7ff2044250165ca563e3bf9e3ed8a437e9dff0",
+  "C10-terms-mismatch.json": "0ab267716f94f43b5778b9d3e3f161d4b87d50d6f78382d9dae4dccfd82aac45",
+  "C11-precedes-fractional.json": "fc06594356a965f41f31cfff944e50d22081bd851e65b41b2d9523ee9d16b0a8",
+  "C12-equal-boundary.json": "acbc77e718ecf843f2438b8de2c53f78ab5e0be143804b653fb7c75e4b7e969d",
+  "C13-signer-is-issuer.json": "10e11263eaba668313e7b65ef0258fc5e530b8aba6f6fc66644938b00d10aad1",
+  "C14-checker-key-unlisted.json": "f0b067071cb2119c96ddee1f59b663a439a6236d66fc10f9f2bf456a1545fde8",
+  "C15-subject-absent.json": "27ab05f7ff2ffa71beac6531a5293b23dfb0e063d798b8abf3a1fb3b3bd52cf9",
+  "C16-authority-other-record.json": "c740f7e04b81565b5465b1ef393e8bac243eead24a991e517ebef2b9476b3e01",
+  "check.py": "49e88c0f870a5957f7d68789db0c90f2216f7c32ea0747f5831627ff4a9ddef7",
+  "common.py": "c7032fbfd7a9a1698b96746cdd645f5c8a95fa310d2e90c26bd861e00a0d94f4",
+  "gen.py": "be1181522134a957940d8f2095414a27395cbe0af77bb27029bb25367a041516"
+ },
+ "COMPOSITION.md": "c8394d15806cf88a11048980ac10979cc26ddfa2d57dc6aa1ff8422644407237",
+ "NOTES.md": "2d022928cd790a83c87a7c392c25d72bca07e3a88c9785932c9911be8d1e5691",
+ "note": "SHA-256 of every file read from composition/ at this commit; the vectors are bundled unchanged in vectors-C01-C16.json."
+}

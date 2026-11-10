@@ -1,0 +1,16 @@
+# maximusrufus/work-acceptance-record composition/vectors/check.py and common.py at 8ce7f42, run 2026-11-09 by CNS Labs with python3 -I over the thirteen mutation vectors of mutations.json, each written as its own C8x/C9x file beside a copy of the two scripts
+
+PASS C81-signature-value-unpadded
+PASS C82-issuer-key-listed-twice
+PASS C83-issuer-kid-differs
+PASS C84-envelope-extra-member
+PASS C85-envelope-without-timestamp
+PASS C86-subject-reserialized
+PASS C87-envelope-key-id-differs
+PASS C88-issued-utc-four-digit-fraction
+PASS C89-issued-utc-zero-fraction-equal
+PASS C90-payer-authority-without-payment
+PASS C91-criteria-digest-uppercase
+PASS C92-schema-1-1
+PASS C93-checker-party-key-id-differs
+13/13 vectors match
