@@ -1,7 +1,8 @@
 # x402 acceptance record, version 0: vectors and checkers
 
 Conformance material for the published specification (CNSLabs/x402-acceptance-record, tag `draft-2026-10-21`,
-commit `ad53b54`):
+commit `ad53b54`; that tag is the text the vectors were typed from, and SPEC.md is byte for byte the same at
+`draft-2026-10-27`, the release of this package):
 
 | Path | What it is | Licence |
 | --- | --- | --- |
@@ -11,6 +12,7 @@ commit `ad53b54`):
 | `checker/` | The authors' checker, TypeScript. `npm test` runs it over the vectors; `npm run selftest:checker` runs its synthetic checks. | Apache-2.0 |
 | `checker-python-independent/` | A Python checker implemented in a fresh agent context from the published texts, with the reference implementations unopened by its author. Its own README, provenance, disagreement ledger and reports are inside. | Apache-2.0 (code), CC0 1.0 (reports) |
 | `checker-blind/` | A blind Python checker: written from the specification texts alone and frozen, in its own git repository, before its author saw any vector; 127 of 127 on the first run. Brief, read log, freeze receipt, the frozen repository as a bundle, and ten spec ambiguities logged before the freeze are inside. | Apache-2.0 (code), CC0 1.0 (reports) |
+| `composition/war-1.2/` | maximusrufus's draft `war/1.2` subject profile implemented as a second profile in the TypeScript checker, his sixteen vectors bundled unchanged, thirteen mutations, and pinned runs of both checkers over both. SPEC.md unchanged. | Apache-2.0 (code), CC0 1.0 (vectors, runs) |
 | `results/` | Pinned runs: `checker-ts-<commit>.json` for the TypeScript checker, `rerun-vic-2026-10-26.json` and its note for the fresh-context Python checker, `rerun-mike-2026-10-26.json` for the frozen blind one and `rerun-mike-r1-2026-10-26.json` for its corrected successor. | CC0 1.0 |
 
 Everything runs offline; nothing is submitted to any chain. Setup for the TypeScript parts: Node 22, `npm install` in
@@ -29,8 +31,11 @@ the two upstream texts the specification pins (x402 execution evidence at `23b5c
 at `faa1c694`). It did not open the generator or the earlier checker's verification code; it copied two small helper
 files from the earlier checker, the Ed25519 point-order and scalar rules and the base64url and JCS encodings, and
 reviewed them against the specification. The vectors were produced in parallel and were run against it before it was
-finished, so their expected objects were visible to its author. It passes 127 of 127; the run is
-`results/checker-ts-0b35fdc.json`.
+finished, so their expected objects were visible to its author. It passes 127 of 127; the run at the release is
+`results/checker-ts-0b35fdc.json`. The checker has changed once since, when subject profiles moved behind an interface
+and `war/1.2` was added (`composition/war-1.2/`): the run after that change is `results/checker-ts-4c2e3d7.json`, 127
+of 127 with the same actual output on every vector, and its 182 synthetic checks are
+`results/checker-ts-4c2e3d7-selftest.txt`.
 
 **`checker-python-independent/`, Python, Vic's fresh-context implementation.** Written by an agent in a fresh context
 on Vic's side, from a frozen packet of SPEC.md, CASES.md, the vector layout, the two pinned upstream texts and the
@@ -56,6 +61,17 @@ The separately preserved post-review revision r1 passes 127 of 127 and 87 synthe
 the two corrections below and is not described as an unchanged blind implementation.
 Ten points it found ambiguous while implementing were written down before the freeze
 (`checker/IMPLEMENTATION-NOTES.md`). The run is `results/rerun-mike-2026-10-26.json`.
+
+## Runs reported by others
+
+Runs of the 127 vectors at `draft-2026-10-27` (commit `428fa21`) by implementers outside this package, as they
+reported them on x402-foundation/tsc#4. The list is append-only; a run is recorded with its author, date, checker
+revision and result, and is not rewritten when a later revision changes.
+
+| Who | Date | Checker | Result | Record |
+| --- | --- | --- | --- | --- |
+| maximusrufus | 2026-10-27 | Clean-room Python checker written from SPEC.md, CASES.md, the vector layout and the two pinned upstream texts, frozen at revision `97ac890` before the run; 41 mutated or re-signed inputs run afterwards. | 127 of 127, no disagreements | `interop/cnslabs-draft-2026-10-27/` of maximusrufus/work-acceptance-record; [tsc#4 comment](https://github.com/x402-foundation/tsc/issues/4#issuecomment-6449737803) |
+| The HORIZONs Co., Ltd. (ogasurfproject-jpg) | 2026-11-03, reported 2026-11-04 | One-file Python checker, standard library only, cryptography written in the file. Not blind, in their words: they read CASES.md, which states each case's expected output, before writing the checker. Only the per-vector `expect` and `statementId` stayed unseen until the verdicts were frozen. Not run: live ERC-1271 calls, AR-2 and the AR-14 record of chain and block. | 127 of 127 on result, conditions, disposition, reason and `policy_refusal`; `statementId` 89 of 89, computed after the comparison | Verdict file SHA-256 `c20595de13969a113dbf8e25ac58c450e17f0a376741d2fe808f6e7dcff41f53`; [write-up](https://github.com/x402-foundation/tsc/issues/4#issuecomment-6765044198), [first report](https://github.com/x402-foundation/tsc/issues/4#issuecomment-6618906442) |
 
 ## Where the checkers read the text differently
 

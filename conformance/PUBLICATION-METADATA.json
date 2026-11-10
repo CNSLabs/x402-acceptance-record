@@ -3,8 +3,8 @@
   "scope": "Publication metadata copies; not a new execution or a new freeze",
   "changed_files": {
     "README.md": {
-      "original_sha256": "65cb27d8dabfa1014568cb5841e033a5b675b0eae532515980452836920214ea",
-      "export_sha256": "684e070311f13583f4420a14cc86868d22fe2882fad3c9daf207998342e52108"
+      "original_sha256": "15b7e898d8e64ee91e0d4c5f4c1f4c5572db45a0b69d300c398629223ed62a13",
+      "export_sha256": "c7211e4b605b718241944b99927bfd92b6ea42b170a6f785246a7b2b0e220d42"
     },
     "checker-blind/BRIEF.md": {
       "original_sha256": "2c5d3afbe91111b4fbb2a2fdf37a6892d3d1182b3e8bb929ec8abe2d5b448be0",

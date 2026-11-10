@@ -3,7 +3,9 @@
 One file per checker per run: `<checker>-<short commit>.json`, written by the checker's runner with `--json`. The
 runner records the checker's name, version and the git commit it ran at (with a `dirty` flag when the checker's own
 files had uncommitted changes), the SHA-256 of the vector file, the profile and specification pin the vector file
-carries, one outcome per vector (pass or fail, with expected and actual on failure) and the totals.
+carries, one outcome per vector (pass or fail, with expected and actual on failure) and the totals. A
+`<checker>-<short commit>-selftest.txt` beside it is the transcript of that checker's synthetic checks at the same
+commit.
 
 Because a file cannot carry the hash of the commit that adds it, a run is recorded in the commit after the checker
 change it reports on: commit the checker, run it, then commit the result file named after the first commit.

@@ -1,7 +1,10 @@
 // The x402ev/1 subject profile (AR-23, AR-27): x402 execution evidence, PR #3682 at 23b5c21.
 import { keyAcceptable, verifyEd25519 } from './ed25519.ts';
 import { addressOrStringEqual, b64uDecode, bytesEqual, isEthAddress, isPlainObject, jcs, sha256Hex, utf8 } from './encoding.ts';
+import type { IssuerKeys } from './inputs.ts';
 import { parseStrictJson, toPlain } from './json.ts';
+import { UNREADABLE, type SubjectFacts, type SubjectProfile, type SubjectReading } from './profile.ts';
+import { qualifyingOfferDigests } from './terms.ts';
 
 export const X402EV1 = 'x402ev/1';
 const EVIDENCE_REF_PREFIX = 'x402ev/1:sha256:';
@@ -17,20 +20,12 @@ export interface ParsedSubject {
   evidenceRef: string | null;
 }
 
-/** What an authenticated subject record says (AR-27). */
-export interface SubjectFacts {
+/** What an authenticated x402ev/1 record says (AR-27): the generic facts plus what AR-29 matches offers against. */
+export interface X402ev1Facts extends SubjectFacts {
   /** The identity, byte-exact: the receipt's evidenceRef. */
   evidenceRef: string;
-  /** `eip155:<chain>:<lowercase address>`, or null when the record has no payer. */
-  payer: string | null;
-  /** 0x + the 64 hex digits of delivery.contentDigest. */
-  outcomeDigest: string;
-  /** delivery.timestamp, integer seconds. */
-  outcomeTime: number;
   /** The payment terms the offer must match (AR-29), or null when a member is not a string. */
   payment: { network: string; amount: string; asset: string; payee: string } | null;
-  /** The issuer key that signed it. */
-  publicKey: Uint8Array;
 }
 
 /**
@@ -86,7 +81,7 @@ export function subjectSignedBy(parsed: ParsedSubject, key: Uint8Array): boolean
  * trust.issuers lists for deliveryIssuer, and reads the fields in their stated forms. Anything off
  * makes the subject unavailable (null); it never produces a mismatch.
  */
-export function authenticateX402ev1(p: ParsedSubject, issuerKeys: Uint8Array[]): SubjectFacts | null {
+export function authenticateX402ev1(p: ParsedSubject, issuerKeys: Uint8Array[]): X402ev1Facts | null {
   if (!p.keyTypeOk || !p.publicKey || !p.signature || !p.bodyJcs || p.evidenceRef === null) return null;
   const publicKey = p.publicKey;
   if (!issuerKeys.some((k) => bytesEqual(k, publicKey))) return null; // listed for deliveryIssuer, compared as 32 bytes
@@ -117,6 +112,8 @@ export function authenticateX402ev1(p: ParsedSubject, issuerKeys: Uint8Array[]):
     : null;
 
   return {
+    identity: p.evidenceRef,
+    contextId: contextIdOf(p.evidenceRef),
     evidenceRef: p.evidenceRef,
     payer: payerId,
     outcomeDigest: '0x' + contentDigest.slice('sha256:'.length),
@@ -130,3 +127,18 @@ export function authenticateX402ev1(p: ParsedSubject, issuerKeys: Uint8Array[]):
 export function contextIdOf(evidenceRef: string): string {
   return '0x' + evidenceRef.slice(EVIDENCE_REF_PREFIX.length);
 }
+
+/** x402ev/1 as a subject profile: AR-27 for the record, AR-29's signed offers for the terms evidence. */
+export const X402EV1_PROFILE: SubjectProfile = {
+  id: X402EV1,
+  read(bytes: Uint8Array, issuerKeys: IssuerKeys): SubjectReading {
+    const parsed = parseX402ev1(bytes);
+    if (!parsed) return UNREADABLE;
+    const facts = authenticateX402ev1(parsed, issuerKeys.ed25519);
+    return {
+      facts,
+      signedBy: (key) => subjectSignedBy(parsed, key),
+      termsDigests: (terms) => (facts ? qualifyingOfferDigests(terms, issuerKeys, facts) : new Set()),
+    };
+  },
+};

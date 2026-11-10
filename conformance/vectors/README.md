@@ -4,7 +4,9 @@ Exact input and output bytes for every case in `CASES.md` of the published speci
 (CNSLabs/x402-acceptance-record, tag `draft-2026-10-21`, commit `ad53b54ad59df93bd5d3258963f27acccdcec23c`),
 in both signing forms where the case says `both`. One vector per variant per form, as the case list's reading
 rules define them. The expected outputs are typed by hand from the case rows; nothing in `expect` was read
-back from a checker.
+back from a checker. The tag named here is the one the vectors were typed from, which is why it is not the tag of
+the release that carries them: SPEC.md is byte for byte the same at `draft-2026-10-27`, and CASES.md there differs
+only in the sentence that points to this file. Results are reported against the release tag, `draft-2026-10-27`.
 
 `vectors.json` and `seeds.json` are dedicated to the public domain under CC0 1.0 Universal, like the case list.
 No key here was ever funded on any chain; every private key derives from a published seed.

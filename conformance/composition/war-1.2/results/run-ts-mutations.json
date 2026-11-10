@@ -1,0 +1,224 @@
+{
+  "checker": {
+    "name": "x402-acceptance-record/conformance/checker",
+    "language": "typescript",
+    "version": "0.1.0",
+    "commit": "1c8bf6c7e97d49c78d818360a345164e6402d95d",
+    "dirty": false
+  },
+  "vectorFile": {
+    "path": "composition/war-1.2/mutations.json",
+    "sha256": "1c6cb6de819e7e2e84c5e30b3e73e3768f31e3295775cd3c1a5789129bae5f22"
+  },
+  "profile": "war/1.2 mutations of C01/C02 (CNS Labs, 2026-11-09); expectations are our reading of COMPOSITION.md at 8ce7f42",
+  "ranAt": "2026-11-09T21:59:49.268Z",
+  "totals": {
+    "vectors": 13,
+    "passed": 13,
+    "failed": 0
+  },
+  "results": [
+    {
+      "id": "C81-signature-value-unpadded",
+      "expected": {
+        "result": "unknown",
+        "conditions": [],
+        "disposition": "accepted",
+        "reason": "evidence_unavailable"
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "unknown",
+        "conditions": [],
+        "disposition": "accepted",
+        "reason": "evidence_unavailable"
+      }
+    },
+    {
+      "id": "C82-issuer-key-listed-twice",
+      "expected": {
+        "result": "unknown",
+        "conditions": [],
+        "disposition": "accepted",
+        "reason": "evidence_unavailable"
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "unknown",
+        "conditions": [],
+        "disposition": "accepted",
+        "reason": "evidence_unavailable"
+      }
+    },
+    {
+      "id": "C83-issuer-kid-differs",
+      "expected": {
+        "result": "unknown",
+        "conditions": [],
+        "disposition": "accepted",
+        "reason": "evidence_unavailable"
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "unknown",
+        "conditions": [],
+        "disposition": "accepted",
+        "reason": "evidence_unavailable"
+      }
+    },
+    {
+      "id": "C84-envelope-extra-member",
+      "expected": {
+        "result": "verified",
+        "conditions": [],
+        "disposition": "accepted"
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "verified",
+        "conditions": [],
+        "disposition": "accepted"
+      }
+    },
+    {
+      "id": "C85-envelope-without-timestamp",
+      "expected": {
+        "result": "verified",
+        "conditions": [],
+        "disposition": "accepted"
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "verified",
+        "conditions": [],
+        "disposition": "accepted"
+      }
+    },
+    {
+      "id": "C86-subject-reserialized",
+      "expected": {
+        "result": "verified",
+        "conditions": [],
+        "disposition": "accepted"
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "verified",
+        "conditions": [],
+        "disposition": "accepted"
+      }
+    },
+    {
+      "id": "C87-envelope-key-id-differs",
+      "expected": {
+        "result": "unknown",
+        "conditions": [],
+        "disposition": "accepted",
+        "reason": "evidence_unavailable"
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "unknown",
+        "conditions": [],
+        "disposition": "accepted",
+        "reason": "evidence_unavailable"
+      }
+    },
+    {
+      "id": "C88-issued-utc-four-digit-fraction",
+      "expected": {
+        "result": "unknown",
+        "conditions": [],
+        "disposition": "accepted",
+        "reason": "evidence_unavailable"
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "unknown",
+        "conditions": [],
+        "disposition": "accepted",
+        "reason": "evidence_unavailable"
+      }
+    },
+    {
+      "id": "C89-issued-utc-zero-fraction-equal",
+      "expected": {
+        "result": "verified",
+        "conditions": [],
+        "disposition": "accepted"
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "verified",
+        "conditions": [],
+        "disposition": "accepted"
+      }
+    },
+    {
+      "id": "C90-payer-authority-without-payment",
+      "expected": {
+        "result": "unknown",
+        "conditions": [
+          "acceptance_authority_unresolved"
+        ],
+        "disposition": "accepted"
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "unknown",
+        "conditions": [
+          "acceptance_authority_unresolved"
+        ],
+        "disposition": "accepted"
+      }
+    },
+    {
+      "id": "C91-criteria-digest-uppercase",
+      "expected": {
+        "result": "unknown",
+        "conditions": [],
+        "disposition": "accepted",
+        "reason": "evidence_unavailable"
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "unknown",
+        "conditions": [],
+        "disposition": "accepted",
+        "reason": "evidence_unavailable"
+      }
+    },
+    {
+      "id": "C92-schema-1-1",
+      "expected": {
+        "result": "unknown",
+        "conditions": [],
+        "disposition": "accepted",
+        "reason": "evidence_unavailable"
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "unknown",
+        "conditions": [],
+        "disposition": "accepted",
+        "reason": "evidence_unavailable"
+      }
+    },
+    {
+      "id": "C93-checker-party-key-id-differs",
+      "expected": {
+        "result": "unknown",
+        "conditions": [],
+        "disposition": "accepted",
+        "reason": "evidence_unavailable"
+      },
+      "outcome": "pass",
+      "actual": {
+        "result": "unknown",
+        "conditions": [],
+        "disposition": "accepted",
+        "reason": "evidence_unavailable"
+      }
+    }
+  ]
+}
